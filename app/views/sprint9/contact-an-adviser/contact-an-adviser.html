@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Contact an adviser - National Careers Service
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+    {% include "includes/contact-breadcrumb.html" %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <form id="userform" method="post">
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                            <h2 class="govuk-fieldset__heading">
+                                What is your query about?
+                            </h2>
+                        </legend>
+                        <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="careers" name="queryCategory" type="radio" value="careers">
+                                <label class="govuk-label govuk-radios__label" for="careers">
+                                    Careers
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="qualifications" name="queryCategory" type="radio" value="qualifications">
+                                <label class="govuk-label govuk-radios__label" for="qualifications">
+                                    Qualifications
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="findingacourse" name="queryCategory" type="radio" value="findingacourse">
+                                <label class="govuk-label govuk-radios__label" for="findingacourse">
+                                    Finding a course
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="generalfeedback" name="queryCategory" type="radio" value="generalfeedback">
+                                <label class="govuk-label govuk-radios__label" for="generalfeedback">
+                                    General feedback
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="funding" name="queryCategory" type="radio" value="funding">
+                                <label class="govuk-label govuk-radios__label" for="funding">
+                                    Funding
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="more-detail">Enter your query for the adviser.
+                    </label>
+                    <span id="more-detail-hint" class="govuk-hint">Do not include any personal or sign in information.</span>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+                <div class="govuk-form-group">
+                    <button type="submit" class="govuk-button">
+                        Continue
+                    </button>
+                </div>
+            </form>
+        </div>
+        {% include "includes/side-contact-us.html" %}
+    </div>
+</main>
+{% endblock %}
