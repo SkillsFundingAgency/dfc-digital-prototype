@@ -1,0 +1,39 @@
+# ignore tracking usage data config - we want a different one for each user
+usage-data-config.json
+# ignore extension SCSS because it's dynamically generated
+lib/extensions/_extensions.scss
+.idea
+/.vs/slnx.sqlite
+/.vs/slnx.sqlite-journal
+/.vs/ProjectSettings.json
+/.vs/config/applicationhost.config
+/.vs/Citizen Digital - Prototype/v15/.suo
+/.vs/VSWorkspaceState.json
+/.vs/VSWorkspaceState.json
+/.vs/tasks.vs.json
+.env
+.sass-cache
+.DS_Store
+.start.pid
+.port.tmp
+public
+node_modules/*
+.tmuxp.*
+package-lock.json
+.idea
+.sass-cache
+.DS_Store
+.start.pid
+.port.tmp
+public
+govuk_modules
+node_modules/*
+.tmuxp.*
+/.vs/slnx.sqlite
+/.vs/slnx.sqlite-journal
+/.vs/ProjectSettings.json
+/.vs/config/applicationhost.config
+/.vs/Citizen Digital - Prototype/v15/.suo
+/.vs/VSWorkspaceState.json
+/.vs/VSWorkspaceState.json
+/.vs/tasks.vs.json
