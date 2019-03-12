@@ -9,12 +9,27 @@ Report a technical issue - National Careers Service
     {% include "includes/contact-breadcrumb.html" %}
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+                <h2 class="govuk-error-summary__title" id="error-summary-title">
+                    There is a problem
+                </h2>
+                <div class="govuk-error-summary__body">
+                    <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                            <a href="#more-detail-error">You must enter a message</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <h1 class="govuk-heading-xl">Report a technical issue</h1>
             <p>Give us as much detail as possible. For example, the web browser you were using when you had a problem, what you were trying to do, what happened and any error messages that were on the screen.</p>
             <form id="userform" method="post">
-                <div class="govuk-form-group">
+                <div class="govuk-form-group govuk-form-group--error">
                     <label class="govuk-label" for="more-detail">Include links to the problem page and any page headings. This will help us to fix the issue more quickly.</label>
                     <span id="more-detail-hint" class="govuk-hint">Do not include any personal or sign in information.</span>
+                    <span id="more-detail-error" class="govuk-error-message">
+                        <span class="govuk-visually-hidden">Error:</span> Enter a message detailing the issue
+                    </span>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                 </div>
                 <p class="govuk-!-font-size-16">Character limit is 1000.</p>

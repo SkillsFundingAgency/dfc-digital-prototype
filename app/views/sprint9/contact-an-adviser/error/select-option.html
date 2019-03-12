@@ -9,14 +9,28 @@ Why would you like to contact us?
     {% include "includes/contact-breadcrumb.html" %}
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+                <h2 class="govuk-error-summary__title" id="error-summary-title">
+                    There is a problem
+                </h2>
+                <div class="govuk-error-summary__body">
+                    <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                            <a href="#category-error">Choose a reason for contacting us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <form id="userform" method="post">
-        <div class="govuk-form-group">
+        <div class="govuk-form-group govuk-form-group--error">
             <fieldset class="govuk-fieldset">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                     <h1 class="govuk-fieldset__heading">
                         Why would you like to contact us?
                     </h1>
                 </legend>
+                <span id="changed-name-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span> Choose a reason for contacting us</span>
                 <div class="govuk-radios">
                     <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="adviser" name="whyContactUs" type="radio" value="adviser">
