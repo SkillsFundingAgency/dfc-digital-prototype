@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Contact us - National Careers Service
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Contact us</h1>
+      <h3 class="govuk-heading-s">Webchat</h3>
+      <p>Contact an adviser using <a href="https://cxdirect.serco.com/visitor/EntryPage.htm">webchat</a>. This service is open from 8am to 10pm, 7 days a week.</p>
+      <h3 class="govuk-heading-s">Phone</h3>
+      <p>Call 0800 100 900 to speak to an adviser. Lines are open from 8am to 10pm, 7 days a week. Calls are free from landlines and most mobile numbers. Find out about <a href="https://www.gov.uk/call-charges">call charges and freephone numbers</a>.</p>
+      <p>If you need advice in a different language, choose option 5 to speak to an adviser using an interpreter.</p>
+      <h3 class="govuk-heading-s">Online message</h3>
+      <p><a href="contact-an-adviser/select-option">Send us an online message</a> to ask an adviser a question, report a technical issue or tell us what you think about our service.</p>
+      <h3 class="govuk-heading-s">Callback</h3>
+      <p>Tell us your phone number and we will <a href="https://cxdirect.serco.com/phone_callback.htm">call you back</a>.</p>
+      <h3 class="govuk-heading-s">Face-to-face advice</h3>
+      <p>Call 0800 100 900 to find out if you are eligible for a face-to-face appointment with an adviser.</p>
+      <h3 class="govuk-heading-s">Text</h3>
+      <p>Text your name and the word ADVICE to 07766 413219 and a National Careers Service adviser will call you back for free. You can also use this text number to ask for information like telephone numbers and addresses.</p>
+      <p>Please note: we cannot open pictures sent by text.</p>
+      <h3 class="govuk-heading-s">Post</h3>
+      <p>
+        National Careers Service<br>
+        PO Box 1331<br>
+        Newcastle Upon Tyne<br>
+        NE99 5EB
+      </p>
+    </div>
+    {% include "includes/side-contact-us.html" %}
+  </div>
+</main>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Thank you for contacting us - National Careers Service
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/contact-breadcrumb.html" %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Thank you for contacting us</h1>
+      <p>We welcome your feedback. It helps us to improve the service.</p>
+      <p><a href="https://nationalcareers.service.gov.uk">Return to the Explore careers home page</a></p>
+    </div>
+    {% include "includes/side-contact-us.html" %}
+  </div>
+</main>
+{% endblock %}
