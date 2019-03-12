@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Give feedback - National Careers Service
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+    {% include "includes/contact-breadcrumb.html" %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <form id="userform" method="post">
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                            <h2 class="govuk-fieldset__heading">
+                                What is your feedback about?
+                            </h2>
+                        </legend>
+                        <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="general" name="feedbackCategory" type="radio" value="general">
+                                <label class="govuk-label govuk-radios__label" for="general">
+                                    General
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="funding" name="feedbackCategory" type="radio" value="funding">
+                                <label class="govuk-label govuk-radios__label" for="funding">
+                                    Funding
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="careers" name="feedbackCategory" type="radio" value="careers">
+                                <label class="govuk-label govuk-radios__label" for="careers">
+                                    Careers
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="qualifications" name="feedbackCategory" type="radio" value="qualifications">
+                                <label class="govuk-label govuk-radios__label" for="qualifications">
+                                    Qualifications
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="coursesearch" name="feedbackCategory" type="radio" value="coursesearch">
+                                <label class="govuk-label govuk-radios__label" for="coursesearch">
+                                    Course search
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="techsupport" name="feedbackCategory" type="radio" value="techsupport">
+                                <label class="govuk-label govuk-radios__label" for="techsupport">
+                                    Technical support
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="website" name="feedbackCategory" type="radio" value="website">
+                                <label class="govuk-label govuk-radios__label" for="website">
+                                    Website
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="customerservice" name="feedbackCategory" type="radio" value="customerservice">
+                                <label class="govuk-label govuk-radios__label" for="customerservice">
+                                    Customer service
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="more-detail">Give us your feedback. If you're commenting on particular pages, it will help us if you include links to them.</label>
+                    <span id="more-detail-hint" class="govuk-hint">Do not include any personal or sign in information.</span>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+                <p class="govuk-!-font-size-16">Character limit is 1000.</p>
+                <div class="govuk-form-group">
+                    <button type="submit" class="govuk-button">
+                        Continue
+                    </button>
+                </div>
+            </form>
+        </div>
+        {% include "includes/side-contact-us.html" %}
+    </div>
+</main>
+{% endblock %}

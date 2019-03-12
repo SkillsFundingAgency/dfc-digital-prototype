@@ -1,7 +1,7 @@
 module.exports = function (router) {
 
   // CHANGE ME TO THE VERSION YOURE WORKING ON
-  var version = 'sprint9/';
+  var version = '/sprint9/';
   var contact = 'contact-an-adviser/';
 
   router.post(version + contact + 'select-option', function (req, res) {
@@ -12,7 +12,7 @@ module.exports = function (router) {
     if (req.session.option == "technical") {
       res.redirect(301, version + contact + 'technical');
     }
-    if (req.session.option.why == "feedback") {
+    if (req.session.option == "feedback") {
       res.redirect(301, version + contact + 'feedback');
     }
   });
