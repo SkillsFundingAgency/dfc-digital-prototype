@@ -14,3 +14,9 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// Change to header to remove blue border underneath header.
+.govuk-header__container {
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
