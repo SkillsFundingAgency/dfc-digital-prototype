@@ -9,44 +9,85 @@ Enter your details - National Careers Service
     {% include "includes/contact-breadcrumb.html" %}
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+                <h2 class="govuk-error-summary__title" id="error-summary-title">
+                    There is a problem
+                </h2>
+                <div class="govuk-error-summary__body">
+                    <ul class="govuk-list govuk-error-summary__list">
+                        <li>
+                            <a href="#first-name-error">Enter your first name</a>
+                        </li>
+                        <li>
+                            <a href="#last-name-error">Enter your last name</a>
+                        </li>
+                        <li>
+                            <a href="#email-error">Enter your email address</a>
+                        </li>
+                        <li>
+                            <a href="#confirm-email-error">Confirm your email address</a>
+                        </li>
+                        <li>
+                            <a href="#contact-error">Say yes if you want us to contact you</a>
+                        </li>
+                        <li>
+                            <a href="#terms-error">You must accept the terms and conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <h1 class="govuk-heading-xl">Enter your details</h1>
             <p class="govuk-body-m">We need your details to process your request.</p>
             <form id="userform" method="post">
             <fieldset class="govuk-fieldset">
 
-                <div class="govuk-form-group">
+                <div class="govuk-form-group govuk-form-group--error">
                     <label class="govuk-label" for="firstName">
                         First name
                     </label>
+                    <span id="first-name-error" class="govuk-error-message">
+                        <span class="govuk-visually-hidden">Error:</span> Enter your first name
+                    </span>
                     <input class="govuk-input govuk-!-width-two-thirds" id="firstName" name="firstName" type="text">
                 </div>
 
-                <div class="govuk-form-group">
+                <div class="govuk-form-group govuk-form-group--error">
                     <label class="govuk-label" for="lastName">
                         Last name
                     </label>
+                    <span id="last-name-error" class="govuk-error-message">
+                        <span class="govuk-visually-hidden">Error:</span> Enter your last name
+                    </span>
                     <input class="govuk-input govuk-!-width-two-thirds" id="lastName" name="lastName" type="text">
                 </div>
 
-                <div class="govuk-form-group">
+                <div class="govuk-form-group govuk-form-group--error">
                     <label class="govuk-label" for="emailAddress">
                         Email address
                     </label>
+                    <span id="email-error" class="govuk-error-message">
+                        <span class="govuk-visually-hidden">Error:</span> Enter your email address
+                    </span>
                     <input class="govuk-input govuk-!-width-two-thirds" id="emailAddress" name="emailAddress" type="text">
                 </div>
 
-                <div class="govuk-form-group">
+                <div class="govuk-form-group govuk-form-group--error">
                     <label class="govuk-label" for="confirmEmailAddress">
                         Confirm email address
                     </label>
+                    <span id="confirm-email-error" class="govuk-error-message">
+                        <span class="govuk-visually-hidden">Error:</span> Confirm your email address
+                    </span>
                     <input class="govuk-input govuk-!-width-two-thirds" id="confirmEmailAddress" name="confirmEmailAddress" type="text">
                 </div>
-                <div class="govuk-form-group">
+                <div class="govuk-form-group govuk-form-group--error">
                     <fieldset class="govuk-fieldset">
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                             <h1 class="govuk-fieldset__heading">Do you want us to contact you?
                             </h1>
                         </legend>
+                        <span id="contact-error" class="govuk-error-message">
+                         <span class="govuk-visually-hidden">Error:</span> Say yes if you want us to contact you</span>
                         <div class="govuk-radios govuk-radios--inline">
                             <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="contact-yes" name="contact" type="radio" value="yes">
@@ -62,12 +103,15 @@ Enter your details - National Careers Service
                                 </div>
                     </fieldset>
                 </div>
-                <div class="govuk-form-group">
+                <div class="govuk-form-group govuk-form-group--error">
                     <fieldset class="govuk-fieldset">
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                             <h1 class="govuk-fieldset__heading">Terms and conditions
                             </h1>
                         </legend>
+                        <span id="terms-error" class="govuk-error-message">
+                            <span class="govuk-visually-hidden">Error:</span> You must accept the terms and conditions
+                        </span>
                         <div class="govuk-checkboxes">
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="terms" name="terms" type="checkbox" value="terms">
