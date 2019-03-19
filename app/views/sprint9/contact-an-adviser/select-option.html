@@ -4,8 +4,9 @@
 Why would you like to contact us?
 {% endblock %}
 
-{% block content %}
-    <div class="govuk-grid-row"><div class="govuk-grid-column-two-thirds">
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+<div class="govuk-grid-row"><div class="govuk-grid-column-two-thirds">
     <div class="govuk-breadcrumbs">
         <ol class="govuk-breadcrumbs__list">
             <li class="govuk-breadcrumbs__list-item">
@@ -19,6 +20,9 @@ Why would you like to contact us?
             </li>
         </ol>
     </div></div></div>
+{% endblock %}
+
+{% block content %}
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
             <form id="userform" method="post">

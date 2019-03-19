@@ -4,8 +4,9 @@
 Contact us - National Careers Service
 {% endblock %}
 
-{% block content %}
-  <div class="govuk-grid-row"><div class="govuk-grid-column-two-thirds">
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+<div class="govuk-grid-row"><div class="govuk-grid-column-two-thirds">
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
@@ -16,6 +17,9 @@ Contact us - National Careers Service
       </li>
     </ol>
   </div></div></div>
+{% endblock %}
+
+{% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">Contact us</h1>
