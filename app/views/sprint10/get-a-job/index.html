@@ -4,15 +4,12 @@
 Get a job | National Careers Service
 {% endblock %}
 
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+{% include "includes/get-a-job/landing-breadcrumb.html" %}
+{% endblock %}
+
 {% block content %}
-    <div class="govuk-grid-row"><div class="govuk-grid-column-two-thirds">
-        <div class="govuk-breadcrumbs">
-            <ol class="govuk-breadcrumbs__list">
-                <li class="govuk-breadcrumbs__list-item">
-                    <a class="govuk-breadcrumbs__link" href="https://nationalcareersservice.direct.gov.uk/">Home</a>
-                </li>
-            </ol>
-        </div></div></div>
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
             <h1 class="govuk-heading-xl">Advice on how to look for and apply for jobs</h1>
