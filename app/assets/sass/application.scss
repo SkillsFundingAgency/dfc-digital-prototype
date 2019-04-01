@@ -23,6 +23,10 @@ $site-width:960px;
   border-bottom: 10px solid #207e77;
 }
 
+.govuk-header__container-beta {
+  border-bottom: 0 solid;
+}
+
 nav {
   .govuk-tag {
     margin: 0 0 0 4px;
@@ -103,6 +107,21 @@ nav {
     }
   }
 }
+
+.PROD_hero_beta {
+  background: #207e77;
+  margin: 0 0 0em 0;
+  padding: 10px 0px 0px;
+  color: #ffffff;
+  p {
+    color: #FFFFFF;
+    a {
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+  }
+}
+
 
 //Changes to the hero when inside a full width container
 .PROD_full-page-width-wrapper {
