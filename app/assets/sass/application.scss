@@ -14,6 +14,9 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+@import 'node_modules/govuk_frontend_toolkit/stylesheets/conditionals.scss';
+@import 'node_modules/govuk_frontend_toolkit/stylesheets/grid_layout.scss';
+$site-width:960px;
 
 // Change to header to change colour of blue border underneath header.
 .govuk-header__container {
@@ -57,4 +60,56 @@ nav {
   margin-top: 30px;
   border-top: 10px solid #005ea5;
   padding-top: 5px;
+}
+
+/* -------------------------------------------------------------
+	Hero
+------------------------------------------------------------- */
+.PROD_full-page-width-wrapper {
+  max-width: $site-width;
+
+  @include ie-lte(8) {
+    width: $site-width;
+  }
+
+  margin: 0 $gutter-half;
+
+  @include media(tablet) {
+    margin: 0 $gutter;
+  }
+
+  @include media($min-width: ($site-width + $gutter * 2)) {
+    margin: 0 auto;
+  }
+}
+
+.PROD_hero {
+  background: #207e77;
+  margin: 0 0 0em 0;
+  padding: 25px 0px 15px;
+  color: #ffffff;
+  @include media(tablet) {
+    padding: 40px 0px 30px;
+  }
+  .govuk-heading-xl {
+    margin: 0 0 30px 0;
+    color: #FFFFFF;
+  }
+  p {
+    color: #FFFFFF;
+    a {
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+  }
+}
+
+//Changes to the hero when inside a full width container
+.PROD_full-page-width-wrapper {
+  .PROD_hero {
+    padding: 25px 0 15px;
+    @include media(tablet) {
+      padding: 40px 0 30px;
+    }
+  }
 }
