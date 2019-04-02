@@ -1,15 +1,30 @@
-{% extends "layout_ncs.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 National Careers Service
 {% endblock %}
 
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header class="PROD_hero">
+  <div class="PROD_full-page-width-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Prototypes and mockups</h1>
+        <p class="govuk-body-m">The mockups linked below are for test purposes.</p>
+        <p class="govuk-body-m">They should not be recreated into production code unless the design has been validated by user research and stakeholders.</p>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="govuk-width-container">
+  {% endblock %}
+
 {% block content %}
 <main id="content" role="main">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">Prototypes and mockups</h1>
-      <p class="govuk-body-m">The design mockups linked below are solely for test purposes. They are organised by sprint number, and should not be recreated into production code unless the design has been approved and validated by user research and stakeholders.</p>
       <ul class="govuk-list govuk-list--bullet">
         <li><a class="govuk-link" href="sprint9/contact-an-adviser/index"><strong>Sprint 9 & 10</strong> - 'contact us' flow</a> - see example of <a href="sprint9/contact-an-adviser/error/contact-an-adviser.html">error validation</a></li>
         <li><a class="govuk-link" href="sprint10/get-a-job/"><strong>Sprint 10</strong> - 'help to find a job'</a></li>
