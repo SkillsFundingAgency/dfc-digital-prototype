@@ -1,0 +1,70 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block pageTitle %}
+National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header class="PROD_hero">
+    <div class="PROD_full-page-width-wrapper">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-xl">Assess yourself</h1>
+                <p class="govuk-body-lead">Take our assessments to find out more about yourself, and what jobs might suit you</p>
+            </div>
+            <div class="govuk-grid-column-one-third">
+            </div>
+        </div>
+    </div>
+</header>
+<div class="govuk-width-container">
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l">Discover your skills and careers</h2>
+            <p class="govuk-body-lead">This is a 5 to 10 minute assessment which can tell you what type of jobs might suit you.</p>
+            <p class="govuk-body">Take this assessment to find out what types of jobs might suit you, for example "retail and sales".</p>
+            <p class="govuk-body">Answer a few more questions to find out what specific job roles might suit you, for example "florist".</p>
+            <div class="govuk-inset-text">
+                This could take 5 to 10 minutes. It will take longer if you’re using assistive technologies, for example a screen reader or screen magnifier.
+            </div>
+            <p class="govuk-body">You can save your assessment if you want to complete it later, or look at your results again another time.</p>
+            <a href="https://discover-skills-careers-dev.nationalcareersservice.org.uk/assessment/short/" role="button" draggable="false" class="govuk-button govuk-button--start">
+                Start assessment
+            </a>
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+            <h2 class="govuk-heading-l">Skills health check</h2>
+            <p class="govuk-body-lead">This is a series of 6 personal skills assessments, and 4 activity skills assessments. Completing all assessments should take approximately three hours.</p>
+            <p class="govuk-body-m">The Skills Health Check is a set of quizzes and activities designed to help you explore your skills, interests and motivations.</p>
+            <p class="govuk-body-m">Working through the Skills Health Check can help you decide what kind of jobs might be right for you.</p>
+            <p class="govuk-body-m">You'll be able to download your report once you've completed at least one assessment.</p>
+            <p class="govuk-body-m"><a class="govuk-link" href="https://nationalcareersservice.direct.gov.uk/skills-health-check/home">Start or resume a Skills Health Check</a></p>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+            <div class="app-related-items">
+                <h3 class="govuk-heading-m">Return to an assessment</h3>
+                <form method="post" action="https://discover-skills-careers-dev.nationalcareersservice.org.uk/assessment/short/reload">
+
+                    <div class="app-resume-panel__input govuk-form-group ">
+                        <label class="govuk-label" for="code">Enter your reference</label>
+                        <input class="govuk-input " id="code" name="code" type="text">
+                    </div>
+                    <button type="submit" class="govuk-button app-button">
+                        Continue
+                    </button>
+                </form>
+            </div>
+            <div class="app-related-items">
+                <h3 class="govuk-heading-m">Want to speak to an adviser?</h3>
+                <p class="govuk-body"><b>Call</b> <a href="tel:+44800100900" class="govuk-link govuk-link--no-visited-state">0800 100 900</a> or <a href="#" class="govuk-link govuk-link--no-visited-state">use webchat</a></p>
+                <p class="govuk-hint">8am to 10pm, 7 days a week</p>
+            </div>
+        </div>
+
+    </div>
+    {% endblock %}
