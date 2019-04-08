@@ -31,12 +31,16 @@ What is your technical issue? - National Careers Service
             <h1 class="govuk-heading-xl">What is your technical issue?</h1>
             <p class="govuk-body-m">Give us as much detail as possible. For example, the web browser you were using when you had a problem, what you were trying to do, what happened and any error messages that were on the screen.</p>
             <form id="userform" method="post">
+                <div class="govuk-character-count" data-module="character-count" data-maxlength="1000">
                 <div class="govuk-form-group">
                     <label class="govuk-label" for="more-detail">Include links to the problem page and any page headings. This will help us to fix the issue more quickly.</label>
                     <span id="more-detail-hint" class="govuk-hint">Do not include any personal or sign in information.</span>
-                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    <textarea class="govuk-textarea js-character-count" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                 </div>
-                <p class="govuk-body-s">Character limit is 1000.</p>
+                    <span id="more-detail-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+    You can enter up to 1000 characters
+  </span>
+                </div>
                 <div class="govuk-form-group">
                     <button type="submit" class="govuk-button">
                         Continue

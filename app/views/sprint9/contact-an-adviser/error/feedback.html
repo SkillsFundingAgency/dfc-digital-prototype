@@ -99,15 +99,19 @@ Give feedback - National Careers Service
                         </div>
                     </fieldset>
                 </div>
+                <div class="govuk-character-count" data-module="character-count" data-maxlength="1000">
                 <div class="govuk-form-group govuk-form-group--error">
                     <label class="govuk-label" for="more-detail">Give us your feedback. If you're commenting on particular pages, it will help us if you include links to them.</label>
                     <span id="more-detail-hint" class="govuk-hint">Do not include any personal or sign in information.</span>
                     <span id="more-detail-error" class="govuk-error-message">
                         <span class="govuk-visually-hidden">Error:</span> Enter your feedback
                     </span>
-                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    <textarea class="govuk-textarea js-character-count" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                 </div>
-                <p class="govuk-body-s">Character limit is 1000.</p>
+                <span id="more-detail-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+    You can enter up to 1000 characters
+  </span>
+                </div>
                 <div class="govuk-form-group">
                     <button type="submit" class="govuk-button">
                         Continue
