@@ -4,6 +4,20 @@
 National Careers Service
 {% endblock %}
 
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+<header class="govuk-header " role="banner" data-module="header"><div class="govuk-header__container govuk-width-container"><a href="https://nationalcareersservice.direct.gov.uk/" class="govuk-header__link govuk-header__link--service-name">National Careers Service
+</a>
+    <button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button><nav><ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
+        <li class="govuk-header__navigation-item"><a href="https://nationalcareers.service.gov.uk" id="nav-EC" class="govuk-header__link" target="_self">Explore careers</a>
+        </li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/skills-health-check" id="nav-SHC" class="govuk-header__link" target="_self">Skills tests</a>
+    </li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/course-directory" id="nav-FC" class="govuk-header__link" target="_self">Find a course</a>
+    </li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/contact-us/home" id="nav-CA" class="govuk-header__link" target="_self">Contact us</a>
+    </li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/about-us" id="nav-AU" class="govuk-header__link" target="_self">About us</a>
+    </li><li class="govuk-header__navigation-item"><a href="https://nationalcareers.service.gov.uk/get-a-job" id="nav-HTG" class="govuk-header__link" target="_self">Help to get a job</a>
+    </li></ul></nav></div></header>
+{% endblock %}
+
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
 </div>
@@ -11,7 +25,7 @@ National Careers Service
     <div class="PROD_full-page-width-wrapper">
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
-                <h1 class="govuk-heading-xl">Assess yourself</h1>
+                <h1 class="govuk-heading-xl">Skills tests</h1>
                 <p class="govuk-body-lead">Take our assessments to find out more about yourself, and what jobs might suit you</p>
             </div>
             <div class="govuk-grid-column-one-third">
@@ -27,37 +41,16 @@ National Careers Service
         <div class="govuk-grid-column-two-thirds">
             <h2 class="govuk-heading-l">Discover your skills and careers</h2>
             <p class="govuk-body">You can take this assessment to learn about your skills and which groups of jobs might suit you. For instance, creative and media, or retail and sales.</p>
-            <p class="govuk-body">Answer a few more questions to find out more about particularjob roles that might interest you. For example, animator or florist.</p>
-            <p class="govuk-body">
-                This assessment will take about 5 to 10 minutes. It may take longer if you’re using assistive technologies, like a screen reader or screen magnifier.
-            </p>
-            <p class="govuk-body">You can save your assessment at any point and come back tofinish it another time.</p>
-            <a href="https://discover-skills-careers-dev.nationalcareersservice.org.uk/assessment/short/" role="button" draggable="false" class="govuk-button govuk-button--start">
-                Start a new assessment
-            </a>
+            <p class="govuk-body"><a class="govuk-link" href="https://discover-skills-careers-dev.nationalcareersservice.org.uk/">
+                Start or resume a Discover your Skills and Careers assessment
+            </a></p>
             <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
             <h2 class="govuk-heading-l">Skills health check</h2>
             <p class="govuk-body-m">The skills health check is a set of quizzes, questions and activities, designed to help you learn more about your skills, interests and motivations.</p>
-            <p class="govuk-body-m">You can do up to 4 personal skills assessments, and 6 activity assessments to get a report. This report can help you to think about the types of jobs that might be right for you.</p>
-            <p class="govuk-body-m">It will take you around 3 hours to complete all of the assessments.</p>
-            <p class="govuk-body-m">You'll be able to save and download your report once you've completed at least one assessment. You can come back to it and do more assessments at any time.</p>
             <p class="govuk-body-m"><a class="govuk-link" href="https://nationalcareersservice.direct.gov.uk/skills-health-check/home">Start or resume a Skills Health Check</a></p>
  </div>
 
         <div class="govuk-grid-column-one-third">
-            <div class="app-related-items">
-                <h3 class="govuk-heading-m">Return to an assessment</h3>
-                <form method="post" action="https://discover-skills-careers-dev.nationalcareersservice.org.uk/assessment/short/reload">
-
-                    <div class="app-resume-panel__input govuk-form-group ">
-                        <label class="govuk-label" for="code">Enter your reference</label>
-                        <input class="govuk-input " id="code" name="code" type="text">
-                    </div>
-                    <button type="submit" class="govuk-button app-button">
-                        Continue
-                    </button>
-                </form>
-            </div>
             <div class="app-related-items">
                 <h3 class="govuk-heading-m">Want to speak to an adviser?</h3>
                 <p class="govuk-body"><b>Call</b> <a href="tel:+44800100900" class="govuk-link govuk-link--no-visited-state">0800 100 900</a> or <a href="#" class="govuk-link govuk-link--no-visited-state">use webchat</a></p>
