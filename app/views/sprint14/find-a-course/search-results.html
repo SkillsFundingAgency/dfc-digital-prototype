@@ -23,7 +23,6 @@ National Careers Service
     <div class="govuk-grid-row">
 
         <div class="govuk-grid-column-one-third">
-
             <div class="filters filters">
 
             <div class="govuk-form-group">
@@ -47,7 +46,7 @@ National Careers Service
         </div>
         <div class="filter-box">
             <fieldset class="govuk-fieldset">
-                    <div class="govuk-radios">
+                    <div class="govuk-radios" role="radiogroup">
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="CourseFiltersModel.StudyMode0" name="CourseFiltersModel.StudyMode" type="radio" value="0">
                         <label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StudyMode0">
@@ -211,12 +210,10 @@ National Careers Service
                 <div class="search-header">
                     <div class="searchfield">
                         <div class="search-input">
-                            <label for="search-main">
-                                <h1 class="search-title">
+                                <label for="search-main" class="search-title">
                                     Showing results for <span class="govuk-visually-hidden">maths</span>
-                                </h1>
-                            </label>
-                            <input class="search-input" id="search-main" name="SearchTerm" placeholder="Search for courses" type="search" value="maths">
+                                </label>
+                            <input class="search-main" id="search-main" name="SearchTerm" placeholder="Search for courses" type="search" value="maths" aria-label="Search Input">
                         </div>
                         <div class="search-submit">
                             <button type="submit" class="button">Search</button>
