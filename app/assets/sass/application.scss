@@ -19,6 +19,8 @@ $govuk-global-styles: true;
 @import "components/navigation";
 @import "components/header";
 @import "components/jobprofile";
+@import "components/filters";
+@import "components/search";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
