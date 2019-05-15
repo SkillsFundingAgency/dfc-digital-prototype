@@ -10,6 +10,25 @@ National Careers Service
 
 {% block content %}
 <form action="/courses-search-results/" method="post">
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">
+        There is a problem
+      </h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <a href="#course-name-error">Enter a course name or subject</a>
+          </li>
+          <li>
+            <a href="#location-error">Location contains invalid characters</a>
+          </li>
+          <li>
+            <a href="#provider-name-error">Provider contains invalid characters</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
          <h1 class="govuk-heading-xl">Find a course</h1>
@@ -25,14 +44,22 @@ National Careers Service
         <div class="govuk-grid-column-one-third">
             <div class="filters filters">
 
-            <div class="govuk-form-group">
+            <div class="govuk-form-group govuk-form-group--error">
+                <span id="location-error" class="govuk-error-message">
+                    <span class="govuk-visually-hidden">Error:</span> Location contains invalid characters
+                </span>
+
               <label class="govuk-label" for="location">
                 Location
               </label>
               <input class="govuk-input govuk-!-width-full" id="location" name="location" type="text">
             </div>
 
-            <div class="govuk-form-group">
+            <div class="govuk-form-group govuk-form-group--error">
+            <span id="provider-name-error" class="govuk-error-message">
+                                                                                                                      <span class="govuk-visually-hidden">Error:</span> Provider name contains invalid characters
+                                                                                                  </span>
+
               <label class="govuk-label" for="provider">
               Provider
               </label>
@@ -42,7 +69,7 @@ National Careers Service
 
     <div class="filter-container">
         <div class="filter-label">
-            <h3 class="govuk-heading-s govuk-!-margin-0">Course hours</h3>
+            <h2 class="govuk-heading-s govuk-!-margin-0">Course hours</h2>
         </div>
         <div class="filter-box">
             <fieldset class="govuk-fieldset">
@@ -73,7 +100,7 @@ National Careers Service
 
     <div class="filter-container">
         <div class="filter-label">
-            <h3 class="govuk-heading-s govuk-!-margin-0">Course type</h3>
+            <h2 class="govuk-heading-s govuk-!-margin-0">Course type</h2>
         </div>
 
         <div class="filter-box">
@@ -112,7 +139,7 @@ National Careers Service
     </div>
     <div class="filter-container">
         <div class="filter-label">
-            <h3 class="govuk-heading-s govuk-!-margin-0">Start date</h3>
+            <h2 class="govuk-heading-s govuk-!-margin-0">Start date</h2>
         </div>
         <div class="filter-box">
             <fieldset class="govuk-fieldset">
@@ -167,7 +194,7 @@ National Careers Service
         </div>
         <div class="filter-container">
                 <div class="filter-label">
-                    <h3 class="govuk-heading-s govuk-!-margin-0">Age suitability</h3>
+                    <h2 class="govuk-heading-s govuk-!-margin-0">Age suitability</h2>
                 </div>
                 <div class="filter-box">
                     <fieldset class="govuk-fieldset">
@@ -207,10 +234,13 @@ National Careers Service
         </div>
 
     <div class="govuk-grid-column-two-thirds">
-            <div class="govuk-form-group">
+            <div class="govuk-form-group govuk-form-group--error">
                 <div class="search-header">
                     <div class="searchfield">
                         <div class="search-input">
+                                          <span id="course-name-error" class="govuk-error-message">
+                                            <span class="govuk-visually-hidden">Error:</span> Enter a course name or subject
+                                          </span>
                                 <label for="search-main" class="search-title">
                                     Showing results for <span class="govuk-visually-hidden">maths</span>
                                 </label>
@@ -221,7 +251,7 @@ National Careers Service
                         </div>
                     </div>
                 </div>
-                <h3 class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Ordered by</h3>
+                <h2 class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Ordered by</h2>
         <p class="govuk-body-s govuk-!-margin-bottom-2"><span class="govuk-!-font-weight-bold">Relevance</span>, <a class="govuk-link" href="/courses-search-results?searchTerm=maths&amp;StartDate=Anytime&amp;sortby=3">Start date</a>, <a class="govuk-link" href="/courses-search-results?searchTerm=maths&amp;StartDate=Anytime&amp;sortby=2">distance</a>
         </p>
 
@@ -229,7 +259,7 @@ National Careers Service
 
                 <div id="results-summary">
 
-                    <h3 class="govuk-body-s govuk-!-margin-bottom-1">Showing 1 - 20 of 10834 results</h3>
+                    <h2 class="govuk-body-s govuk-!-margin-bottom-1">Showing 1 - 20 of 10834 results</h2>
                     <hr class="govuk-section-break govuk-section-break--visible">
 
                 </div>
