@@ -42,11 +42,12 @@ National Careers Service
 
     <div class="filter-container">
         <div class="filter-label">
-            <h3 class="govuk-heading-s govuk-!-margin-0">Course hours</h3>
+            <h2 class="govuk-heading-s govuk-!-margin-0">Course hours</h2>
         </div>
         <div class="filter-box">
             <fieldset class="govuk-fieldset">
-                    <div class="govuk-radios" role="radiogroup">
+                        <legend class="govuk-visually-hidden">Choose desired course hours</legend>
+                    <div class="govuk-radios">
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="CourseFiltersModel.StudyMode0" name="CourseFiltersModel.StudyMode" type="radio" value="0">
                         <label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StudyMode0">
@@ -73,11 +74,12 @@ National Careers Service
 
     <div class="filter-container">
         <div class="filter-label">
-            <h3 class="govuk-heading-s govuk-!-margin-0">Course type</h3>
+            <h2 class="govuk-heading-s govuk-!-margin-0">Course type</h2>
         </div>
 
         <div class="filter-box">
             <fieldset class="govuk-fieldset">
+            <legend class="govuk-visually-hidden">Choose desired course hours</legend>
                 <div class="govuk-radios">
 
                         <div class="govuk-radios__item">
@@ -112,23 +114,24 @@ National Careers Service
     </div>
     <div class="filter-container">
         <div class="filter-label">
-            <h3 class="govuk-heading-s govuk-!-margin-0">Start date</h3>
+            <h2 class="govuk-heading-s govuk-!-margin-0">Start date</h2>
         </div>
         <div class="filter-box">
             <fieldset class="govuk-fieldset">
-                <div class="govuk-radios govuk-radios--conditional" data-module="radios"">
+                <div class="govuk-radios govuk-radios--conditional" data-module="radios">
                     <div class="govuk-form-group">
 
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="CourseFiltersModel.StartDate1" name="CourseFiltersModel.StartDate" type="radio"  value="1" data-aria-controls="conditional-start-date-conditional-1"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate1">Anytime</label>
+                                <input class="govuk-radios__input" id="CourseFiltersModel.StartDate1" name="CourseFiltersModel.StartDate" type="radio"  value="1" data-aria-controls="conditional-start-date-conditional-1" aria-describedby="startdate-hint"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate1">Anytime</label>
                             </div>
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="CourseFiltersModel.StartDate2" name="CourseFiltersModel.StartDate" type="radio"  value="2" data-aria-controls="conditional-start-date-conditional-1"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate2">From today</label>
+                                <input class="govuk-radios__input" id="CourseFiltersModel.StartDate2" name="CourseFiltersModel.StartDate" type="radio"  value="2" data-aria-controls="conditional-start-date-conditional-1" aria-describedby="startdate-hint"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate2">From today</label>
                             </div>
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="CourseFiltersModel.StartDate3" name="CourseFiltersModel.StartDate" type="radio"  value="3" data-aria-controls="conditional-start-date-conditional-1"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate3">Select date from</label>
+                                <input class="govuk-radios__input" id="CourseFiltersModel.StartDate3" name="CourseFiltersModel.StartDate" type="radio"  value="3" data-aria-controls="conditional-start-date-conditional-1" aria-describedby="startdate-hint"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate3">Select date from</label>
                             </div>
                         <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-start-date-conditional-1" style="margin-left: 0px">
+                           <legend class="govuk-visually-hidden" id="startdate-hint">Choose desired course start date</legend>
                             <div class="govuk-form-group">
                                 <label class="govuk-label govuk-!-font-size-16" for="startDate-Date">
                                     Start date
@@ -167,10 +170,11 @@ National Careers Service
         </div>
         <div class="filter-container">
                 <div class="filter-label">
-                    <h3 class="govuk-heading-s govuk-!-margin-0">Age suitability</h3>
+                    <h2 class="govuk-heading-s govuk-!-margin-0">Age suitability</h2>
                 </div>
                 <div class="filter-box">
                     <fieldset class="govuk-fieldset">
+                                 <legend class="govuk-visually-hidden">Choose age range for courses</legend>
                         <div class="govuk-radios">
                             <div class="govuk-form-group">
 
@@ -221,7 +225,7 @@ National Careers Service
                         </div>
                     </div>
                 </div>
-                <h3 class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Ordered by</h3>
+                <h2 class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Ordered by</h2>
         <p class="govuk-body-s govuk-!-margin-bottom-2"><span class="govuk-!-font-weight-bold">Relevance</span>, <a class="govuk-link" href="/courses-search-results?searchTerm=maths&amp;StartDate=Anytime&amp;sortby=3">Start date</a>, <a class="govuk-link" href="/courses-search-results?searchTerm=maths&amp;StartDate=Anytime&amp;sortby=2">distance</a>
         </p>
 
@@ -229,7 +233,7 @@ National Careers Service
 
                 <div id="results-summary">
 
-                    <h3 class="govuk-body-s govuk-!-margin-bottom-1">Showing 1 - 20 of 10834 results</h3>
+                    <h2 class="govuk-body-s govuk-!-margin-bottom-1">Showing 1 - 20 of 10834 results</h2>
                     <hr class="govuk-section-break govuk-section-break--visible">
 
                 </div>
