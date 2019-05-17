@@ -1,0 +1,68 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block pageTitle %}
+Skills assessment
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+<header class="govuk-header " role="banner" data-module="header"><div class="govuk-header__container govuk-width-container">
+    <a href="https://nationalcareersservice.direct.gov.uk/" class="govuk-header__link govuk-header__link--service-name">National Careers Service
+    </a>
+    <button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button><nav><ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
+    <li class="govuk-header__navigation-item"><a href="https://nationalcareers.service.gov.uk" id="nav-EC" class="govuk-header__link" target="_self">Explore careers</a>
+    </li><li class="govuk-header__navigation-item govuk-header__navigation-item--active"><a href="#" id="nav-SHC" class="govuk-header__link" target="_self">Skills assessment</a>
+</li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/course-directory" id="nav-FC" class="govuk-header__link" target="_self">Find a course</a>
+</li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/contact-us/home" id="nav-CA" class="govuk-header__link" target="_self">Contact us</a>
+</li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/about-us" id="nav-AU" class="govuk-header__link" target="_self">About us</a>
+</li><li class="govuk-header__navigation-item"><a href="https://nationalcareers.service.gov.uk/get-a-job" id="nav-HTG" class="govuk-header__link" target="_self">Help to get a job</a>
+</li></ul></nav></div></header>
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header class="PROD_hero">
+    <div class="PROD_full-page-width-wrapper">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-xl">Skills assessment</h1>
+                <p class="govuk-body-lead">Find out about careers that might be right for you by taking one of our assessments</p>
+            </div>
+            <div class="govuk-grid-column-one-third">
+            </div>
+        </div>
+    </div>
+</header>
+<div class="govuk-width-container">
+    {% endblock %}
+
+    {% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-body-lead">These assessments will take longer to complete if you’re using assistive technologies, such as a screen reader or screen magnifier.</div>
+                        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+            <h2 class="govuk-heading-l">Quick quiz</h2>
+            <p class="govuk-body">Take this 5 to 10 minute quiz to find out what groups of jobs, and particular job roles, might suit you.</p>
+            <p class="govuk-body">You can save your assessment at any point and return to it later. You’ll get a summary of your results.</p>
+            <p class="govuk-body"><a class="govuk-link govuk-button" href="https://discover-skills-careers-sit.nationalcareersservice.org.uk/">Go to discover your skills and careers
+            </a></p>
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+            <h2 class="govuk-heading-l">In depth assessment</h2>
+            <p class="govuk-body-m">Answer a set of questions to help you understand your work interests, motivations, what you're good at and how you like to work. You'll need 15 minutes to complete at least 1 of the sections and 1 hour to answer all 4.</p>
+            <p class="govuk-body-m">Spending between 15 minutes to 2 hours answering additional questions will help you with creating your CV, completing a job application, or preparing for an interview. There are 6 additional sections to complete that assess your work-related skills, such as written communication and problem solving.</p>
+            <p class="govuk-body-m">You will also get advice on how to improve your skills in areas that need attention.</p>
+            <p class="govuk-body-m">You can save your progress and return to it later. You’ll get a report with your results.</p>
+            <p class="govuk-body-m"><a class="govuk-link govuk-button" href="https://nationalcareersservice.direct.gov.uk/skills-health-check/home">Go to skills health check</a></p>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+            <div class="app-related-items">
+                <h3 class="govuk-heading-m">Want to speak to an adviser?</h3>
+                <p class="govuk-body"><b>Call</b> 0800 100 900 or <a href="#" class="govuk-link govuk-link--no-visited-state">use webchat</a></p>
+                <p class="govuk-hint">8am to 10pm, 7 days a week</p>
+            </div>
+        </div>
+
+    </div>
+    {% endblock %}
