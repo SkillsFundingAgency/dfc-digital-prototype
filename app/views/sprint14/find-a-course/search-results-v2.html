@@ -15,9 +15,20 @@ National Careers Service
          <h1 class="govuk-heading-xl">Find a course</h1>
         </div>
     </div>
-    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-8">
     <div class="govuk-grid-row">
 
+        <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-form-group">
+        <label class="govuk-label" for="keyword-search">
+        Course name
+        </label>
+        <label for="results-summary" class="govuk-body">
+        <span class="govuk-visually-hidden">Search results for maths</span>
+        </label>
+        <input name="keywords" value="maths" class="govuk-input gem-c-input--search-icon" id="keyword-search" type="search">
+        </div></div>
+        </div>
+        <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-third">
             <div class="filters filters">
 
@@ -132,6 +143,7 @@ National Careers Service
                                 <label class="govuk-label govuk-!-font-size-16" for="startDate-Date-day">
                                     Start date
                                 </label>
+                                <span class="govuk-hint govuk-!-font-size-16">For example, 01 01 2020</span>
                                 <div class="govuk-date-input" id="startDate-Date">
                                     <div class="govuk-date-input__item">
                                         <div class="govuk-form-group">
@@ -195,11 +207,11 @@ National Careers Service
                     </fieldset>
                 </div>
             </div>
-    <div class="submit js-live-search-fallback">
+    <noscript><div class="submit js-live-search-fallback">
 
-        <button class="gem-c-button govuk-button" type="submit">Apply filters</button>
+        <button class="js-enabled gem-c-button govuk-button" type="submit">Apply filters</button>
 
-    </div>
+    </div></noscript>
 
         </div>
         </div>
@@ -208,19 +220,6 @@ National Careers Service
 
     <div class="govuk-grid-column-two-thirds">
             <div class="govuk-form-group">
-                <div class="search-header">
-                    <div class="searchfield">
-                        <div class="search-input">
-                                <label for="search-main" class="search-title">
-                                    Showing results for <span class="govuk-visually-hidden">maths</span>
-                                </label>
-                            <input class="search-main" id="search-main" name="SearchTerm" placeholder="Search for courses" type="search" value="maths" aria-label="Search Input">
-                        </div>
-                        <div class="search-submit">
-                            <button type="submit" class="button">Search</button>
-                        </div>
-                    </div>
-                </div>
                 <div class="facet-tags">
                       <div class="facet-tags__group">
                           <div class="facet-tags__wrapper">
