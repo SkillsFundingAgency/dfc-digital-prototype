@@ -19,6 +19,8 @@ National Careers Service
 {% endblock %}
 
 {% block content %}
+<script type="text/javascript" src="/public/javascripts/conditional.js"></script>
+
 <form action="/courses-search-results/" method="post">
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
@@ -44,8 +46,22 @@ National Careers Service
               <label class="govuk-label" for="location">
                 Location
               </label>
-              <input class="govuk-input govuk-!-width-full" id="location" name="location" type="text">
+              <input class="govuk-input govuk-!-width-full locationfield" id="location" name="location" type="text">
             </div>
+
+            <div id="distanceFormGroup" style="display: none;" class="govuk-form-group">
+                                        <div class="govuk-inset-text" id="distance">
+                                            <label class="govuk-label" for="CurrentSearchRequest_LocationDistance">Within</label>
+                                            <select class="govuk-select" id="CurrentSearchRequest_LocationDistance" name="CurrentSearchRequest.LocationDistance"><option value="5">5 Miles</option>
+            <option value="10">10 Miles</option>
+            <option value="15">15 Miles</option>
+            <option value="30">30 Miles</option>
+            <option value="45">45 Miles</option>
+            <option value="60">60 Miles</option>
+            <option value="75">75 Miles</option>
+            </select>
+                                        </div>
+                                    </div>
 
             <div class="govuk-form-group">
               <label class="govuk-label" for="provider">
