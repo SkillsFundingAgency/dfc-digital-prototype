@@ -97,6 +97,11 @@
     }
   }
 
+  .facet-tag-inline {
+    @extend .facet-tag;
+    display: inline-block;
+  }
+
   .facet-tag__text {
     display: inline-block;
     margin-left: 0;
