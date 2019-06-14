@@ -1,0 +1,263 @@
+    {% extends "layout_ncs_home.html" %}
+
+    {% block pageTitle %}
+    National Careers Service
+    {% endblock %}
+
+    {% block head %}
+    <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/db67ba6/css/main.css">
+      {% include "includes/head.html" %}
+    {% endblock %}
+
+    {% block beforeContent %}
+    {% include "includes/beta-banner.html" %}
+    </div>
+    <div class="search search--results-page print--hide" id="searchBar">
+    <div class="wrapper">
+    <form class="col-wrap search__form" action="/search">
+    <h1 style="font-weight: bold">Find a course</h1>
+    <label class="block" for="nav-search" style="color: #FFFFFF;">Search by course name</label>
+    <input type="search" autocomplete="off" class="search__input search__input--results-page col col--md-29 col--lg-29" id="nav-search" name="q" value="maths">
+    <button type="submit" class="search__button search__button--results-page col--md-3 col--lg-3" id="nav-search-submit">
+    <span class="visuallyhidden">Search</span>
+    <span class="icon icon-search--light"></span>
+    </button>
+    </form>
+    </div>
+    </div><div class="govuk-width-container">
+        {% endblock %}
+
+        {% block content %}
+            <div class="wrapper">
+    <div class="col-wrap print-hidden">
+    <div class="col">
+     <div class="col col--md-28 col--lg-38">
+    <h2 aria-live="polite" class="search-page__results-text">
+    <span class="stand-out-text">
+    193</span> <strong><span class="lowercase">
+    courses </span></strong> containing
+    <strong>‘maths’</strong>,
+    <span class="lowercase">Sorted by <strong>
+    Relevance
+    </strong>
+    </span>
+    .
+    </h2>
+    </div>
+    <div class="float-right">
+    <div class="sort-results">
+    <form id="form-sort" class="js-auto-submit__form">
+    <input type="hidden" name=":uri" value="search">
+    <input type="hidden" name="filter" value="bulletin">
+    <input type="hidden" name="size" value="10">
+    <input type="hidden" name="q" value="employment" class="js-auto-submit__input">
+
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    <form id="form" class="js-auto-submit__form">
+    <div class="col col--md-12 col--lg-18 margin-bottom">
+    <div class="margin-bottom-md--2 flush-col js-mobile-filters js-show-hide show-hide show-hide--light">
+    <div class="background--gallery padding-top-md--2 padding-right-md--1 padding-bottom-md--4 padding-left-sm--1 padding-left-md--1 flush js-mobile-filters__title mobile-filters__title js-show-hide__title show-hide__title"><button class="js-show-hide__button" type="button" aria-expanded="true" aria-controls="collapsible-0">
+    <h3 class="inline-block flush">Refine results</h3>
+
+    </button></div>
+    <div class="background--mercury border-top--iron-md padding-top-sm--2 padding-top-md--1 padding-right-sm--1 padding-right-md--1 padding-bottom-sm--2 padding-bottom-md--2 padding-left-sm--1 padding-left-md--1 js-mobile-filters__contents mobile-filters__contents js-show-hide__contents" id="collapsible-0" aria-hidden="false"><div class="js-mobile-filters__sort" style="display: inline-block;">
+    <label for="sort" class="sort__label">Sort by
+    <select class="input select select--thin width-auto js-auto-submit__input" id="sort" name="sortBy">
+    <option class="sort__option" value="relevance" selected="">Relevance
+    </option>
+    <option class="sort__option" value="release_date">Start date
+    </option>
+    <option class="sort__option" value="title">
+    Distance
+    </option>
+    </select>
+    </label>
+    <button type="submit" class="btn btn--primary btn--thin btn--small js--hide" style="display: none;">Sort</button>
+    </div><a href="/search?q=employment" id="clear-search" class="btn btn--primary btn--thin btn--narrow btn--small float-right" style="color: #FFFFFF; margin-top: 4px">Clear all</a>
+    <div class="filters js-filters">
+    <fieldset class="filters__fieldset">
+    <legend class="filters__sub-title" style="padding-top: 10px">Location</legend>
+    <div class="js-checkbox-container">
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+    </div>
+    </fieldset>
+    <fieldset class="filters__fieldset">
+    <legend class="filters__sub-title">Provider</legend>
+    <div class="js-checkbox-container">
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+    </div>
+    </fieldset>
+                <fieldset class="filters__fieldset">
+            <legend class="filters__sub-title" style="margin-bottom: 10px">Course programme type</legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="organisation-1" name="organisation" type="checkbox" value="hmrc">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-16" for="organisation-1">
+                    Full time
+                    </label> </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-16" for="organisation-2">
+                    Part time
+                    </label> </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-16" for="organisation-3">
+                      Part of a full time programme
+                    </label> </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-16" for="organisation-4">
+                      Flexible
+                    </label> </div>
+                </div>
+
+        </fieldset>
+                <fieldset class="filters__fieldset">
+            <legend class="filters__sub-title">Start date</legend>
+            <fieldset class="govuk-fieldset">
+                            <div class="govuk-radios govuk-radios--conditional" data-module="radios" style="margin-top:10px;">
+                                <div class="govuk-form-group">
+
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate1" name="CourseFiltersModel.StartDate" type="radio" value="1" aria-controls="conditional-start-date-conditional-1" aria-expanded="false"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate1">Anytime</label>
+                                        </div>
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate3" name="CourseFiltersModel.StartDate" type="radio" value="3" aria-controls="conditional-start-date-conditional-1" aria-expanded="false"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate3">Pick a date</label>
+                                        </div>
+                                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden conditional-date" id="conditional-start-date-conditional-1">
+                                        <div class="govuk-form-group">
+                                            <span class="govuk-hint govuk-!-font-size-16">For example, 01 01 2020</span>
+                                            <div class="govuk-date-input" id="startDate-Date">
+                                                <div class="govuk-date-input__item">
+                                                    <div class="govuk-form-group">
+                                                        <label class="govuk-label govuk-date-input__label govuk-!-font-size-14" for="startDate-Date-day">
+                                                            Day
+                                                        </label>
+                                                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="startDate-Date-day" name="startDate-Date-day" type="number" pattern="[0-9]*">
+                                                    </div>
+                                                </div>
+                                                <div class="govuk-date-input__item">
+                                                    <div class="govuk-form-group">
+                                                        <label class="govuk-label govuk-date-input__label govuk-!-font-size-14" for="startDate-Date-month">
+                                                            Month
+                                                        </label>
+                                                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="startDate-Date-month" name="startDate-Date-month" type="number" pattern="[0-9]*">
+                                                    </div>
+                                                </div>
+                                                <div class="govuk-date-input__item">
+                                                    <div class="govuk-form-group">
+                                                        <label class="govuk-label govuk-date-input__label govuk-!-font-size-14" for="startDate-Date-year">
+                                                            Year
+                                                        </label>
+                                                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="startDate-Date-year" name="startDate-Date-year" type="number" pattern="[0-9]*">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+            </fieldset>
+
+
+    <input class="sort__input" type="hidden" name="q" value="employment">
+    </div>
+    <input type="hidden" name="size" value="10">
+    <input type="hidden" name="sortBy" value="relevance">
+    <button type="submit" class="btn btn--primary margin-top-sm--2 margin-top-md--2 js-submit-button">Filter</button>
+    </div>
+    </div>
+    </div>
+    </form>
+    <div class="col col--md-34 col--lg-40 margin-left-md--1">
+    <div id="results" class="results">
+
+    <div class="search-results margin-top-md--2">
+    <ul class="list--neutral flush">
+    <li class="col col--md-34 col--lg-40 search-results__item">
+    <h3 class="search-results__title">
+    <a href="/redir/eyJhbGciOiJIUzI1NiJ9.eyJpbmRleCI6MSwicGFnZVNpemUiOjEwLCJ0ZXJtIjoiZW1wbG95bWVudCIsInBhZ2UiOjEsInVyaSI6Ii9lbXBsb3ltZW50YW5kbGFib3VybWFya2V0L3Blb3BsZWlud29yay9lbXBsb3ltZW50YW5kZW1wbG95ZWV0eXBlcy9idWxsZXRpbnMvcmVnaW9uYWxsYWJvdXJtYXJrZXQvanVuZTIwMTkiLCJsaXN0VHlwZSI6InNlYXJjaCJ9.yLvjBHiGGYlZIS2aTWgSngD6EPQ6zPbbSA213uoRxHA" data-gtm-uri="/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/june2019">Maths and Further Maths AS Programme
+</a>
+    </h3>
+    <p class="search-results__meta">
+    @ Cirencester College
+
+    |
+    Start date: 11 June 2019
+    </p>
+    <div class="search-results__summary">This is a combination course which takes up two of your A Level options. In the first year students study Mathematics AS Level and Further Mathematics AS Level. In the second year students complete Mathematics A Level and Further Mathematics A Level. Six modules are studied in each year and include a mixture of Pure Maths Statistics Mechanics and Decision Maths units.</div>
+    </li>
+    <li class="col col--md-34 col--lg-40 search-results__item">
+    <h3 class="search-results__title">
+    <a href="/redir/eyJhbGciOiJIUzI1NiJ9.eyJpbmRleCI6MSwicGFnZVNpemUiOjEwLCJ0ZXJtIjoiZW1wbG95bWVudCIsInBhZ2UiOjEsInVyaSI6Ii9lbXBsb3ltZW50YW5kbGFib3VybWFya2V0L3Blb3BsZWlud29yay9lbXBsb3ltZW50YW5kZW1wbG95ZWV0eXBlcy9idWxsZXRpbnMvcmVnaW9uYWxsYWJvdXJtYXJrZXQvanVuZTIwMTkiLCJsaXN0VHlwZSI6InNlYXJjaCJ9.yLvjBHiGGYlZIS2aTWgSngD6EPQ6zPbbSA213uoRxHA" data-gtm-uri="/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/june2019">Maths and Further Maths (A-Level)</a>
+    </h3>
+    <p class="search-results__meta">
+    @ King Edward VI College
+    |
+    Start date: 29 June 2019
+    </p>
+    <div class="search-results__summary">To make an application for Maths and Further Maths (A-Level) or other similar related courses, please visit the college website http://www.kedst.ac.uk or contact the college directly and the admissions team will be able to assist you.
+                                         </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <form id="js-pagination-container" class="js-auto-submit__form">
+    <div class="col col--md-22 col--lg-28">
+    <nav>
+    <ul class="list--neutral list--inline margin-right-sm--1 margin-right-md--1 margin-bottom-sm--7 margin-bottom-md--7">
+    <li class="margin-top-sm--0 margin-top-md--0">
+    <span class="page-link btn btn--plain btn--plain-active btn--block">1</span>
+    </li>
+    <li class="margin-top-sm--0 margin-top-md--0">
+    <a href="/search?:uri=search&amp;filter=bulletin&amp;q=employment&amp;q=employment&amp;size=10&amp;sortBy=relevance&amp;page=2" class="page-link btn btn--plain">
+    <span class="visuallyhidden">Page</span> 2 <span class="visuallyhidden">of 20</span>
+    </a>
+    </li>
+    <li class="margin-top-sm--0 margin-top-md--0">
+    <a href="/search?:uri=search&amp;filter=bulletin&amp;q=employment&amp;q=employment&amp;size=10&amp;sortBy=relevance&amp;page=3" class="page-link btn btn--plain">
+    <span class="visuallyhidden">Page</span> 3 <span class="visuallyhidden">of 20</span>
+    </a>
+    </li>
+    <li class="margin-top-sm--0 margin-top-md--0">
+    <a href="/search?:uri=search&amp;filter=bulletin&amp;q=employment&amp;q=employment&amp;size=10&amp;sortBy=relevance&amp;page=4" class="page-link btn btn--plain">
+    <span class="visuallyhidden">Page</span> 4 <span class="visuallyhidden">of 20</span>
+    </a>
+    </li>
+    <li class="margin-top-sm--0 margin-top-md--0">
+    <a href="/search?:uri=search&amp;filter=bulletin&amp;q=employment&amp;q=employment&amp;size=10&amp;sortBy=relevance&amp;page=5" class="page-link btn btn--plain">
+    <span class="visuallyhidden">Page</span> 5 <span class="visuallyhidden">of 20</span>
+    </a>
+    </li>
+    <li class="margin-top-sm--0 margin-top-md--0">
+    <a href="/search?:uri=search&amp;filter=bulletin&amp;q=employment&amp;q=employment&amp;size=10&amp;sortBy=relevance&amp;page=2" class="page-link btn btn--plain">Next</a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+    <div class="col col--md-12 col--lg-12 margin-top-md--2 padding-left--1">
+    <input type="hidden" name=":uri" value="search">
+    <input type="hidden" name="filter" value="bulletin">
+    <input type="hidden" name="sortBy" value="relevance">
+    <input type="hidden" name="q" value="employment" class="js-auto-submit__input">
+    <div class="baseline">
+    <label for="page-size">Results per page:</label>
+    <select name="size" id="page-size" class="input select--thin font-size--14 width--3 padding-left--1 padding-right--1 js-auto-submit__input">
+    <option value="10" selected="">10</option>
+    <option value="25">25</option>
+    <option value="50">50</option>
+    </select>
+    <button class="btn btn--primary btn--thin btn--small hide--md" type="submit">Submit</button>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+        </div>
+        {% endblock %}
