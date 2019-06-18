@@ -25,26 +25,27 @@ National Careers Service
     {% block content %}
     <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-row"><div class="govuk-grid-column-full">
 <form action="/course-directory/" method="post">            <div class="govuk-form-group">
                 <label class="govuk-label govuk-body govuk-body govuk-!-font-size-24 govuk-!-font-weight-bold" for="SearchTerm">Course name</label>
                 <span id="course-name-hint" class="govuk-hint">
                     For example, Maths or Sports Studies
                 </span>
-                <input class="govuk-input" id="SearchTerm" name="SearchTerm" type="text" value="" />
+                <input class="govuk-input" id="SearchTerm" name="SearchTerm" aria-describedby="course-name-hint" type="text" value="" />
             </div>
             <div class="govuk-form-group">
                 <label class="govuk-label govuk-body govuk-body govuk-!-font-size-24 govuk-!-font-weight-bold" for="ProviderKeyword">Provider name (optional)</label>
                                 <span id="provider-name-hint" class="govuk-hint">
                                     For example, Sheffield College
                                 </span>
-                <input class="govuk-input" id="ProviderKeyword" name="ProviderKeyword" type="text" value="" />
+                <input class="govuk-input" id="ProviderKeyword" name="ProviderKeyword" aria-describedby="provider-name-hint" type="text" value="" />
             </div>
             <div class="govuk-form-group">
                 <label class="govuk-label govuk-body govuk-body govuk-!-font-size-24 govuk-!-font-weight-bold" for="Location">Location (optional)</label>
-                <span id="qualification-level-hint" class="govuk-hint">
+                <span id="location-hint" class="govuk-hint">
                     Enter a town or postcode. For example, Birmingham
                 </span>
-                <input class="govuk-input govuk-!-width-one-third" id="Location" name="Location" type="text" value="" />
+                <input class="govuk-input govuk-!-width-one-third" id="Location" aria-describedby="location-hint" name="Location" type="text" value="" />
             </div>
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset">
@@ -59,10 +60,10 @@ National Careers Service
             </div>
             <div class="govuk-form-group"><button type="submit" class="govuk-button">Find a course</button>
             </div>
-</form>    </div>
+</form>    </div></div></div>
         <div class="govuk-grid-column-one-third">
             <div class="app-related-items">
-                <h3 class="govuk-heading-m">Want to speak to an adviser?</h3>
+                <h2 class="govuk-heading-m">Want to speak to an adviser?</h2>
                 <p class="govuk-body"><b>Call</b> 0800 100 900 or <a href="#" class="govuk-link govuk-link--no-visited-state">use webchat</a></p>
                 <p class="govuk-hint">8am to 10pm, 7 days a week</p>
             </div>
