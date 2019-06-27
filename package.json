@@ -17,7 +17,10 @@
     "basic-auth": "^2.0.0",
     "basic-auth-connect": "^1.0.0",
     "body-parser": "^1.14.1",
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.11.1",
+    "buefy": "^0.7.7",
+    "bulma-extensions": "^6.2.7",
     "client-sessions": "^0.8.0",
     "cookie-parser": "^1.4.3",
     "cross-spawn": "^6.0.5",
@@ -35,16 +38,19 @@
     "gulp-nodemon": "^2.1.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.0",
+    "jquery": "^3.4.1",
     "keypather": "^3.0.0",
     "marked": "^0.4.0",
     "notifications-node-client": "^4.1.0",
     "nunjucks": "^3.1.3",
+    "popper.js": "^1.15.0",
     "portscanner": "^2.1.1",
     "prompt": "^1.0.0",
     "require-dir": "^1.0.0",
     "sync-request": "^6.0.0",
     "universal-analytics": "^0.4.16",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "vue": "^2.6.10"
   },
   "greenkeeper": {
     "ignore": [
