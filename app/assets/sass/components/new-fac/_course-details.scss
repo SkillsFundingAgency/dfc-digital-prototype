@@ -190,3 +190,24 @@
     }
   }
 }
+
+.course-search-submit {
+  @include box-sizing(border-box);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: 50000px;
+  background: #000000;
+  background-image: govuk-image-url("../../public/images/icon-search-2x.png");
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  background-size: 24px;
+  padding: 6px;
+  border: 0;
+  color: $white;
+  z-index: 900;
+  position: relative;
+  margin-left: -4px;
+  margin-top: 2px;
+};
