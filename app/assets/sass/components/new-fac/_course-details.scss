@@ -1,3 +1,37 @@
+.box-columns {
+  width: 115%;
+  padding: 0;
+  @extend %contain-floats;
+  margin-bottom: 50px;
+
+  .column {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    float: left;
+
+    @include media(tablet) {
+      width: 100%;
+    }
+  }
+
+  .column-40 {
+    @extend .column;
+
+    @media (min-width: 750px) {
+      width: 40%;
+    }
+  }
+
+  .column-30 {
+    @extend .column;
+
+    @media (min-width: 750px) {
+      width: 30%;
+    }
+  }
+}
+
 .course-details-hero {
   background-color: $grey-4;
   width: 100%;
