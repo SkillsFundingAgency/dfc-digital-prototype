@@ -22,9 +22,9 @@ National Careers Service
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
 </div>
-<header class="course-details-hero" style="margin-bottom: 20px">
+<header class="course-details-hero">
     <div class="PROD_full-page-width-wrapper">
-    <div class="govuk-grid-row" style="padding-bottom: 15px">
+    <div class="govuk-grid-row" style="padding-bottom: 30px">
             <div class="govuk-grid-column-two-thirds">
             <a href="search-results" class="govuk-back-link">Back to course search results</a>
                 <h1 class="govuk-heading-xl" style="margin-top:0.5em;">Certificate in IT User Skills (ITQ)</h1>
@@ -40,30 +40,37 @@ National Careers Service
     {% block content %}
     <div class="govuk-grid-row" style="margin-top: -15px">
     <div class="govuk-grid-column-two-thirds">
-            <nav role="navigation">
-                <div class="govuk-grid-row">
-                    <div class="govuk-grid-column-one-half">
-                        <ol class="govuk-list govuk-list--bullet">
-                            <li><a class="govuk-link" href="#courseinfo">Course information</a></li>
-                            <li><a class="govuk-link" href="#whatlearn">What you'll learn</a></li>
-                            <li><a class="govuk-link" href="#whofor">Who this course is for</a></li>
-                            <li><a class="govuk-link" href="#entry">Entry requirements</a></li>
-                        </ol>
-                    </div>
-                    <div class="govuk-grid-column-one-half">
-                        <ol class="govuk-list govuk-list--bullet">
-                            <li><a class="govuk-link" href="#howlearn">How you'll learn</a></li>
-                            <li><a class="govuk-link" href="#need">What you'll need</a></li>
-                            <li><a class="govuk-link" href="#assessed">How you'll be assessed</a></li>
-                            <li><a class="govuk-link" href="#next">Where next</a></li>
-                        </ol>
-                    </div>
-                </div>
-            </nav>
-            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <nav aria-label="skip to your documents" class="jump-links" role="navigation" style="padding-bottom: 50px">
+                <ol class="list list-number job-profile-anchorlinks">
+                        <li>
+                            <a href="#courseinfo">Course information</a>
+                        </li>
+                        <li>
+                            <a href="#whatlearn">What you'll learn</a>
+                        </li>
+                        <li>
+                            <a href="#whofor">Who this course is for</a>
+                        </li>
+                        <li>
+                            <a href="#entry">Entry requirements</a>
+                        </li>
+                        <li>
+                            <a href="#howlearn">How you'll learn</a>
+                        </li>
+                        <li>
+                            <a href="#need">What you'll need</a>
+                        </li>
+                        <li>
+                            <a href="#assessed">How you'll be assessed</a>
+                        </li>
+                        <li>
+                            <a href="#next">Where next</a>
+                        </li>
+                </ol>
+    </nav>
 
             <table class="govuk-table">
-            <h2 class="govuk-heading-m" id="courseinfo">Course information</h2>
+            <span class="govuk-heading-l" id="courseinfo">Course information</span>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                   <th class="govuk-table__header" scope="row">Start date</th>
