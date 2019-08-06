@@ -70,15 +70,24 @@
       background: #207e77;
       transition: .1s ease-in-out;
     }
+    &:active {
+      p {
+        color: #ffffff;
+      }
+      h3 {
+        color: #ffffff;
+      }
+      background: #207e77;
+    }
   }
 }
 
 .home-headings {
-  margin-top: 1.5em;
+  margin-top: 1.8em;
   margin-bottom: 0.9em;
   font-size: 1.4em;
   @media (max-width: 960px) {
-    margin-top: 2.2em;
+    margin-top: 1.7em;
     font-size: 1.1em;
   }
 
