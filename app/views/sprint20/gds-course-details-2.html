@@ -38,33 +38,36 @@ National Careers Service
     {% endblock %}
 
     {% block content %}
+    <script type="text/javascript" src="/public/javascripts/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="/public/javascripts/openaccordion.js"></script>
+
     <div class="govuk-grid-row" style="margin-top: -15px">
     <div class="govuk-grid-column-two-thirds">
         <nav aria-label="skip to your documents" class="jump-links" role="navigation" style="padding-bottom: 50px">
                     <ol class="list list-number job-profile-anchorlinks">
                             <li>
-                                <a href="#courseinfo">Course information</a>
+                                <a href="#courseinfo" id="jump-courseinfo">Course information</a>
                             </li>
                             <li>
-                                <a href="#whatlearn">What you'll learn</a>
+                                <a href="#whatlearn" id="jump-whatlearn">What you'll learn</a>
                             </li>
                             <li>
-                                <a href="#whofor">Who this course is for</a>
+                                <a href="#whofor" id="jump-whofor">Who this course is for</a>
                             </li>
                             <li>
-                                <a href="#entry">Entry requirements</a>
+                                <a href="#entry" id="jump-entry">Entry requirements</a>
                             </li>
                             <li>
-                                <a href="#howlearn">How you'll learn</a>
+                                <a href="#howlearn" id="jump-howlearn">How you'll learn</a>
                             </li>
                             <li>
-                                <a href="#need">What you'll need</a>
+                                <a href="#need" id="jump-need">What you'll need</a>
                             </li>
                             <li>
-                                <a href="#assessed">How you'll be assessed</a>
+                                <a href="#assessed" id="jump-assessed">How you'll be assessed</a>
                             </li>
                             <li>
-                                <a href="#next">Where next</a>
+                                <a href="#next" id="jump-next">Where next</a>
                             </li>
                     </ol>
         </nav>
@@ -104,7 +107,7 @@ National Careers Service
 
         <div class="govuk-accordion" data-module="accordion" id="accordion-default">
 
-          <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section " id="accordion-whatlearn">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="whatlearn">
@@ -116,7 +119,7 @@ National Careers Service
               <p class='govuk-body'>The course has only one compulsory unit which covers using IT to improve productivity. For the remainder of the course you are able to select units that cover the specific IT skills you require. You could study software applications such as word processing and spreadsheets, using the internet, using email and creating presentations. Hardware skills can include setting up an IT system, using collaborative technology and mobile devices and optimising system performance.  You’ll also gain some useful transferable skills including time-management, team working, research and communication through this course.</p>
             </div>
           </div>
-          <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section " id="accordion-whofor">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="whofor">
@@ -128,7 +131,7 @@ National Careers Service
               <p class='govuk-body'>This course is for you if you need to be able to use a computer to improve your opportunities for work, further study or training. It’s suitable for young learners as well as adults who may already be employed or seeking employment where IT skills are required. The course will give you the opportunity to gain experience of IT and software applications for personal or office use as well as becoming skilled in specific areas of technology such as in using website software or mobile devices.  It’s the next step for anyone who has already completed a level 1 IT course.</p>
             </div>
           </div>
-          <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section " id="accordion-entry">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="entry">
@@ -140,7 +143,7 @@ National Careers Service
               <p class='govuk-body'>You will need to be familiar with using a computer and have reasonable literacy and numeracy skills. Level 1 IT qualifications would be an advantage.</p>
             </div>
           </div>
-          <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section " id="accordion-howlearn">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="howlearn">
@@ -152,7 +155,7 @@ National Careers Service
               <p class='govuk-body'>This is a practical, hands-on course. You will learn in an IT suite through demonstrations, discussions and practice exercises. You will have one to one support from a tutor to make sure you’re keeping on track. Or You’ll learn through access to materials on an online learning portal.</p>
             </div>
           </div>
-          <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section " id="accordion-need">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="need">
@@ -164,7 +167,7 @@ National Careers Service
               <p class='govuk-body'>Notebook, pen, folder for course handouts, memory stick on which to save assignments. You will need access to the internet to be able to use online resources that support this course.</p>
             </div>
           </div>
-          <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section " id="accordion-assessed">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="assessed">
@@ -176,7 +179,7 @@ National Careers Service
               <p class='govuk-body'>You’ll be assessed through timed assignments at the end of every unit. You’ll get the chance to do practice assignments beforehand and only take the final unit assignment when both you and your tutor are confident that you will pass.</p>
             </div>
           </div>
-          <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section " id="accordion-next">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="next">
