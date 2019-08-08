@@ -84,12 +84,15 @@
 }
 
 .home-headings {
-  margin-top: 1.8em;
+  margin-top: 1.9em;
   margin-bottom: 0.9em;
-  font-size: 1.4em;
+  font-size: 1.3em;
   @media (max-width: 960px) {
     margin-top: 1.7em;
     font-size: 1.1em;
+  }
+  @media (min-width: 760px) and (max-width: 960px) {
+    font-size: 1.2em;
   }
 
   }
