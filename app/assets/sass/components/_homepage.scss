@@ -88,27 +88,32 @@
         font-size: 1em;
       }
     }
-    //&:active {
-    //  p {
-    //    color: #ffffff;
-    //  }
-    //  h3 {
-    //    color: #ffffff;
-    //  }
-    //  background: #207e77;
-    //}
   }
-  body.hasHover a:hover {
+}
 
-      p {
-        color: #ffffff;
+body.hasHover {
+  .eggs {
+    a {
+      &:hover {
+        p {
+          color: #ffffff;
+        }
+        h3 {
+          color: #ffffff;
+        }
+        background: #207e77;
+        transition: .1s ease-in-out;
       }
-      h3 {
-        color: #ffffff;
+      &:active {
+        p {
+          color: #ffffff;
+        }
+        h3 {
+          color: #ffffff;
+        }
+        background: #207e77;
       }
-      background: #207e77;
-      transition: .1s ease-in-out;
-
+    }
   }
 }
 

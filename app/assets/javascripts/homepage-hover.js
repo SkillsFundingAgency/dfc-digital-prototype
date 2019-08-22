@@ -4,7 +4,6 @@ function watchForHover() {
   var lastTouchTime = 0;
 
   function enableHover() {
-    // filter emulated events coming from touch events
     if (new Date() - lastTouchTime < 500) return;
     if (hasHoverClass) return;
 
