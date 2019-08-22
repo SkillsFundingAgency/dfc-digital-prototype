@@ -104,15 +104,6 @@ body.hasHover {
         background: #207e77;
         transition: .1s ease-in-out;
       }
-      &:active {
-        p {
-          color: #ffffff;
-        }
-        h3 {
-          color: #ffffff;
-        }
-        background: #207e77;
-      }
     }
   }
 }
