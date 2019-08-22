@@ -1,3 +1,30 @@
+// Account login at top banner
+
+.account-info {
+  padding-left: 0;
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  padding: 1em 0;
+}
+
+.your-name {
+  @extend .govuk-body-s
+}
+
+@media (min-width: 641px) {
+  .account-info {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.account-info .your-name,#signin-link {
+  padding: 0 .5em;
+}
+
+// EGGS
+
 .egg-center {
   display: flex;
   flex-direction: row;
