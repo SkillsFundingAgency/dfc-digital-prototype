@@ -25,6 +25,18 @@
 
 // EGGS
 
+.eggs-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin: 10% 0;
+  background-color: rgba(33, 33, 33, .3);
+  align-items: center;
+}
+
 .egg-center {
   display: flex;
   flex-direction: row;
@@ -74,11 +86,13 @@
       width: 4em;
     }
     p {
+      padding: 0 1em 0;
       @media (max-width: 960px) {
         font-size: 1.0em;
       }
       @media (max-width: 780px) {
         font-size: 1em;
+        padding: 0;
       }
     }
     h3 {
@@ -107,7 +121,7 @@ body.hasHover {
 }
 
 .home-headings {
-  margin-top: 1.9em;
+  margin-top: 0.6em;
   margin-bottom: 0.9em;
   font-size: 1.3em;
   @media (max-width: 960px) {
