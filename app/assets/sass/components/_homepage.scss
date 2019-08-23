@@ -37,8 +37,8 @@
   position: relative;
   a {
     padding: 0.75em;
-    width: 10.938em;
-    height: 10.938em;
+    width: 11.238em;
+    height: 11.238em;
     float: left;
     border-radius: 50%;
     -moz-border-radius: 50%;
@@ -74,7 +74,6 @@
       width: 4em;
     }
     p {
-      float: left;
       @media (max-width: 960px) {
         font-size: 1.0em;
       }
