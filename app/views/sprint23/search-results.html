@@ -22,8 +22,8 @@ National Careers Service
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
 </div>
-<header class="course-details-hero" style="margin-bottom: 0em;">
-    <div class="PROD_full-page-width-wrapper">
+<div class="course-search-hero">
+    <div class="govuk-width-container">
     <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
             <div class="govuk-breadcrumbs">
@@ -36,16 +36,16 @@ National Careers Service
             </div>
                 <h1 class="govuk-heading-xl">Find a course</h1>
 
-        <label class="govuk-label govuk-!-font-weight-bold" for="keyword-search" style="padding-top: 1em;">
+        <label class="govuk-label govuk-!-font-weight-bold course-search-label" for="keyword-search">
         Course name
         </label>
         <div class="search-input-wrapper">
-        <input name="keywords" value="IT trainer" class="govuk-input gem-c-input--search-icon" id="keyword-search" type="search" style="margin-bottom: 1em; width: 80%">
+        <input name="keywords" value="IT trainer" class="govuk-input gem-c-input--search-icon course-search-input" id="keyword-search" type="search">
         <button class="course-search-submit" type="submit" value="Search">Search</button></div>
         </div>
         </div>
     </div>
-</header>
+</div>
 <div class="govuk-width-container">
     {% endblock %}
 
@@ -62,7 +62,7 @@ National Careers Service
               </label>
                 <span id="location-hint" class="govuk-hint">Enter a town or postcode
                 </span>
-              <input class="govuk-input govuk-input--width-10 locationfield" id="location" name="location" type="text">
+              <input class="govuk-input govuk-input--width-10" id="location" name="location" type="text">
             </div>
 
             <div id="distanceForm" class="govuk-form-group">
@@ -80,93 +80,97 @@ National Careers Service
                                     </div>
 
                       <div id="courseTypeGroup" class="govuk-form-group">
-                                                  <div id="coursetype">
-                                                      <label class="govuk-label govuk-!-font-weight-bold" for="CourseType">Course type</label>
+                                                  <div id="CourseType">
+                                                  <fieldset class="govuk-fieldset">
+                                                      <legend class="govuk-label govuk-!-font-weight-bold">Course type</legend>
                                                       <div class="govuk-checkboxes govuk-checkboxes--small">
                                                           <div class="govuk-checkboxes__item">
-                                                            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                                                            <label class="govuk-label govuk-checkboxes__label" for="waste">Online
+                                                            <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseType" name="CurrentSearchRequest.CourseType" type="checkbox" value="online">
+                                                            <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseType">Online
                                                             </label>
                                                           </div>
                                                           <div class="govuk-checkboxes__item">
-                                                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                                                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">Classroom-based
+                                                            <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseType2" name="CurrentSearchRequest.CourseType" type="checkbox" value="classroom">
+                                                            <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseType2">Classroom-based
                                                             </label>
                                                           </div>
                                                           <div class="govuk-checkboxes__item">
-                                                            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                                                            <label class="govuk-label govuk-checkboxes__label" for="waste-3">Work-based
+                                                            <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseType3" name="CurrentSearchRequest.CourseType" type="checkbox" value="work">
+                                                            <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseType3">Work-based
                                                             </label>
                                                           </div>
                                                          </div>
-
+                                                    </fieldset>
                                                   </div>
                                               </div>
                       <div id="courseHoursGroup" class="govuk-form-group">
-                                                  <div id="coursehours">
-                                                      <label class="govuk-label govuk-!-font-weight-bold" for="waste">Course hours</label>
+                                                  <div id="CourseHours">
+                                                  <fieldset class="govuk-fieldset">
+                                                      <legend class="govuk-label govuk-!-font-weight-bold">Course hours</legend>
                                                           <div class="govuk-checkboxes govuk-checkboxes--small">
                                                             <div class="govuk-checkboxes__item">
-                                                              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                                                              <label class="govuk-label govuk-checkboxes__label" for="waste">Full-time
+                                                              <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseHours" name="CurrentSearchRequest.CourseHours" type="checkbox" value="fulltime">
+                                                              <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseHours">Full-time
                                                               </label>
                                                             </div>
                                                             <div class="govuk-checkboxes__item">
-                                                              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                                                              <label class="govuk-label govuk-checkboxes__label" for="waste-2">Part-time
+                                                              <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseHours2" name="CurrentSearchRequest.CourseHours" type="checkbox" value="parttime">
+                                                              <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseHours2">Part-time
                                                               </label>
                                                             </div>
                                                             <div class="govuk-checkboxes__item">
-                                                              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                                                              <label class="govuk-label govuk-checkboxes__label" for="waste-3">Flexible
+                                                              <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseHours3" name="CurrentSearchRequest.CourseHours" type="checkbox" value="flexible">
+                                                              <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseHours3">Flexible
                                                               </label>
                                                             </div>
                                                           </div>
-
+                                                  </fieldset>
                                                   </div>
                                               </div>
                       <div id="courseTimeGroup" class="govuk-form-group">
-                                                  <div id="coursetime">
-                                                      <label class="govuk-label govuk-!-font-weight-bold" for="CourseTime">Time</label>
+                                                  <div id="CourseTime">
+                                                  <fieldset class="govuk-fieldset">
+                                                      <legend class="govuk-label govuk-!-font-weight-bold">Time</legend>
                                                       <div class="govuk-checkboxes govuk-checkboxes--small">
                                          <div class="govuk-checkboxes__item">
-                                           <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                                           <label class="govuk-label govuk-checkboxes__label" for="waste">Day
+                                           <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime" name="CurrentSearchRequest.CourseTime" type="checkbox" value="day">
+                                           <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime">Day
                                            </label>
                                          </div>
                                          <div class="govuk-checkboxes__item">
-                                           <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                                           <label class="govuk-label govuk-checkboxes__label" for="waste-2">Night
+                                           <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime2" name="CurrentSearchRequest.CourseTime" type="checkbox" value="night">
+                                           <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime2">Night
                                            </label>
                                          </div>
                                          <div class="govuk-checkboxes__item">
-                                           <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                                           <label class="govuk-label govuk-checkboxes__label" for="waste-3">Weekend
+                                           <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime3" name="CurrentSearchRequest.CourseTime" type="checkbox" value="weekend">
+                                           <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime3">Weekend
                                            </label>
                                          </div>
                                        </div>
-
+                                                </fieldset>
                                                   </div>
                                               </div>
 
 
-                            <span id="starthint" class="govuk-label govuk-!-font-weight-bold">
-                              Start date
-                            </span>
+
                         <fieldset class="govuk-fieldset">
+                        <legend id="starthint" class="govuk-label govuk-!-font-weight-bold">
+                                Start date
+                        </legend>
                             <div class="govuk-radios govuk-radios--small" data-module="radios">
                                 <div class="govuk-form-group">
                                         <div class="govuk-radios__item">
-                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate1" name="CourseFiltersModel.StartDate" type="radio"  value="1" data-aria-controls="conditional-start-date-conditional-1"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate1">Anytime</label>
+                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate1" name="CourseFiltersModel.StartDate" type="radio"  value="1"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate1">Anytime</label>
                                         </div>
                                         <div class="govuk-radios__item">
-                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate2" name="CourseFiltersModel.StartDate" type="radio"  value="2" data-aria-controls="conditional-start-date-conditional-2"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate2">Next three months</label>
+                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate2" name="CourseFiltersModel.StartDate" type="radio"  value="2"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate2">Next three months</label>
                                         </div>
                                         <div class="govuk-radios__item">
-                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate3" name="CourseFiltersModel.StartDate" type="radio"  value="3" data-aria-controls="conditional-start-date-conditional-3"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate3">Three to six months</label>
+                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate3" name="CourseFiltersModel.StartDate" type="radio"  value="3"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate3">Three to six months</label>
                                         </div>
                                         <div class="govuk-radios__item">
-                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate4" name="CourseFiltersModel.StartDate" type="radio"  value="4" data-aria-controls="conditional-start-date-conditional-4"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate4">Six months to a year</label>
+                                            <input class="govuk-radios__input" id="CourseFiltersModel.StartDate4" name="CourseFiltersModel.StartDate" type="radio"  value="4"><label class="govuk-label govuk-radios__label govuk-!-font-size-16" for="CourseFiltersModel.StartDate4">Six months to a year</label>
                                         </div>
                                 </div>
                             </div>
@@ -180,14 +184,15 @@ National Careers Service
         </div>
 
     <div class="govuk-grid-column-two-thirds">
-                <div id="results-summary">
+                <div>
+                <p class="govuk-body">9,625 results</p>
                 <div class="govuk-form-group">
                     <label for="order" class="result-region-header__sort-label govuk-label">Sort by</label>
-                    <select class="js-order-results govuk-select" name="order" id="order" aria-controls="js-search-results-info" data-default-sort-option="most-viewed" data-relevance-sort-option="relevance" data-module="track-select-change">
-                        <option value="most-viewed" data-track-category="dropDownClicked" data-track-action="clicked" data-track-label="Most viewed">Distance</option>
-                        <option value="relevance" selected="" data-track-category="dropDownClicked" data-track-action="clicked" data-track-label="Relevance">Cost</option>
-                        <option value="updated-newest" data-track-category="dropDownClicked" data-track-action="clicked" data-track-label="Updated (newest)">Relevance</option>
-                        <option value="updated-oldest" data-track-category="dropDownClicked" data-track-action="clicked" data-track-label="Updated (oldest)">Start date</option>
+                    <select class="govuk-select" name="order" id="order">
+                        <option value="most-viewed">Distance</option>
+                        <option value="relevance" selected="">Cost</option>
+                        <option value="updated-newest">Relevance</option>
+                        <option value="updated-oldest">Start date</option>
                     </select>
                   </div>
                     <hr class="govuk-section-break govuk-section-break--visible">
