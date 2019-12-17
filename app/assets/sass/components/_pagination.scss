@@ -25,7 +25,7 @@
             border: none;
 
             &:hover, &:active {
-                background-color: govuk-colour("grey-4");
+                background-color: govuk-colour("light-grey", $legacy: "grey-4");
             }
 
             &:hover .page-numbers {
@@ -61,7 +61,7 @@
                 border: none;
 
                 &:before {
-                    background: transparent govuk-image-url("../../public/images/arrow-sprite.png") no-repeat -102px -11px;
+                    background: transparent govuk-image-url("../../../../public/images/arrow-sprite.png") no-repeat -102px -11px;
                     margin: -4px -32px 0 0;
                     display: block;
                     float: right;
@@ -88,7 +88,7 @@
                 border: none;
 
                 &:before {
-                    background: transparent govuk-image-url("../../public/images/arrow-sprite.png") no-repeat -20px -11px;
+                    background: transparent govuk-image-url("../../../public/images/arrow-sprite.png") no-repeat -20px -11px;
                     margin: -4px 0 0 -32px;
                     display: block;
                     float: left;

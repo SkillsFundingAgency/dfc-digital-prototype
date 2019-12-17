@@ -6,10 +6,10 @@ National Careers Service
 
 {% block header %}
 {% include "includes/cookie-banner.html" %}
-<header class="govuk-header " role="banner" data-module="header"><div class="govuk-header__container govuk-width-container">
+<header class="govuk-header " role="banner" data-module="govuk-header"><div class="govuk-header__container govuk-width-container">
     <a href="homepage" class="govuk-header__link govuk-header__link--service-name">National Careers Service
     </a>
-    <button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button><nav><ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
+    <button data-module="govuk-button" type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button><nav><ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
     <li class="govuk-header__navigation-item"><a href="" id="nav-EC" class="govuk-header__link" target="_self">Explore careers</a></li>
     <li class="govuk-header__navigation-item"><a href="#" id="nav-SHC" class="govuk-header__link" target="_self">Skills assessments</a>
 </li><li class="govuk-header__navigation-item govuk-header__navigation-item--active"><a href="find-course" id="nav-FC" class="govuk-header__link" target="_self">Find a course</a>
@@ -30,7 +30,7 @@ National Careers Service
                 <p class="govuk-body-lead">Use our course search to look for different types of learning opportunities.</p>
         <div class="search-input-wrapper">
         <input name="keywords" class="govuk-input gem-c-input--search-icon course-search-input" id="keyword-search" type="search" value="IT">
-        <a href="find-course-2"><button class="course-search-submit" type="submit" value="Search">Search</button></div></a>
+        <a href="find-course-2"><button data-module="govuk-button" class="course-search-submit" type="submit" value="Search">Search</button></div></a>
         </div>
         </div>
     </div>
