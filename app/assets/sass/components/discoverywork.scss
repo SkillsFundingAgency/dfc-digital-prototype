@@ -115,3 +115,14 @@
 .card-body p {
   flex: 1 0 auto;
 }
+
+.arrow-block {
+  &:before {
+    background: govuk-image-url("../../../public/images/arrow-up.svg");
+    margin-left: 5px;
+  }
+
+  p {
+    margin-left: 60px;
+  }
+}
