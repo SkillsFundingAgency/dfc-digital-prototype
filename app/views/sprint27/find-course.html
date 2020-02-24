@@ -63,7 +63,7 @@ National Careers Service
                         <label class="govuk-label govuk-!-font-weight-bold" for="CurrentSearchRequest_LocationDistance">Distance</label>
                         <select class="govuk-select" id="CurrentSearchRequest_LocationDistance" name="CurrentSearchRequest.LocationDistance">
                             <option value="5">5 miles</option>
-                            <option value="10">10 miles</option>
+                            <option value="10" selected>10 miles</option>
                             <option value="15">15 miles</option>
                             <option value="30">30 miles</option>
                             <option value="45">45 miles</option>
@@ -133,7 +133,7 @@ National Careers Service
                                 </div>
                                 <div class="govuk-checkboxes__item">
                                     <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime2" name="CurrentSearchRequest.CourseTime" type="checkbox" value="night">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime2">Night
+                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime2">Evening
                                     </label>
                                 </div>
                                 <div class="govuk-checkboxes__item">
@@ -195,10 +195,10 @@ National Careers Service
                 <div class="govuk-form-group">
                     <label for="order" class="result-region-header__sort-label govuk-label">Sort by</label>
                     <select class="govuk-select" name="order" id="order">
-                        <option value="recent" selected>Recently added</option>
+                        <option value="recent">Recently added</option>
                         <option value="most-viewed">Distance</option>
                         <option value="updated-newest">Relevance</option>
-                        <option value="updated-oldest">Start date</option>
+                        <option value="updated-oldest" selected>Start date</option>
                     </select>
                 </div>
                 <hr class="govuk-section-break govuk-section-break--visible">
