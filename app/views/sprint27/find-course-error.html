@@ -76,6 +76,18 @@ National Careers Service
                     </div>
                 </div>
 
+                <div id="startDateForm" class="govuk-form-group">
+                                    <div id="startDate">
+                                        <label class="govuk-label govuk-!-font-weight-bold" for="CurrentSearchRequest_StartDate">Start date</label>
+                                        <select class="govuk-select" id="CurrentSearchRequest_StartDate" name="CurrentSearchRequest.StartDate">
+                                            <option value="anytime" selected>Anytime</option>
+                                            <option value="nextThree">Next 3 months</option>
+                                            <option value="threeToSix">In 3 to 6 months</option>
+                                            <option value="moreThanSix">More than 6 months</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                 <div id="courseTypeGroup" class="govuk-form-group">
                     <div id="CourseType">
                         <fieldset class="govuk-fieldset">
@@ -147,36 +159,6 @@ National Careers Service
                                 <div class="govuk-checkboxes__item">
                                     <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime4" name="CurrentSearchRequest.CourseTime" type="checkbox" value="dayblockrelease">
                                     <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime4">Day or block release
-                                    </label>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-
-                <div id="courseStartDateGroup" class="govuk-form-group">
-                    <div id="CourseStartDate">
-                        <fieldset class="govuk-fieldset">
-                            <legend class="govuk-label govuk-!-font-weight-bold">Start date</legend>
-                            <div class="govuk-radios govuk-radios--small">
-                                <div class="govuk-radios__item">
-                                    <input class="govuk-radios__input" id="CourseFiltersModel.StartDate1" name="CourseFiltersModel.StartDate" type="checkbox" value="anytime">
-                                    <label class="govuk-label govuk-radios__label" for="CourseFiltersModel.StartDate1">Anytime
-                                    </label>
-                                </div>
-                                <div class="govuk-radios__item">
-                                    <input class="govuk-radios__input" id="CourseFiltersModel.StartDate2" name="CourseFiltersModel.StartDate" type="checkbox" value="nextThree">
-                                    <label class="govuk-label govuk-radios__label" for="CourseFiltersModel.StartDate2">Next 3 months
-                                    </label>
-                                </div>
-                                <div class="govuk-radios__item">
-                                    <input class="govuk-radios__input" id="CourseFiltersModel.StartDate3" name="CourseFiltersModel.StartDate" type="checkbox" value="threeToSix">
-                                    <label class="govuk-label govuk-radios__label" for="CourseFiltersModel.StartDate3">In 3 to 6 months
-                                    </label>
-                                </div>
-                                <div class="govuk-radios__item">
-                                    <input class="govuk-radios__input" id="CourseFiltersModel.StartDate4" name="CourseFiltersModel.StartDate" type="checkbox" value="moreThanSix">
-                                    <label class="govuk-label govuk-radios__label" for="CourseFiltersModel.StartDate4">More than 6 months
                                     </label>
                                 </div>
                             </div>
