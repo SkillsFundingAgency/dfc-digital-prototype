@@ -49,13 +49,16 @@ National Careers Service
         <div class="govuk-grid-column-one-third">
             <div class="filters filters">
 
-                <div class="govuk-form-group">
+                <div class="govuk-form-group govuk-form-group--error">
                     <label class="govuk-label govuk-!-font-weight-bold" for="location">
                         Location
                     </label>
                     <span id="location-hint" class="govuk-hint">Enter a town or postcode
                 </span>
-                    <input class="govuk-input govuk-input--width-10" id="location" name="location" type="text">
+                  <span id="location-error" class="govuk-error-message">
+                    <span class="govuk-visually-hidden">Error:</span> Enter a valid postcode
+                  </span>
+                    <input class="govuk-input govuk-input--width-10 govuk-input--error" id="location" name="location" type="text">
                 </div>
 
                 <div id="distanceForm" class="govuk-form-group">
