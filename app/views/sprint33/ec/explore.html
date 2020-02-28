@@ -1,0 +1,422 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="govuk:content-id" content="764a2ce0-eae5-414a-a4a9-2217507165fb">
+<meta name="govuk:schema-name" content="mainstream_browse_page">
+<meta name="govuk:publishing-application" content="collections-publisher">
+<meta name="govuk:format" content="mainstream_browse_page">
+<meta name="govuk:navigation-page-type" content="First Level Browse">
+<meta name="description" content="Voting, community participation, life in the UK, international projects">
+<meta name="csrf-token" content="N0vr8FTNCqaMyNNc7klH8IItjSJ2CtSYfdkQkHSzFP2l3subO+NLkunEO6+erTtquQjinYfK5YANk7FuvYdI5g==">
+<meta name="csrf-param" content="authenticity_token">
+    <meta charset="utf-8">
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-c0b8ba8b1652aacad298d74f24752260187f538b50c40c2484f7f333cbc3cf2b.css">
+<!--<![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-11027733d1abeac34c7bf14e37fea30366ad3a87cfd7f7a084de3a3b4b838412.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css">
+
+    <link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-e9ec5a5f82e5c2a17927ce356e5a054cb28025ec1547ec5d00f5c98d2ec5e481.css">
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js"></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.publishing.service.gov.uk/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-1924d57f4bba2603a29dda66a0fb53ded6bc766e697e13c27b52db13ddef3a7b.css">
+    <link href="https://dev-cdn.nationalcareersservice.org.uk/nationalcareers_toolkit/css/all.min.css" rel="stylesheet" type="text/css" />
+<!--<![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie8-40c60d07866c397b92055d03e2ba718d212ede58a127f1f61696ab648d8b123d.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/core-layout-print-e5e1eaa5adefa3987302e6761ce03133d44b120aadb23c61db441df0cf4a852b.css">
+
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://assets.publishing.service.gov.uk/static/global-bar-init-3abac7067a4f91eb71d1587e3b44c073e372dbe21a187cb6a9e165619667e998.js"></script>
+    <script>
+      if (GOVUK.globalBarInit) {
+        window.GOVUK.globalBarInit.init()
+      }
+    </script>
+
+
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+  <link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/collections/application-877e4f8ec9f13a888a928d0c874aaf53aeef3082e5ad804d524683641e4ea7aa.css">
+<link rel="alternate" type="application/json" href="/api/content/browse/citizenship">
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/collections/print-ea79e10f9f5b0df66170c595d36461b2937b4f7f1626a8375dff687816732fe4.css">
+<meta name="govuk:rendering-application" content="collections">
+<style media="screen">
+  .govuk-hint{
+    font-size:13px;
+  }
+  h3{
+
+    color:#1d70b8;
+  }
+</style>
+</head>
+<div>
+    <div class="sfContentBlock sf-Long-text"><header class="govuk-header" role="banner" data-module="header">
+                    <div class="govuk-header__container govuk-width-container" style="border-bottom: 10px solid #207e77;"><a href="/" class="govuk-header__link govuk-header__link--service-name" style="margin-bottom: 0;">National Careers Service
+    </a>
+                        <button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+                        <nav>
+                            <ul id="navigation" class="govuk-header__navigation" style="margin-bottom: 2px" aria-label="Top Level Navigation">
+                                <li class="govuk-header__navigation-item"><a href="/explore-careers" id="nav-EC" class="govuk-header__link" target="_self">Explore careers</a>
+                                </li>
+                                <li class="govuk-header__navigation-item"><a href="/skills-assessment" id="nav-SHC" class="govuk-header__link" target="_self">Skills assessment</a>
+                                </li>
+                                <li class="govuk-header__navigation-item"><a href="/find-a-course" id="nav-FC" class="govuk-header__link" target="_self">Find a course</a>
+                                </li>
+                                <li class="govuk-header__navigation-item"><a href="/get-a-job" id="nav-HTG" class="govuk-header__link" target="_self">Help to get a job</a>
+
+                                </li>
+                                <li class="govuk-header__navigation-item"><a href="/about-us" id="nav-AU" class="govuk-header__link" target="_self">About us</a>
+                                </li>
+                                <li class="govuk-header__navigation-item"><a href="/contact-us" id="nav-CA" class="govuk-header__link" target="_self">Contact us</a>
+
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header></div>
+</div>
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-width-container"><div class="govuk-phase-banner"><p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">beta
+</strong>
+ <span class="govuk-phase-banner__text">Complete <a target="_blank" class="govuk-link" href="https://surveys.ipsosinteractive.com/mrIWeb/mrIWeb.dll?I.Project=S1039833&amp;id=&amp;cf=ovl ">Ipsos MORI survey</a> to give us your feedback about the service.</span>
+ </p></div></div>
+</div>
+  <section class="primary-hero">
+                <div class="govuk-width-container">
+                    <div id="ServiceBanner_T0499ABFB002_Col00" class="sf_colsIn" data-sf-element="Container" data-placeholder-label="Hero banner content">
+                        <div>
+                            <div class="sf-Long-text">
+                                <div class="govuk-grid-row">
+                                <div class="govuk-grid-column-full">
+                                        <h1 class="govuk-heading-xl">Explore careers</h1>
+                                        </div>
+                                    <div class="govuk-grid-column-two-thirds">
+                                        <p class="govuk-body-lead">We provide information, advice and guidance to help you make decisions on learning, training and work.</p>
+                                    <label class="input-label js-search-label" id="input-label" for="search-input" style="font-size: 19px;">Search for career profiles</label>
+                                                    <div class="input-wrapper">
+                                                        <input type="search" id="search-input" name="searchTerm" title="Search" class="govuk-input input-search-item input-search js-search-focus">
+                                                        <div class="input-search-item input-submit-wrapper">
+                                                            <button data-module="govuk-button" type="submit" class="input-search-submit">Search</button>
+                                                        </div>
+                                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<div class="govuk-width-container" style="padding-top:0px;">
+{% endblock %}
+
+{% block content %}
+<div class="wrapper" id="wrapper" style="padding-top:0px;">
+
+  <main id="content" role="main" class="content browse" style="padding-top:0px;">
+
+
+<h1 class="visuallyhidden">Browse GOV.UK</h1>
+
+<div class="browse-panes section" data-state="section" data-module="track-click" style="padding-top:0px;">
+  <div id="subsection" class="subsection-pane pane" style="display: none;"></div>
+<div id="section" class="section-pane pane with-sort" style="width:74%; margin-right:1%;">
+  <div class="pane-inner" style="height:1130px;">
+  <ul>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+              <li>
+                  <a href="/job-profiles/accounting-technician"><h3>Accounting technician</h3>
+                  <p>Accounting technicians handle day-to-day financial matters in all types of business.</p></a>
+              </li>
+</div>
+
+</div>
+
+<div id="root" class="pane root-pane">
+<h2 class="visuallyhidden" tabindex="-1">All categories</h2>
+<ul>
+    <li class="active">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="1" data-track-label="/browse/benefits" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Benefits&quot;}" class="govuk-link" href="/browse/benefits">Administration</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="2" data-track-label="/browse/births-deaths-marriages" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Births, deaths, marriages and care&quot;}" class="govuk-link" href="/browse/births-deaths-marriages">Animal care</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="3" data-track-label="/browse/business" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Business and self-employed&quot;}" class="govuk-link" href="/browse/business">Beauty and wellbeing</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="4" data-track-label="/browse/childcare-parenting" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Childcare and parenting&quot;}" class="govuk-link" href="/browse/childcare-parenting">Business and finance</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="5" data-track-label="/browse/citizenship" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Citizenship and living in the UK&quot;}" class="govuk-link" href="/browse/citizenship">Computing, technology and digital</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="6" data-track-label="/browse/justice" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Crime, justice and the law&quot;}" class="govuk-link" href="/browse/justice">Construction and trades</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="7" data-track-label="/browse/disabilities" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Disabled people&quot;}" class="govuk-link" href="/browse/disabilities">Creative and media</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="8" data-track-label="/browse/driving" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Driving and transport&quot;}" class="govuk-link" href="/browse/driving">Delivery and storage</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="9" data-track-label="/browse/education" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Education and learning&quot;}" class="govuk-link" href="/browse/education">Emergency and uniform services</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="10" data-track-label="/browse/employing-people" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Employing people&quot;}" class="govuk-link" href="/browse/employing-people">Engineering and maintenance</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="11" data-track-label="/browse/environment-countryside" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Environment and countryside&quot;}" class="govuk-link" href="/browse/environment-countryside">Environment and land</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="12" data-track-label="/browse/housing-local-services" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Housing and local services&quot;}" class="govuk-link" href="/browse/housing-local-services">Government services</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="13" data-track-label="/browse/tax" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Money and tax&quot;}" class="govuk-link" href="/browse/tax">Healthcare</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="14" data-track-label="/browse/abroad" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Passports, travel and living abroad&quot;}" class="govuk-link" href="/browse/abroad">Home services</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="15" data-track-label="/browse/visas-immigration" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Visas and immigration&quot;}" class="govuk-link" href="/browse/visas-immigration">Hospitality and food</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="16" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Law and legal</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="17" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Managerial</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="18" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Manufacturing</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="19" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Retail sales</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="20" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Science and research</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="21" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Social care</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="22" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Sports and leisure</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="23" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Teaching and education</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="24" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Transport</a>
+    </li>
+    <li class="">
+      <a data-track-category="firstLevelBrowseLinkClicked" data-track-action="25" data-track-label="/browse/working" data-track-options="{&quot;dimension28&quot;:&quot;16&quot;,&quot;dimension29&quot;:&quot;Working, jobs and pensions&quot;}" class="govuk-link" href="/browse/working">Travel and tourism</a>
+    </li>
+</ul>
+</div>
+
+</div>
+
+  </main>
+
+
+<div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+
+<div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+<div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+  <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+  <a class="gem-c-feedback__prompt-link" data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" role="button" style="display: none;" hidden="hidden" aria-hidden="true" href="/contact/govuk">
+      Maybe
+</a>    <ul class="gem-c-feedback__option-list">
+    <li class="gem-c-feedback__option-list-item gem-c-feedback__option-list-item--useful">
+      <a class="gem-c-feedback__prompt-link js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" aria-expanded="false" role="button" href="/contact/govuk">
+        Yes <span class="visually-hidden">this page is useful</span>
+</a>      </li>
+    <li class="gem-c-feedback__option-list-item gem-c-feedback__option-list-item--not-useful">
+      <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+        No <span class="visually-hidden">this page is not useful</span>
+</a>      </li>
+    <li class="gem-c-feedback__option-list-item gem-c-feedback__option-list-item--wrong">
+      <a class="gem-c-feedback__prompt-link js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+        Is there anything wrong with this page?
+</a>      </li>
+  </ul>
+</div>
+
+<div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+  Thank you for your feedback
+</div>
+</div>
+
+<form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post" aria-hidden="true">
+<a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+    <input type="hidden" name="url" value="https://www.gov.uk/browse/citizenship">
+
+    <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+    <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+
+<div class="govuk-form-group">
+
+<label for="input-4ef628ae" class="gem-c-label govuk-label">
+What were you doing?
+</label>
+
+
+
+
+<input name="what_doing" class="gem-c-input govuk-input" id="input-4ef628ae" type="text" aria-describedby="feedback_explanation">
+</div>
+
+
+<div class="govuk-form-group">
+
+<label for="input-1e4fe580" class="gem-c-label govuk-label">
+What went wrong?
+</label>
+
+
+
+
+<input name="what_wrong" class="gem-c-input govuk-input" id="input-1e4fe580" type="text">
+</div>
+
+
+
+
+<button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+  </div>
+</div>
+<input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/"></form>
+
+<form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post" aria-hidden="true">
+<a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds" id="survey-wrapper">
+    <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+    <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+    <input name="email_survey_signup[survey_source]" type="hidden" value="/browse/citizenship">
+
+    <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+    <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+
+<div class="govuk-form-group">
+
+<label for="input-783ccd96" class="gem-c-label govuk-label">
+Email address
+</label>
+
+
+
+
+<input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-783ccd96" type="email" autocomplete="email" aria-describedby="survey_explanation">
+</div>
+
+
+
+
+<button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+  </div>
+</div>
+</form>
+
+</div>
+
+</div>
+{% endblock %}
