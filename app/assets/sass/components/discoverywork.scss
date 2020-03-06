@@ -89,6 +89,24 @@
   }
 }
 
+.cardhover2 {
+  :hover {
+    p {
+      color: #ffffff;
+      text-decoration-line:  white!important;
+    }
+    h5 {
+      color: #ffffff !important;
+      text-decoration-line: underline!important;
+    }
+    background: #700052;
+    transition: .1s ease-in-out;
+  }
+  :focus {
+    @include govuk-focused-text;
+  }
+}
+
 @include govuk-media-query(desktop) {
 
   .row.vertical-divider {
