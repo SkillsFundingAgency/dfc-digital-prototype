@@ -144,3 +144,9 @@
     margin-left: 60px;
   }
 }
+
+.govuk-accordion__icon {
+  :before {
+    background: govuk-image-url("../../../public/images/arrow-up.svg")
+  }
+}
