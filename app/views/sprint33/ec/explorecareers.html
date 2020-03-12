@@ -101,14 +101,6 @@
                                         </div>
                                     <div class="govuk-grid-column-two-thirds">
                                         <p class="govuk-body-lead">Find out what a job involves and if it's right for you.</p>
-                                        <form action="https://nationalcareers.service.gov.uk/explore-careers/Search/" class="site-search ui-front" id="header-search" method="post">
-                                    <label class="input-label" id="input-label" for="search-input" style="font-size: 19px;">Enter a job title</label>
-                                                    <div class="input-wrapper">
-                                                        <input type="search" id="search-input" name="searchTerm" title="Search" class="govuk-input input-search-item input-search js-search-focus">
-                                                        <div class="input-search-item input-submit-wrapper">
-                                                            <button data-module="govuk-button" type="submit" class="input-search-submit">Search</button>
-                                                        </div>
-                                                    </div></form>
                                     </div>
 
                                 </div>
@@ -121,6 +113,7 @@
     </div>
     <div class="govuk-width-container">
         <main class="govuk-main-wrapper app-main-class govuk-!-padding-top-6" id="main-content" role="main">
+
         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
         <style>
         .govuk-accordion__controls {
@@ -139,6 +132,7 @@
               </div>
             </div>
             <div id="accordion-with-summary-sections-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-1">
+            <h2 class="govuk-heading-m">What are your interests?</h2>
             <div class="govuk-checkboxes govuk-checkboxes--small dual-checkbox-container" style="width: 75%;">
                         <div class="govuk-checkboxes__item checkbox-container-item">
                           <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
@@ -260,8 +254,18 @@
         </div>
           </div>
         </div>
-
-        <h2 class="heading-medium">Explore by job category</h2>
+                <div style="width: 66%;">
+                <h2 class="govuk-heading-m">Explore by job title</h2>
+                <form action="https://nationalcareers.service.gov.uk/explore-careers/Search/" class="site-search ui-front" id="header-search" method="post">
+                                                    <label class="input-label" id="input-label" for="search-input" style="font-size: 19px;">Enter a job title</label>
+                                                                    <div class="input-wrapper">
+                                                                        <input type="search" id="search-input" name="searchTerm" title="Search" class="govuk-input input-search-item input-search js-search-focus">
+                                                                        <div class="input-search-item input-submit-wrapper">
+                                                                            <button data-module="govuk-button" type="submit" class="input-search-submit">Search</button>
+                                                                        </div>
+                                                                    </div></form>
+                </div>
+        <h2 class="heading-medium govuk-!-padding-top-4">Explore by job category</h2>
         <ul class="homepage-jobcategories">
                     <li><a href="http://nationalcareers.service.gov.uk/job-categories/administration">Administration</a></li>
                     <li><a href="http://nationalcareers.service.gov.uk/job-categories/animal-care">Animal care</a></li>
