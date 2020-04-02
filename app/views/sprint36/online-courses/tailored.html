@@ -1,0 +1,87 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block pageTitle %}
+Furloughed workers
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+<header class="govuk-header " role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <a href="https://nationalcareersservice.direct.gov.uk/" class="govuk-header__link govuk-header__link--service-name">National Careers Service
+    </a>
+    <button data-module="govuk-button" type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+    <nav>
+      <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
+        <li class="govuk-header__navigation-item"><a href="https://nationalcareers.service.gov.uk" id="nav-EC" class="govuk-header__link" target="_self">Explore careers</a>
+        </li>
+        <li class="govuk-header__navigation-item govuk-header__navigation-item--active"><a href="#" id="nav-SHC" class="govuk-header__link" target="_self">Skills assessment</a>
+        </li>
+        <li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/course-directory" id="nav-FC" class="govuk-header__link" target="_self">Find a course</a>
+        </li>
+        <li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/contact-us/home" id="nav-CA" class="govuk-header__link" target="_self">Contact us</a>
+        </li>
+        <li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/about-us" id="nav-AU" class="govuk-header__link" target="_self">About us</a>
+        </li>
+        <li class="govuk-header__navigation-item"><a href="https://nationalcareers.service.gov.uk/get-a-job" id="nav-HTG" class="govuk-header__link" target="_self">Help to get a job</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+<!-- breadcrumbs start -->
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Name of this page</li>
+  </ol>
+</div>
+
+<!-- breadcrumbs end -->
+</div>
+
+<!-- <header class="PROD_hero">
+  <div class="PROD_full-page-width-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Online learning courses for furlough workers</h1>
+        <p class="govuk-body-lead">Mollit dolore sit sit mollit culpa esse esse voluptate nulla ad.</p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+      </div>
+    </div>
+  </div>
+</header> -->
+<div class="govuk-width-container">
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Title of this page</h1>
+      <p class="govuk-body">Consequat labore commodo irure proident nisi sit enim dolor Lorem aute pariatur do incididunt sit. Non velit laborum enim amet sint ex exercitation exercitation id. Aute Lorem qui sit sint ullamco qui laborum duis. Laborum ullamco excepteur ea voluptate sint tempor sunt excepteur mollit nulla aliqua ea esse cillum ea ad. Deserunt Lorem irure aute amet elit minim dolor veniam occaecat elit aliqua laborum fugiat id ad. Voluptate elit reprehenderit laboris ad sunt reprehenderit proident amet commodo aliqua cillum do id ad qui esse. Irure pariatur do ut reprehenderit voluptate sit adipisicing dolor ut pariatur culpa nulla Lorem duis magna duis.</p>
+      <p class="govuk-body">Ea qui deserunt mollit commodo esse sunt voluptate excepteur proident nostrud. Minim minim culpa sit aliqua labore culpa adipisicing ullamco ut consequat Lorem velit minim laboris occaecat elit. Commodo incididunt ullamco laborum veniam mollit ullamco non elit eu. Et est nulla officia ea labore deserunt consequat cillum ut.</p>
+
+      <p class="govuk-body">aborum veniam veniam qui qui nulla do et eiusmod. Lorem excepteur cupidatat sunt minim aliqua sunt et sint consectetur nostrud id sint. Ex tempor exercitation minim eiusmod sit cillum adipisicing officia aliqua quis officia officia velit quis in. Sunt consequat do sint consequat in et adipisicing nulla commodo pariatur in ad pariatur sint. Exercitation laboris sint culpa cillum adipisicing consequat anim duis ut aliqua fugiat cupidatat incididunt. Tempor exercitation velit ex irure voluptate non velit cupidatat esse magna ut voluptate.</p>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="app-related-items">
+        <h2 class="govuk-heading-m">Want to speak to an adviser?</h2>
+        <p class="govuk-body"><b>Call</b> 0800 100 900 or <a href="#" class="govuk-link govuk-link--no-visited-state">use webchat</a></p>
+        <p class="govuk-hint">8am to 10pm, 7 days a week</p>
+      </div>
+    </div>
+
+  </div>
+  {% endblock %}
