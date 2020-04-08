@@ -1,7 +1,7 @@
 {% extends "layout_ncs_new.html" %}
 
 {% block pageTitle %}
-Finance, book-keeping and accounts
+Course listing
 {% endblock %}
 
 <!-- govuk-header__navigation-item--active -->
@@ -19,7 +19,7 @@ Finance, book-keeping and accounts
         </li>
         <li class="govuk-header__navigation-item"><a href="#" id="nav-SHC" class="govuk-header__link" target="_self">Skills assessment</a>
         </li>
-        <li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/course-directory" id="nav-FC" class="govuk-header__link" target="_self">Find a course</a>
+        <li class="govuk-header__navigation-item govuk-header__navigation-item--active"><a href="landing" id="nav-FC" class="govuk-header__link" target="_self">Find a course</a>
         </li>
         <li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/contact-us/home" id="nav-CA" class="govuk-header__link" target="_self">Contact us</a>
         </li>
@@ -41,15 +41,12 @@ Finance, book-keeping and accounts
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      <a class="govuk-breadcrumbs__link" href="homepage">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="landing">Online courses</a>
     </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="topics">Course subjects</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Finance, book-keeping and accounts</li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Course listing page</li>
   </ol>
 </div>
 
@@ -74,9 +71,9 @@ Finance, book-keeping and accounts
   {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">Finance, book-keeping and accounts</h1>
+      <h1 class="govuk-heading-xl">Course listing heading</h1>
 
-      <p class="govuk-body">From book-keeping and basic accounting techniques to professional accounting qualifications. Learn skills for accurate financial record keeping in business. Useful for careers like book-keeper, payroll or accounts clerk, in banking and accountancy or for running your own business.</p>
+      <p class="govuk-body">Lorem culpa fugiat do dolore aliquip exercitation dolore dolore dolor aute aliqua ut ut ad. Ut quis proident duis labore dolore incididunt nisi ipsum magna dolor magna excepteur nulla sint est ut excepteur. Ut nostrud cillum ea aute sunt pariatur non excepteur pariatur culpa est officia ullamco laborum.</p>
 
       <hr class="govuk-section-break govuk-section-break--visible">
 
@@ -107,37 +104,27 @@ Finance, book-keeping and accounts
     <div class="govuk-grid-column-one-third">
 
       <aside class="app-related-items">
-        <div class="">
+        <div>
           <h2 class="govuk-heading-m">Advice on online learning</h2>
           <ul class="govuk-list">
-            <li><a class="govuk-link" href="choosing-an-online-course" target="_blank">Choosing an online course</a></li>
-            <li><a class="govuk-link" href="the-benefits-of-online-learning" target="_blank">The benefits to learning online</a></li>
-            <li><a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" class="govuk-link" target="_blank">What qualification levels mean</a></li>
+            <li><a class="govuk-link" href="#" target="_blank">Choosing an online course</a></li>
+            <li><a class="govuk-link" href="#" target="_blank">The benefits to learning online</a></li>
+            <li><a class="govuk-link" href="#" target="_blank">Where to find free online learning courses</a></li>
+            <li><a class="govuk-link" href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" target="_blank">What qualification levels mean</a></li>
           </ul>
         </div>
-      </aside>
 
-      <aside class="app-related-items">
-        <div class="">
+        <div class="govuk-!-margin-top-7">
           <h2 class="govuk-heading-m">Skills assessment</h2>
-          <p><a href="https://beta.nationalcareers.service.gov.uk/" target="_blank">Take an assessment</a> to learn more about your skills and the careers that might suit you.</p>
+          <p><a href="https://beta.nationalcareers.service.gov.uk/" class="govuk-link" target="_blank">Take an assessment</a> to learn more about your skills and the careers that might suit you.</p>
+        </div>
+
+        <div class="govuk-!-margin-top-7">
+          <h2 class="govuk-heading-m">Want to speak to an adviser?</h2>
+          <p class="govuk-body"><b>Call</b> 0800 100 900 or <a href="https://nationalcareers.service.gov.uk/webchat/chat/" target="_blank" class="govuk-link govuk-link--no-visited-state">use webchat</a></p>
+          <p class="govuk-hint">8am to 10pm, 7 days a week</p>
         </div>
       </aside>
-
-      <aside class="app-related-items" role="complementary">
-        <h2 class="govuk-heading-m">Want to speak to an adviser?</h2>
-        <p class="govuk-body"><b>Call</b> 0800 100 900 or <a href="https://nationalcareers.service.gov.uk/webchat/chat/" target="_blank" class="govuk-link govuk-link--no-visited-state">use webchat</a></p>
-        <p class="govuk-hint">8am to 10pm, 7 days a week</p>
-      </aside>
-
-      <!-- <aside class="app-related-items" role="complementary">
-        <p class="govuk-body-m">The National Careers Service offers advice about careers and skills in England. For careers advice in other parts of the UK visit:</p>
-        <ul class="govuk-list">
-          <li><a class="govuk-link" href="https://www.myworldofwork.co.uk/">Skills Development Scotland - <br>My World of Work</a></li>
-          <li><a class="govuk-link" href="https://www.careerswales.com/">Careers Wales</a></li>
-          <li><a class="govuk-link" href="https://www.nidirect.gov.uk/campaigns/careers">Careers Service Northern Ireland</a></li>
-        </ul>
-      </aside> -->
     </div>
 
   </div>
