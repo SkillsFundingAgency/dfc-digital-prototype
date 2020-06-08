@@ -6,7 +6,23 @@ if (window.console && window.console.info) {
 }
 
 $(document).ready(function () {
-  window.GOVUKFrontend.initAll()
+  window.GOVUKFrontend.initAll();
+
+  $(".govuk-button").click(function () {
+    if ($('#SelectedOption-1').is(':checked')) {
+
+      window.location.href = 'save-my-progress/email.html';
+	  return false;
+
+    } else if ($('#SelectedOption-2').is(':checked')) {
+
+      window.location.href = 'save-my-progress/reference.html';
+      return false;
+    }
+
+  });
+
+
 })
 
 // import 'bootstrap';
