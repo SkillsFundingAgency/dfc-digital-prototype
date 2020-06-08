@@ -28,7 +28,7 @@
 {% from "govuk/components/warning-text/macro.njk"     import govukWarningText %}
 
 {% block head %}
-  {% include "includes/head.html" %}
+  {% include "includes/head-shc.html" %}
 {% endblock %}
 
 {% block pageTitle %}
@@ -37,16 +37,7 @@
 
 {% block header %}
   {% include "includes/cookie-banner.html" %}
-<header class="govuk-header " role="banner" data-module="govuk-header"><div class="govuk-header__container govuk-width-container"><a href="https://nationalcareersservice.direct.gov.uk/" class="govuk-header__link govuk-header__link--service-name">National Careers Service
-</a>
-  <button data-module="govuk-button" type="button" role="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button><nav><ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
-    <li class="govuk-header__navigation-item"><a href="https://nationalcareers.service.gov.uk" id="nav-EC" class="govuk-header__link" target="_self">Explore careers</a>
-  </li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/skills-health-check" id="nav-SHC" class="govuk-header__link" target="_self">Skills assessment</a>
-  </li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/course-directory" id="nav-FC" class="govuk-header__link" target="_self">Find a course</a>
-  </li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/contact-us/home" id="nav-CA" class="govuk-header__link" target="_self">Contact us</a>
-  </li><li class="govuk-header__navigation-item"><a href="https://nationalcareersservice.direct.gov.uk/about-us" id="nav-AU" class="govuk-header__link" target="_self">About us</a>
-  </li><li class="govuk-header__navigation-item"><a href="https://nationalcareers.service.gov.uk/get-a-job" id="nav-HTG" class="govuk-header__link" target="_self">Help to get a job</a>
-  </li></ul></nav></div></header>
+
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}

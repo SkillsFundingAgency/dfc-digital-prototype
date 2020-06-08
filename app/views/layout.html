@@ -29,6 +29,7 @@
 
 {% block head %}
   {% include "includes/head.html" %}
+  
 {% endblock %}
 
 {% block pageTitle %}
@@ -47,6 +48,9 @@
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
+
+
+
 {% if useAutoStoreData %}
   {% block footer %}
     {{ govukFooter({
