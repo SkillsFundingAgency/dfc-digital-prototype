@@ -6333,3 +6333,16 @@ header #proposition-links li:first-child a:after {
       .app-your-reference__meta p:last-child {
         margin-top: 0;
         text-align: right; } }
+
+
+//No need to copy
+
+.button,.govuk-button {
+        font-size: 19px;
+        line-height: 1
+    }
+
+.button-start,.gem-c-cookie-banner .button,.gem-c-cookie-banner .govuk-button,.govuk-button--start {
+    padding-top: 11px;
+    padding-bottom: 8px
+}

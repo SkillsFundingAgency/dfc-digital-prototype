@@ -576,7 +576,19 @@ section.PROD_icon-buttons {
   color: $govuk-secondary-text-colour;
 }
 
+// Extended Pattern
+
+/* INSET TEXT */
+
+.ncs-inset-info {
+    border-color: #5694ca;
+    background-color: #eef4fa
+}
+
+.ncs-inset-success {
+    border-color: #28a197;
+}
+
 //COOKIES
 
 @import "patterns/cookies";
-@import "sfa.min.scss";

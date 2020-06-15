@@ -1,0 +1,33 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Send by email
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container">
+    <div class="app-breadcrumb-panel"> <a href="../../../../sprint41/skills-assessment/skills-health-check/save-my-progress/question" class="govuk-back-link">Back</a> </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds" wiid="C291">
+        <div class="govuk-body" wiid="C292">
+          <h1 class="govuk-heading-xl" wiid="C293">Check your phone</h1>
+          <p wiid="C294">A text message has been sent to {{ data['mobileNumber'] }}</p>
+          <p wiid="C295">Click on the link in the text message to return to your assessment.</p>
+          <a href="../../../../sprint41/skills-assessment/skills-health-check/question" class="govuk-button" wiid="C296">Return to assessment</a>
+          <p wiid="C297"><a href="../homepage.html" wiid="C298">Back to start</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
