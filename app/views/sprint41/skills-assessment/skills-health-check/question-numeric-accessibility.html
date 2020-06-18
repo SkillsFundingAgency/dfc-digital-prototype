@@ -1,0 +1,134 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Homepage
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container" wiid="C321">
+    <div class="breadcrumbs" wiid="C321">
+      <ol wiid="C322">
+        <li wiid="C323"><a href="/" wiid="C324">Home</a></li>
+        <li wiid="C325"><a href="../../../sprint41/homepage" wiid="C326">Skills assessment</a></li>
+        <li wiid="C325"><a href="../../../sprint41/skills-assessment/skills-health-check/homepage" wiid="C326">Skills health check</a></li>
+        <li wiid="C325">Your skills</li>
+      </ol>
+    </div>
+    <div class="govuk-grid-row" wiid="C323">
+      <div class="sf_colsIn column-two-thirds" data-sf-element="Column 1" data-placeholder-label="Left Two Third Column" wiid="C327">
+        <h1 class="heading-xlarge" wiid="C328"> <span class="heading-secondary" wiid="C329"> Question 1 out of 12</span> Working with numbers </h1>
+        <h2 class="heading-large" wiid="C330"> Explore how you make judgements using numbers </h2>
+        <p wiid="C331"> </p>
+        <p wiid="C332">Number skills are important for many job areas such as finance, management, and science and research. Think about how much you enjoy working with numbers and if you would want to do this in your work.</p>
+        <p wiid="C333"></p>
+        <div class="mechanical-table">
+          <table class="govuk-table" wiid="N450">
+            <caption class="govuk-table__caption" wiid="N449">
+            Talented America Phone Line Information
+            </caption>
+            <thead class="govuk-table__head" wiid="N451">
+              <tr class="govuk-table__row" wiid="C452">
+                <th colspan="6" wiid="C469">Month</th>
+              </tr>
+              <tr class="govuk-table__row" wiid="C452">
+                <th scope="col" class="govuk-table__header" wiid="C453">Phone Line Data</th>
+                <th scope="col" class="govuk-table__header govuk-table__header--numeric" wiid="C454">January</th>
+                <th scope="col" class="govuk-table__header govuk-table__header--numeric" wiid="C455">February</th>
+                <th scope="col" class="govuk-table__header govuk-table__header--numeric" wiid="C455">March</th>
+                <th scope="col" class="govuk-table__header govuk-table__header--numeric" wiid="C455">April</th>
+                <th scope="col" class="govuk-table__header govuk-table__header--numeric" wiid="C455">May</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body" wiid="N456">
+              <tr class="govuk-table__row" wiid="C457">
+                <td scope="row" class="govuk-table__header" wiid="C458">Money from Calls</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C459">11</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C460">14</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C460">18.5</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C460">12</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C460">19</td>
+              </tr>
+              <tr class="govuk-table__row" wiid="C461">
+                <td scope="row" class="govuk-table__header" wiid="C462">Number of calls (millions)</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C463">22</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C464">27</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C463">32</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C464">26</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C463">40</td>
+              </tr>
+              <tr class="govuk-table__row" wiid="C461">
+                <td scope="row" class="govuk-table__header" wiid="C462">Calls during weekends</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C463">82%</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C464">94%</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C463">90%</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C464">87%</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric" wiid="C463">93%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--<div class="mechanical-images" wiid="C335">
+                    <img src="https://cdsprdwesfstorage.blob.core.windows.net/skills-health-check/QuestionSetImages/Numerical/201.gif" title="Table showing details of calls to TV show &quot;Talented America&quot; each month from January to May, in terms of total numbers and money made" alt="Numerical content in a table" wiid="C336">
+                </div>-->
+        <h3 class="heading-medium" wiid="C337"> How many calls would there be if there was a 5% decrease from May? </h3>
+        <form action="/skills-health-check/question/AnswerQuestion/" class="form" id="skillsForm" method="post" novalidate="novalidate" wiid="C338">
+          <div class="form-group " wiid="C339">
+            <fieldset wiid="C340">
+              <legend class="visuallyhidden" wiid="C341"> </legend>
+              <span class="error-message" wiid="C342"><span class="field-validation-valid" data-valmsg-for="QuestionAnswer" data-valmsg-replace="true" wiid="C343"></span></span>
+              <label class="block-label" for="radio-A                                                 " wiid="C344">
+                <input data-val="true" data-val-required="Choose an answer" id="radio-A                                                 " name="QuestionAnswer" type="radio" value="A                                                 " wiid="C345">
+                3,800,000 </label>
+              <label class="block-label" for="radio-B                                                 " wiid="C346">
+                <input id="radio-B                                                 " name="QuestionAnswer" type="radio" value="B                                                 " wiid="C347">
+                4,200,000 </label>
+              <label class="block-label" for="radio-C                                                 " wiid="C348">
+                <input id="radio-C                                                 " name="QuestionAnswer" type="radio" value="C                                                 " wiid="C349">
+                38,000,000 </label>
+              <label class="block-label" for="radio-D                                                 " wiid="C350">
+                <input id="radio-D                                                 " name="QuestionAnswer" type="radio" value="D                                                 " wiid="C351">
+                40,000,000 </label>
+              <label class="block-label" for="radio-E                                                 " wiid="C352">
+                <input id="radio-E                                                 " name="QuestionAnswer" type="radio" value="E                                                 " wiid="C353">
+                42,000,000 </label>
+            </fieldset>
+          </div>
+          <p wiid="C354">You must select an answer to continue.</p>
+          <div class="form-group" wiid="C355">
+            <input class="button" type="submit" name="answerAction" value="Continue" wiid="C356">
+          </div>
+          <input data-val="true" data-val-required="The AssessmentType field is required." id="Question_AssessmentType" name="Question.AssessmentType" type="hidden" value="Numeric" wiid="C357">
+          <input data-val="true" data-val-number="The field QuestionNumber must be a number." data-val-required="The QuestionNumber field is required." id="Question_QuestionNumber" name="Question.QuestionNumber" type="hidden" value="1" wiid="C358">
+          <input data-val="true" data-val-number="The field TotalQuestionNumber must be a number." data-val-required="The TotalQuestionNumber field is required." id="Question_TotalQuestionNumber" name="Question.TotalQuestionNumber" type="hidden" value="10" wiid="C359">
+          <input data-val="true" data-val-number="The field NextQuestionNumber must be a number." id="Question_NextQuestionNumber" name="Question.NextQuestionNumber" type="hidden" value="2" wiid="C360">
+        </form>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
+        <div class="app-sidebar app-resume-panel app-related-items" wiid="C301">
+          <h2 class="govuk-heading-m" wiid="C302">Return to this later</h2>
+          <p class="govuk-body" wiid="C304"><a href="../../../sprint41/skills-assessment/skills-health-check/save-my-progress" class="govuk-link govuk-link--no-visited-state">Save my progress</a></p>
+        </div>
+        <div wiid="C340">
+          <div class="sfContentBlock sf-Long-text" wiid="C341">
+            <div class="app-related-items" wiid="C342">
+              <h2 class="govuk-heading-m" wiid="C343">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;" wiid="C344"><span class="govuk-body govuk-!-font-weight-bold" wiid="C345">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'" wiid="C346">use webchat</a></p>
+              <p class="govuk-caption-m" wiid="C347">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
