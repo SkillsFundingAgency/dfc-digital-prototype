@@ -1,0 +1,232 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Homepage
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container" wiid="C321">
+    <div class="breadcrumbs" wiid="C321">
+      <ol wiid="C322">
+        <li wiid="C323"><a href="/" wiid="C324">Home</a></li>
+        <li wiid="C325"><a href="../../../sprint41/homepage" wiid="C326">Skills assessment</a></li>
+        <li wiid="C325"><a href="../../../sprint41/skills-assessment/skills-health-check/homepage" wiid="C326">Skills health check</a></li>
+        <li wiid="C325">Your skills</li>
+      </ol>
+    </div>
+    <div class="govuk-grid-row" wiid="C323">
+      <div class="sf_colsIn column-two-thirds" data-sf-element="Column 1" data-placeholder-label="Left Two Third Column" wiid="C318">
+        <h1 class="heading-xlarge" wiid="C319"> <span class="heading-secondary" wiid="C320"> Question 5 out of 12</span> Working with numbers </h1>
+        <p class="passageHdr" wiid="C321">Table showing performance of Company "Prime International" across different European sites, in terms of different figures.</p>
+        <table class="govuk-table questionTbl">
+          <caption class="govuk-table__caption">
+          Prime International: Performance by Site
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" rowspan="2" class="govuk-table__header"></th>
+              <th scope="col" colspan="5" class="govuk-table__header">Site Location</th>
+            </tr>
+            <tr wiid="C328">
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Geneva</th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">London</th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Munich</th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Paris</th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Rome</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell" colspan="6">Performance Figures (in million £ sterling) </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">Sales Revenue </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">109</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">533</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">495</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">385</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">254</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">Operating Costs </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">55</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">96</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">85</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">75</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">103</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">Payroll Costs </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">85</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">210</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">195</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">112</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">91</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">Waste - known loss </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">19</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">42</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">25</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">90</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">78</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">Shrinkage - unknown loss</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">7</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">21</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">17</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">10</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">52</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">Number of Employees (in Thousands)</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">0.9</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">4.5</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">3.8</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">2.9</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">1.5</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3 class="heading-medium" wiid="C384"> Which site had the greatest losses (both known and unknown)? </h3>
+        <form action="/skills-health-check/question/AnswerQuestion/" class="form" id="skillsForm" method="post" novalidate="novalidate" wiid="C385">
+          <div class="form-group " wiid="C386">
+            <fieldset wiid="C387">
+              <legend class="visuallyhidden" wiid="C388">
+              <p class="passageHdr" wiid="C389">Table showing performance of Company "Prime International" across different European sites, in terms of different figures.</p>
+              <table class="questionTbl" wiid="C390">
+                <caption>
+                Prime International: Performance by Site
+                </caption>
+                <thead wiid="C392">
+                  <tr wiid="C393">
+                    <th rowspan="2" wiid="C394"></th>
+                    <th colspan="5" wiid="C395">Site Location</th>
+                  </tr>
+                  <tr wiid="C396">
+                    <th wiid="C397">Geneva</th>
+                    <th wiid="C398">London</th>
+                    <th wiid="C399">Munich</th>
+                    <th wiid="C400">Paris</th>
+                    <th wiid="C401">Rome</th>
+                  </tr>
+                </thead>
+                <tbody wiid="C402">
+                  <tr wiid="C403">
+                    <td wiid="C404">Performance Figures (in million £ sterling) </td>
+                    <td wiid="C405"></td>
+                    <td wiid="C406"></td>
+                    <td wiid="C407"></td>
+                    <td wiid="C408"></td>
+                    <td wiid="C409"></td>
+                  </tr>
+                  <tr wiid="C410">
+                    <td wiid="C411">Sales Revenue </td>
+                    <td wiid="C412">109</td>
+                    <td wiid="C413">533</td>
+                    <td wiid="C414">495</td>
+                    <td wiid="C415">385</td>
+                    <td wiid="C416">254</td>
+                  </tr>
+                  <tr wiid="C417">
+                    <td wiid="C418">Operating Costs </td>
+                    <td wiid="C419">55</td>
+                    <td wiid="C420">96</td>
+                    <td wiid="C421">85</td>
+                    <td wiid="C422">75</td>
+                    <td wiid="C423">103</td>
+                  </tr>
+                  <tr wiid="C424">
+                    <td wiid="C425">Payroll Costs </td>
+                    <td wiid="C426">85</td>
+                    <td wiid="C427">210</td>
+                    <td wiid="C428">195</td>
+                    <td wiid="C429">112</td>
+                    <td wiid="C430">91</td>
+                  </tr>
+                  <tr wiid="C431">
+                    <td wiid="C432">Waste - known loss </td>
+                    <td wiid="C433">19</td>
+                    <td wiid="C434">42</td>
+                    <td wiid="C435">25</td>
+                    <td wiid="C436">90</td>
+                    <td wiid="C437">78</td>
+                  </tr>
+                  <tr wiid="C438">
+                    <td wiid="C439">Shrinkage - unknown loss</td>
+                    <td wiid="C440">7</td>
+                    <td wiid="C441">21</td>
+                    <td wiid="C442">17</td>
+                    <td wiid="C443">10</td>
+                    <td wiid="C444">52</td>
+                  </tr>
+                  <tr wiid="C445">
+                    <td wiid="C446">Number of Employees (in Thousands)</td>
+                    <td wiid="C447">0.9</td>
+                    <td wiid="C448">4.5</td>
+                    <td wiid="C449">3.8</td>
+                    <td wiid="C450">2.9</td>
+                    <td wiid="C451">1.5</td>
+                  </tr>
+                </tbody>
+              </table>
+              </legend>
+              <span class="error-message" wiid="C452"><span class="field-validation-valid" data-valmsg-for="QuestionAnswer" data-valmsg-replace="true" wiid="C453"></span></span>
+              <label class="block-label" for="radio-A                                                 " wiid="C454">
+                <input data-val="true" data-val-required="Choose an answer" id="radio-A                                                 " name="QuestionAnswer" type="radio" value="A                                                 " wiid="C455">
+                Geneva </label>
+              <label class="block-label" for="radio-B                                                 " wiid="C456">
+                <input id="radio-B                                                 " name="QuestionAnswer" type="radio" value="B                                                 " wiid="C457">
+                London </label>
+              <label class="block-label" for="radio-C                                                 " wiid="C458">
+                <input id="radio-C                                                 " name="QuestionAnswer" type="radio" value="C                                                 " wiid="C459">
+                Munich </label>
+              <label class="block-label" for="radio-D                                                 " wiid="C460">
+                <input id="radio-D                                                 " name="QuestionAnswer" type="radio" value="D                                                 " wiid="C461">
+                Paris </label>
+              <label class="block-label" for="radio-E                                                 " wiid="C462">
+                <input id="radio-E                                                 " name="QuestionAnswer" type="radio" value="E                                                 " wiid="C463">
+                Rome </label>
+            </fieldset>
+          </div>
+          <p wiid="C464">You must select an answer to continue.</p>
+          <div class="form-group" wiid="C465">
+            <input class="button" type="submit" name="answerAction" value="Continue" wiid="C466">
+          </div>
+          <input data-val="true" data-val-required="The AssessmentType field is required." id="Question_AssessmentType" name="Question.AssessmentType" type="hidden" value="Numeric" wiid="C467">
+          <input data-val="true" data-val-number="The field QuestionNumber must be a number." data-val-required="The QuestionNumber field is required." id="Question_QuestionNumber" name="Question.QuestionNumber" type="hidden" value="5" wiid="C468">
+          <input data-val="true" data-val-number="The field TotalQuestionNumber must be a number." data-val-required="The TotalQuestionNumber field is required." id="Question_TotalQuestionNumber" name="Question.TotalQuestionNumber" type="hidden" value="10" wiid="C469">
+          <input data-val="true" data-val-number="The field NextQuestionNumber must be a number." id="Question_NextQuestionNumber" name="Question.NextQuestionNumber" type="hidden" value="6" wiid="C470">
+        </form>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
+        <div class="app-sidebar app-resume-panel app-related-items" wiid="C301">
+          <h2 class="govuk-heading-m" wiid="C302">Return to this later</h2>
+          <p class="govuk-body" wiid="C304"><a href="../../../sprint41/skills-assessment/skills-health-check/save-my-progress" class="govuk-link govuk-link--no-visited-state">Save my progress</a></p>
+        </div>
+        <div wiid="C340">
+          <div class="sfContentBlock sf-Long-text" wiid="C341">
+            <div class="app-related-items" wiid="C342">
+              <h2 class="govuk-heading-m" wiid="C343">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;" wiid="C344"><span class="govuk-body govuk-!-font-weight-bold" wiid="C345">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'" wiid="C346">use webchat</a></p>
+              <p class="govuk-caption-m" wiid="C347">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
