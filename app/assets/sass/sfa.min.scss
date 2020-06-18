@@ -6346,3 +6346,6 @@ header #proposition-links li:first-child a:after {
     padding-top: 11px;
     padding-bottom: 8px
 }
+@media (max-width: 500px) {
+	.govuk-table__header, .govuk-table__cell { padding: 5px 5px 5px 0}
+}
