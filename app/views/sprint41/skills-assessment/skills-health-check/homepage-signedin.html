@@ -1,31 +1,29 @@
 {% extends "layout_ncs_new.html" %}
-
+<link href="/public/stylesheets/sfa.min.css" media="all" rel="stylesheet" type="text/css" />
 {% block header %}
 
 {% endblock %}
 
 {% block pageTitle %}
-Skills health check
+Homepage
 {% endblock %}
 
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
-
 <div class="govuk-width-container">
-		<div class="account-info">
-			<a class="account-link" href="signin" id="signin-link">Sign in</a>
-		</div>
-	
-	
-	
-		<div class="breadcrumbs">
-			<ol>
-				<li ><a href="../../../">Home</a></li> 
-				<li><a href="../../homepage">Skills assessment</a></li> 
-				<li>Skills Health Check</li>
-			</ol>
-		</div>
-	</div>
+  <div class="account-info">
+	  <span class="your-name" id="bannerUserName">Gurnaik Singh</span> 
+	  <a href="homepage" id="signout-link">Sign out</a> 
+	  &nbsp;&nbsp;<a class="account-link" href="your-account" id="myaccount-link">Your account</a>
+  </div>
+  <div class="breadcrumbs">
+    <ol wiid="C299">
+      <li wiid="C300"><a href="../../../" wiid="C301">Home</a></li>
+      <li wiid="C300"><a href="../../homepage" wiid="C301">Skills assessment</a></li>
+      <li wiid="C300">Skills health check</li>
+    </ol>
+  </div>
+</div>
 {% endblock %}
   {% block content %}
 <div class="govuk-width-container">
@@ -214,10 +212,9 @@ Skills health check
       </div>
       <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
         <div class="app-sidebar app-resume-panel app-related-items">
-			            {% include "includes/return-to-this-later.html" %}
+          {% include "includes/return-to-this-later.html" %}
 
            {% include "includes/return-to-shc.html" %}
-		  
         </div>
         <div>
           <div class="sfContentBlock sf-Long-text">

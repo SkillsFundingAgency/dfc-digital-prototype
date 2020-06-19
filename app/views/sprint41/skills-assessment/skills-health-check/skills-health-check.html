@@ -12,11 +12,11 @@ Skills health check
 {% include "includes/beta-banner.html" %}
 </div>
 <div class="govuk-width-container">
-  <div class="account-info" wiid="C295"> <a class="account-link" href="/your-account/home/signin" id="signin-link" wiid="C296">Sign in</a> </div>
+  <div class="account-info" wiid="C295"> <a class="account-link" href="signin" id="signin-link" wiid="C296">Sign in</a> </div>
   <div class="breadcrumbs" wiid="C298">
     <ol wiid="C299">
       <li wiid="C300"><a href="/" wiid="C301">Home</a></li>
-      <li wiid="C300"><a href="../homepage" wiid="C301">Skills assessment</a></li>
+      <li wiid="C300"><a href="../../homepage" wiid="C301">Skills assessment</a></li>
       <li wiid="C300">Skills health check</li>
     </ol>
   </div>
@@ -34,36 +34,21 @@ Skills health check
 			  
             <p class="govuk-body">The skills health check is a set of quizzes and activities designed to help you explore your skills, interests and motivations.</p>
             <p>Working through the skills health check can help you decide what kind of jobs might be right for you. </p>
-            <p>You'll be able to download your report once you've completed at least one assessment. </p>
-            
-            <div class="govuk-box-border-yellow govuk-!-padding-top-5 govuk-!-padding-bottom-1">
-              <h2  class="govuk-heading-l">Save your progress</h2>
-              <p> You can save your results and come back to them at any time. </p>
-              
+            <p>You can save your results and come back to them at any time or able to download your report once you've completed at least one assessment. </p>
 				{% include "includes/shc-warning.html" %}
-				
-            </div>
             <form action="homepage" class="form" method="post" wiid="C331">        
 				<input class="button button-start" type="submit" value="Start a new skills health check">
-
-				<input id="ListTypeFieldsString" name="ListTypeFieldsString" type="hidden" value="Numeric.Type,Numeric.Answers,Numeric.Complete,Numeric.Ease,Numeric.Timing,Verbal.Type,Verbal.Answers,Verbal.Complete,Verbal.Ease,Verbal.Timing,Motivation.Type,Motivation.Answers,Motivation.Complete,Personal.Type,Personal.Answers,Personal.Complete,SkillAreas.Type,SkillAreas.Answers,SkillAreas.Complete,SkillAreas.ExcludedJobFamilies1,SkillAreas.ExcludedJobFamilies2,SkillAreas.ExcludedJobFamilies3,Mechanical.Type,Mechanical.Answers,Mechanical.Complete,Mechanical.Ease,Mechanical.Timing,Mechanical.Enjoyment,Checking.Type,Checking.Answers,Checking.Complete,Checking.Ease,Checking.Timing,Checking.Enjoyment,Qualification.Level,Interest.Type,Interest.Answers,Interest.Complete,Spatial.Type,Spatial.Answers,Spatial.Complete,Spatial.Ease,Spatial.Timing,Spatial.Enjoyment,Abstract.Type,Abstract.Answers,Abstract.Complete,Abstract.Ease,Abstract.Timing,Abstract.Enjoyment,CandidateFullName">
 			  </form>
 			      
-			  <button class="govuk-button govuk-button--secondary govuk-!-margin-top-5" data-module="govuk-button">Sign in to your existing  account</button>
+			  
           </div>
         </div>
       </div>
       <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
         <div class="app-sidebar app-resume-panel app-related-items">
-          <h2 class="govuk-heading-m" wiid="C302">Return to a skills health check</h2>
-          <form method="post" action="../../../sprint41/skills-assessment/skills-health-check/homepage-returned">
-            <div class="app-resume-panel__input govuk-form-group">
-              <label class="govuk-label" for="code" wiid="C305">Enter your reference</label>
-              <input class="govuk-input " id="code" name="code" type="text" wiid="C306">
-            </div>
-            <button type="submit" class="govuk-button app-button" wiid="C307"> Continue </button>
-          </form>
+           {% include "includes/return-to-shc.html" %}
         </div>
+			  <button class="govuk-button govuk-button govuk-!-margin-top-5" data-module="govuk-button">Sign in to your account</button>
         <div wiid="C340">
           <div class="sfContentBlock sf-Long-text" wiid="C341">
             <div class="app-related-items" wiid="C342">
