@@ -21,6 +21,10 @@ $(document).ready(function () {
     }
 
   });
+  $("#sign-into-accounts").on('click', function() {
+	  location.href="signin";
+	  
+  })
 
 
 })
