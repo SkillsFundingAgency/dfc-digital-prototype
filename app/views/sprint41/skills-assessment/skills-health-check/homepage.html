@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block pageTitle %}
-Homepage
+Skills health check
 {% endblock %}
 
 {% block beforeContent %}
@@ -45,6 +45,7 @@ Homepage
             <div class="govuk-inset-text" wiid="C324"> Within the skills health check, the mechanical, spatial and abstract assessments use images. They are not suitable for users with screen readers. We are not able to supply alternative text for these assessments without influencing your results. </div>
             <p wiid="C344">All the assessments are optional and you'll be able to download your report once you've completed at least one. Completing more assessments could offer you more job ideas to explore and help you get a better understanding of the skills you have. </p>
             <p wiid="C345"> Working through the assessments can help you to get ideas about jobs and careers you could be interested in. The activity skills assessments can also help you identify what work related skills you're good at. This can be especially helpful if you're looking for work, applying for jobs or going to interviews. </p>
+			  {% include "includes/shc-warning-home.html" %}
             <nav aria-label="skip to the assessments" class="jump-links" role="navigation" wiid="C346">
               <div class="grid-row" wiid="C347">
                 <div class="column-one-half" wiid="C348">
@@ -200,15 +201,8 @@ Homepage
       </div>
       <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
         <div class="app-sidebar app-resume-panel app-related-items" wiid="C301">
-          <h2 class="govuk-heading-m" wiid="C302">Return to a skills health check</h2>
-          <form method="post" action="../../../sprint41/skills-assessment/skills-health-check/homepage-returned" wiid="C303">
-            <div class="app-resume-panel__input govuk-form-group " wiid="C304">
-              <label class="govuk-label" for="code" wiid="C305">Enter your reference</label>
-              <input class="govuk-input " id="code" name="code" type="text" wiid="C306">
-            </div>
-            <button type="submit" class="govuk-button app-button" wiid="C307"> Continue </button>
-			  
-          </form>
+          {% include "includes/return-to-this-later.html" %}
+          {% include "includes/return-to-shc.html" %}
 			
         </div>
         <div wiid="C340">
