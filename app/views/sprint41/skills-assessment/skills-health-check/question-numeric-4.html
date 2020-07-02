@@ -1,0 +1,204 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Working with numbers
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container" wiid="C321">
+    <div class="breadcrumbs" wiid="C321">
+      <ol wiid="C322">
+        <li wiid="C323"><a href="/" wiid="C324">Home</a></li>
+        <li wiid="C325"><a href="../../../sprint41/homepage" wiid="C326">Skills assessment</a></li>
+        <li wiid="C325"><a href="../../../sprint41/skills-assessment/skills-health-check/homepage" wiid="C326">Skills health check</a></li>
+        <li wiid="C325">Your skills</li>
+      </ol>
+    </div>
+    <div class="govuk-grid-row" wiid="C323">
+      <div class="sf_colsIn column-two-thirds" data-sf-element="Column 1" data-placeholder-label="Left Two Third Column">
+        <h1 class="heading-xlarge"> <span class="heading-secondary"> Question 4 out of 12</span> Working with numbers </h1>
+        <p class="passageHdr">Table showing amount of new and old games played in an amusement park, including the category of game played.</p>
+        <table class="govuk-table questionTbl responsive-table" role="table">
+          <caption class="govuk-table__caption">
+          Use of arcade games
+          </caption>
+          <thead class="govuk-table__head" role="rowgroup">
+            <tr role="row" class="govuk-table__row">
+              <th rowspan="2" >Type of game</th>
+              <th colspan="2" >New games played (000s)</th>
+              <th colspan="2" >Old games played (000s)</th>
+            </tr>
+            <tr role="row" class="govuk-table__row">
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Saturday</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Sunday</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Saturday</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Sunday</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell table-heading-bold"><span class="table-heading" aria-hidden="true">Type of game</span>Racing</td>
+              <td role="cell" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">New games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Saturday</span>2.9</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Sunday</span>3.7</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Old games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Saturday</span>8.6</td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Sunday</span>8.6</td>
+            </tr>
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell table-heading-bold"><span class="table-heading" aria-hidden="true">Type of game</span>Sports</td>
+              <td role="cell" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">New games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell"><span class="table-cell" aria-hidden="true">Saturday</span>10.1</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-cell" aria-hidden="true">Sunday</span>8.6</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Old games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Saturday</span>14.1</td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Sunday</span>9.7</td>
+            </tr>
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell table-heading-bold"><span class="table-heading" aria-hidden="true">Type of game</span>Fighting</td>
+              <td role="cell" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">New games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Saturday</span>6.7</td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Sunday</span>6.9</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Old games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Saturday</span>12.2</td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Sunday</span>12.4</td>
+            </tr>
+            <tr class="govuk-table__row" role="row">
+			  <td role="cell" class="govuk-table__cell table-heading-bold"><span class="table-heading" aria-hidden="true">Type of game</span>Music</td>
+              <td role="cell" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">New games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Saturday</span>1.6</td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Sunday</span>2.4</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Old games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Saturday</span>5.1</td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Sunday</span>4.6</td>
+            </tr>
+            <tr class="govuk-table__row" role="row">
+				<td role="cell" class="govuk-table__cell table-heading-bold"><span class="table-heading" aria-hidden="true">Type of game</span>Puzzles</td>
+              <td role="cell" scope="row" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">New games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Saturday</span>3.4</td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Sunday</span>3.5</td>
+              <td role="cell" scope="row" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">New games played (000s)</span></td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Saturday</span>6.7</td>
+              <td role="cell" class="govuk-table__cell " ><span class="table-cell" aria-hidden="true">Sunday</span>6.3</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="heading-medium"> The costs for using an arcade machine are 20p for a new game and 6p for an old game. What was the total money collected in the Racing category on Saturday? </h3>
+        <form action="question-numeric-5" class="form" id="skillsForm" method="post" novalidate="novalidate">
+          <div class="form-group ">
+            <fieldset>
+              <legend class="visuallyhidden">
+              <p class="passageHdr">Table showing amount of new and old games played in an amusement park, including the category of game played.</p>
+              <table class="questionTbl">
+                <caption>
+                Use of arcade games
+                </caption>
+                <thead>
+                  <tr>
+                    <th rowspan="2">Type of game</th>
+                    <th colspan="2">New games played (000s)</th>
+                    <th colspan="2">Old games played (000s)</th>
+                  </tr>
+                  <tr>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Racing</td>
+                    <td>2.9</td>
+                    <td>3.7</td>
+                    <td>8.6</td>
+                    <td>8.6</td>
+                  </tr>
+                  <tr>
+                    <td>Sports</td>
+                    <td>10.1</td>
+                    <td>8.6</td>
+                    <td>14.1</td>
+                    <td>9.7</td>
+                  </tr>
+                  <tr>
+                    <td>Fighting</td>
+                    <td>6.7</td>
+                    <td>6.9</td>
+                    <td>12.2</td>
+                    <td>12.4</td>
+                  </tr>
+                  <tr>
+                    <td>Music</td>
+                    <td>1.6</td>
+                    <td>2.4</td>
+                    <td>5.1</td>
+                    <td>4.6</td>
+                  </tr>
+                  <tr>
+                    <td>Puzzles</td>
+                    <td>3.4</td>
+                    <td>3.5</td>
+                    <td>6.7</td>
+                    <td>6.3</td>
+                  </tr>
+                </tbody>
+              </table>
+              </legend>
+              <span class="error-message"><span class="field-validation-valid" data-valmsg-for="QuestionAnswer" data-valmsg-replace="true"></span></span>
+              <label class="block-label" for="radio-A                                                 ">
+                <input data-val="true" data-val-required="Choose an answer" id="radio-A                                                 " name="QuestionAnswer" type="radio" value="A                                                 ">
+                £516 </label>
+              <label class="block-label" for="radio-B                                                 ">
+                <input id="radio-B                                                 " name="QuestionAnswer" type="radio" value="B                                                 ">
+                £580 </label>
+              <label class="block-label" for="radio-C                                                 ">
+                <input id="radio-C                                                 " name="QuestionAnswer" type="radio" value="C                                                 ">
+                £1,096 </label>
+              <label class="block-label" for="radio-D                                                 ">
+                <input id="radio-D                                                 " name="QuestionAnswer" type="radio" value="D                                                 ">
+                £1,256 </label>
+              <label class="block-label" for="radio-E                                                 ">
+                <input id="radio-E                                                 " name="QuestionAnswer" type="radio" value="E                                                 ">
+                £1,894 </label>
+            </fieldset>
+          </div>
+          <p>You must select an answer to continue.</p>
+          <div class="form-group">
+            <input class="button" type="submit" name="answerAction" value="Continue">
+          </div>
+          <input data-val="true" data-val-required="The AssessmentType field is required." id="Question_AssessmentType" name="Question.AssessmentType" type="hidden" value="Numeric">
+          <input data-val="true" data-val-number="The field QuestionNumber must be a number." data-val-required="The QuestionNumber field is required." id="Question_QuestionNumber" name="Question.QuestionNumber" type="hidden" value="4">
+          <input data-val="true" data-val-number="The field TotalQuestionNumber must be a number." data-val-required="The TotalQuestionNumber field is required." id="Question_TotalQuestionNumber" name="Question.TotalQuestionNumber" type="hidden" value="10">
+          <input data-val="true" data-val-number="The field NextQuestionNumber must be a number." id="Question_NextQuestionNumber" name="Question.NextQuestionNumber" type="hidden" value="5">
+        </form>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
+        <div class="app-sidebar app-resume-panel app-related-items" wiid="C301">
+          <h2 class="govuk-heading-m" wiid="C302">Return to this later</h2>
+          <p class="govuk-body" wiid="C304"><a href="../../../sprint41/skills-assessment/skills-health-check/save-my-progress" class="govuk-link govuk-link--no-visited-state">Save my progress</a></p>
+        </div>
+        <div wiid="C340">
+          <div class="sfContentBlock sf-Long-text" wiid="C341">
+            <div class="app-related-items" wiid="C342">
+              <h2 class="govuk-heading-m" wiid="C343">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;" wiid="C344"><span class="govuk-body govuk-!-font-weight-bold" wiid="C345">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'" wiid="C346">use webchat</a></p>
+              <p class="govuk-caption-m" wiid="C347">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
