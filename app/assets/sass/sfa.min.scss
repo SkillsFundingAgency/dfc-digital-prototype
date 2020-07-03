@@ -6392,7 +6392,16 @@ header #proposition-links li:first-child a:after {
 .responsive-table {
   
   width: 100%;
-
+	@media (min-width: $mobile) {
+		.hidden {
+			position:absolute;
+			left:-10000px;
+			top:auto;
+			width:1px;
+			height:1px;
+			overflow:hidden;
+		}
+	}
   thead {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
@@ -6401,10 +6410,11 @@ header #proposition-links li:first-child a:after {
     padding: 0;
     position: absolute;
     width: 1px;
+	display: none;
 
     @media (min-width: $mobile) {
       clip: auto;
-      display: table-header-group;
+      display: table-header-group; 
       height: auto;
       overflow: auto;
       position: relative;

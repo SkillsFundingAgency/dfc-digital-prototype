@@ -1,0 +1,159 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Working with numbers
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container" wiid="C321">
+    <div class="breadcrumbs" wiid="C321">
+      <ol wiid="C322">
+        <li wiid="C323"><a href="/" wiid="C324">Home</a></li>
+        <li wiid="C325"><a href="../../../sprint41/homepage" wiid="C326">Skills assessment</a></li>
+        <li wiid="C325"><a href="../../../sprint41/skills-assessment/skills-health-check/homepage" wiid="C326">Skills health check</a></li>
+        <li wiid="C325">Your skills</li>
+      </ol>
+    </div>
+    <div class="govuk-grid-row" wiid="C323">
+      <div class="sf_colsIn column-two-thirds" data-sf-element="Column 1" data-placeholder-label="Left Two Third Column">
+        <h1 class="heading-xlarge"> <span class="heading-secondary"> Question 8 out of 12</span> Working with numbers </h1>
+        <p class="passageHdr">Table showing different types of transport used by commuters under 35 as well as those 35 or older.</p>
+        <table class="govuk-table questionTbl responsive-table" role="table">
+          <caption class="govuk-table__caption govuk-!-margin-bottom-3">
+          Type of Transport used by Commuters in City Z this Year
+          </caption>
+          <thead class="govuk-table__head" role="rowgroup">
+            
+            <tr role="row" class="govuk-table__row">
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Age Group</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Average Number of Daily Commuters</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Rail</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Car</th>
+			  <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Subway</th>
+			  <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Bus</th>
+			  <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Others</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell"><span class="table-heading table-heading-bold" aria-hidden="true" >Age Group</span>Under 35</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Average Number of Daily Commuters</span>425,600</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Rail</span>43%	</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Car</span>9%	</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Subway</span>27%	</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Bus</span>12%	</td>
+			  <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Others</span>9%</td>
+            </tr>
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell"><span class="table-heading table-heading-bold" aria-hidden="true">Age Group</span>35 and Over</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Average Number of Daily Commuters</span>638,400</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Rail</span>42%</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Car</span>12%</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Subway</span>25%	</td>
+              <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Bus</span>14%</td>
+			  <td role="cell" class="govuk-table__cell"><span class="table-heading" aria-hidden="true">Others</span>7%</td>
+            </tr>
+          </tbody>
+        </table>
+		  
+		  
+        <h3 class="heading-medium"> Within the Under 35 'Others' group, if 65% walk and the remainder cycle, what is the approximate ratio of walkers to cyclists? </h3>
+        <form action="question-numeric-9" class="form" id="skillsForm" method="post" novalidate="novalidate">
+          <div class="form-group ">
+            <fieldset>
+              <legend class="visuallyhidden">
+              <p class="passageHdr">Table showing different types of transport used by commuters under 35 as well as those 35 or older.</p>
+              <table class="questionTbl">
+                <caption>
+                Type of Transport used by Commuters in City Z this Year
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Age Group</th>
+                    <th>Average Number of Daily Commuters</th>
+                    <th>Rail</th>
+                    <th>Car</th>
+                    <th>Subway</th>
+                    <th>Bus</th>
+                    <th>Others</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Under 35</td>
+                    <td>425,600</td>
+                    <td>43%</td>
+                    <td>9%</td>
+                    <td>27%</td>
+                    <td>12%</td>
+                    <td>9%</td>
+                  </tr>
+                  <tr>
+                    <td>35 and Over </td>
+                    <td>638,400</td>
+                    <td>42%</td>
+                    <td>12%</td>
+                    <td>25%</td>
+                    <td>14%</td>
+                    <td>7%</td>
+                  </tr>
+                </tbody>
+              </table>
+              </legend>
+              <span class="error-message"><span class="field-validation-valid" data-valmsg-for="QuestionAnswer" data-valmsg-replace="true"></span></span>
+              <label class="block-label" for="radio-A                                                 ">
+                <input data-val="true" data-val-required="Choose an answer" id="radio-A                                                 " name="QuestionAnswer" type="radio" value="A                                                 ">
+                6:32 </label>
+              <label class="block-label" for="radio-B                                                 ">
+                <input id="radio-B                                                 " name="QuestionAnswer" type="radio" value="B                                                 ">
+                7:13 </label>
+              <label class="block-label" for="radio-C                                                 ">
+                <input id="radio-C                                                 " name="QuestionAnswer" type="radio" value="C                                                 ">
+                13:7 </label>
+              <label class="block-label" for="radio-D                                                 ">
+                <input id="radio-D                                                 " name="QuestionAnswer" type="radio" value="D                                                 ">
+                13:6 </label>
+              <label class="block-label" for="radio-E                                                 ">
+                <input id="radio-E                                                 " name="QuestionAnswer" type="radio" value="E                                                 ">
+                32:6 </label>
+            </fieldset>
+          </div>
+          <p>You must select an answer to continue.</p>
+          <div class="form-group">
+            <input class="button" type="submit" name="answerAction" value="Continue">
+          </div>
+          <input data-val="true" data-val-required="The AssessmentType field is required." id="Question_AssessmentType" name="Question.AssessmentType" type="hidden" value="Numeric">
+          <input data-val="true" data-val-number="The field QuestionNumber must be a number." data-val-required="The QuestionNumber field is required." id="Question_QuestionNumber" name="Question.QuestionNumber" type="hidden" value="8">
+          <input data-val="true" data-val-number="The field TotalQuestionNumber must be a number." data-val-required="The TotalQuestionNumber field is required." id="Question_TotalQuestionNumber" name="Question.TotalQuestionNumber" type="hidden" value="10">
+          <input data-val="true" data-val-number="The field NextQuestionNumber must be a number." id="Question_NextQuestionNumber" name="Question.NextQuestionNumber" type="hidden" value="9">
+        </form>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
+        <div class="app-sidebar app-resume-panel app-related-items" wiid="C301">
+          <h2 class="govuk-heading-m" wiid="C302">Return to this later</h2>
+          <p class="govuk-body" wiid="C304"><a href="../../../sprint41/skills-assessment/skills-health-check/save-my-progress" class="govuk-link govuk-link--no-visited-state">Save my progress</a></p>
+        </div>
+        <div wiid="C340">
+          <div class="sfContentBlock sf-Long-text" wiid="C341">
+            <div class="app-related-items" wiid="C342">
+              <h2 class="govuk-heading-m" wiid="C343">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;" wiid="C344"><span class="govuk-body govuk-!-font-weight-bold" wiid="C345">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'" wiid="C346">use webchat</a></p>
+              <p class="govuk-caption-m" wiid="C347">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
