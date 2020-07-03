@@ -1,0 +1,237 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Working with numbers
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container" wiid="C321">
+    <div class="breadcrumbs" wiid="C321">
+      <ol wiid="C322">
+        <li wiid="C323"><a href="/" wiid="C324">Home</a></li>
+        <li wiid="C325"><a href="../../../sprint41/homepage" wiid="C326">Skills assessment</a></li>
+        <li wiid="C325"><a href="../../../sprint41/skills-assessment/skills-health-check/homepage" wiid="C326">Skills health check</a></li>
+        <li wiid="C325">Your skills</li>
+      </ol>
+    </div>
+    <div class="govuk-grid-row" wiid="C323">
+      <div class="sf_colsIn column-two-thirds" data-sf-element="Column 1" data-placeholder-label="Left Two Third Column">
+        <h1 class="heading-xlarge"> <span class="heading-secondary"> Question 9 out of 12</span> Working with numbers </h1>
+        <p class="passageHdr">Table showing defective components in five different factories across three years.</p>
+        <table class="govuk-table questionTbl responsive-table" role="table">
+          <caption class="govuk-table__caption">
+          Percentage of Defective Components in Factories
+          </caption>
+          <thead class="govuk-table__head" role="rowgroup">
+            <tr role="row" class="govuk-table__row">
+              <th></th>
+              <th colspan="2" >Year 1</th>
+              <th colspan="2" >Year 2</th>
+              <th colspan="2" >Year 3</th>
+            </tr>
+            <tr role="row" class="govuk-table__row">
+              <th></th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Units Produced</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Defects (%)</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Units Produced</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Defects (%)</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Units Produced</th>
+              <th role="columnheader" scope="col" class="govuk-table__header" aria-hidden="true">Defects (%)</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell table-heading-bold">Factory A</td>
+              <td role="cell" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">Year 1</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>12,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>10</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 2</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>14,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>8</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 3</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>16,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>6</td>
+            </tr>
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell table-heading-bold">Factory B</td>
+              <td role="cell" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">Year 1</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>23,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>5</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 2</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>20,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>5</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 3</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>25,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>3</td>
+            </tr>
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell table-heading-bold">Factory C</td>
+              <td role="cell" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">Year 1</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>14,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>3</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 2</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>14,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>9</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 3</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>12,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>5</td>
+            </tr>
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell table-heading-bold">Factory D</td>
+              <td role="cell" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">Year 1</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>13,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>12</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 2</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>25,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>12</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 3</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>27,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>6</td>
+            </tr>
+            <tr class="govuk-table__row" role="row">
+              <td role="cell" class="govuk-table__cell table-heading-bold">Factory E</td>
+              <td role="cell" class="govuk-table__cell table-heading table-heading-bold"><span class="table-heading" aria-hidden="true">Year 1</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>21,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>15</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 2</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>16,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>12</td>
+              <td role="cell" class="govuk-table__cell table-heading-bold table-heading"><span class="table-heading" aria-hidden="true">Year 3</span></td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Units Produced</span>20,000</td>
+              <td role="cell" class="govuk-table__cell" ><span class="table-cell" aria-hidden="true">Defects (%)</span>6</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="heading-medium"> Which factory produced the most defects in Year 2? </h3>
+        <form action="question-numeric-10" class="form" id="skillsForm" method="post" novalidate="novalidate">
+          <div class="form-group ">
+            <fieldset>
+              <legend class="visuallyhidden">
+              <p class="passageHdr">Table showing defective components in five different factories across three years.</p>
+              <table class="questionTbl">
+                <caption>
+                Percentage of Defective Components in Factories
+                </caption>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th colspan="2">Year 1</th>
+                    <th colspan="2">Year 2</th>
+                    <th colspan="2">Year 3</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>Units Produced</th>
+                    <th>Defects (%)</th>
+                    <th>Units Produced</th>
+                    <th>Defects (%)</th>
+                    <th>Units Produced</th>
+                    <th>Defects (%)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Factory A </td>
+                    <td>12,000</td>
+                    <td>10</td>
+                    <td>14,000</td>
+                    <td>8</td>
+                    <td>16,000</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>Factory B</td>
+                    <td>23,000</td>
+                    <td>5</td>
+                    <td>20,000</td>
+                    <td>5</td>
+                    <td>25,000</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Factory C</td>
+                    <td>14,000</td>
+                    <td>3</td>
+                    <td>14,000</td>
+                    <td>9</td>
+                    <td>12,000</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>Factory D </td>
+                    <td>13,000</td>
+                    <td>12</td>
+                    <td>25,000</td>
+                    <td>12</td>
+                    <td>27,000</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>Factory E </td>
+                    <td>21,000</td>
+                    <td>15</td>
+                    <td>16,000</td>
+                    <td>12</td>
+                    <td>20,000</td>
+                    <td>6</td>
+                  </tr>
+                </tbody>
+              </table>
+              </legend>
+              <span class="error-message"><span class="field-validation-valid" data-valmsg-for="QuestionAnswer" data-valmsg-replace="true"></span></span>
+              <label class="block-label" for="radio-A                                                 ">
+                <input data-val="true" data-val-required="Choose an answer" id="radio-A                                                 " name="QuestionAnswer" type="radio" value="A                                                 ">
+                Factory A </label>
+              <label class="block-label" for="radio-B                                                 ">
+                <input id="radio-B                                                 " name="QuestionAnswer" type="radio" value="B                                                 ">
+                Factory B </label>
+              <label class="block-label" for="radio-C                                                 ">
+                <input id="radio-C                                                 " name="QuestionAnswer" type="radio" value="C                                                 ">
+                Factory C </label>
+              <label class="block-label" for="radio-D                                                 ">
+                <input id="radio-D                                                 " name="QuestionAnswer" type="radio" value="D                                                 ">
+                Factory D </label>
+              <label class="block-label" for="radio-E                                                 ">
+                <input id="radio-E                                                 " name="QuestionAnswer" type="radio" value="E                                                 ">
+                Factory E </label>
+            </fieldset>
+          </div>
+          <p>You must select an answer to continue.</p>
+          <div class="form-group">
+            <input class="button" type="submit" name="answerAction" value="Continue">
+          </div>
+          <input data-val="true" data-val-required="The AssessmentType field is required." id="Question_AssessmentType" name="Question.AssessmentType" type="hidden" value="Numeric">
+          <input data-val="true" data-val-number="The field QuestionNumber must be a number." data-val-required="The QuestionNumber field is required." id="Question_QuestionNumber" name="Question.QuestionNumber" type="hidden" value="9">
+          <input data-val="true" data-val-number="The field TotalQuestionNumber must be a number." data-val-required="The TotalQuestionNumber field is required." id="Question_TotalQuestionNumber" name="Question.TotalQuestionNumber" type="hidden" value="10">
+          <input data-val="true" data-val-number="The field NextQuestionNumber must be a number." id="Question_NextQuestionNumber" name="Question.NextQuestionNumber" type="hidden" value="10">
+        </form>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
+        <div class="app-sidebar app-resume-panel app-related-items" wiid="C301">
+          <h2 class="govuk-heading-m" wiid="C302">Return to this later</h2>
+          <p class="govuk-body" wiid="C304"><a href="../../../sprint41/skills-assessment/skills-health-check/save-my-progress" class="govuk-link govuk-link--no-visited-state">Save my progress</a></p>
+        </div>
+        <div wiid="C340">
+          <div class="sfContentBlock sf-Long-text" wiid="C341">
+            <div class="app-related-items" wiid="C342">
+              <h2 class="govuk-heading-m" wiid="C343">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;" wiid="C344"><span class="govuk-body govuk-!-font-weight-bold" wiid="C345">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'" wiid="C346">use webchat</a></p>
+              <p class="govuk-caption-m" wiid="C347">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
