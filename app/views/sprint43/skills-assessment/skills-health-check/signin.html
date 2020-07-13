@@ -1,0 +1,41 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Homepage
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container">
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href="/">Home</a></li>
+        
+      </ol>
+    </div>
+    <div class="govuk-grid-row">
+      <div id="" class="sf_colsIn govuk-grid-column-one-third govuk-!-margin-left-0" data-sf-element="Container">
+        <h1 class="heading-xlarge">Sign in </h1>
+        
+		  
+		  <form action="accounts" class="form ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength" data-ng-submit="submit($event)" method="post" name="forms.registrationForm" novalidate="" wiid="C295" pb-autologin="true" autocomplete="off"> 
+			   <div class="form-group" data-ng-class="{'error':wasInvalidOnSubmit('username')}"> 
+				   <div wiid="C304"> <label class="form-label" for="email" wiid="C305">Email address</label> 
+					    <input class="form-control ng-pristine ng-untouched ng-empty ng-valid-email ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength" data-ng-model="user.userEmail" data-required="true" id="email" maxlength="128" name="username" pattern="[A-Za-z0-9_\-\+/{\t\n\r}#$%^\\&amp;\[\]*=()|?'~`! :]+([.][A-Za-z0-9_\-\+/{\t\n\r}#$%^\\&amp;\[\]*=()|?'~`! :]+)*@[A-Za-z0-9\[\]:]+([.-][A-Za-z0-9\[\]:]+)*\.[A-Za-z0-9\[\]:]+([-.][A-Za-z0-9\[\]:]+)*" type="email" data-ng-init="user.userEmail=''" value="" aria-invalid="true" wiid="C307" pb-role="username"> </div> </div> <div class="form-group" data-ng-class="{'error':wasInvalidOnSubmit('password')}" wiid="C308"> <div wiid="C309"> <label class="form-label" for="password" wiid="C310">Password</label> <ul class="hidden force-show" data-ng-class="{'force-show':true}" role="group" tabindex="-1" wiid="C311"> <!-- ngIf: errorOnSubmission && wasInvalidOnSubmit('password', 'required') --> </ul> <input autocomplete="off" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength" data-ng-model="vars.password" data-required="true" id="password" maxlength="16" name="password" type="password" aria-invalid="true" wiid="C312" pb-role="password"> </div> </div> <p wiid="C313"><a href="/Login/dialog/appl/selfcare/wflow/cantaccessaccount" id="signin_a12" wiid="C314">I cannot access my account</a></p> <div class="form-group" wiid="C315"> <button class="button" id="signin_b01" type="submit" wiid="C316" pb-role="submit">Sign in</button> </div> </form>
+		  
+		  
+      </div>
+      
+    </div>
+  </div>
+</div>
+{% endblock %} 

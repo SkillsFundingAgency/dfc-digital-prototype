@@ -6660,3 +6660,16 @@ div {
   }
 }
 	}
+
+@media (min-width: 768px) and (max-width:966px)
+{
+    table.responsive-table.tablet-mode td,table.responsive-table.tablet-mode td.numeric,table.responsive-table.tablet-mode th {
+       zoom:.8;
+       padding:6px;
+    }
+}
+#skiplink {position:absolute; left:-9000px;}
+.app-example {
+    position: relative;
+    border: 1px solid #b1b4b6;
+}

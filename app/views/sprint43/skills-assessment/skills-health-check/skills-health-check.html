@@ -1,0 +1,64 @@
+{% extends "layout_ncs_new.html" %}
+<link href="/public/stylesheets/sfa.min.css" media="all" rel="stylesheet" type="text/css" />
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Skills health check
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<div class="govuk-width-container">
+  <div class="account-info" wiid="C295"> <a class="account-link" href="signin" id="signin-link" wiid="C296">Sign in</a> </div>
+  <div class="breadcrumbs" wiid="C298">
+    <ol wiid="C299">
+      <li wiid="C300"><a href="/" wiid="C301">Home</a></li>
+      <li wiid="C300"><a href="../../homepage" wiid="C301">Skills assessment</a></li>
+      <li wiid="C300">Skills health check</li>
+    </ol>
+  </div>
+</div>
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container" id="shc">
+  <div class="govuk-width-container" wiid="C321">
+    <div class="govuk-grid-row" wiid="C323">
+      <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container" wiid="C324">
+        <div wiid="C325">
+          <div class="sfContentBlock sf-Long-text" wiid="C326">
+			  
+            <h1 class="govuk-heading-xl">Skills health check</h1>
+			  
+            <p class="govuk-body">The skills health check is a set of quizzes and activities designed to help you explore your skills, interests and motivations.</p>
+            <p>Working through the skills health check can help you decide what kind of jobs might be right for you. </p>
+            <p>You can save your results and come back to them at any time or able to download your report once you've completed at least one assessment. </p>
+				{% include "includes/shc-warning.html" %}
+            <form action="homepage" class="form" method="post" wiid="C331">        
+				<input class="button button-start" type="submit" value="Start a new skills health check">
+			  </form>
+			      
+			  
+          </div>
+        </div>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
+        <div class="app-sidebar app-resume-panel app-related-items">
+           {% include "includes/return-to-shc.html" %}
+        </div>
+        <div wiid="C340">
+          <div class="sfContentBlock sf-Long-text" wiid="C341">
+            <div class="app-related-items" wiid="C342">
+              <h2 class="govuk-heading-m" wiid="C343">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;" wiid="C344"><span class="govuk-body govuk-!-font-weight-bold" wiid="C345">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'" wiid="C346">use webchat</a></p>
+              <p class="govuk-caption-m" wiid="C347">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

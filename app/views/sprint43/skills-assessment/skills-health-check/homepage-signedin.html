@@ -1,0 +1,232 @@
+{% extends "layout_ncs_new.html" %}
+<link href="/public/stylesheets/sfa.min.css" media="all" rel="stylesheet" type="text/css" />
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Homepage
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+<div class="govuk-width-container">
+  <div class="account-info">
+	  <span class="your-name" id="bannerUserName">Gurnaik Singh</span> 
+	  <a href="homepage" id="signout-link">Sign out</a> 
+	  &nbsp;&nbsp;<a class="account-link" href="your-account" id="myaccount-link">Your account</a>
+  </div>
+  <div class="breadcrumbs">
+    <ol wiid="C299">
+      <li wiid="C300"><a href="../../../" wiid="C301">Home</a></li>
+      <li wiid="C300"><a href="../../homepage" wiid="C301">Skills assessment</a></li>
+      <li wiid="C300">Skills health check</li>
+    </ol>
+  </div>
+</div>
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
+        <div>
+          <div class="sfContentBlock sf-Long-text">
+            <h1 class="heading-xlarge govuk-!-margin-top-0 govuk-!-margin-bottom-5"> Skills health check<span class="heading-secondary">Started 12 June 2020 16:33</span> </h1>
+            {% include "includes/shc-warning.html" %}
+            <p class="govuk-body">The Skills Health Check is a set of quizzes and activities designed to help you explore your skills, interests and motivations.</p>
+            <p>Working through the Skills Health Check can help you decide what kind of jobs might be right for you. </p>
+            
+            <p>There are two different types of assessments that can help you explore your skills, interests, motivations, problem solving skills and how you work with information. They’ll help you understand your: </p>
+            <ul class="list list-bullet">
+              <li>personal skills</li>
+              <li>activity skills</li>
+            </ul>
+			  <div class="govuk-inset-text">
+        Within the skills health check, the mechanical, spatial and abstract assessments use images. They are not suitable for users with screen readers. We are not able to supply alternative text for these assessments without influencing your results.
+    </div>
+            <p>All the assessments are optional and you'll be able to download your report once you've completed at least one. Completing more assessments could offer you more job ideas to explore and help you get a better understanding of the skills you have. </p>
+            <p> Working through the assessments can help you to get ideas about jobs and careers you could be interested in. The activity skills assessments can also help you identify what work related skills you're good at. This can be especially helpful if you're looking for work, applying for jobs or going to interviews. </p>
+            <nav aria-label="skip to the assessments" class="jump-links" role="navigation">
+              <div class="grid-row">
+                <div class="column-one-half">
+                  <ol class="list list-number">
+                    <li> <a href="#1">Not started</a> </li>
+                    <li> <a href="#2">In progress</a> </li>
+                  </ol>
+                </div>
+                <div class="column-one-half">
+                  <ol class="list list-number" start="3">
+                    <li> <a href="#3" >Completed</a> </li>
+                    <li> <a href="#4">Create report</a> </li>
+                  </ol>
+                </div>
+              </div>
+            </nav>
+            <section id="1">
+              <h2 class="heading-large">1. Not started</h2>
+              <h3 class="heading-medium">Personal skills</h3>
+              <p>Work through the personal skills assessments to help you understand your skills, interests and motivations in the workplace. Explore what you’re good at, your preferred working style and what you want to get from work.</p>
+              <table id="shc" role="presentation" wiid="C350">
+                <thead wiid="C351">
+                  <tr wiid="C352">
+                    <th wiid="C353">Name</th>
+                    <th wiid="C354">Description</th>
+                    <th colspan="2" wiid="C355">Estimated duration</th>
+                  </tr>
+                </thead>
+                <tbody wiid="C356">
+                  <tr wiid="C357">
+                    <td wiid="C358"><span class="visuallyhidden" wiid="C359">Name:</span>Skills </td>
+                    <td wiid="C360"><span class="visuallyhidden" wiid="C361">Description:</span>Identify activities you're good at. </td>
+                    <td wiid="C362"><span class="visuallyhidden" wiid="C363">Estimated duration:</span>15 minutes </td>
+                    <td wiid="C364"><a href="../../../sprint41/skills-assessment/skills-health-check/question-signedin" wiid="C365">Start skills assessment</a></td>
+                  </tr>
+                  <tr wiid="C366">
+                    <td wiid="C367"><span class="visuallyhidden" wiid="C368">Name:</span>Interests </td>
+                    <td wiid="C369"><span class="visuallyhidden" wiid="C370">Description:</span>Explore areas of work you're interested in. </td>
+                    <td wiid="C371"><span class="visuallyhidden" wiid="C372">Estimated duration:</span>15 minutes </td>
+                    <td wiid="C373"><a href="/skills-assessment/skills-health-check/question?assessmentType=Interest" wiid="C374">Start interests assessment</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 class="heading-medium" wiid="C389">Activity skills</h3>
+              <p wiid="C390">Work through the activity skills assessments to help you get a better understanding of how you work with information and solve problems in the workplace. Understanding what activity skills you have, could help you if you're writing your CV, looking for work, applying for jobs or going to an interview. </p>
+              <table id="shc" role="presentation" wiid="C395">
+                <thead wiid="C396">
+                  <tr wiid="C397">
+                    <th wiid="C398">Name</th>
+                    <th wiid="C399">Description</th>
+                    <th colspan="2" wiid="C400">Estimated duration</th>
+                  </tr>
+                </thead>
+                <tbody wiid="C401">
+                  <tr wiid="C402">
+                    <td wiid="C403"><span class="visuallyhidden" wiid="C404" style="">Name:</span>Working with numbers </td>
+                    <td wiid="C405"><span class="visuallyhidden" wiid="C406" style="">Description:</span>Explore how you make judgements using numbers </td>
+                    <td wiid="C407"><span class="visuallyhidden" wiid="C408" style="">Estimated duration:</span>25 minutes </td>
+                    <td wiid="C409"><a href="../../../sprint41/skills-assessment/skills-health-check/question-numeric" wiid="C410">Start numerical assessment</a></td>
+                  </tr>
+                  <tr wiid="C411">
+                    <td wiid="C412"><span class="visuallyhidden" wiid="C413" style="">Name:</span>Working with written information </td>
+                    <td wiid="C414"><span class="visuallyhidden" wiid="C415" style="">Description:</span>Explore how you make judgements using written information. </td>
+                    <td wiid="C416"><span class="visuallyhidden" wiid="C417" style="">Estimated duration:</span>25 minutes </td>
+                    <td wiid="C418"><a href="/skills-assessment/skills-health-check/question?assessmentType=Verbal" wiid="C419">Start verbal reasoning assessment</a></td>
+                  </tr>
+                  <tr wiid="C420">
+                    <td wiid="C421"><span class="visuallyhidden" wiid="C422" style="">Name:</span>Checking information activity </td>
+                    <td wiid="C423"><span class="visuallyhidden" wiid="C424" style="">Description:</span>Try a clerical checking activity. </td>
+                    <td wiid="C425"><span class="visuallyhidden" wiid="C426" style="">Estimated duration:</span>15 minutes </td>
+                    <td wiid="C427"><a href="/skills-assessment/skills-health-check/question?assessmentType=Checking" wiid="C428">Start clerical assessment</a></td>
+                  </tr>
+                  <tr wiid="C429">
+                    <td wiid="C430"><span class="visuallyhidden" wiid="C431" style="">Name:</span>Solving mechanical problems </td>
+                    <td wiid="C432"><span class="visuallyhidden" wiid="C433" style="">Description:</span>Work through some mechanical problems. </td>
+                    <td wiid="C434"><span class="visuallyhidden" wiid="C435" style="">Estimated duration:</span>15 minutes </td>
+                    <td wiid="C436"><a href="/skills-assessment/skills-health-check/question?assessmentType=Mechanical" wiid="C437">Start mechanical assessment</a></td>
+                  </tr>
+                  <tr wiid="C438">
+                    <td wiid="C439"><span class="visuallyhidden" wiid="C440" style="">Name:</span>Working with shapes </td>
+                    <td wiid="C441"><span class="visuallyhidden" wiid="C442" style="">Description:</span>Explore some spatial problems. </td>
+                    <td wiid="C443"><span class="visuallyhidden" wiid="C444" style="">Estimated duration:</span>15 minutes </td>
+                    <td wiid="C445"><a href="/skills-assessment/skills-health-check/question?assessmentType=Spatial" wiid="C446">Start spatial assessment</a></td>
+                  </tr>
+                  <tr wiid="C447">
+                    <td wiid="C448"><span class="visuallyhidden" wiid="C449" style="">Name:</span>Solving abstract problems </td>
+                    <td wiid="C450"><span class="visuallyhidden" wiid="C451" style="">Description:</span>Try some abstract problems. </td>
+                    <td wiid="C452"><span class="visuallyhidden" wiid="C453" style="">Estimated duration:</span>25 minutes </td>
+                    <td wiid="C454"><a href="/skills-assessment/skills-health-check/question?assessmentType=Abstract" wiid="C455">Start abstract assessment</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section id="2">
+              <h2 class="heading-large">2. In progress</h2>
+              <table id="" role="presentation" wiid="C350">
+                <thead wiid="C351">
+                  <tr wiid="C352">
+                    <th wiid="C353">Name</th>
+                    <th wiid="C354">Description</th>
+                    <th colspan="2" wiid="C355">Estimated duration</th>
+                  </tr>
+                </thead>
+                <tbody wiid="C356">
+                  <tr wiid="C375">
+                    <td wiid="C376"><span class="visuallyhidden" wiid="C377">Name:</span>Personal style </td>
+                    <td wiid="C378"><span class="visuallyhidden" wiid="C379">Description:</span>Understand how you prefer to work. </td>
+                    <td wiid="C380"><span class="visuallyhidden" wiid="C381">Estimated duration:</span>15 minutes </td>
+                    <td wiid="C382"><a href="question" wiid="C383">Start personal assessment</a></td>
+                  </tr>
+                  <tr wiid="C384">
+                    <td wiid="C385"><span class="visuallyhidden" wiid="C386">Name:</span>Motivation </td>
+                    <td wiid="C387"><span class="visuallyhidden" wiid="C388">Description:</span>Identify what you want from work. </td>
+                    <td wiid="C389"><span class="visuallyhidden" wiid="C390">Estimated duration:</span>15 minutes </td>
+                    <td wiid="C391"><a href="question" wiid="C392">Start motivation assessment</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section id="3">
+              <h2 class="heading-large">3. Completed</h2>
+              <p>No assessments have been completed.</p>
+            </section>
+            <form action="/skills-health-check/your-assessments/DownloadDocument/" class="form" id="skillsListForm" method="post" novalidate="novalidate">
+              <section id="4">
+                <h2 class="heading-large">4. Create report</h2>
+                <p> Your Skills Health Check report can provide you with a
+                  clear idea of your skills and strengths. Your report will
+                  also outline how your skills can help you get the job you
+                  want. Your report is for your personal use – no one else
+                  can see your results. </p>
+                <p> Once you've completed at least one assessment you can
+                  check your progress by creating a report. Your report will
+                  be created using the assessments you've completed in
+                  full. </p>
+                <fieldset>
+                  <h3 class="heading-medium"> Choose your document
+                    type </h3>
+                  <div class="form-group">
+                    <legend class="visuallyhidden"> Choose your
+                    document type </legend>
+                    <label class="block-label selected">
+                      <input checked="checked" data-val="true" data-val-required="The DownloadType field is required." id="DownloadType" name="DownloadType" type="radio" value="Pdf">
+                      PDF </label>
+                    <label class="block-label">
+                      <input id="DownloadType" name="DownloadType" type="radio" value="Word">
+                      Microsoft Word
+                      document </label>
+                  </div>
+                </fieldset>
+                <p> Download your report. This may take a few
+                  minutes. </p>
+                <p> This downloads a document to your device (up to 200kb) which may take a few minutes. Data plan charges may apply. </p>
+                <p> You'll be able to download your report once you've completed at least one assessment. </p>
+                <div class="form-group">
+                  <input class="button" type="submit" disabled="disabled" value="Download your report">
+                </div>
+              </section>
+              <input data-val="true" data-val-required="The SkillsAssessmentComplete field is required." id="skillsAssessmentComplete" name="SkillsAssessmentComplete" type="hidden" value="False">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+        <div class="app-sidebar app-resume-panel app-related-items">
+          {% include "includes/return-to-this-later.html" %}
+
+           {% include "includes/return-to-shc.html" %}
+        </div>
+        <div>
+          <div class="sfContentBlock sf-Long-text">
+            <div class="app-related-items">
+              <h2 class="govuk-heading-m">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'"> use webchat</a></p>
+              <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

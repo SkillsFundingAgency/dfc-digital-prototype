@@ -1,0 +1,55 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Send by email
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container">
+    <div class="app-breadcrumb-panel"> <a href="../../../../sprint41/skills-assessment/skills-health-check/save-my-progress" class="govuk-back-link">Back</a> </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds" wiid="C294">
+        <h1 class="govuk-heading-l" wiid="C295">Your reference code</h1>
+        <div class="app-your-reference govuk-body" wiid="C296">
+          <p wiid="C297"> <span class="app-your-reference__code govuk-heading-xl" wiid="C298">a93bcfa6-4968-44aa-888c-b30016c80d1c</span> </p>
+          <div class="app-your-reference__meta govuk-grid-row" wiid="C299">
+            <p class="govuk-grid-column-one-third govuk-body-s" wiid="C300">04 June 2020</p>
+            <p class="govuk-grid-column-two-thirds govuk-body-s" wiid="C301"></p>
+          </div>
+        </div>
+        <div class="govuk-body" wiid="C302">
+          <h2 class="govuk-heading-m" wiid="C303">What to do with your reference</h2>
+          <p wiid="C304">The code above is your unique reference. You can use this to:</p>
+          <ul wiid="C305">
+            <li wiid="C306">return to your assessment and continue</li>
+            <li wiid="C307">see your results, if you have finished the assessment</li>
+          </ul>
+        </div>
+        <h2 class="govuk-heading-m" wiid="C308">Send reference code in a text message</h2>
+        <form action="../../../../sprint41/skills-assessment/skills-health-check/save-my-progress/sms-sent" method="post" class="govuk-grid-row" wiid="C309">
+          <div class="govuk-grid-column-two-thirds-from-desktop" wiid="C310"> <span class="govuk-hint" wiid="C311">We will only use this to send you a link to return to your assessment</span>
+            <div wiid="C312">
+              <div class="govuk-form-group" wiid="C313">
+                <label class="govuk-label" for="mobileNumber" wiid="C314"> Phone number </label>
+                <input class="govuk-input" id="mobileNumber" name="mobileNumber" type="text" wiid="C315">
+              </div>
+            </div>
+            <button type="submit" class="govuk-button" wiid="C316"> Send </button>
+          </div>
+        </form>
+        <p wiid="C317"><a href="/results" class="" wiid="C318">Return to assessment</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

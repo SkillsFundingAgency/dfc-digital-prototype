@@ -1,0 +1,35 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Email send
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container">
+    <div class="app-breadcrumb-panel"> <a href="../../../../sprint41/skills-assessment/skills-health-check/save-my-progress/email" class="govuk-back-link">Back</a> </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds" wiid="C294">
+        <div class="govuk-body" wiid="C295">
+          <form action="" method="post" id="">
+            <h1 class="govuk-heading-xl" wiid="C296">Check your email</h1>
+            <p wiid="C297">An email has been sent to <strong>{{ data['email'] }}</strong></p>
+            <p wiid="C298">Click on the link in the email to return to your assessment.</p>
+            <a href="/results" class="govuk-button" wiid="C299">Return to assessment</a>
+            <p wiid="C300"><a href="../../../../sprint41/skills-assessment/skills-health-check/question" wiid="C301">Back to start</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
