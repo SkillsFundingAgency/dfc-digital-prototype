@@ -10,26 +10,30 @@ Email send
 
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
-
-
+</div>
+<div class="govuk-width-container">
+ <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/skills-health-check">Skills assessment</a></li>
+      <li>Skills health check</li>
+    </ol>
+  </div></div>
 {% endblock %}
   {% block content %}
 <div class="govuk-width-container">
-  <div class="govuk-width-container">
-    <div class="app-breadcrumb-panel"> <a href="../../../../sprint41/skills-assessment/skills-health-check/save-my-progress/email" class="govuk-back-link">Back</a> </div>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds" wiid="C294">
         <div class="govuk-body" wiid="C295">
           <form action="" method="post" id="">
             <h1 class="govuk-heading-xl" wiid="C296">Check your email</h1>
             <p wiid="C297">An email has been sent to <strong>{{ data['email'] }}</strong></p>
-            <p wiid="C298">Click on the link in the email to return to your assessment.</p>
-            <a href="/results" class="govuk-button" wiid="C299">Return to assessment</a>
-            <p wiid="C300"><a href="../../../../sprint41/skills-assessment/skills-health-check/question" wiid="C301">Back to start</a></p>
+            <p wiid="C298">Click on the link in the email to return to your skills health check.</p>
+            <a href="/sprint43/skills-assessment/skills-health-check/homepage" class="govuk-button">Return to your skills health check</a>
+
           </form>
         </div>
       </div>
     </div>
-  </div>
 </div>
 {% endblock %} 

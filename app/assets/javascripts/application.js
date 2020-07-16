@@ -21,10 +21,7 @@ $(document).ready(function () {
     }
 
   });
-function resetTab(){
-            document.getElementById('skiplink').focus();
-        }
-        window.setTimeout(resetTab, 250);
+
 
 })
 

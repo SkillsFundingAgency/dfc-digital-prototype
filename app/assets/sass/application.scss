@@ -858,6 +858,19 @@ html {
 .circle-chart__info::after {
 	content: "%";
 }
+.govuk-caption-xl,.heading-secondary {
+    font-family: nta,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1111111111;
+    display: block;
+    margin-bottom: 5px;
+    color: #6f777b;
+	font-size: 27px;
+}
+
 
 //COOKIES
 
