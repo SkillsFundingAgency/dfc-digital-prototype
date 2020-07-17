@@ -1,7 +1,5 @@
 {% extends "layout_ncs_new-shc.html" %}
-
 <link href="/public/stylesheets/sfa.min.css" media="all" rel="stylesheet" type="text/css" />
-
 {% block header %}
 
 {% endblock %}
@@ -33,17 +31,16 @@ Skills health check
             <div wiid="C322">
               <div class="sfContentBlock sf-Long-text" wiid="C323">
                 <h1 class="heading-xlarge govuk-!-margin-top-0 govuk-!-margin-bottom-5"> Skills health check<span class="heading-secondary">Started 12 June 2020 16:33</span> </h1>
-                <div class="govuk-warning-text"> <span class="govuk-warning-text__icon" aria-hidden="true">!</span> <strong class="govuk-warning-text__text"> <span class="govuk-warning-text__assistive">Warning</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </strong> </div>
-                <p class="govuk-body">The skills health check is a set of quizzes and activities designed to help you explore your skills, interests and motivations.</p>
+                <p class="govuk-body">The skills health check is a set of activities to help you find out about yourself and what you're good at. You must do at least one assessment to get your report. Your report will become more detailed every time you finish another assessment. </p>
               </div>
             </div>
-            <div class="govuk-grid-row govuk-!-margin-top-9">
+            <div class="govuk-grid-row govuk-!-margin-top-9 govuk-!-padding-left-0"> 
+              <!--
               <div class="govuk-grid-column-one-quarter">
                 <section class="margin-bottom">
                   <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <circle class="circle-chart__background" stroke="#ccc" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15" />
                     <circle id="first" class="circle-chart__circle" stroke-width="4" stroke-dasharray="30,100" stroke-linecap="" fill="none" cx="16.91549431" cy="16.91549431" r="15" />
-                    <!-- was stroke="#efefef" -->
                     <g class="circle-chart__info">
                       <text class="circle-chart__percent counter" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8" id="firstDonut" data-count="">0</text>
                       <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">completed</text>
@@ -51,116 +48,180 @@ Skills health check
                   </svg>
                 </section>
               </div>
-              <div class="govuk-grid-column-three-quarters govuk-!-padding-left-5">
+-->
+              <div class="govuk-grid-column-full">
                 <h2 class="govuk-heading-l">You have completed 5 out of 10 assessments!</h2>
                 <ul class="list list-bullet">
-                  <li>Skills</li>
-                  <li>Personal style</li>
-                  <li>Verbal reasoning</li>
-                  <li>Solving mechanical problems</li>
-                  <li>Solving abstract problems</li>
+                  <li>skills</li>
+                  <li>personal style</li>
+                  <li>verbal reasoning</li>
+                  <li>solve mechanical problems</li>
+                  <li>solve abstract problems</li>
                 </ul>
-                <button class="govuk-button" data-module="govuk-button">Get your personalised report</button>
+                <button class="govuk-button" data-module="govuk-button">Get your report</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="govuk-grid-row govuk-!-margin-top-0">
-          <h3 class="govuk-heading-m ">Personal skills</h3>
-          <p>Work through the personal skills assessments to help you understand your skills, interests and motivations in the workplace. Explore what you’re good at, your preferred working style and what you want to get from work. </p>
+        <div class="govuk-!-margin-top-0">
+          <h3 class="govuk-heading-l govuk-!-margin-top-9">Personal skills</h3>
+          <p>The assessments in this section can help you understand what's important to you in a job. This information can help you decide if a job is a good fit for you. </p>
           <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
             <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-1"> Your personal skills assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-1"> Skills </span> </h2>
               </div>
               <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-                <p class="govuk-body">This is the content for personal skills assessment.</p>
+                <p class="govuk-body">Knowing your strengths could help you decide which jobs you'd enjoy.</p>
+                <p class="govuk-body">This assessment helps you work out how you see yourself and what things you're good at and enjoy doing.  The results will help you identify your strengths and areas for development.</p>
+                <p class="govuk-body">This will take 15-30 minutes. </p>
+                <button class="govuk-button" data-module="govuk-button">Start skills assessment</button>
               </div>
             </div>
             <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-2"> Your interest assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-2"> Interests</span> </h2>
               </div>
               <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-                <p class="govuk-body">This is the content for interest assessment .</p>
+                <p class="govuk-body">Knowing what you're interested in could help you decide what you want to do for a job.</p>
+                <p class="govuk-body">This assessment helps you work out what areas of work might interest you. The results will give you some career paths to explore.</p>
+                <p class="govuk-body">This will take 15-30 minutes. </p>
+                <button class="govuk-button" data-module="govuk-button">Start interests assessment</button>
               </div>
             </div>
             <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-3"> Your working style assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-3"> Personal style </span> </h2>
               </div>
               <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-                <p class="govuk-body">This is the content for working style assessment.</p>
+                <p class="govuk-body">Knowing your personal style could help you decide how you prefer to work, and what sort of roles might suit you. This assessment helps you work out your working style. The results will help you identify what jobs allow you to work comfortably.</p>
+                <p class="govuk-body">This will take 15-30 minutes. </p>
+                <button class="govuk-button" data-module="govuk-button">Start personal style assessment </button>
               </div>
             </div>
             <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4"> Your motion assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4">Motivation </span> </h2>
               </div>
               <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-                <p class="govuk-body">This is the content for motion assessment.</p>
+                <p class="govuk-body">Knowing what you want to get out of work could help you find a job that satisfies you.</p>
+                <p class="govuk-body">This assessment will help you work out what motivates you. The result will help you identify career paths that would help you feel happy at work.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <button class="govuk-button" data-module="govuk-button">Start motivation assessment </button>
               </div>
             </div>
           </div>
-          <h3 class="govuk-heading-m ">Work-based skills </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-		  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default1">
+          <h3 class="govuk-heading-l govuk-!-margin-top-9">Work-based skills </h3>
+          <p>The assessments in this section can help you understand your strengths at work. This information could help you write your CV or apply for jobs.</p>
+          <div class="govuk-inset-text"> The spatial and abstract assessments use images. They are not suitable for users with screen readers. We are not able to supply alternative text without influencing your results. </div>
+          <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default1">
             <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-1"> Your numerical assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-1"> Working with numbers </span> </h2>
               </div>
               <div id="accordion-default1-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-                <p class="govuk-body">This is the content for personal skills assessment.</p>
+                <p class="govuk-body">Some careers use number skills more than others. This skill is useful if you want to go into:</p>
+                <ul class="list list-bullet">
+                  <li>finance</li>
+                  <li>management</li>
+                  <li>science</li>
+                  <li>research</li>
+                </ul>
+                <p class="govuk-body">This assessment will identify how you solve problems using numbers. The results could help you work out if working with numbers suits you.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <button class="govuk-button" data-module="govuk-button">Start numerical assessment</button>
               </div>
             </div>
             <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-2"> Your verbal reasoning assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-2"> Verbal reasoning </span> </h2>
               </div>
               <div id="accordion-default1-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-                <p class="govuk-body">This is the content for interest assessment .</p>
+                <p class="govuk-body">Some careers use speaking and writing skills more than others. This skill is useful if you want to go into:</p>
+                <ul class="list list-bullet">
+                  <li>marketing</li>
+                  <li>publishing</li>
+                  <li>journalism</li>
+                  <li>law</li>
+                </ul>
+                <p class="govuk-body">This assessment will identify how you solve word problems. The results could help you work out if problem solving using words suits you.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <button class="govuk-button" data-module="govuk-button">Start verbal reasoning assessment</button>
               </div>
             </div>
             <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-3"> Your clerical assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-3"> Checking details </span> </h2>
               </div>
               <div id="accordion-default1-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-                <p class="govuk-body">This is the content for working style assessment.</p>
+                <p class="govuk-body">Some jobs need you to pay attention to details. This skill is useful if you want to go into:</p>
+                <ul class="list list-bullet">
+                  <li>administration</li>
+                  <li>customer service</li>
+                  <li>retail</li>
+                  <li>sales</li>
+                </ul>
+                <p class="govuk-body">This assessment will identify how comfortable you feel doing this sort of work. Your results could help you work out if you want to do this in a job.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <button class="govuk-button" data-module="govuk-button">Start clerical assessment</button>
               </div>
             </div>
             <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4"> Your mechanical assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4"> Solving mechanical problems </span> </h2>
               </div>
               <div id="accordion-default1-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-                <p class="govuk-body">This is the content for motion assessment.</p>
+                <p class="govuk-body">Some jobs need you to solve problems using mechanical knowledge. This skill is useful if you want to go into: </p>
+                <ul class="list list-bullet">
+                  <li>engineering</li>
+                  <li>manufacturing</li>
+                  <li>construction</li>
+                </ul>
+                <p class="govuk-body">The assessment will identify how comfortable you feel solving mechanical problems. Your results could help you work out if you want to do this in a job.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <button class="govuk-button" data-module="govuk-button">Start mechanical assessment</button>
               </div>
             </div>
-			<div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4"> Your spatial assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4"> Working with shapes</span> </h2>
               </div>
               <div id="accordion-default1-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-                <p class="govuk-body">This is the content for spatial assessment.</p>
+                <p class="govuk-body">Some jobs need you to have an understanding of shape and space. This skill is useful if you want to go into: </p>
+                <ul class="list list-bullet">
+                  <li>construction</li>
+                  <li>art and design</li>
+                  <li>manufacturing</li>
+                </ul>
+                <p class="govuk-body">This assessment will identify how comfortable you feel working with shapes and space. Your results could help you work out if this is a skill you would enjoy using at work.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <button class="govuk-button" data-module="govuk-button">Start spatial assessment</button>
               </div>
             </div>
-			<div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section ">
               <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4"> Your abstract assessment </span> </h2>
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4"> Solving abstract problems </span> </h2>
               </div>
               <div id="accordion-default1-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-                <p class="govuk-body">This is the content for abstract assessment.</p>
+                <p class="govuk-body">This skill is useful for jobs that involve creative thinking and logical decision-making. This skill is useful if you want to go into: </p>
+                <ul class="list list-bullet">
+                  <li>IT and digital</li>
+                  <li>science</li>
+                  <li>medicine</li>
+                </ul>
+                <p class="govuk-body">The assessment will identify how comfortable you feel solving abstract problems. Your results could help you work out if you want to do this in a job. </p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <button class="govuk-button" data-module="govuk-button">Start abstract  assessment</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="govuk-grid-row">
-          <h3 class="govuk-heading-m">Next steps</h3>
+        <div class="govuk-grid-row"> <div class="govuk-grid-column-full"> 
+          <h3 class="govuk-heading-l">Next steps</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
+        </div></div>
       </div>
       <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
         <div class="app-sidebar app-resume-panel app-related-items" wiid="C301"> {% include "includes/next-steps.html" %}{% include "includes/save-my-assessments.html" %}
