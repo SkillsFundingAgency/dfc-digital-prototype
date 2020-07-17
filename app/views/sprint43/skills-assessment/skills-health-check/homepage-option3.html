@@ -12,24 +12,24 @@ Skills health check
 {% include "includes/beta-banner.html" %}
 </div>
 <div class="govuk-width-container">
-  <div class="breadcrumbs" wiid="C298">
-    <ol wiid="C299">
-      <li wiid="C300"><a href="../../../" wiid="C301">Home</a></li>
-      <li wiid="C300"><a href="../../homepage" wiid="C301">Skills assessment</a></li>
-      <li wiid="C300">Skills health check</li>
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="../../../">Home</a></li>
+      <li><a href="../../homepage">Skills assessment</a></li>
+      <li>Skills health check</li>
     </ol>
   </div>
 </div>
 {% endblock %}
   {% block content %}
 <div class="govuk-width-container" id="shc">
-  <div class="govuk-width-container" wiid="C321">
-    <div class="govuk-grid-row" wiid="C323">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
       <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
         <div>
           <div class="sfContentBlock sf-Long-text">
-            <div wiid="C322">
-              <div class="sfContentBlock sf-Long-text" wiid="C323">
+            <div>
+              <div class="sfContentBlock sf-Long-text">
                 <h1 class="heading-xlarge govuk-!-margin-top-0 govuk-!-margin-bottom-5"> Skills health check<span class="heading-secondary">Started 12 June 2020 16:33</span> </h1>
                 <p class="govuk-body">The skills health check is a set of activities to help you find out about yourself and what you're good at. You must do at least one assessment to get your report. Your report will become more detailed every time you finish another assessment. </p>
               </div>
@@ -64,7 +64,7 @@ Skills health check
           </div>
         </div>
         <div class="govuk-!-margin-top-0">
-          <h3 class="govuk-heading-l govuk-!-margin-top-9">Personal skills</h3>
+          <h3 class="govuk-heading-l govuk-!-margin-top-5">Personal skills</h3>
           <p>The assessments in this section can help you understand what's important to you in a job. This information can help you decide if a job is a good fit for you. </p>
           <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
             <div class="govuk-accordion__section ">
@@ -218,13 +218,17 @@ Skills health check
         </div>
         <div class="govuk-grid-row"> <div class="govuk-grid-column-full"> 
           <h3 class="govuk-heading-l">Next steps</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p>Now that you've discovered your skills, you might want to:</p>
+			<ul class="list list-bullet">
+                  <li><a href="#">print</a> or <a href="#">email your results</a></li>
+                  <li><a href="#">explore careers</a> that interest you</li>
+                  <li>look for <a href="#">careers advice</a> to help you look for and apply for jobs</li>
+				  <li><a href="#">speak to an adviser</a> about your next steps</li>
+                </ul>
         </div></div>
       </div>
-      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
-        <div class="app-sidebar app-resume-panel app-related-items" wiid="C301"> {% include "includes/next-steps.html" %}{% include "includes/save-my-assessments.html" %}
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+        <div class="app-sidebar app-resume-panel app-related-items"> {% include "includes/next-steps.html" %}{% include "includes/save-my-assessments.html" %}
           {% include "includes/return-to-assessment.html" %}  {% include "includes/speak-to-an-advisor.html" %}</div>
       </div>
     </div>
