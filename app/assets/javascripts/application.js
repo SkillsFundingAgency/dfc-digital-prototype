@@ -22,6 +22,20 @@ $(document).ready(function () {
 
   });
 
+	$(".govuk-button").click(function () {
+    if ($('#SelectedOption-3').is(':checked')) {
+
+      window.location.href = 'save-my-progress/email-saved.html';
+	  return false;
+
+    } else if ($('#SelectedOption-4').is(':checked')) {
+
+      window.location.href = 'save-my-progress/reference-saved.html';
+      return false;
+    }
+
+  });
+
 
 })
 
