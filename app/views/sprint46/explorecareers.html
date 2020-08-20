@@ -11,73 +11,67 @@ Careers advice - job profiles, information and resources | National Careers Serv
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
 </div>
-<header>
-	<div class="govuk-width-container"><div class="govuk-breadcrumbs ">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="#">Home</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="#">Passports, travel and living abroad</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="#">Travel abroad</a>
-    </li>
-  </ol>
-</div></div>
+<header class="homepage-top">
   <div class="ec-hero">
     <div class="govuk-width-container">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h1 class="govuk-heading-xl">Explore careers</h1>
-          <p class="govuk-body-lead">Find out what a job involves and if it's right for you.</p> <form action="/job-profiles/Search/" class="js-live-search-form site-search  ui-front" id="job-profile-search-box" method="post">        <div class="job-profile-search-content">
-            <label for="search-main"> Enter a job title</label>
-            <div class="search-input-wrapper">
-                <input class="search-input js-search-focus js-autocomplete" data-autocomplete-fuzzysearch="True" data-autocomplete-maxlength="7" data-autocomplete-maxnumberdisplyed="5" data-autocomplete-minlength="2" data-autocomplete-source="/searchautocomplete" id="search-main" name="SearchTerm" type="search" value="" />
-            </div>
-            <button data-module="govuk-button" class="submit" type="submit" value="Search">Search</button>
+          <p class="govuk-body-lead">Find out what a job involves and if it's right for you.</p>
+          <form action="/explore-careers/Search/" class="site-search ui-front" id="header-search" method="post">    <div class="header-search-content">
+        <label for="SearchTerm">Enter a job title</label>
+
+        <div class="search-input-wrapper">
+            <input class="search-input js-search-focus js-autocomplete ui-autocomplete-input" data-autocomplete-fuzzysearch="True" data-autocomplete-maxlength="7" data-autocomplete-maxnumberdisplyed="5" data-autocomplete-minlength="2" data-autocomplete-source="/searchautocomplete" id="SearchTerm" name="SearchTerm" type="search" value="" autocomplete="off">
         </div>
-<input id="JobProfileUrl" name="JobProfileUrl" type="hidden" value="admin-assistant" /></form>
+        <button class="submit" type="submit" value="Search">Search</button>
+    </div>
+<ul wiid="N15" id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul></form>
         </div>
       </div>
     </div>
   </div>
-  
+  <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs ">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="#">Home</a> </li>
+        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="#">Explore careers</a> </li>
+      </ol>
+    </div>
+  </div>
 </header>
 {% endblock %}
 {% block content %}
-    
-    <div class="govuk-width-container">
-        <main class="govuk-main-wrapper app-main-class govuk-!-padding-top-6" id="main-content" role="main">
-                        
-        <h2 class="govuk-heading-m govuk-!-padding-top-0">Explore by job category</h2>
-        <ul class="homepage-jobcategories">
-                    <li><a href="job-categories">Administration</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/animal-care">Animal care</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/beauty-and-wellbeing">Beauty and wellbeing</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/business-and-finance">Business and finance</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/computing-technology-and-digital">Computing, technology and digital</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/construction-and-trades">Construction and trades</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/creative-and-media">Creative and media</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/delivery-and-storage">Delivery and storage</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/emergency-and-uniform-services">Emergency and uniform services</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/engineering-and-maintenance">Engineering and maintenance</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/environment-and-land">Environment and land</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/government-services">Government services</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/healthcare">Healthcare</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/home-services">Home services</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/hospitality-and-food">Hospitality and food</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/law-and-legal">Law and legal</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/managerial">Managerial</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/manufacturing">Manufacturing</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/retail-and-sales">Retail and sales</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/science-and-research">Science and research</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/social-care">Social care</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/sports-and-leisure">Sports and leisure</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/teaching-and-education">Teaching and education</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/transport">Transport</a></li>
-                    <li><a href="http://nationalcareers.service.gov.uk/job-categories/travel-and-tourism">Travel and tourism</a></li>
-            </ul>
-        </main>
-    </div>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper app-main-class govuk-!-padding-top-6" id="main-content" role="main">
+    <h2 class="govuk-heading-m govuk-!-padding-top-0">Explore by job category</h2>
+    <ul class="homepage-jobcategories">
+      <li><a href="job-categories">Administration</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/animal-care">Animal care</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/beauty-and-wellbeing">Beauty and wellbeing</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/business-and-finance">Business and finance</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/computing-technology-and-digital">Computing, technology and digital</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/construction-and-trades">Construction and trades</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/creative-and-media">Creative and media</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/delivery-and-storage">Delivery and storage</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/emergency-and-uniform-services">Emergency and uniform services</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/engineering-and-maintenance">Engineering and maintenance</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/environment-and-land">Environment and land</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/government-services">Government services</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/healthcare">Healthcare</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/home-services">Home services</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/hospitality-and-food">Hospitality and food</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/law-and-legal">Law and legal</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/managerial">Managerial</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/manufacturing">Manufacturing</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/retail-and-sales">Retail and sales</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/science-and-research">Science and research</a></li>
+      <li><a href="job-categories">Social care</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/sports-and-leisure">Sports and leisure</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/teaching-and-education">Teaching and education</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/transport">Transport</a></li>
+      <li><a href="http://nationalcareers.service.gov.uk/job-categories/travel-and-tourism">Travel and tourism</a></li>
+    </ul>
+  </main>
+</div>
 {% endblock %} 
