@@ -1,0 +1,317 @@
+.card-group .card {
+  min-height: 170px;
+  background: #f3f2f1;
+  padding: 10px;
+  margin-bottom: 15px; }
+  .card-group .card a {
+    text-decoration: none; }
+  .card-group .card:hover {
+    background: #207e77;
+    cursor: pointer; }
+    .card-group .card:hover h3, .card-group .card:hover p {
+      color: #fff; }
+    .card-group .card:hover h3 {
+      text-decoration: underline; }
+
+.brand--ncs.brand__border-color, .brand--ncs .brand__border-color {
+  border-color: #009390; }
+
+.organisation__brand-border-top {
+  border-top-width: 5px;
+  border-top-style: solid; }
+
+/* CORE LAYOUT */
+#user-satisfaction-survey .survey-wrapper, .govuk-emergency-banner div, #wrapper {
+  max-width: 960px;
+  margin: 0 15px; }
+
+@media (min-width: 40.0625em) {
+  #user-satisfaction-survey .survey-wrapper, .govuk-emergency-banner div, #wrapper {
+    margin: 0 30px; } }
+@media (min-width: 1020px) {
+  #user-satisfaction-survey .survey-wrapper, .govuk-emergency-banner div, #wrapper {
+    margin: 0 auto; } }
+.gem-c-govspeak .gem-c-attachment-link__abbr {
+  text-decoration: none;
+  cursor: help; }
+
+.gem-c-govspeak .gem-c-attachment {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  position: relative; }
+
+@media print {
+  .gem-c-govspeak .gem-c-attachment {
+    font-family: sans-serif; } }
+@media (min-width: 40.0625em) {
+  .gem-c-govspeak .gem-c-attachment {
+    font-size: 19px;
+    line-height: 1.3157894737; } }
+@media print {
+  .gem-c-govspeak .gem-c-attachment {
+    font-size: 14pt;
+    line-height: 1.15; } }
+.gem-c-govspeak .gem-c-attachment:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.gem-c-govspeak .gem-c-attachment .govuk-details__summary {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25; }
+
+@media print {
+  .gem-c-govspeak .gem-c-attachment .govuk-details__summary {
+    font-family: sans-serif; } }
+@media (min-width: 40.0625em) {
+  .gem-c-govspeak .gem-c-attachment .govuk-details__summary {
+    font-size: 14px;
+    line-height: 1.4285714286; } }
+@media print {
+  .gem-c-govspeak .gem-c-attachment .govuk-details__summary {
+    font-size: 12pt;
+    line-height: 1.2; } }
+.gem-c-govspeak .gem-c-attachment__thumbnail {
+  position: relative;
+  width: auto;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  padding: 5px;
+  float: left; }
+
+.gem-c-govspeak .gem-c-attachment__thumbnail-image {
+  display: block;
+  width: auto;
+  max-width: 99px;
+  height: 140px;
+  border: rgba(11, 12, 12, 0.1);
+  outline: 5px solid rgba(11, 12, 12, 0.1);
+  background: #fff;
+  box-shadow: 0 2px 2px rgba(11, 12, 12, 0.4);
+  fill: #b1b4b6;
+  stroke: #b1b4b6; }
+
+.gem-c-govspeak .gem-c-attachment__details {
+  padding-left: 134px; }
+
+.gem-c-govspeak .gem-c-attachment__details .gem-c-details {
+  word-break: break-word;
+  word-wrap: break-word; }
+
+.gem-c-govspeak .gem-c-attachment__title {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1111111111;
+  margin: 0 0 15px; }
+
+@media print {
+  .gem-c-govspeak .gem-c-attachment__title {
+    font-family: sans-serif; } }
+@media (min-width: 40.0625em) {
+  .gem-c-govspeak .gem-c-attachment__title {
+    font-size: 27px;
+    line-height: 1.1111111111; } }
+@media print {
+  .gem-c-govspeak .gem-c-attachment__title {
+    font-size: 18pt;
+    line-height: 1.15; } }
+.gem-c-govspeak .gem-c-attachment__link {
+  line-height: 1.29; }
+
+.gem-c-govspeak .gem-c-attachment__metadata {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 0 0 15px; }
+
+@media print {
+  .gem-c-govspeak .gem-c-attachment__metadata {
+    font-family: sans-serif; } }
+@media (min-width: 40.0625em) {
+  .gem-c-govspeak .gem-c-attachment__metadata {
+    font-size: 14px;
+    line-height: 1.4285714286; } }
+@media print {
+  .gem-c-govspeak .gem-c-attachment__metadata {
+    font-size: 12pt;
+    line-height: 1.2; } }
+.gem-c-govspeak .gem-c-attachment__metadata:last-of-type {
+  margin-bottom: 0; }
+
+.gem-c-govspeak .gem-c-attachment__metadata--compact {
+  margin-bottom: 0; }
+
+.gem-c-govspeak .gem-c-attachment__abbr {
+  text-decoration: none;
+  cursor: help; }
+
+.gem-c-govspeak .attachment {
+  position: relative;
+  margin: 30px 0;
+  padding: 15px 0 0 129px; }
+
+.gem-c-govspeak .attachment:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.gem-c-govspeak .attachment:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+.gem-c-govspeak .attachment .attachment-thumb {
+  position: relative;
+  float: left;
+  margin-top: 5px;
+  margin-left: -124px;
+  padding-bottom: 15px; }
+
+.gem-c-govspeak .attachment .attachment-thumb img {
+  display: block;
+  width: 99px;
+  height: 140px;
+  background: #fff;
+  outline: 5px solid rgba(11, 12, 12, 0.1);
+  box-shadow: 0 2px 2px rgba(11, 12, 12, 0.4); }
+
+.gem-c-govspeak .attachment .attachment-details h2 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1111111111;
+  margin: 0; }
+
+@media print {
+  .gem-c-govspeak .attachment .attachment-details h2 {
+    font-family: sans-serif; } }
+@media (min-width: 40.0625em) {
+  .gem-c-govspeak .attachment .attachment-details h2 {
+    font-size: 27px;
+    line-height: 1.1111111111; } }
+@media print {
+  .gem-c-govspeak .attachment .attachment-details h2 {
+    font-size: 18pt;
+    line-height: 1.15; } }
+.gem-c-govspeak .attachment .attachment-details p {
+  margin: 10px 0; }
+
+.gem-c-govspeak .attachment .attachment-details .metadata {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25; }
+
+@media print {
+  .gem-c-govspeak .attachment .attachment-details .metadata {
+    font-family: sans-serif; } }
+@media (min-width: 40.0625em) {
+  .gem-c-govspeak .attachment .attachment-details .metadata {
+    font-size: 14px;
+    line-height: 1.4285714286; } }
+@media print {
+  .gem-c-govspeak .attachment .attachment-details .metadata {
+    font-size: 12pt;
+    line-height: 1.2; } }
+.gem-c-govspeak .attachment .attachment-details .url {
+  word-break: break-word;
+  word-wrap: break-word; }
+
+.gem-c-govspeak .attachment .attachment-details .changed, .gem-c-govspeak .attachment .attachment-details .references, .gem-c-govspeak .attachment .attachment-details .unnumbered-paper {
+  display: block; }
+
+.gem-c-govspeak .attachment .attachment-details .preview, .gem-c-govspeak .attachment .attachment-details .download {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25; }
+
+@media print {
+  .gem-c-govspeak .attachment .attachment-details .preview, .gem-c-govspeak .attachment .attachment-details .download {
+    font-family: sans-serif; } }
+@media (min-width: 40.0625em) {
+  .gem-c-govspeak .attachment .attachment-details .preview, .gem-c-govspeak .attachment .attachment-details .download {
+    font-size: 19px;
+    line-height: 1.3157894737; } }
+@media print {
+  .gem-c-govspeak .attachment .attachment-details .preview, .gem-c-govspeak .attachment .attachment-details .download {
+    font-size: 14pt;
+    line-height: 1.15; } }
+.gem-c-govspeak .attachment .attachment-details .preview strong, .gem-c-govspeak .attachment .attachment-details .download strong {
+  font-weight: bold; }
+
+.gem-c-govspeak .attachment .attachment-details .preview {
+  padding-right: 15px; }
+
+.gem-c-govspeak .attachment .attachment-details .opendocument-help {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25; }
+
+@media print {
+  .gem-c-govspeak .attachment .attachment-details .opendocument-help {
+    font-family: sans-serif; } }
+@media (min-width: 40.0625em) {
+  .gem-c-govspeak .attachment .attachment-details .opendocument-help {
+    font-size: 14px;
+    line-height: 1.4285714286; } }
+@media print {
+  .gem-c-govspeak .attachment .attachment-details .opendocument-help {
+    font-size: 12pt;
+    line-height: 1.2; } }
+.gem-c-govspeak .attachment .attachment-details .accessibility-warning {
+  word-break: break-word;
+  word-wrap: break-word; }
+
+.gem-c-govspeak .attachment .attachment-details .accessibility-warning h2 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 0; }
+
+@media print {
+  .gem-c-govspeak .attachment .attachment-details .accessibility-warning h2 {
+    font-family: sans-serif; } }
+@media (min-width: 40.0625em) {
+  .gem-c-govspeak .attachment .attachment-details .accessibility-warning h2 {
+    font-size: 14px;
+    line-height: 1.4285714286; } }
+@media print {
+  .gem-c-govspeak .attachment .attachment-details .accessibility-warning h2 {
+    font-size: 12pt;
+    line-height: 1.2; } }
+.gem-c-govspeak .attachment .attachment-details .js-hidden {
+  display: none; }
+
+.gem-c-govspeak.direction-rtl .attachment {
+  padding: 15px 129px 0 0; }
+
+.gem-c-govspeak.direction-rtl .attachment .attachment-thumb {
+  float: right;
+  margin-left: 0;
+  margin-right: -114px; }

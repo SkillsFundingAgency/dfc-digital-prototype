@@ -6673,3 +6673,9 @@ div {
     position: relative;
     border: 1px solid #b1b4b6;
 }
+.job-profile-hero .column,.job-profile-hero .column-30,.job-profile-hero .column-40,.job-profile-hero .column-60 {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    float: left
+}
