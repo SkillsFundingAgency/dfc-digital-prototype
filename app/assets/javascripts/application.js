@@ -40,7 +40,16 @@ $(document).ready(function () {
         $(e.target.hash).closest('.govuk-accordion__section').addClass('govuk-accordion__section--expanded');
     });
 
-   
+
+  $('section.regional').hide();
+  $('#east-midlands').show();
+  $('select#regional').change(function () {
+    $('section.regional').hide();
+    $('#'+$(this).val()).show();
+  })
+	
+	
+
 
 })
 
