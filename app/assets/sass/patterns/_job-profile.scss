@@ -223,3 +223,410 @@ iframe body{font-family: arial; font-size: 19px !important;}
     -webkit-transform: rotate(-45deg);
     margin-right: 10px
 }
+
+
+
+
+.search-title {
+    font-family: nta,Arial,sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.2;
+    padding-bottom: 10px
+}
+
+.search-header {
+    position: relative;
+    margin: 0;
+    padding: 10px 0 15px;
+    overflow: visible
+}
+
+@media (min-width: 641px) {
+    .homepage-jobcategories a {
+        font-size:19px;
+        line-height: 1.3157894737
+    }
+
+    .search-title {
+        font-size: 24px;
+        line-height: 1.25
+    }
+
+    .search-header {
+        padding: 20px 0 30px;
+        width: 66.666%
+    }
+}
+
+.search-header .searchfield {
+    position: relative
+}
+
+.search-header .search-input {
+    position: static;
+    margin: 0;
+	
+}
+.search-header .search-input input {padding-left: 10px !important;}
+.search-header .search-submit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    overflow: visible
+}
+
+.search-header input {
+    border: 1px solid #bfc1c3;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: nta,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    font-size-adjust: .5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0 50px 0 10px;
+    display: block;
+    height: 50px;
+    border-right: none
+}
+
+.search-header button {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none!important;
+    position: absolute !important;
+    z-index: 4 !important;
+    right: 0 !important;
+    top: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+    border: none !important;
+    overflow: hidden !important;
+    text-indent: 50000px !important;
+    color: #fff !important;
+    background: url(../images/icon-search-2x.png) 60% 50%/24px no-repeat #2b8cc4 !important;
+    cursor: pointer !important
+}
+
+.search-header button:hover {
+    background-color: #267daf
+}
+
+.search-header button:focus {
+    background-color: #2b8cc4
+}
+
+.search-header button:active {
+    top: 0
+}
+
+.search-header .search-dym {
+    margin-top: .5em;
+    font-family: nta,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25
+}
+
+
+#results .results-block .result-count {
+    padding: 0
+}
+
+#results .results-block .results-list {
+    list-style: none;
+    margin: 0;
+    padding: 30px 0
+}
+
+#results .results-block .results-list li {
+    max-width: 32.5em;
+    margin: 0;
+    padding: 0 0 15px
+}
+
+#results .results-block .results-list h3 {
+    font-family: nta,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 .25em
+}
+
+#results .results-block .results-list h3 a {
+    text-decoration: none;
+    font-weight: 700
+}
+
+#results .results-block .results-list .result-description {
+    margin: 0 0 .5em;
+    font-family: nta,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25
+}
+
+@media (min-width: 641px) {
+    .search-header .search-dym,.search-header input {
+        font-size:19px;
+        line-height: 1.3157894737
+    }
+
+    #results .results-block .results-list li {
+        padding: 0 0 40px
+    }
+
+    #results .results-block .results-list h3 {
+        font-size: 24px;
+        line-height: 1.25
+    }
+
+    #results .results-block .results-list .result-description {
+        font-size: 19px;
+        line-height: 1.3157894737
+    }
+}
+
+#results .results-block .results-list .meta {
+    color: #6f777b;
+    font-family: nta,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.1428571429
+}
+
+#results .results-block .results-list .results-salary {
+    margin-bottom: .75em
+}
+
+#results .results-block .results-list .results-categories a:after {
+    content: ","
+}
+
+#results .results-block .results-list .results-categories a:last-child:after {
+    display: none
+}
+
+.ui-autocomplete {
+    background-color: #fff;
+    color: #0b0c0c;
+    border: 1px solid #bfc1c3;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    width: calc(100% - 40px);
+    top: 100%;
+    z-index: 500
+}
+
+.ui-autocomplete li {
+    padding: 0;
+    margin: 0;
+    font-size: 19px
+}
+
+.ui-autocomplete li div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #dee0e2
+}
+
+.ui-autocomplete li div:hover {
+    background-color: #dee0e2;
+    cursor: pointer
+}
+
+.ui-autocomplete li .ui-state-active {
+    background-color: #dee0e2
+}
+
+.ui-autocomplete li:last-child div {
+    border: none
+}
+
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.previous-next-navigation {
+    margin: 0;
+    padding: 0
+}
+
+.previous-next-navigation li {
+    font-family: nta,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 12px;
+    line-height: 1.25;
+    float: left;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 49%
+}
+
+.previous-next-navigation li a,.previous-next-navigation li button {
+    background-color: transparent;
+    display: block;
+    color: #005ea5;
+    text-decoration: none;
+    border: none
+}
+
+.previous-next-navigation li a:active,.previous-next-navigation li a:hover,.previous-next-navigation li button:active,.previous-next-navigation li button:hover {
+    background-color: #f8f8f8
+}
+
+.previous-next-navigation li a:hover .page-numbers,.previous-next-navigation li button:hover .page-numbers {
+    text-decoration: underline
+}
+
+.previous-next-navigation li a .pagination-label,.previous-next-navigation li button .pagination-label {
+    font-family: nta,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 1.1111111111;
+    margin-bottom: .1em;
+    display: block
+}
+
+@media (min-width: 641px) {
+    #results .results-block .results-list .meta {
+        font-size:16px;
+        line-height: 1.25
+    }
+
+    .previous-next-navigation li {
+        font-size: 16px;
+        line-height: 1.25
+    }
+
+    .previous-next-navigation li a .pagination-label,.previous-next-navigation li button .pagination-label {
+        font-size: 27px;
+        line-height: 1.25
+    }
+}
+
+.previous-next-navigation li.next {
+    float: right;
+    text-align: right;
+    border: none
+}
+
+@media (max-width: 640px) {
+    #results {
+        width:100%
+    }
+
+    .previous-next-navigation li.next {
+        float: right;
+        width: 50%
+    }
+}
+
+.previous-next-navigation li.next a,.previous-next-navigation li.next button {
+    padding: 15px 35px 15px 0;
+    text-align: right;
+    float: right;
+    border: none
+}
+
+.previous-next-navigation li.next a:before,.previous-next-navigation li.next button:before {
+    background: url(/public/images/search/arrow-sprite.png) -102px -11px no-repeat;
+    margin: -4px -32px 0 0;
+    display: block;
+    float: right;
+    width: 30px;
+    height: 38px;
+    content: " "
+}
+
+.previous-next-navigation li.previous {
+    float: left;
+    text-align: left;
+    border: none
+}
+
+@media (max-width: 640px) {
+    .previous-next-navigation li.previous {
+        float:right;
+        width: 50%
+    }
+}
+
+.previous-next-navigation li.previous a,.previous-next-navigation li.previous button {
+    padding: 15px 0 15px 35px;
+    float: left;
+    border: none
+}
+
+.previous-next-navigation li.previous a:before,.previous-next-navigation li.previous button:before {
+    background: url(../images/arrow-sprite.png) -20px -11px no-repeat;
+    margin: -4px 0 0 -32px;
+    display: block;
+    float: left;
+    width: 30px;
+    height: 38px;
+    content: " "
+}
+
+.previous-next-navigation .first,.previous-next-navigation .last {
+    min-height: 4.5em
+}
+
+.previous-next-navigation .first .span,.previous-next-navigation .last .span {
+    display: block;
+    min-height: 4.5em;
+    padding: .75em 5%;
+    width: 90%
+}
+
+.previous-next-navigation .first .pagination-label,.previous-next-navigation .last .pagination-label {
+    display: block;
+    margin-bottom: .5em
+}
+.search-header .button:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: 0 0;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.search-header .button:active:before {
+    top: -10%;
+    height: 120%
+}
+main #results .results-block .results-list {padding: 0 !important}
+#results .visuallyhidden {display: none;}

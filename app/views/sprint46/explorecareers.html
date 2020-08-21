@@ -18,15 +18,17 @@ Careers advice - job profiles, information and resources | National Careers Serv
         <div class="govuk-grid-column-two-thirds">
           <h1 class="govuk-heading-xl">Explore careers</h1>
           <p class="govuk-body-lead">Find out what a job involves and if it's right for you.</p>
-          <form action="/explore-careers/Search/" class="site-search ui-front" id="header-search" method="post">    <div class="header-search-content">
-        <label for="SearchTerm">Enter a job title</label>
-
-        <div class="search-input-wrapper">
-            <input class="search-input js-search-focus js-autocomplete ui-autocomplete-input" data-autocomplete-fuzzysearch="True" data-autocomplete-maxlength="7" data-autocomplete-maxnumberdisplyed="5" data-autocomplete-minlength="2" data-autocomplete-source="/searchautocomplete" id="SearchTerm" name="SearchTerm" type="search" value="" autocomplete="off">
-        </div>
-        <button class="submit" type="submit" value="Search">Search</button>
-    </div>
-<ul wiid="N15" id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul></form>
+          <form action="career-search" class="site-search ui-front" id="header-search" method="post">
+            <div class="header-search-content">
+              <label for="SearchTerm">Enter a job title</label>
+              <div class="search-input-wrapper">
+                <input class="search-input js-search-focus js-autocomplete ui-autocomplete-input" data-autocomplete-fuzzysearch="True" data-autocomplete-maxlength="7" data-autocomplete-maxnumberdisplyed="5" data-autocomplete-minlength="2" data-autocomplete-source="/searchautocomplete" id="SearchTerm" name="SearchTerm" type="search" value="" autocomplete="off">
+              </div>
+              <button class="submit" type="submit" value="Search">Search</button>
+            </div>
+            <ul wiid="N15" id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;">
+            </ul>
+          </form>
         </div>
       </div>
     </div>
@@ -34,8 +36,8 @@ Careers advice - job profiles, information and resources | National Careers Serv
   <div class="govuk-width-container">
     <div class="govuk-breadcrumbs ">
       <ol class="govuk-breadcrumbs__list">
-        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="#">Home</a> </li>
-        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="#">Explore careers</a> </li>
+        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="sprint46/homepage-LMI">Home</a> </li>
+        <li class="govuk-breadcrumbs__list-item">Explore careers</li>
       </ol>
     </div>
   </div>
