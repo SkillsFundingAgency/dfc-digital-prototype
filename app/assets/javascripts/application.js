@@ -48,6 +48,12 @@ $(document).ready(function () {
     $('#'+$(this).val()).show();
   })
 	
+	$('section.sub-regional').hide();
+	$('#hertfordshire').show();
+	$('select#subregional').change(function () {
+    $('section.sub-regional').hide();
+    $('#'+$(this).val()).show();
+  })
 	
 
 
