@@ -39,6 +39,11 @@ $(document).ready(function () {
     $('.in-progress li a').on('click',function (e) {
         $(e.target.hash).closest('.govuk-accordion__section').addClass('govuk-accordion__section--expanded');
     });
+	
+	$('.govuk-header__menu-button').click(function () { 
+		$(this).toggleClass('govuk-header__menu-button--open');
+		$('#navigation').toggleClass('govuk-header__navigation--open');
+	})
 
 
   $('section.regional').hide();
