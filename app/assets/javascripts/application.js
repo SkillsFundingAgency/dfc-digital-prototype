@@ -59,7 +59,59 @@ $(document).ready(function () {
     $('section.sub-regional').hide();
     $('#'+$(this).val()).show();
   })
+
 	
+  google.charts.load('current', {packages: ['corechart', 'bar']});
+  google.charts.setOnLoadCallback(drawAxisTickColors);
+
+	function drawAxisTickColors() {
+		  var data = new google.visualization.arrayToDataTable([
+          
+          ["Social work", 44],
+          ["Health", 31],
+          ["Residential care", 12],
+          ["Membership organisation", 10],
+          ['Public admin and defence', 3],
+          ['Service to buildings', 3],
+          ['Service to buildings', 3]
+       
+        ]);
+
+		  var options = {
+			title: '',
+			
+			chartArea: {width: '50%'},
+			hAxis: {
+			  title: '',
+			  minValue: 0,
+			  textStyle: {
+				bold: true,
+				fontSize: 12,
+				color: '#4d4d4d'
+			  },
+			  titleTextStyle: {
+				bold: true,
+				fontSize: 18,
+				color: '#4d4d4d'
+			  }
+			},
+			vAxis: {
+			  title: '',
+			  textStyle: {
+				fontSize: 14,
+				bold: true,
+				color: '#848484'
+			  },
+			  titleTextStyle: {
+				fontSize: 14,
+				bold: true,
+				color: '#848484'
+			  }
+			}
+		  };
+		  var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+		  chart.draw(data, options);
+		}
 
 
 })
