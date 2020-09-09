@@ -102,7 +102,13 @@
             width: 30%;
         }
     }
+	.govuk-breadcrumbs {
+		margin-top:0
+	}
+	
 }
+
+main.govuk-main-wrapper {padding-top:0 !important}
 
 .job-profile-heroblock {
     h2 {
@@ -194,7 +200,7 @@
     .job-profile-salary {
 
         &:before {
-            background: file-url("pound-sign.svg") no-repeat center;
+			background: url("/public/images/pound-sign.svg") no-repeat center;
         }
 
         &:after {
@@ -288,10 +294,103 @@
             }
         }
     }
+	
+	.job-profile-group {
+
+        &:before {
+			background: url("/public/images/chart-line-solid2.svg") no-repeat center;
+			display: block;
+			min-height:100px;
+			width: 50px;
+        }
+
+       
+
+        p {
+
+            span {
+                margin-top: 20px;
+                position: relative;
+            }
+
+            &:nth-child(1) {
+                
+
+                span {
+                    &:before {
+                        content: "|";
+                        font-size: 20px;
+                        position: absolute;
+                        font-weight: bold;
+                        top: -21px;
+                        left: -2px;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                float: right;
+                text-align: right;
+
+
+                span {
+                    text-align: right;
+
+                    &:after {
+                        content: "|";
+                        font-size: 20px;
+                        position: absolute;
+                        font-weight: bold;
+                        top: -21px;
+                        right: -2px;
+                    }
+                }
+            }
+        }
+
+
+        @media (max-width: 749px) {
+
+            &:after {
+                display: none;
+            }
+
+            &:before {
+                display: none;
+            }
+
+            i {
+                margin: 0 5px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+            }
+
+            p {
+                margin: 0;
+                float: left;
+                text-align: left;
+
+
+
+                &:nth-child(even) {
+                    float: left;
+                }
+
+                span {
+                    margin-top: 0;
+
+                    &:after, &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 
     .job-profile-hours {
         &:before {
-            background: file-url("clock.svg") no-repeat center;
+			background: url("/public/images/clock.svg") no-repeat center;
         }
 
         p {
@@ -301,7 +400,7 @@
 
     .job-profile-pattern {
         &:before {
-            background: file-url("calendar-alt.svg") no-repeat center;
+			background: url("/public/images/calendar-alt.svg") no-repeat center;
         }
 
         p {
@@ -526,7 +625,7 @@
         overflow: hidden;
         text-indent: 50000px;
         background: $black;
-        background-image: file-url("icon-search-2x.png");
+        background: url(/public/images/icon-search-2x.png) 60% 50%/24px no-repeat #0b0c0c;
         background-repeat: no-repeat;
         background-position: 60% 50%;
         background-size: 24px;
@@ -601,7 +700,9 @@
 
     .yes {
         &:before {
-            background: file-url("thumbs-up.svg") no-repeat center;
+
+			background: url("/public/images/thumbs-up.svg") no-repeat center;
+			
         }
 
         &:hover:before {
@@ -611,7 +712,7 @@
 
     .no {
         &:before {
-            background: file-url("thumbs-down.svg") no-repeat center;
+			background: url("/public/images/thumbs-down.svg") no-repeat center;
             position: relative;
             top: 2px;
         }
@@ -683,5 +784,129 @@
             background-color: $grey-3;
             color: $black;
         }
+    }
+}
+.govuk-caption-m {
+    font-family: "GDS Transport",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25;
+    display: block;
+    color: #626a6e
+}
+
+@media (min-width: 40.0625em) {
+    .govuk-caption-m {
+        font-size:1.1875rem;
+        line-height: 1.3157894737
+    }
+}
+
+@media print {
+    .govuk-caption-m {
+        font-family: sans-serif;
+        font-size: 14pt;
+        line-height: 1.15
+    }
+}
+
+.jump-links {
+    border-bottom: none
+}
+
+.jump-links ol {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.jump-links ol li {
+    font-weight: 700;
+    margin: 0;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%
+}
+
+.jump-links ol li a {
+    color: #0b0c0c;
+    width: 100%;
+    padding: 8px 10px;
+    text-decoration: none;
+    float: left;
+    box-sizing: border-box;
+    background-color: #dee0e2;
+    border-radius: 3px
+}
+
+.jump-links ol li a:hover {
+    background-color: #005ea5;
+    color: #fff
+}
+
+.jump-links ol li a:hover:after {
+    border: solid #fff;
+    border-width: 0 3px 3px 0
+}
+
+.jump-links ol li a:after {
+    content: "";
+    border: solid #005ea5;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 6px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    float: right
+}
+
+.job-profile-subsection {
+    margin-bottom: 40px
+}
+
+.job-profile-subsection .job-profile-subsection-content {
+    padding-left: 20px;
+    border-left: 3px solid #dee0e2
+}
+
+.job-profile-subsection h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #dee0e2;
+    padding: 15px 20px;
+    border-radius: 5px
+}
+
+.opportunity-item {
+    border-color: #207e77
+}
+
+.govuk-related-items {
+    border-top: 3px solid #207e77;
+    margin-bottom: 2em
+}
+
+@media (min-width: 641px) {
+    .job-profile-heroblock .job-profile-heroblock-content p span {
+        font-size:14px;
+        line-height: 1.4285714286
+    }
+
+    .jump-links ol {
+        -moz-column-count: 2;
+        -moz-column-gap: 25px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 25px;
+        column-count: 2;
+        column-gap: 25px;
+        margin-top: -5px
+    }
+
+    .govuk-related-items {
+        border-top: 6px solid #207e77
     }
 }

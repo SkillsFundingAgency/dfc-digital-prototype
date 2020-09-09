@@ -6673,9 +6673,145 @@ div {
     position: relative;
     border: 1px solid #b1b4b6;
 }
-.job-profile-hero .column,.job-profile-hero .column-30,.job-profile-hero .column-40,.job-profile-hero .column-60 {
-    width: 100%;
-    padding: 25px;
-    box-sizing: border-box;
-    float: left
-}
+
+
+
+
+@media (min-width: 48.0625em) {
+  .app-long-results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .app-long-results li {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 48%;
+              flex: 0 1 48%;
+      border-right: 1px solid #bfc1c3;
+      margin-bottom: 0; padding-bottom: 50px }
+      .app-long-results li:last-child, .app-long-results li:nth-child(2n) {
+        border: 0; } }
+
+.app-long-results .app-long-results__item {
+  border: 0;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 35px;
+  margin-bottom: 60px; }
+  @media (min-width: 48.0625em) {
+    .app-long-results .app-long-results__item {
+      margin-bottom: 15px; } }
+  .app-long-results .app-long-results__item h3 {
+    margin-top: 0; }
+  @media (min-width: 48.0625em) {
+    .app-long-results .app-long-results__item .result-description {
+      margin-bottom: 20px; }
+      .app-long-results .app-long-results__item .result-description p {
+        margin: 0; } }
+  .app-long-results .app-long-results__item .govuk-heading-s--alt {
+    border-bottom: 1px solid #bfc1c3;
+    font-weight: normal;
+    padding-bottom: 5px; }
+    @media (min-width: 40.0625em) {
+      .app-long-results .app-long-results__item .govuk-heading-s--alt {
+        padding-bottom: 5px; } }
+  .app-long-results .app-long-results__item .app-results__cta {
+    text-align: center; }
+  .app-long-results .app-long-results__item .result-meta {
+    width: calc(100% - 40px);
+    float: right; }
+  .app-long-results .app-long-results__item .salary-min,
+  .app-long-results .app-long-results__item .salary-max,
+  .app-long-results .app-long-results__item .level-min,
+  .app-long-results .app-long-results__item .level-max {
+    width: 50%; }
+  .app-long-results .app-long-results__item .level-max,
+  .app-long-results .app-long-results__item .level-min {
+    font-size: 1rem; }
+  .app-long-results .app-long-results__item .salary-variable,
+  .app-long-results .app-long-results__item .salary-max,
+  .app-long-results .app-long-results__item .salary-min {
+    margin-bottom: 8px; }
+  .app-long-results .app-long-results__item .salary-max,
+  .app-long-results .app-long-results__item .level-max {
+    text-align: right;
+    float: right; }
+  .app-long-results .app-long-results__item .salary-min,
+  .app-long-results .app-long-results__item .level-min {
+    float: left; }
+  .app-long-results .app-long-results__item .range-bar {
+    clear: both;
+    margin-bottom: 0.5rem;
+    width: calc(100% - 8px);
+    border-left: 4px solid #207E77;
+    border-right: 4px solid #207E77;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem; }
+    .app-long-results .app-long-results__item .range-bar hr {
+      border: 2px solid #207E77; background: #207E77 }
+    .app-long-results .app-long-results__item .range-bar--variable {
+      margin-bottom: 20px;
+      border-left: 0;
+      border-right: 0; }
+  .app-long-results .app-long-results__item .embedded-fa-icon {
+    width: 24px;
+    height: 24px;
+    float: left; }
+    .app-long-results .app-long-results__item .embedded-fa-icon svg {
+      color: #207E77; }
+  .app-long-results .app-long-results__item .result-meta .small {
+    display: block;
+    font-size: 1rem; }
+
+.show-more a {
+  clear: both; }
+  .show-more a:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.show-more a:last-child:before {
+  content: '';
+  display: block;
+  clear: both;
+  height: 16px; }
+
+
+.text-light {
+  color: #6f777b; }
+
+.app-advisor-panel {
+  margin-top: 5px; }
+
+.app-advisor-hours {
+  margin: 19px 0; }
+
+
+
+.text-light {
+  color: #6f777b; }
+
+.app-advisor-panel {
+  margin-top: 5px; }
+
+.app-advisor-hours {
+  margin: 19px 0; }
+
+
+.text-light {
+  color: #6f777b; }
+
+.app-advisor-panel {
+  margin-top: 5px; }
+
+.app-advisor-hours {
+  margin: 19px 0; }
+
+.app-grey,
+.app-grey .app-sidebar {
+  background: #f8f8f8; }

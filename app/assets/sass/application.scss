@@ -226,7 +226,9 @@ nav {
     }
   }
 }
-
+.no-wrap {
+	white-space: nowrap;
+}
 .ec-hero {
   background-color: #207e77;
   color: #ffffff;
@@ -926,21 +928,7 @@ html {
         line-height: 1.15
     }
 }
-.job-profile-hero .column,.job-profile-hero .column-30,.job-profile-hero .column-40 {
-    width: 100%;
-    padding: 25px;
-    box-sizing: border-box;
-    float: left
-}
-@media (min-width: 750px) {
-    .job-profile-hero .column-60 {
-        width:60%
-    }
 
-    .job-profile-hero .column-30 {
-        width: 30%
-    }
-}
 
  .gem-c-attachment-link__abbr {
     text-decoration: none;

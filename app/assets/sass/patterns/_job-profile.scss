@@ -120,7 +120,8 @@ iframe body{font-family: arial; font-size: 19px !important;}
     z-index: 1000
 }
 
-.homepage-top .submit {
+.homepage-top .submit,
+.js-live-search-form.site-search .submit{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -129,7 +130,7 @@ iframe body{font-family: arial; font-size: 19px !important;}
     cursor: pointer;
     overflow: hidden;
     text-indent: 50000px;
-    background: url(../images/icon-search-2x.png) 60% 50%/24px no-repeat #0b0c0c;
+    background: url(/public/images/icon-search-2x.png) 60% 50%/24px no-repeat #0b0c0c;
     float: left;
     padding: 6px;
     border: 0;
@@ -142,8 +143,9 @@ iframe body{font-family: arial; font-size: 19px !important;}
     margin-bottom: 30px;
 	overflow:hidden;
 }
+
 @media (min-width: 750px) {
-    .job-profile-hero .column-60,.secondary-hero .column-40 {
+    .job-profile-hero .column-40,.secondary-hero .column-40 {
         width:40%
     }
 
@@ -190,8 +192,11 @@ iframe body{font-family: arial; font-size: 19px !important;}
     display: block;
     padding: 5px 0;
     border-bottom: 1px solid #bfc1c3;
-    text-decoration: none
+    text-decoration: none;
+	
+	
 }
+.list-big li:last-child a {  border-bottom: 0px solid #bfc1c3;}
 
 @media (min-width: 641px) {
     .column-third aside:first-child {
@@ -317,7 +322,7 @@ iframe body{font-family: arial; font-size: 19px !important;}
     overflow: hidden !important;
     text-indent: 50000px !important;
     color: #fff !important;
-    background: url(../images/icon-search-2x.png) 60% 50%/24px no-repeat #2b8cc4 !important;
+    background: url(/public/images/icon-search-2x.png) 60% 50%/24px no-repeat #2b8cc4 !important;
     cursor: pointer !important
 }
 
@@ -589,7 +594,7 @@ iframe body{font-family: arial; font-size: 19px !important;}
 }
 
 .previous-next-navigation li.previous a:before,.previous-next-navigation li.previous button:before {
-    background: url(../images/arrow-sprite.png) -20px -11px no-repeat;
+    background: url(/public/images/arrow-sprite.png) -20px -11px no-repeat;
     margin: -4px 0 0 -32px;
     display: block;
     float: left;
@@ -630,3 +635,30 @@ iframe body{font-family: arial; font-size: 19px !important;}
 }
 main #results .results-block .results-list {padding: 0 !important}
 #results .visuallyhidden {display: none;}
+
+.govuk-caption-m {
+    font-family: "GDS Transport",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25;
+    display: block;
+    color: #626a6e
+}
+
+@media (min-width: 40.0625em) {
+    .govuk-caption-m {
+        font-size:1.1875rem;
+        line-height: 1.3157894737
+    }
+}
+
+@media print {
+    .govuk-caption-m {
+        font-family: sans-serif;
+        font-size: 14pt;
+        line-height: 1.15
+    }
+}
+
