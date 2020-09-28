@@ -61,7 +61,7 @@
     margin-bottom: 50px;
 
     h1 {
-        font-size: 38px;
+        font-size: 38px !important;
         margin: 1em 0 0 0;
         padding: 0;
     }
@@ -669,7 +669,7 @@ main.govuk-main-wrapper {padding-top:0 !important}
     background-color: $white;
     color: $govuk-blue;
     border-top: 3px solid $govuk-blue;
-    padding: 10px 0;
+    padding: 10px 0 45px!important;
     display: none;
     z-index: 1000;
 
@@ -909,4 +909,20 @@ main.govuk-main-wrapper {padding-top:0 !important}
     .govuk-related-items {
         border-top: 6px solid #207e77
     }
+}
+.opportunity-item {
+ border-color:#207e77;
+ padding:.7894736842em;
+ margin-top:0;
+ margin-bottom:.7894736842em;
+ -webkit-box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ box-sizing:border-box;
+ clear:both;
+ border-left-style:solid;
+ border-left-width:5px
+}
+.sr-hidden {
+    float: left;
+    margin-left: -10000px
 }
