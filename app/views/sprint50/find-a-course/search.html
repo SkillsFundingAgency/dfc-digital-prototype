@@ -1,0 +1,90 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header class="homepage-top">
+  <div class="ec-hero">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Find a course</h1>
+          <p class="govuk-body-lead">Use our course search to look for different types of learning opportunities including classroom, work based and online learning. All learning providers are contracted with the Education and Skills Funding Agency (ESFA) and include colleges, training
+            providers and local councils.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+  <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs ">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="homepage-LMI">Home</a> </li>
+        <li class="govuk-breadcrumbs__list-item">Explore careers</li>
+      </ol>
+    </div>
+  </div>
+--> 
+</header>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper app-main-class" id="main-content" role="main">
+    <div class="govuk-grid-row govuk-!-padding-top-6">
+      <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
+        <div>
+          <div class="sfContentBlock sf-Long-text">
+            <div class="govuk-warning-text"><span class="govuk-warning-text__icon" aria-hidden="true">!</span><strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span> Due to COVID-19, schools, colleges and training centres are closed for classroom based study until further notice. Providers may still be recruiting for courses starting later in the year.</strong> </div>
+          </div>
+        </div>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <form action="course-search-result" method="post">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-body govuk-!-font-size-24 govuk-!-font-weight-bold" for="SearchTerm">Course name</label>
+                <span id="course-name-hint" class="govuk-hint"> For example, maths or sports studies </span>
+                <input aria-describedby="course-name-hint" class="govuk-input" id="SearchTerm" name="SearchTerm" type="text" value="">
+              </div>
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-body govuk-!-font-size-24 govuk-!-font-weight-bold" for="Provider">Provider name (optional)</label>
+                <span id="provider-name-hint" class="govuk-hint"> For example, Sheffield College. </span>
+                <input aria-describedby="provider-name-hint" class="govuk-input" id="Provider" name="Provider" type="text" value="">
+              </div>
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-body govuk-!-font-size-24 govuk-!-font-weight-bold" for="Location">Location (optional)</label>
+                <span id="location-name-hint" class="govuk-hint"> Enter a town or postcode. For example, Birmingham. </span>
+                <input aria-describedby="location-name-hint" class="govuk-input govuk-!-width-one-third" id="Location" name="Location" type="text" value="">
+              </div>
+              <div class="govuk-form-group">
+                <button type="submit" class="govuk-button novalidate">Find a course</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div class="sfContentBlock sf-Long-text"></div>
+        </div>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+        <div>
+          <div class="sfContentBlock sf-Long-text">
+            <div class="app-related-items">
+              <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_194="103" data-gtm-vis-first-on-screen-8675592_194="103" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'">use webchat</a></p>
+              <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %} 
