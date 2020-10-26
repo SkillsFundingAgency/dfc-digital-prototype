@@ -36,67 +36,61 @@ $(document).ready(function () {
 
     });
 
-    $('.in-progress li a').on('click',function (e) {
+    $('.in-progress li a').on('click', function (e) {
         $(e.target.hash).closest('.govuk-accordion__section').addClass('govuk-accordion__section--expanded');
     });
-	
-	$('.govuk-header__menu-button').click(function () { 
-		$(this).toggleClass('govuk-header__menu-button--open');
-		$('#navigation').toggleClass('govuk-header__navigation--open');
-	})
+
+    $('.govuk-header__menu-button').click(function () {
+        $(this).toggleClass('govuk-header__menu-button--open');
+        $('#navigation').toggleClass('govuk-header__navigation--open');
+    })
 
 
-  $('section.regional').hide();
-  $('#east-midlands').show();
-  $('select#regional').change(function () {
     $('section.regional').hide();
-    $('#'+$(this).val()).show();
-  })
-	
-	$('section.sub-regional').hide();
-	$('#hertfordshire').show();
-	$('select#subregional').change(function () {
+    $('#east-midlands').show();
+    $('select#regional').change(function () {
+        $('section.regional').hide();
+        $('#' + $(this).val()).show();
+    })
+
     $('section.sub-regional').hide();
-    $('#'+$(this).val()).show();
-  })
+    $('#hertfordshire').show();
+    $('select#subregional').change(function () {
+        $('section.sub-regional').hide();
+        $('#' + $(this).val()).show();
+    })
 
-	
-  
 
-  
+    var $element = $('#step-by-step-navigation');
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav();
+    stepByStepNavigation.start($element);
 
-  var $element = $('#step-by-step-navigation');
-  var stepByStepNavigation = new GOVUK.Modules.AppStepNav();
-  stepByStepNavigation.start($element);
-	
-	
 
-        $("#psf-skills input[type=checkbox]").each(function () {
-          $(this).change(updateCount);
-			//$(this).change(updateSectionCount);
-        });
+    $("#psf-skills input[type=checkbox]").each(function () {
+        $(this).change(updateCount);
+        //$(this).change(updateSectionCount);
+    });
 
-        updateCount();
+    updateCount();
 
-        function updateCount () {
-          var count = $("#psf-skills input[type=checkbox]:checked").size();
+    function updateCount() {
+        var count = $("#psf-skills input[type=checkbox]:checked").size();
 
-          $("#count span").text(count);
-			$(".govuk-accordion__section h2 .section-count").text(count).toggle(count > 0);
-          //$("#status").toggle(count > 0);
-        }
-	function updateSectionCount () {
-          var sectionCount = $("#psf-skills input[type=checkbox]:checked").size();
+        $("#count span").text(count);
+        $(".govuk-accordion__section h2 .section-count").hide();
+        //$("#status").toggle(count > 0);
+    }
 
-          //$("#count span").text(sectionCount);
-			$(".govuk-accordion__section h2 .section-count").text(sectionCount).toggle(sectionCount > 0);
-		//closest('.govuk-accordion__section').find('.section-count')
-          //$("#status").toggle(count > 0);
-        }
-	
-		
-	
-	
+    function updateSectionCount() {
+        var sectionCount = $("#psf-skills input[type=checkbox]:checked").size();
+
+        //$("#count span").text(sectionCount);
+        //$(".govuk-accordion__section h2 .section-count").text(sectionCount).toggle(sectionCount > 0);
+        //closest('.govuk-accordion__section').find('.section-count')
+        //$("#status").toggle(count > 0);
+    }
+
+
 })
 
 // import 'bootstrap';
