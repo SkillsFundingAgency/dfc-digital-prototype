@@ -3163,7 +3163,7 @@ p.warning-message {
 }
 
 .previous-next-navigation li.next a:before {
-    background: url(https://assets.digital.cabinet-office.gov.uk/frontend/arrow-sprite-2B8CC4-5e2cee3e982549b5285684a2e4f0706c5d9c531f0afdf61dfe32dfb1dfeb82f0.png) -102px -11px no-repeat;
+    background: url(/public/images/arrow-sprite.png) -102px -11px no-repeat;
     margin: -4px -32px 0 0;
     display: block;
     float: right;
@@ -3177,7 +3177,7 @@ p.warning-message {
 }
 
 .previous-next-navigation li.previous a:before {
-    background: url(https://assets.digital.cabinet-office.gov.uk/frontend/arrow-sprite-2B8CC4-5e2cee3e982549b5285684a2e4f0706c5d9c531f0afdf61dfe32dfb1dfeb82f0.png) -20px -11px no-repeat;
+    background: url(/public/images/arrow-sprite.png) -20px -11px no-repeat;
     margin: -4px 0 0 -32px;
     display: block;
     float: left;
@@ -3211,6 +3211,51 @@ p.warning-message {
 
 .previous-next-navigation li a:active {
     background: #dee0e2
+}
+
+.previous-next-navigation {
+    margin: 0;
+    padding: 0
+}
+
+.previous-next-navigation li {
+    font-family: nta,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 12px;
+    line-height: 1.25;
+    float: left;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 49%
+}
+
+.previous-next-navigation li a,.previous-next-navigation li button {
+    background-color: transparent;
+    display: block;
+    color: #005ea5;
+    text-decoration: none;
+    border: none
+}
+
+.previous-next-navigation li a:active,.previous-next-navigation li a:hover,.previous-next-navigation li button:active,.previous-next-navigation li button:hover {
+    background-color: #f8f8f8
+}
+
+.previous-next-navigation li a:hover .page-numbers,.previous-next-navigation li button:hover .page-numbers {
+    text-decoration: underline
+}
+
+.previous-next-navigation li a .pagination-label,.previous-next-navigation li button .pagination-label {
+    font-family: nta,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 1.1111111111;
+    margin-bottom: .1em;
+    display: block
 }
 
 @media (min-width: 641px) {
@@ -3652,7 +3697,8 @@ main #results .results-block .results-list p.historic,main #results .results-blo
     text-transform: none;
     padding: 0 0 3px;
     word-wrap: break-word;
-    color: #6f777b
+    color: #6f777b;
+	margin-bottom: 15px;
 }
 
 main #results .zero-results h2 {

@@ -61,59 +61,42 @@ $(document).ready(function () {
   })
 
 	
-  google.charts.load('current', {packages: ['corechart', 'bar']});
-  google.charts.setOnLoadCallback(drawAxisTickColors);
+  
 
-	function drawAxisTickColors() {
-		  var data = new google.visualization.arrayToDataTable([
-          
-          ["Social work", 44],
-          ["Health", 31],
-          ["Residential care", 12],
-          ["Membership organisation", 10],
-          ['Public admin and defence', 3],
-          ['Service to buildings', 3],
-          ['Service to buildings', 3]
-       
-        ]);
+  
 
-		  var options = {
-			title: '',
-			
-			chartArea: {width: '50%'},
-			hAxis: {
-			  title: '',
-			  minValue: 0,
-			  textStyle: {
-				bold: true,
-				fontSize: 12,
-				color: '#4d4d4d'
-			  },
-			  titleTextStyle: {
-				bold: true,
-				fontSize: 18,
-				color: '#4d4d4d'
-			  }
-			},
-			vAxis: {
-			  title: '',
-			  textStyle: {
-				fontSize: 14,
-				bold: true,
-				color: '#848484'
-			  },
-			  titleTextStyle: {
-				fontSize: 14,
-				bold: true,
-				color: '#848484'
-			  }
-			}
-		  };
-		  var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-		  chart.draw(data, options);
-		}
+  var $element = $('#step-by-step-navigation');
+  var stepByStepNavigation = new GOVUK.Modules.AppStepNav();
+  stepByStepNavigation.start($element);
+	
+	
 
+        $("#psf-skills input[type=checkbox]").each(function () {
+          $(this).change(updateCount);
+			//$(this).change(updateSectionCount);
+        });
 
+        updateCount();
+
+        function updateCount () {
+          var count = $("#psf-skills input[type=checkbox]:checked").size();
+
+          $("#count span").text(count);
+			$(".govuk-accordion__section h2 .section-count").text(count).toggle(count > 0);
+          //$("#status").toggle(count > 0);
+        }
+	function updateSectionCount () {
+          var sectionCount = $("#psf-skills input[type=checkbox]:checked").size();
+
+          //$("#count span").text(sectionCount);
+			$(".govuk-accordion__section h2 .section-count").text(sectionCount).toggle(sectionCount > 0);
+		//closest('.govuk-accordion__section').find('.section-count')
+          //$("#status").toggle(count > 0);
+        }
+	
+		
+	
+	
 })
 
 // import 'bootstrap';
