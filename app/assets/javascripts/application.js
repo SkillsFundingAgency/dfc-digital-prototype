@@ -77,19 +77,22 @@ $(document).ready(function () {
         var count = $("#psf-skills input[type=checkbox]:checked").size();
 
         $("#count span").text(count);
-        $(".govuk-accordion__section h2 .section-count").hide();
-        //$("#status").toggle(count > 0);
+        
+
     }
 
     function updateSectionCount() {
-        var sectionCount = $("#psf-skills input[type=checkbox]:checked").size();
-
-        //$("#count span").text(sectionCount);
-        //$(".govuk-accordion__section h2 .section-count").text(sectionCount).toggle(sectionCount > 0);
-        //closest('.govuk-accordion__section').find('.section-count')
-        //$("#status").toggle(count > 0);
+        var sectionCount = $(this).closest('.govuk-accordion__section').find("input[type=checkbox]:checked").size();
+		$(this).closest('.govuk-accordion__section').find('.section-count').text(sectionCount).toggle(sectionCount > 0)
     }
-
+    
+	$('.govuk-accordion__section').each(function() {
+		var sectionCount = $(this).closest('.govuk-accordion__section').find("input[type=checkbox]:checked").size();
+		$('.section-count').toggle(sectionCount > 0);
+        $("input[type=checkbox]").each(function () {
+        	$(this).change(updateSectionCount);
+    	});
+	})
 
 })
 
