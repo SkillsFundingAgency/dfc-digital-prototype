@@ -31,65 +31,64 @@ Careers advice - job profiles, information and resources | National Careers Serv
     <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
       <div>
         <div class="sfContentBlock sf-Long-text"> <span class="govuk-caption-xl">Step 1 of 5</span>
-          <h1 class="govuk-heading-xl">Select the highest education level you have achieved</h1>
-          <p class="govuk-body">To match you to jobs that will suit your education level, please select the highest level you have achieved. These levels are based on the <a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" target="_blank" class="govuk-link">education qualification levels</a> used by England, Wales and Northern Ireland.  </p>
+          <h1 class="govuk-heading-xl">Select qualification level</h1>
+          <p class="govuk-body">Filter your jobs by entry <a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" target="_blank" class="govuk-link"> qualification level</a>.  If you want to see jobs you can get into at any level, <a href="skills" class="govuk-link">skip this step</a>.  </p>
 <!--			<p class="govuk-body">If you do not want to filter by job level, please <a href="skills">skip this step</a>  </p>-->
           
           <form action="skills" class="js-live-search-form" id="psf-skills" method="post">
-			  <div class="govuk-form-group">
+			  <div class="govuk-form-group govuk-!-margin-top-9">
   <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
     <div id="nationality-hint" class="govuk-hint">
       Select all that apply.
     </div>
     <div class="govuk-checkboxes">
       <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-        <label class="govuk-label govuk-checkboxes__label" for="nationality">
+        <input class="govuk-checkboxes__input" id="no-formal-qualifications" name="no-formal-qualifications" type="checkbox" value="british" aria-describedby="no-formal-qualifications-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="no-formal-qualifications">
           No formal qualifications
         </label>
-        <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+        <div id="no-formal-qualifications-hint" class="govuk-hint govuk-checkboxes__hint">
           work experience and skills learnt on the job
         </div>
       </div>
       <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
-        <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+        <input class="govuk-checkboxes__input" id="upto-level-2" name="upto-level-2" type="checkbox" value="upto-level-2" aria-describedby="upto-level-2-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="upto-level-2">
           Up to Level 2
 
         </label>
-		  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+		  <div id="upto-level-2-hint" class="govuk-hint govuk-checkboxes__hint">
           Achieved up to GCSEs, BTECs or equivalent
         </div>
       </div>
       <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
-        <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+        <input class="govuk-checkboxes__input" id="levels-3-to-4" name="levels-3-to-4" type="checkbox" value="levels-3-to-4" aria-describedby="levels-3-to-4-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="levels-3-to-4">
           Levels 3 to 4
 
         </label>
-		  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+		  <div id="levels-3-to-4-hint" class="govuk-hint govuk-checkboxes__hint">
           Achieved A Levels or equivalent
         </div>
       </div>
 		<div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
-        <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+        <input class="govuk-checkboxes__input" id="levels-5-to-6" name="levels-5-to-6" type="checkbox" value="levels-5-to-6" aria-describedby="levels-5-to-6-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="levels-5-to-6">
          Levels 5 to 6
 
 
         </label>
-		  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+		  <div id="levels-5-to-6-hint" class="govuk-hint govuk-checkboxes__hint">
           Achieved an undergraduate degree or equivalent
         </div>
       </div>
 		<div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
-        <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+        <input class="govuk-checkboxes__input" id="levels-7-to-8" name="levels-7-to-8" type="checkbox" value="levels-7-to-8" aria-describedby="levels-7-to-8-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="levels-7-to-8">
           Levels 7 to 8
         </label>
-		  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
-          Achieved a postgraduate degree, professional 
-qualification or equivalent
+		  <div id="levels-7-to-8-hint" class="govuk-hint govuk-checkboxes__hint">
+          Achieved a postgraduate degree, professional qualification or equivalent
         </div>
       </div>
     </div>
@@ -98,7 +97,7 @@ qualification or equivalent
 </div>
 			
 			<button class="govuk-button" data-module="govuk-button">Continue</button>
-<!--			  <a href="skills" class="govuk-link govuk-!-margin-left-5">Skip this step</a>-->
+			  <a href="skills" class="govuk-link govuk-!-margin-left-5">Skip this step</a>
 			</form>
 			
 			
