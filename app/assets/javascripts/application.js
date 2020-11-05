@@ -66,27 +66,22 @@ $(document).ready(function () {
     stepByStepNavigation.start($element);
 
 
-    $("#psf-skills input[type=checkbox]").each(function () {
+    $("#accordion-filter-skills-list input[type=checkbox]").each(function () {
         $(this).change(updateCount);
-        //$(this).change(updateSectionCount);
     });
 
-    updateCount();
 
     function updateCount() {
-        var count = $("#psf-skills input[type=checkbox]:checked").size();
-
+        var count = $("#accordion-filter-skills-list input[type=checkbox]:checked").size();
         $("#count span").text(count);
-        
-
     }
 
     function updateSectionCount() {
-        var sectionCount = $(this).closest('.govuk-accordion__section').find("input[type=checkbox]:checked").size();
-		$(this).closest('.govuk-accordion__section').find('.section-count').text(sectionCount).toggle(sectionCount > 0)
+        var sectionCounts = $(this).closest('.govuk-accordion__section').find("input[type=checkbox]:checked").size();
+		$(this).closest('.govuk-accordion__section').find('.section-count').text(sectionCounts).toggle(sectionCounts > 0)
     }
     
-	$('.govuk-accordion__section').each(function() {
+	$('#accordion-filter-skills-list .govuk-accordion__section').each(function() {
 		var sectionCount = $(this).closest('.govuk-accordion__section').find("input[type=checkbox]:checked").size();
 		$('.section-count').toggle(sectionCount > 0);
         $("input[type=checkbox]").each(function () {
