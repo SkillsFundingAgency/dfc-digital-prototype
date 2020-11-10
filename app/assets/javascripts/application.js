@@ -60,35 +60,45 @@ $(document).ready(function () {
         $('#' + $(this).val()).show();
     })
 
-
     var $element = $('#step-by-step-navigation');
     var stepByStepNavigation = new GOVUK.Modules.AppStepNav();
     stepByStepNavigation.start($element);
 
 
-    $("#accordion-filter-skills-list input[type=checkbox]").each(function () {
+    var skillsCheckboxes = $("#accordion-filter-skills-list input[type=checkbox]");
+	skillsCheckboxes.each(function () {
         $(this).change(updateCount);
     });
-
-
+	
     function updateCount() {
-        var count = $("#accordion-filter-skills-list input[type=checkbox]:checked").size();
-        $("#count span").text(count);
+		var target = $(this),
+		parent = target.closest('.govuk-accordion__section'),
+		checked = parent.find('input[type="checkbox"]:checked'),
+		checkedAll = $('#accordion-filter-skills-list input[type="checkbox"]:checked').length,
+		sectionCount = parent.find('.section-count'),
+			
+		sectionCountLength = checked.length,
+		count = $("#count span");
+			
+		count.text(checkedAll);
+		sectionCount.text(sectionCountLength).toggle(sectionCountLength > 0);
     }
-
-    function updateSectionCount() {
-        var sectionCounts = $(this).closest('.govuk-accordion__section').find("input[type=checkbox]:checked").size();
-		$(this).closest('.govuk-accordion__section').find('.section-count').text(sectionCounts).toggle(sectionCounts > 0)
-    }
-    
-	$('#accordion-filter-skills-list .govuk-accordion__section').each(function() {
-		var sectionCount = $(this).closest('.govuk-accordion__section').find("input[type=checkbox]:checked").size();
-		$('.section-count').toggle(sectionCount > 0);
-        $("input[type=checkbox]").each(function () {
-        	$(this).change(updateSectionCount);
-    	});
-	})
+	
+	/* retain skills selection on browser back or forward*/
+	$(window).on("load", function() {
+		updateCount(); 
+		
+		/* accordion section selected checkbox count again */
+		var accordionSection = $('#accordion-filter-skills-list .govuk-accordion__section');
+		accordionSection.each(function () {
+    		var sectionCheckedLength = $(this).find('input[type="checkbox"]:checked').length;
+			$(this).find('.section-count').text(sectionCheckedLength).toggle(sectionCheckedLength > 0);
+			
+		});
+	});
+	
 
 })
+
 
 // import 'bootstrap';
