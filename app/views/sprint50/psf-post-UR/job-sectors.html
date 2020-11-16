@@ -1,0 +1,166 @@
+{% extends "layout_ncs_sprint50-psfmvp.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header>
+  <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs ">
+      <a href="skills" class="govuk-back-link">Back</a>
+    </div>
+  </div>
+</header>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-grid-row  govuk-!-margin-top-5">
+    <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sfContentBlock sf-Long-text"> <span class="govuk-caption-xl">Step 3 of 5</span>
+          <h1 class="govuk-heading-xl">Select job categories</h1>
+          <div class="banner-message">
+            <p class="govuk-body govuk-!-margin-bottom-0 govuk-!-font-weight-bold">There are 19 profile options based on your selection. <!--<a href="matched-results">View</a>--> </p>
+          </div>
+			<p class="govuk-body">Select all the job categories you are interested in working in. </p> <p class="govuk-body ">If you want to see jobs without filtering by category, <a href="restrictions" class="govuk-link govuk-!-font-weight-bold">skip this step</a>.
+</p>
+<!--          <p class="govuk-body">If you do not want to filter by job sectors, please <a href="restrictions">skip this step</a> </p>-->
+          
+          <form action="restrictions" class="js-live-search-form" id="psf-skills" method="post">
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+                <div id="nationality-hint" class="govuk-hint"> Select all that apply. </div>
+                <div class="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="administration" name="Administration" type="checkbox" value="british" aria-describedby="administration-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="administration"> Administration</label>
+                  </div>
+				  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="animal-care" name="Animal care " type="checkbox" value="british" aria-describedby="animal-care-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="animal-care"> Animal care </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="Beauty-and-wellbeing" name="Beauty-and-wellbeing" type="checkbox" value="british" aria-describedby="Beauty-and-wellbeing-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="Beauty-and-wellbeing"> Beauty and wellbeing </label>
+                  </div>
+				  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="business-and-finance" name="Business and finance" type="checkbox" value="british" aria-describedby="business-and-finance-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="business-and-finance">Business and finance </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="computing-tech-digital" name="computing-tech-digital" type="checkbox" value="british" aria-describedby="computing-tech-digital-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="computing-tech-digital"> Computing, technology and digital  </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="construction-and-trades" name="construction-and-trades" type="checkbox" value="british" aria-describedby="construction-and-trades-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="construction-and-trades"> Construction and trades </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="creative-and-media" name="creative-and-media" type="checkbox" value="british" aria-describedby="creative-and-media-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="creative-and-media"> Creative and media </label>
+                  </div>
+				  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="delivery-and-storage" name="delivery-and-storage" type="checkbox" value="british" aria-describedby="delivery-and-storage-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="delivery-and-storage">Delivery and storage</label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="emergency-uniformed-services" name="emergency-uniformed-services" type="checkbox" value="british" aria-describedby="emergency-uniformed-services-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="emergency-uniformed-services"> Emergency and uniformed services </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="engineering-manufacturing-maintenance" name="engineering-manufacturing-maintenance" type="checkbox" value="engineering-manufacturing-maintenance" aria-describedby="engineering-manufacturing-maintenance-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="engineering-manufacturing-maintenance"> Engineering and maintenance </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="environment-and-agriculture" name="environment-and-agriculture" type="checkbox" value="environment-and-agriculture" aria-describedby="environment-and-agriculture-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="environment-and-agriculture"> Environment and land </label>
+                  </div>
+				  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="government-services" name="government-services" type="checkbox" value="government-services" aria-describedby="government-services-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="government-services"> Government services </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="health-and-social-care" name="health-and-social-care" type="checkbox" value="health-and-social-care" aria-describedby="health-and-social-care-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="health-and-social-care"> Healthcare </label>
+                  </div>
+				  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="home-services" name="home-services" type="checkbox" value="home-services" aria-describedby="home-services-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="home-services"> Home services </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hospitality-and-food" name="hospitality-and-food" type="checkbox" value="hospitality-and-food" aria-describedby="hospitality-and-food-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="hospitality-and-food"> Hospitality and food </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="legal-services" name="legal-services" type="checkbox" value="legal-services" aria-describedby="legal-services-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="legal-services"> Law and legal </label>
+                  </div>
+					
+				  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="mangerial" name="mangerial" type="checkbox" value="mangerial" aria-describedby="mangerial-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="mangerial"> Managerial </label>
+                  </div>
+				 
+				  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="manufacturing" name="manufacturing" type="checkbox" value="manufacturing" aria-describedby="manufacturing-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="manufacturing"> Manufacturing </label>
+                  </div>
+					
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="retail-and-sales" name="retail-and-sales" type="checkbox" value="retail-and-sales" aria-describedby="retail-and-sales-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="retail-and-sales"> Retail and sales </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="science-and-research" name="science-and-research" type="checkbox" value="science-and-research" aria-describedby="science-and-research-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="science-and-research"> Science and research </label>
+                  </div>
+				  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="social-care" name="social-care" type="checkbox" value="Social care" aria-describedby="social-care-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="social-care"> Social care </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="sports-and-leisure" name="sports-and-leisure" type="checkbox" value="sports-and-leisure" aria-describedby="sports-and-leisure-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="sports-and-leisure"> Sports and leisure </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="teaching-and-education" name="teaching-and-education" type="checkbox" value="teaching-and-education" aria-describedby="teaching-and-education-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="teaching-and-education"> Teaching and education </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="transport-delivery-and-storage" name="transport-delivery-and-storage" type="checkbox" value="transport-delivery-and-storage" aria-describedby="transport-delivery-and-storage-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="transport-delivery-and-storage"> Transport</label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="travel-and-tourism" name="travel-and-tourism" type="checkbox" value="travel-and-tourism" aria-describedby="travel-and-tourism-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="travel-and-tourism"> Travel and tourism </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+<!--			  <a href="restrictions" class="govuk-link govuk-!-margin-left-5">Skip this step</a>-->
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sf-Long-text">
+          <div class="app-related-items">
+            <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_194="287" data-gtm-vis-first-on-screen-8675592_194="287" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">Want to speak to an adviser?</h2>
+            <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 </p>
+            <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
