@@ -1,0 +1,165 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Working with numbers
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container" wiid="C321">
+    <div class="breadcrumbs" wiid="C321">
+      <ol wiid="C322">
+        <li wiid="C323"><a href="/" wiid="C324">Home</a></li>
+        <li wiid="C325"><a href="../../../sprint41/homepage" wiid="C326">Skills assessment</a></li>
+        <li wiid="C325"><a href="../../../sprint41/skills-assessment/skills-health-check/homepage" wiid="C326">Skills health check</a></li>
+        <li wiid="C325">Your skills</li>
+      </ol>
+    </div>
+    <div class="govuk-grid-row" wiid="C323">
+      <div class="sf_colsIn column-two-thirds" data-sf-element="Column 1" data-placeholder-label="Left Two Third Column" wiid="C318">
+        <h1 class="heading-xlarge" wiid="C319"> <span class="heading-secondary" wiid="C320"> Question 5 out of 12</span> Working with numbers </h1>
+        <p class="passageHdr" wiid="C321">Table showing performance of Company "Prime International" across different European sites, in terms of different figures.</p>
+        <table class="govuk-table questionTbl responsive-table" role="table">
+          <caption class="govuk-table__caption">
+          Prime International: Performance by Site
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row" role="row">
+              <td rowspan="2" class="govuk-table__header" aria-hidden="true"></td>
+              <th role="columnheader" scope="colgroup" colspan="5" class="govuk-table__header">Site Location</th>
+            </tr>
+            <tr role="row">
+              <th role="columnheader" scope="col" class="govuk-table__header govuk-table__header--numeric">Geneva</th>
+              <th role="columnheader" scope="col" class="govuk-table__header govuk-table__header--numeric">London</th>
+              <th role="columnheader" scope="col" class="govuk-table__header govuk-table__header--numeric">Munich</th>
+              <th role="columnheader" scope="col" class="govuk-table__header govuk-table__header--numeric">Paris</th>
+              <th role="columnheader" scope="col" class="govuk-table__header govuk-table__header--numeric">Rome</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr role="row" class="govuk-table__row">
+              <td role="cell" scope="colgroup" class="govuk-table__cell" colspan="6">Performance Figures (in million £ sterling) </td>
+            </tr> 
+            <tr role="row" class="govuk-table__row">
+              <td role="rowheader" class="govuk-table__cell table-heading-bold"><span class="table-heading">Site Location</span>Sales Revenue</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric" ><span class="table-cell">Geneva</span>109</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">London</span>533</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Munich</span>495</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell numeric">Paris</span>385</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Rome</span>254</td>
+            </tr>
+            <tr role="row" class="govuk-table__row">
+              <td role="rowheader"  class="govuk-table__cell table-heading-bold"><span class="table-heading">Site Location</span>Operating Costs </td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Geneva</span>55</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">London</span>96</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Munich</span>85</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Paris</span>75</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Rome</span>103</td>
+            </tr>
+            <tr role="row" class="govuk-table__row">
+              <td role="rowheader" class="govuk-table__cell table-heading-bold"><span class="table-heading">Site Location</span>Payroll Costs </td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Geneva</span>85</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">London</span>210</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Munich</span>195</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Paris</span>112</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Rome</span>91</td>
+            </tr>
+            <tr role="row" class="govuk-table__row">
+              <td role="rowheader" class="govuk-table__cell table-heading-bold"><span class="table-heading">Site Location</span>Waste - known loss </td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Geneva</span>19</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">London</span>42</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Munich</span>25</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Paris</span>90</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Rome</span>78</td>
+            </tr>
+            <tr role="row" class="govuk-table__row">
+              <th role="rowheader" class="govuk-table__cell table-heading-bold"><span class="table-heading">Site Location</span>Shrinkage - unknown loss</th>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Geneva</span>7</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">London</span>21</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Munich</span>17</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Paris</span>10</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Rome</span>52</td>
+            </tr>
+            <tr role="row" class="govuk-table__row">
+              <td role="rowheader" class="govuk-table__cell table-heading-bold"><span class="table-heading">Site Location</span>Number of Employees (in Thousands)</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Geneva</span>0.9</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">London</span>4.5</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Munich</span>3.8</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Paris</span>2.9</td>
+              <td role="cell" class="govuk-table__cell govuk-table__cell--numeric"><span class="table-cell">Rome</span>1.5</td>
+            </tr>
+          </tbody>
+        </table>
+		
+
+        <h3 class="heading-medium" wiid="C384"> Which site had the greatest losses (both known and unknown)? </h3>
+        <form action="question-numeric-6" class="form" id="skillsForm" method="post" novalidate="novalidate" wiid="C385">
+          <div class="form-group " wiid="C386">
+            <fieldset wiid="C387">
+              <legend class="visuallyhidden" wiid="C388">
+              <p class="passageHdr" wiid="C389">Table showing performance of Company "Prime International" across different European sites, in terms of different figures.</p>
+              
+				  
+				  
+				  
+				  
+				  
+              </legend>
+								  
+
+              <span class="error-message" wiid="C452"><span class="field-validation-valid" data-valmsg-for="QuestionAnswer" data-valmsg-replace="true" wiid="C453"></span></span>
+              <label class="block-label" for="radio-A                                                 " wiid="C454">
+                <input data-val="true" data-val-required="Choose an answer" id="radio-A                                                 " name="QuestionAnswer" type="radio" value="A                                                 " wiid="C455">
+                Geneva </label>
+              <label class="block-label" for="radio-B                                                 " wiid="C456">
+                <input id="radio-B                                                 " name="QuestionAnswer" type="radio" value="B                                                 " wiid="C457">
+                London </label>
+              <label class="block-label" for="radio-C                                                 " wiid="C458">
+                <input id="radio-C                                                 " name="QuestionAnswer" type="radio" value="C                                                 " wiid="C459">
+                Munich </label>
+              <label class="block-label" for="radio-D                                                 " wiid="C460">
+                <input id="radio-D                                                 " name="QuestionAnswer" type="radio" value="D                                                 " wiid="C461">
+                Paris </label>
+              <label class="block-label" for="radio-E                                                 " wiid="C462">
+                <input id="radio-E                                                 " name="QuestionAnswer" type="radio" value="E                                                 " wiid="C463">
+                Rome </label>
+            </fieldset>
+          </div>
+          <p wiid="C464">You must select an answer to continue.</p>
+          <div class="form-group" wiid="C465">
+            <input class="button" type="submit" name="answerAction" value="Continue" wiid="C466">
+          </div>
+          <input data-val="true" data-val-required="The AssessmentType field is required." id="Question_AssessmentType" name="Question.AssessmentType" type="hidden" value="Numeric" wiid="C467">
+          <input data-val="true" data-val-number="The field QuestionNumber must be a number." data-val-required="The QuestionNumber field is required." id="Question_QuestionNumber" name="Question.QuestionNumber" type="hidden" value="5" wiid="C468">
+          <input data-val="true" data-val-number="The field TotalQuestionNumber must be a number." data-val-required="The TotalQuestionNumber field is required." id="Question_TotalQuestionNumber" name="Question.TotalQuestionNumber" type="hidden" value="10" wiid="C469">
+          <input data-val="true" data-val-number="The field NextQuestionNumber must be a number." id="Question_NextQuestionNumber" name="Question.NextQuestionNumber" type="hidden" value="6" wiid="C470">
+        </form>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
+        <div class="app-sidebar app-resume-panel app-related-items" wiid="C301">
+          <h2 class="govuk-heading-m" wiid="C302">Return to this later</h2>
+          <p class="govuk-body" wiid="C304"><a href="../../../sprint41/skills-assessment/skills-health-check/save-my-progress" class="govuk-link govuk-link--no-visited-state">Save my progress</a></p>
+        </div>
+        <div wiid="C340">
+          <div class="sfContentBlock sf-Long-text" wiid="C341">
+            <div class="app-related-items" wiid="C342">
+              <h2 class="govuk-heading-m" wiid="C343">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;" wiid="C344"><span class="govuk-body govuk-!-font-weight-bold" wiid="C345">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'" wiid="C346">use webchat</a></p>
+              <p class="govuk-caption-m" wiid="C347">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

@@ -809,7 +809,7 @@ a:focus {
 
 @media (min-width: 641px) {
     a[rel=external]:after {
-        content:"\A0\A0\A0\A0";
+        content:"";
         background-position: right 6px
     }
 
@@ -6867,3 +6867,37 @@ div {
     margin: 30px 0;
     background: #f3f2f1
 }
+.course-list .course {
+    background-color: #f3f2f1
+}
+.sfContentBlock ul.course-list.govuk-list {padding-left:0 !important; list-style: none !important; }
+.govuk-list,.app-prose-scope ul,.app-prose-scope ol {
+    font-weight: 400;
+    color: #0b0c0c;
+    margin-top: 0;
+    padding-left: 0 !important;
+    list-style-type: none !important;
+}
+
+.govuk-list--bullet,.app-prose-scope ul {
+    padding-left: 20px !important;
+    list-style-type: disc !important
+}
+
+
+.app-sidebar {
+  margin-bottom: 20px; }
+  @media (min-width: 40.0625em) {
+    .app-sidebar {
+      margin-bottom: 30px; } }
+  @media (min-width: 48.0625em) {
+    .app-sidebar .govuk-heading-m {
+      border-top: 10px solid #207E77;
+      padding-top: 10px; } }
+  .app-sidebar:last-child {
+    margin-bottom: 0; }
+    @media (min-width: 40.0625em) {
+      .app-sidebar:last-child {
+        margin-bottom: 0; } }
+  .app-sidebar .govuk-body {
+    margin-bottom: 0; }

@@ -1,0 +1,79 @@
+{% extends "layout_ncs_sprint47.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header class="homepage-top">
+  <div class="ec-hero">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Explore careers</h1>
+          <p class="govuk-body-lead">Find out what a job involves and if it's right for you.</p>
+          <form action="career-search" class="site-search ui-front" id="header-search" method="post">
+            <div class="header-search-content">
+              <label for="SearchTerm">Enter a job title</label>
+              <div class="search-input-wrapper">
+                <input class="search-input js-search-focus js-autocomplete ui-autocomplete-input" data-autocomplete-fuzzysearch="True" data-autocomplete-maxlength="7" data-autocomplete-maxnumberdisplyed="5" data-autocomplete-minlength="2" data-autocomplete-source="/searchautocomplete" id="SearchTerm" name="SearchTerm" type="search" value="" autocomplete="off">
+              </div>
+              <button class="submit" type="submit" value="Search">Search</button>
+            </div>
+            <ul wiid="N15" id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;">
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs ">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="homepage-LMI">Home</a> </li>
+        <li class="govuk-breadcrumbs__list-item">Explore careers</li>
+      </ol>
+    </div>
+  </div>
+</header>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper app-main-class govuk-!-padding-top-6" id="main-content" role="main">
+    <h2 class="govuk-heading-m govuk-!-padding-top-0">Explore by job category</h2>
+    <ul class="homepage-jobcategories">
+      <li><a href="job-categories">Administration</a></li>
+      <li><a href="#">Animal care</a></li>
+      <li><a href="#">Beauty and wellbeing</a></li>
+      <li><a href="#">Business and finance</a></li>
+      <li><a href="#">Computing, technology and digital</a></li>
+      <li><a href="#">Construction and trades</a></li>
+      <li><a href="#">Creative and media</a></li>
+      <li><a href="#">Delivery and storage</a></li>
+      <li><a href="#">Emergency and uniform services</a></li>
+      <li><a href="#">Engineering and maintenance</a></li>
+      <li><a href="#">Environment and land</a></li>
+      <li><a href="#">Government services</a></li>
+      <li><a href="#">Healthcare</a></li>
+      <li><a href="#">Home services</a></li>
+      <li><a href="#">Hospitality and food</a></li>
+      <li><a href="#">Law and legal</a></li>
+      <li><a href="#">Managerial</a></li>
+      <li><a href="#">Manufacturing</a></li>
+      <li><a href="#">Retail and sales</a></li>
+      <li><a href="#">Science and research</a></li>
+      <li><a href="job-categories">Social care</a></li>
+      <li><a href="#">Sports and leisure</a></li>
+      <li><a href="#">Teaching and education</a></li>
+      <li><a href="#">Transport</a></li>
+      <li><a href="#">Travel and tourism</a></li>
+    </ul>
+  </main>
+</div>
+{% endblock %} 

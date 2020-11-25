@@ -1,0 +1,39 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Email send
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<div class="govuk-width-container">
+ <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/skills-health-check">Skills assessment</a></li>
+      <li>Skills health check</li>
+    </ol>
+  </div></div>
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds" wiid="C294">
+        <div class="govuk-body" wiid="C295">
+          <form action="" method="post" id="">
+            <h1 class="govuk-heading-xl" wiid="C296">Check your email</h1>
+            <p wiid="C297">An email has been sent to <strong>{{ data['email'] }}</strong></p>
+            <p wiid="C298">Click on the link in the email to return to your skills health check.</p>
+            <a href="/sprint43/skills-assessment/skills-health-check/homepage" class="govuk-button">Return to your skills health check</a>
+
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %} 

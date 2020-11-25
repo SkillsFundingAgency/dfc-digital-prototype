@@ -1,0 +1,104 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Homepage
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+
+
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-width-container">
+	  <div class="account-info" style="margin-top:-40px;">
+                <div wiid="C295">
+                    <span class="your-name" id="bannerUserName" wiid="C296">
+                        Gurnaik Singh
+                    </span>
+                    <a href="/home/signout" id="signout-link" wiid="C297" data-gtm-vis-recent-on-screen-8675592_139="1191" data-gtm-vis-first-on-screen-8675592_139="1191" data-gtm-vis-total-visible-time-8675592_139="100" data-gtm-vis-has-fired-8675592_139="1">Sign out</a>
+                </div>
+                <div wiid="C298">
+                    <a class="account-link" href="/your-account/home" id="myaccount-link" wiid="C299">Your account</a>
+                </div>
+            </div>
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="../../../sprint41/homepage">Skills assessment</a></li>
+        <li><a href="../../../sprint41/skills-assessment/skills-health-check/homepage-returned">Skills health check</a></li>
+        <li>Your skills</li>
+      </ol>
+    </div>
+    <div class="govuk-grid-row">
+      <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container" >
+        <h1 class="heading-xlarge"> <span class="heading-secondary"> Question 1 out of 56</span> Your skills </h1>
+        <h2 class="heading-large"> Identify activities you're good at </h2>
+        <p> </p>
+        <p>This assessment is about how you see yourself and it can help you explore the skills you have. The answers you give will be used in your report to suggest job families you might be interested in.</p>
+        <p></p>
+        <h3 class="heading-medium"> Choose the statement that you feel
+          is most like you </h3>
+        <form action="/skills-health-check/question/AnswerEliminationQuestion/" class="form" id="skillsForm" method="post" novalidate="novalidate">
+          <div class="form-group " >
+            <fieldset>
+              <legend class="visuallyhidden"> </legend>
+              <span class="error-message"><span class="field-validation-valid" data-valmsg-for="QuestionAnswer" data-valmsg-replace="true"></span></span>
+              <label class="block-label" for="radio-SA1" >
+                <input data-val="true" data-val-required="Choose an answer" id="radio-SA1" name="QuestionAnswer" type="radio" value="0">
+                I always spend a lot of time making plans </label>
+              <label class="block-label" for="radio-SA2">
+                <input id="radio-SA2" name="QuestionAnswer" type="radio" value="1">
+                I find change exciting </label>
+              <label class="block-label" for="radio-SA3" >
+                <input id="radio-SA3" name="QuestionAnswer" type="radio" value="2">
+                I look for more work when there is little to do </label>
+            </fieldset>
+          </div>
+          <p >You must select an answer to continue.</p>
+          <div class="form-group" >
+            <input class="button" type="submit" name="answerAction" value="Continue" >
+          </div>
+          <input data-val="true" data-val-required="The AssessmentType field is required." id="Question_AssessmentType" name="Question.AssessmentType" type="hidden" value="SkillAreas" >
+          <input data-val="true" data-val-number="The field QuestionNumber must be a number." data-val-required="The QuestionNumber field is required." id="Question_QuestionNumber" name="Question.QuestionNumber" type="hidden" value="1" >
+          <input data-val="true" data-val-number="The field TotalQuestionNumber must be a number." data-val-required="The TotalQuestionNumber field is required." id="Question_TotalQuestionNumber" name="Question.TotalQuestionNumber" type="hidden" value="28" >
+          <input data-val="true" data-val-number="The field NextQuestionNumber must be a number." id="Question_NextQuestionNumber" name="Question.NextQuestionNumber" type="hidden" value="2" >
+          <input data-val="true" data-val-number="The field AlreadySelected must be a number." data-val-required="The AlreadySelected field is required." id="AlreadySelected" name="AlreadySelected" type="hidden" value="-1" >
+          <input data-val="true" data-val-number="The field QuestionNumber must be a number." data-val-required="The QuestionNumber field is required." id="QuestionNumber" name="QuestionNumber" type="hidden" value="1" >
+          <input data-val="true" data-val-number="The field ActualTotalQuestions must be a number." data-val-required="The ActualTotalQuestions field is required." id="ActualTotalQuestions" name="ActualTotalQuestions" type="hidden" value="56" >
+        </form>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+        <div class="app-sidebar app-resume-panel app-related-items">
+			<h2 class="govuk-heading-m">Your progress is saved</h2>
+			<p class="govuk-body">You can exit and return later to finish any assessments.</p>
+			<p class="govuk-body">To come back either sign in or <a href="save-my-progress" class="govuk-link govuk-link--no-visited-state">get a reference code</a>to use each time you want to see your results.</p>
+			
+          
+		<p>Any work you carry out before saving your progress will be lost if:</p>
+		<ul class="list list-bullet">
+			<li>your internet connection is lost</li>
+			<li>you leave your internet browser</li>
+			<li>your session times out</li>
+		</ul>
+		<p><a href="homepage-returned">Return to your  skills health check</a></p>
+        </div>
+        <div >
+          <div class="sfContentBlock sf-Long-text">
+            <div class="app-related-items">
+              <h2 class="govuk-heading-m">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'">use webchat</a></p>
+              <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

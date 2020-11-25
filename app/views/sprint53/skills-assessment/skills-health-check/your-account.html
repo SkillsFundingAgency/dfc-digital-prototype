@@ -1,0 +1,86 @@
+{% extends "layout_ncs_new.html" %}
+<link href="/public/stylesheets/sfa.min.css" media="all" rel="stylesheet" type="text/css" />
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Your Skills health check account
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+<div class="govuk-width-container">
+  <div class="account-info" wiid="C295"> <span class="your-name" id="bannerUserName">Gurnaik Singh</span> <a href="/home/signout" id="signout-link">Sign out</a> &nbsp;&nbsp;<a class="account-link" href="your-account" id="myaccount-link" wiid="C305">Your account</a> </div>
+  <div class="breadcrumbs" wiid="C298">
+    <ol wiid="C299">
+      <li wiid="C300"><a href="../../../" wiid="C301">Home</a></li>
+      <li wiid="C300">Your account</li>
+    </ol>
+  </div>
+</div>
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container" id="shc">
+  <div class="govuk-width-container" wiid="C321">
+    <div class="govuk-grid-row" wiid="C323">
+      <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container" wiid="C324">
+        <div wiid="C325">
+          <div class="sfContentBlock sf-Long-text" wiid="C326">
+            <div wiid="C322">
+              <div class="sfContentBlock sf-Long-text" wiid="C323">
+                <h1 class="heading-xlarge govuk-!-margin-top-0 govuk-!-margin-bottom-5"> Your account</h1>
+                {% include "includes/shc-warning-accounts.html" %}
+              </div>
+              
+            </div>
+            <section id="2" wiid="C318">
+              <h3 class="heading-medium" wiid="C319"> Skills health checks </h3>
+              <table role="presentation" wiid="C320">
+                <thead wiid="C321">
+                  <tr wiid="C322">
+                    <th colspan="3" wiid="C323">Name</th>
+                  </tr>
+                </thead>
+                <tbody wiid="C324">
+                  <tr wiid="C325">
+                    <td wiid="C326">Started 10 June 2020 08:49</td>
+                    <td wiid="C327"><a class="bold-xsmall" href="homepage-signedin">View</a></td>
+                    <td wiid="C329"><a class="bold-xsmall" href="#">Delete</a></td>
+                  </tr>
+                  <tr wiid="C331">
+                    <td wiid="C332">Started 19 June 2020 10:07</td>
+                    <td wiid="C333"><a class="bold-xsmall" href="homepage-signedin">View</a></td>
+                    <td wiid="C335"><a class="bold-xsmall" href="#" wiid="C336">Delete</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
+        <aside class="govuk-related-items govuk-!-margin-top-0" role="complementary">
+          <h2 class="heading-medium" id="subsection-title" wiid="C339">Manage your account</h2>
+          <nav aria-labelledby="subsection-title" role="navigation" wiid="C340">
+            <ul class="font-xsmall" wiid="C341">
+              <li wiid="C342"> <a class="" href="#" target="_self" wiid="C343">Your details</a> </li>
+              <li wiid="C344"> <a class="" href="#" target="_self" wiid="C345">Change your password</a> </li>
+              <li wiid="C346"> <a class="" href="#" target="_self" wiid="C347">Close your account</a> </li>
+            </ul>
+          </nav>
+        </aside>
+        <div wiid="C340">
+          <div class="sfContentBlock sf-Long-text">
+            <div class="app-related-items" wiid="C342">
+              <h2 class="govuk-heading-m" wiid="C343">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;" wiid="C344"><span class="govuk-body govuk-!-font-weight-bold" wiid="C345">Call</span> 0800 100 900 or <a class="govuk-link" href="#" target="'_blank'" wiid="C346">use webchat</a></p>
+              <p class="govuk-caption-m" wiid="C347">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

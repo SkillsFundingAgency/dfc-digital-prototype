@@ -1,0 +1,277 @@
+{% extends "layout_ncs_new-shc.html" %}
+<link href="/public/stylesheets/sfa.min.css" media="all" rel="stylesheet" type="text/css" />
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Skills health check
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<div class="govuk-width-container">
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="../../../">Home</a></li>
+      <li><a href="../../homepage">Skills assessment</a></li>
+      <li>Skills health check</li>
+    </ol>
+  </div>
+</div>
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container" id="shc">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
+        <div>
+          <div class="sfContentBlock sf-Long-text">
+            <div>
+              <div class="sfContentBlock sf-Long-text">
+                <h1 class="heading-xlarge govuk-!-margin-top-0 govuk-!-margin-bottom-5"> Skills health check<span class="heading-secondary">Started 12 June 2020 16:33</span> </h1>
+                <p class="govuk-body">The skills health check is a set of activities to help you find out about yourself and what you're good at. You must do at least one assessment to get your report. Your report will become more detailed every time you finish another assessment. </p>
+              </div>
+            </div>
+			<!--
+            <div class="banner-information-without-action">
+              <h2 class="govuk-!-margin-bottom-5">Save your progress</h2>
+              <p><a href="save-my-progress">Get a reference code</a> sent to you by email, by text or online so you can:</p>
+              <ul class="list list-bullet govuk-!-margin-bottom-0">
+                <li> return and continue with your assessment</li>
+                <li> view your report online at any time</li>
+                <li> download your report at anytime if you have finished the assessment</li>
+              </ul>
+            </div>
+			-->
+            <div class="govuk-grid-row govuk-!-margin-top-7 govuk-!-padding-left-0"> 
+              <!-- ignore the following element -->
+              <div class="govuk-grid-column-one-quarter" aria-hidden="true" style="position:absolute; top:-9000px;">
+                <section class="margin-bottom">
+                  <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle-chart__background" stroke="#ccc" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15" />
+                    <circle id="first" class="circle-chart__circle" stroke-width="4" stroke-dasharray="30,100" stroke-linecap="" fill="none" cx="16.91549431" cy="16.91549431" r="15" />
+                    <g class="circle-chart__info">
+                      <text class="circle-chart__percent counter" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8" id="firstDonut" data-count="">0</text>
+                      <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">completed</text>
+                    </g>
+                  </svg>
+                </section>
+              </div>
+				<!-- ignore above section-->
+              <div class="govuk-grid-column-full">
+                <h2 class="govuk-heading-l">You have finished all assessments</h2>
+                
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">Get your report</a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="govuk-!-margin-top-0">
+          <h3 class="govuk-heading-l govuk-!-margin-top-5">Personal skills</h3>
+          <p>The assessments in this section can help you understand what's important to you in a job. This information can help you decide if a job is a good fit for you. </p>
+		
+          <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-skills" id="accordion-default-heading-skills"> Skills </span> </h2>
+              </div>
+              <div id="accordion-default-content-skills" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-skills">
+                <p class="govuk-body">Knowing your strengths could help you decide which jobs you'd enjoy.</p>
+                <p class="govuk-body">This assessment helps you work out how you see yourself and what things you're good at and enjoy doing.  The results will help you identify your strengths and areas for development.</p>
+                <p class="govuk-body">This will take 15-30 minutes. </p>
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of skills assessment</a> </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-interests" id="accordion-default-heading-interests"> Interests</span> </h2>
+              </div>
+              <div id="accordion-default-content-interests" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-interests">
+                <p class="govuk-body">Knowing what you're interested in could help you decide what you want to do for a job.</p>
+                <p class="govuk-body">This assessment helps you work out what areas of work might interest you. The results will give you some career paths to explore.</p>
+                <p class="govuk-body">This will take 15-30 minutes. </p>
+				<a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of interests assessment</a>  
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-personal" id="accordion-default-heading-personal"> Personal style </span> </h2>
+              </div>
+              <div id="accordion-default-content-personal" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-personal">
+                <p class="govuk-body">Knowing your personal style could help you decide how you prefer to work, and what sort of roles might suit you. This assessment helps you work out your working style. The results will help you identify what jobs allow you to work comfortably.</p>
+                <p class="govuk-body">This will take 15-30 minutes. </p>
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of personal style assessment</a> </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-motivation" id="accordion-default-heading-motivation">Motivation </span> </h2>
+              </div>
+              <div id="accordion-default-content-motivation" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-motivation">
+                <p class="govuk-body">Knowing what you want to get out of work could help you find a job that satisfies you.</p>
+                <p class="govuk-body">This assessment will help you work out what motivates you. The result will help you identify career paths that would help you feel happy at work.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of motivation assessment</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="govuk-heading-l govuk-!-margin-top-9">Work-based skills </h3>
+          <p>The assessments in this section can help you understand your strengths at work. This information could help you write your CV or apply for jobs.</p>
+          <div class="govuk-inset-text"> The spatial and abstract assessments use images. They are not suitable for users with screen readers. We are not able to supply alternative text without influencing your results. </div>
+          <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default1">
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-numbers" id="accordion-default-heading-numbers"> Working with numbers </span> </h2>
+              </div>
+              <div id="accordion-default1-content-numbers" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-numbers">
+                <p class="govuk-body">Some careers use number skills more than others. This skill is useful if you want to go into:</p>
+                <ul class="list list-bullet">
+                  <li>finance</li>
+                  <li>management</li>
+                  <li>science</li>
+                  <li>research</li>
+                </ul>
+                <p class="govuk-body">This assessment will identify how you solve problems using numbers. The results could help you work out if working with numbers suits you.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of numerical assessment</a>
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-verbal" id="accordion-default-heading-verbal"> Verbal reasoning </span> </h2>
+              </div>
+              <div id="accordion-default1-content-verbal" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-verbal">
+                <p class="govuk-body">Some careers use speaking and writing skills more than others. This skill is useful if you want to go into:</p>
+                <ul class="list list-bullet">
+                  <li>marketing</li>
+                  <li>publishing</li>
+                  <li>journalism</li>
+                  <li>law</li>
+                </ul>
+                <p class="govuk-body">This assessment will identify how you solve word problems. The results could help you work out if problem solving using words suits you.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of verbal reasoning assessment</a> </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-checking-details" id="accordion-default-heading-checking-details"> Checking details </span> </h2>
+              </div>
+              <div id="accordion-default1-content-checking-details" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-checking-details">
+                <p class="govuk-body">Some jobs need you to pay attention to details. This skill is useful if you want to go into:</p>
+                <ul class="list list-bullet">
+                  <li>administration</li>
+                  <li>customer service</li>
+                  <li>retail</li>
+                  <li>sales</li>
+                </ul>
+                <p class="govuk-body">This assessment will identify how comfortable you feel doing this sort of work. Your results could help you work out if you want to do this in a job.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of clerical assessment</a>
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-mechanical" id="accordion-default-heading-mechanical"> Solving mechanical problems </span> </h2>
+              </div>
+              <div id="accordion-default1-content-mechanical" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-mechanical">
+                <p class="govuk-body">Some jobs need you to solve problems using mechanical knowledge. This skill is useful if you want to go into: </p>
+                <ul class="list list-bullet">
+                  <li>engineering</li>
+                  <li>manufacturing</li>
+                  <li>construction</li>
+                </ul>
+                <p class="govuk-body">The assessment will identify how comfortable you feel solving mechanical problems. Your results could help you work out if you want to do this in a job.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of mechanical assessment</a> </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-shapes" id="accordion-default-heading-shapes"> Working with shapes</span> </h2>
+              </div>
+              <div id="accordion-default1-content-shapes" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-shapes">
+                <p class="govuk-body">Some jobs need you to have an understanding of shape and space. This skill is useful if you want to go into: </p>
+                <ul class="list list-bullet">
+                  <li>construction</li>
+                  <li>art and design</li>
+                  <li>manufacturing</li>
+                </ul>
+                <p class="govuk-body">This assessment will identify how comfortable you feel working with shapes and space. Your results could help you work out if this is a skill you would enjoy using at work.</p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of spatial assessment</a>
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" aria-controls="accordion-default-heading-abstract" id="accordion-default-heading-abstract"> Solving abstract problems </span> </h2>
+              </div>
+              <div id="accordion-default1-content-abstract" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-abstract">
+                <p class="govuk-body">This skill is useful for jobs that involve creative thinking and logical decision-making. This skill is useful if you want to go into: </p>
+                <ul class="list list-bullet">
+                  <li>IT and digital</li>
+                  <li>science</li>
+                  <li>medicine</li>
+                </ul>
+                <p class="govuk-body">The assessment will identify how comfortable you feel solving abstract problems. Your results could help you work out if you want to do this in a job. </p>
+                <p class="govuk-body">This will take 15-30 minutes.</p>
+                <a href="#get-your-report" role="button" draggable="false" class="govuk-button" data-module="govuk-button">View report of abstract  assessment</a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <h3 class="govuk-heading-l">Next steps</h3>
+            <p>Now that you've discovered your skills, you might want to:</p>
+            <ul class="list list-bullet">
+              <li><a href="https://nationalcareers.service.gov.uk/explore-careers">explore careers</a> that interest you</li>
+              <li>look for <a href="https://nationalcareers.service.gov.uk/get-a-job">careers advice</a> to help you look for and apply for jobs</li>
+              <li><a href="/contact-us">speak to an adviser</a> about your next steps</li>
+				<li><a href="#">return to skills assessments</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="govuk-grid-row govuk-!-margin-top-5">
+          <div class="govuk-grid-column-full">
+            <h3 class="govuk-heading-l" id="get-your-report">Get your report</h3>
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                <span id="changed-name-hint" class="govuk-hint"> Choose your document type </span>
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input checked="checked" class="govuk-radios__input" data-val="true" data-val-required="The DownloadType field is required." id="DownloadType" name="DownloadType" type="radio" value="Pdf">
+                    <label class="govuk-label govuk-radios__label" for="DownloadType"> PDF </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="DownloadTypeWord" name="DownloadType" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="DownloadTypeWord"> Microsoft Word document </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <button class="govuk-button" data-module="govuk-button">Download your report</button>
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> Help with download report </span> </summary>
+              <div class="govuk-details__text">
+                <p class="govuk-body">Download your report. This may take a few minutes.</p>
+                <p class="govuk-body">This downloads a document to your device (up to 200kb) which may take a few minutes. Data plan charges may apply.</p>
+                <p class="govuk-body">You'll be able to download your report once you've completed at least one assessment.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+        <div class="app-sidebar app-resume-panel app-related-items"> {% include "includes/return-to-this-later-43a.html" %}
+          {% include "includes/return-to-shc43.html" %} </div>
+        <div>
+          <div class="sfContentBlock sf-Long-text">
+            <div class="app-related-items">
+              <h2 class="govuk-heading-m">Speak to an adviser</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'">use webchat</a></p>
+              <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

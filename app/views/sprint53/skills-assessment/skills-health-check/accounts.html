@@ -1,0 +1,68 @@
+{% extends "layout_ncs_new.html" %}
+<link href="/public/stylesheets/sfa.min.css" media="all" rel="stylesheet" type="text/css" />
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Homepage
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+<div class="govuk-width-container">
+  <div class="account-info" wiid="C295">
+	  <span class="your-name" id="bannerUserName">Gurnaik Singh</span>
+	  <a href="/home/signout" id="signout-link">Sign out</a>
+	  &nbsp;&nbsp;<a class="account-link" href="your-account" id="myaccount-link" wiid="C305">Your account</a>
+  </div>
+  <div class="breadcrumbs" wiid="C298">
+    <ol wiid="C299">
+      <li wiid="C300"><a href="../../../" wiid="C301">Home</a></li>
+      <li wiid="C300">Skills health check</li>
+    </ol>
+  </div>
+</div>
+{% endblock %}
+  {% block content %}
+<div class="govuk-width-container" id="shc">
+  <div class="govuk-width-container" wiid="C321">
+    <div class="govuk-grid-row" wiid="C323">
+      <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container" wiid="C324">
+        <div wiid="C325">
+          <div class="sfContentBlock sf-Long-text" wiid="C326">
+            <div wiid="C322">
+              <div class="sfContentBlock sf-Long-text" wiid="C323">
+                <h1 class="heading-xlarge govuk-!-margin-bottom-5 govuk-!-margin-top-0" wiid="C331"> Skills health check</h1>
+                {% include "includes/shc-warning-accounts.html" %}
+                <p class="govuk-body">The skills health check is a set of quizzes and activities designed to help you explore your skills, interests and motivations.</p>
+              </div>
+            </div>
+            <p class="govuk-body" wiid="C326">Working through the skills health check can help you decide what kind of jobs might be right for you. </p>
+            <p wiid="C340">You'll be able to download your report once you've completed at least one assessment.</p>
+            <div class="govuk-box-border-yellow" wiid="C318">
+              <h2 class="heading-large" wiid="C319">You've already started a skills health check</h2>
+              <p wiid="C320"> If you want to view or continue a skills health check you've already started, visit the skills health check section of <a href="your-account">your account</a>. </p>
+              <p wiid="C322"><a href="your-account">
+                <input class="button button-start" type="button" value="Show me" wiid="C324">
+                </a> </p>
+            </div>
+            <p wiid="C325"> If you want to retake an assessment then <a href="homepage-signedin" wiid="C326">start a new skills health check </a>. </p>
+          </div>
+        </div>
+      </div>
+      <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container" wiid="C339">
+        <div wiid="C340">
+          <div class="sfContentBlock sf-Long-text" wiid="C341">
+            <div class="app-related-items" wiid="C342">
+              <h2 class="govuk-heading-m" wiid="C343">Want to speak to an adviser?</h2>
+              <p class="govuk-body-m" style="margin-bottom:0px;" wiid="C344"><span class="govuk-body govuk-!-font-weight-bold" wiid="C345">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'" wiid="C346">use webchat</a></p>
+              <p class="govuk-caption-m" wiid="C347">8am to 10pm, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

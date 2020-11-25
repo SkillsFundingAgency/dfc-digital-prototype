@@ -632,7 +632,7 @@ a:focus {
 
 @media (min-width: 641px) {
   a[rel=external]:after {
-    content: "\A0\A0\A0\A0";
+    content: "";
     background-position: right 6px; }
 
   a[rel=external]:hover:after {
@@ -1178,7 +1178,7 @@ hr {
   background-color: #00823b;
   position: relative;
   display: inline-block;
-  padding: .5263157895em .7894736842em .2631578947em;
+  padding: .526315em .789473em 0.563157em;
   border: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -5478,5 +5478,39 @@ table.responseTest {
   margin: 30px 0;
   background: #f3f2f1; }
 
-.section-count {
-  display: none; }
+.course-list .course {
+  background-color: #f3f2f1; }
+
+.sfContentBlock ul.course-list.govuk-list {
+  padding-left: 0 !important;
+  list-style: none !important; }
+
+.govuk-list, .app-prose-scope ul, .app-prose-scope ol {
+  font-weight: 400;
+  color: #0b0c0c;
+  margin-top: 0;
+  padding-left: 0 !important;
+  list-style-type: none !important; }
+
+.govuk-list--bullet, .app-prose-scope ul {
+  padding-left: 20px !important;
+  list-style-type: disc !important; }
+
+.app-sidebar {
+  margin-bottom: 20px; }
+
+@media (min-width: 40.0625em) {
+  .app-sidebar {
+    margin-bottom: 30px; } }
+@media (min-width: 48.0625em) {
+  .app-sidebar .govuk-heading-m {
+    border-top: 10px solid #207E77;
+    padding-top: 10px; } }
+.app-sidebar:last-child {
+  margin-bottom: 0; }
+
+@media (min-width: 40.0625em) {
+  .app-sidebar:last-child {
+    margin-bottom: 0; } }
+.app-sidebar .govuk-body {
+  margin-bottom: 0; }

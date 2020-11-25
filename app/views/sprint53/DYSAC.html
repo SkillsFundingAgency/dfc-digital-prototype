@@ -1,0 +1,63 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Skills assessment | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header>
+<div class="PROD_hero">
+<div class="PROD_full-page-width-wrapper">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl app-masthead__title">Discover your skills and careers</h1>
+    </div>
+  </div>
+</div>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-grid-row govuk-!-margin-bottom-9 govuk-!-margin-top-7">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body"> Discover your skills and careers (DYSAC) is a tool to help you identify your:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>interests</li>
+        <li>motivations</li>
+        <li>preferences</li>
+      </ul>
+      <p class="govuk-body">Understanding yourself can help you work out what careers you may enjoy working in. You can use this information to explore careers that interest you in more detail.</p>
+      <p class="govuk-body">After you answer the questions, you’ll see a list of categories that may interest you based on your answers. You can answer more questions to see more specific roles that may suit you.</p>
+      <p class="govuk-body">These suggestions are based on your preferences, and may not reflect opportunities in the job market. You may want to <a href="https://nationalcareers.service.gov.uk/contact-us" class="govuk-link">speak to a careers adviser</a> about your results. They know about local opportunities in your area and can help you work out your next steps.</p>
+      <p class="govuk-body">It takes 5 to 10 minutes. It may take longer with a screen reader. You can save your progress at any time and come back to it later.</p>
+      <a href="/assessment/short/" role="button" draggable="false" class="govuk-button govuk-button--start"> Start assessment </a> </div>
+    <div class="govuk-grid-column-one-third">
+      <div class="app-sidebar app-resume-panel">
+        <h2 class="govuk-heading-m">Return to an assessment</h2>
+        <form method="post" action="/reload">
+          <div class="app-resume-panel__input govuk-form-group ">
+            <label class="govuk-label" for="code">Enter your reference</label>
+            <input class="govuk-input " id="code" name="code" type="text">
+          </div>
+          <button type="submit" class="govuk-button app-button"> Continue </button>
+        </form>
+      </div>
+      <div class="app-sidebar app-advisor-panel">
+        <h2 class="govuk-heading-m">Speak to an adviser</h2>
+        <p class="govuk-body govuk-!-margin-bottom-3"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'">use webchat</a></p>
+        <ul class="govuk-list">
+          <li> 8am-8pm Monday-Friday </li>
+          <li> 10am-5pm Saturday </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
