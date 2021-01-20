@@ -1,0 +1,142 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header>
+  <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs ">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="homepage-LMI">Home</a> </li>
+        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="careers-advice">Careers advice</a> </li>
+        <li class="govuk-breadcrumbs__list-item">Compare different jobs</li>
+      </ol>
+    </div>
+  </div>
+</header>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sfContentBlock sf-Long-text">
+          <h1 class="govuk-heading-xl">Compare different jobs</h1>
+          <p class="govuk-body">You may want to compare one job you’re interested in with another to see which one you prefer. Use the Careerometer to compare national information like:</p>
+          <ul class="govuk-list govuvvk-list--bullet">
+            <li>salaries</li>
+            <li>working hours</li>
+            <li>how many jobs there are likely to be in this area</li>
+            <li>which industries you can find these job roles in</li>
+          </ul>
+          <div class="govuk-inset-text"> This tool is not suitable for users with screen readers. We are not able to make this tool accessible as the Careerometer is supplied directly from <a href="https://www.lmiforall.org.uk/" target="_blank">LMI For All</a>. If you would prefer to use the tool with the help of one of our career advisers, please <a href="https://nationalcareers.service.gov.uk/contact-us">contact us</a>. </div>
+          
+			<div class="cm2-widget" cards="2" colours="#207e77,#207e77" style="height:460px"></div>
+          <script src="//www.lmiforall.org.uk/cm2/careerometer2.js"></script> 
+			
+			
+
+			<details class="govuk-details govuk-!-margin-top-7" data-module="govuk-details">
+            <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> How to use this tool </span> </summary>
+            <div class="govuk-details__text"> <p class="govuk-body">To compare two different jobs, you should:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>click the dotted square </li>
+            <li>type in the first job that you think you might be interested in</li>
+            <li>select from the drop-down list</li>
+            <li>repeat the steps to add your second job</li>
+          </ul>
+          <p class="govuk-body">If you want to compare a job you’re interested in against the national average, you should:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>click the dotted square</li>
+            <li>type in the job that you think you might be interested in</li>
+            <li>select from the drop-down list</li>
+            <li>click “display UK average” on the second card</li>
+          </ul> 
+			<p>If the Careerometer is not working, contact LMI For All <a href="mailto: LMIforAll.dfe@education.gov.uk"> LMIforAll.dfe@education.gov.uk</a></p>	
+				</div>
+				
+          </details>
+			
+			
+			
+			<details class="govuk-details govuk-!-margin-top-0" data-module="govuk-details">
+            <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> Note on projected workforce change </span> </summary>
+            <div class="govuk-details__text"> <p class="govuk-body">This information is based on past employment trends. It may not reflect up to date information about the job market, particularly the impact of Covid-19. This information can help you make a career decision but should not be your only reason for making a career choice.
+</p>
+				
+				</div>
+				
+          </details>
+			
+          
+<!--
+			<h2 class="govuk-heading-m">How to use the Careerometer</h2>
+          <p class="govuk-body">To compare two different jobs, you should:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>click the dotted square </li>
+            <li>type in the first job that you think you might be interested in</li>
+            <li>select from the drop-down list</li>
+            <li>repeat the steps to add your second job</li>
+          </ul>
+          <p class="govuk-body">If you want to compare a job you’re interested in against the national average, you should:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>click the dotted square</li>
+            <li>type in the job that you think you might be interested in</li>
+            <li>select from the drop-down list</li>
+            <li>click “display UK average” on the second card</li>
+          </ul>
+--><h2 class="govuk-heading-m">Next steps</h2>
+          <p class="govuk-body">You could:</p>
+      <ul class="govuk-list govuk-list--bullet">
+		<li><a href="explorecareers" class="govuk-link">explore careers</a> in more depth to see what other roles might suit you</li>
+        <li>take a <a href="https://nationalcareers.service.gov.uk/skills-assessment" class="govuk-link">skills assessment</a> to see what you're good at</li>
+        
+      
+      <li><a href="https://nationalcareers.service.gov.uk/contact-us" class="govuk-link">speak to an adviser</a> if you want more support with your career decisions</li></ul>
+        </div>
+      </div>
+    </div>
+    <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sf-Long-text">
+          <div>
+            <div class="job-profile-search">
+              <h3 class="heading-small">Find job profile</h3>
+              <form action="career-search" class="js-live-search-form site-search  ui-front" id="job-profile-search-box" method="post">
+                <div class="job-profile-search-content">
+                  <label for="search-main"> Enter a job title</label>
+                  <div class="search-input-wrapper">
+                    <input class="search-input js-search-focus js-autocomplete" data-autocomplete-fuzzysearch="True" data-autocomplete-maxlength="7" data-autocomplete-maxnumberdisplyed="5" data-autocomplete-minlength="2" data-autocomplete-source="/searchautocomplete" id="search-main" name="SearchTerm" type="search" value="" />
+                  </div>
+                  <button data-module="govuk-button" class="submit" type="submit" value="Search">Search</button>
+                </div>
+                <input id="JobProfileUrl" name="JobProfileUrl" type="hidden" value="admin-assistant" />
+              </form>
+            </div>
+            <div class="gem-c-related-navigation">
+              <h2 class="govuk-heading-m"> Related content </h2>
+              <ul class="govuk-list">
+				<li> <a href="informed-career-decisions" class="govuk-link">Make informed career decisions</a></li>
+              	<li> <a href="understanding-world-of-work" class="govuk-link">How job trends can inform your career decisions</a></li>
+                <li> <a href="covid-19-disruption" class="govuk-link">Understanding the working world during COVID-19</a></li>
+                
+              </ul>
+            </div>
+            <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_194="287" data-gtm-vis-first-on-screen-8675592_194="287" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">Want to speak to an adviser?</h2>
+            <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 </p>
+            <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
