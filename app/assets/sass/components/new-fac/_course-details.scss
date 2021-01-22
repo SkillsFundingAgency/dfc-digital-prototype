@@ -275,3 +275,29 @@
   @extend .govuk-details;
   margin-bottom: 0;
 }
+.fac-section-sort { margin-bottom: 0px}
+.js-enabled .fac-section-sort { margin-bottom: 30px}
+
+@media (max-width: 60.0625em) {
+  .fac-section-sort select { margin-bottom: 20px}
+}
+.clear-filters {display:none;}
+.js-enabled .clear-filters {display:inline-block;}
+
+.filters-button,.js-enabled .filters-button, body .filters-button {
+    display: none
+}
+
+.js-enabled .filters, body .filters {
+    display: block
+}
+
+@media (max-width: 40.0525em) {
+    .js-enabled .filters-button, body .filters-button {
+        display:block
+    }
+
+    .js-enabled .filters, body .filters {
+        display: none
+    }
+}

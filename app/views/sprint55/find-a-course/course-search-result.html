@@ -38,6 +38,8 @@ Careers advice - job profiles, information and resources | National Careers Serv
 
       <div class="govuk-grid-row govuk-!-margin-top-7">
         <div class="govuk-grid-column-one-third">
+            <button class="govuk-button filters-button" id="show-filters-button">Show filters</button>
+            
             <div class="filters filters">
 
                 <div class="govuk-form-group">
@@ -153,19 +155,10 @@ Careers advice - job profiles, information and resources | National Careers Serv
                         </fieldset>
                     </div>
                 </div>
-                <div class="govuk-form-group">
-                    <label for="order" class="result-region-header__sort-label govuk-label">Sort by</label>
-                    <select class="govuk-select" name="order" id="order">
-                        <!-- <option value="most-viewed">Distance</option> -->
-                        <option value="updated-newest">Relevance</option>
-                        <option value="updated-oldest" selected>Start date</option>
-                    </select>
-                </div>
-
                 <noscript>
                     <button data-module="govuk-button" class="govuk-button" type="submit">Apply filters</button>
                 </noscript>
-                <p><a href="">Clear filters</a></p>
+                <p class="clear-filters"><a href="">Clear filters</a></p>
             </div>
 
         </div>
@@ -174,12 +167,20 @@ Careers advice - job profiles, information and resources | National Careers Serv
 <div>
         <p class="govuk-body">Showing all <span class="fac-result-count">96,342</span> courses</p>
 </div>
+                        <div class="govuk-form-group fac-section-sort">
+                            <label for="order" class="result-region-header__sort-label govuk-label">Sort by</label>
+                            <select class="govuk-select" name="order" id="order">
+                                <!-- <option value="most-viewed">Distance</option> -->
+                                <option value="updated-newest">Relevance</option>
+                                <option value="updated-oldest" selected>Start date</option>
+                            </select><noscript>
+                                <button data-module="govuk-button" class="govuk-button" type="submit">Apply sort</button>
+                            </noscript>
+                        </div>
 
 
-                        <hr class="govuk-section-break govuk-section-break--visible">
 
-
-
+<hr class="govuk-section-break govuk-section-break--visible">
 <div id="fac-result-list">
 
   <div class="govuk-!-margin-top-6">

@@ -69,34 +69,42 @@ $(document).ready(function () {
 	skillsCheckboxes.each(function () {
         $(this).change(updateCount);
     });
-	
+
     function updateCount() {
 		var target = $(this),
 		parent = target.closest('.govuk-accordion__section'),
 		checked = parent.find('input[type="checkbox"]:checked'),
 		checkedAll = $('#accordion-filter-skills-list input[type="checkbox"]:checked').length,
 		sectionCount = parent.find('.section-count'),
-			
+
 		sectionCountLength = checked.length,
 		count = $("#count span");
-			
+
 		count.text(checkedAll);
 		sectionCount.text(sectionCountLength).toggle(sectionCountLength > 0);
     }
-	
+
 	/* retain skills selection on browser back or forward*/
 	$(window).on("load", function() {
-		updateCount(); 
-		
+		updateCount();
+
 		/* accordion section selected checkbox count again */
 		var accordionSection = $('#accordion-filter-skills-list .govuk-accordion__section');
 		accordionSection.each(function () {
     		var sectionCheckedLength = $(this).find('input[type="checkbox"]:checked').length;
 			$(this).find('.section-count').text(sectionCheckedLength).toggle(sectionCheckedLength > 0);
-			
+
 		});
 	});
-	
+
+  $(".filters-button").on("click", function() {
+        event.preventDefault();
+        $(".filters").toggle(),
+        $(this).text(function(e, t) {
+            return "Show filters" === t ? "Hide filters" : "Show filters"
+        })
+    })
+
 
 })
 
