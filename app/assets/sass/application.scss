@@ -1415,7 +1415,16 @@ html {
 .govuk-section-break--visible {
     border-bottom: 0px solid $govuk-border-colour;
   }
-  
+
+
+.fac-section-sort-js {display: none;}
+.js-enabled .fac-section-sort-js {display: inline-block;}
+
+.fac-section-sort-nojs {display: inline-block;}
+.js-enabled .fac-section-sort-nojs {display: none;}
+
+.js-enabled #distance-block {display: none;}
+.distance-block {display: block;}
 
 //COOKIES
 

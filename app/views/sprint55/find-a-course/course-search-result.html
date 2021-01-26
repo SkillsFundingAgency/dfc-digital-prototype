@@ -51,6 +51,20 @@ Careers advice - job profiles, information and resources | National Careers Serv
                     <input class="govuk-input govuk-input--width-10" id="location" name="location" type="text">
                 </div>
 
+                <div id="distance-block" class="govuk-form-group" style="">
+                            <div id="distance">
+                                <label class="govuk-label govuk-!-font-weight-bold" for="location-distance" id="distance-label">Distance</label>
+                                <select aria-label="DistanceValue" class="govuk-select" name="SelectedDistanceValue" id="distance-select"><option value="5 miles">5 miles</option>
+                <option selected="selected" value="10 miles">10 miles</option>
+                <option value="15 miles">15 miles</option>
+                <option value="30 miles">30 miles</option>
+                <option value="45 miles">45 miles</option>
+                <option value="60 miles">60 miles</option>
+                <option value="75 miles">75 miles</option>
+                </select>
+                            </div>
+                        </div>
+
                 <!-- <div id="distanceForm" class="govuk-form-group">
                     <div id="distance">
                         <label class="govuk-label govuk-!-font-weight-bold" for="CurrentSearchRequest_LocationDistance">Distance</label>
@@ -169,8 +183,13 @@ Careers advice - job profiles, information and resources | National Careers Serv
 </div>
                         <div class="govuk-form-group fac-section-sort">
                             <label for="order" class="result-region-header__sort-label govuk-label">Sort by</label>
-                            <select class="govuk-select" name="order" id="order">
-                                <!-- <option value="most-viewed">Distance</option> -->
+                            <select class="govuk-select fac-section-sort-js" name="order" id="order">
+                                <option value="updated-newest">Relevance</option>
+                                <option value="updated-oldest" selected>Start date</option>
+                            </select>
+
+                            <select class="govuk-select fac-section-sort-nojs" name="order" id="order">
+                                <option value="distance">Distance</option>
                                 <option value="updated-newest">Relevance</option>
                                 <option value="updated-oldest" selected>Start date</option>
                             </select><noscript>

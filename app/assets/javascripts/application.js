@@ -106,6 +106,22 @@ $(document).ready(function () {
     })
 
 
+
+    $(".js-enabled .filters input#location").change(function () {
+   if ($(this).val()) {
+      $("#distance-block").show();
+      $(".fac-section-sort-js").hide();
+      $(".fac-section-sort-nojs").show();
+   }
+   else {
+      $("#distance-block").hide();
+      $(".fac-section-sort-js").show();
+      $(".fac-section-sort-nojs").hide();
+   }
+});
+
+
+
 })
 
 
