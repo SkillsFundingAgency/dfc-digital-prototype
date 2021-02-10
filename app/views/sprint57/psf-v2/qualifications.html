@@ -1,0 +1,174 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header>
+  <div class="govuk-width-container">
+    <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs ">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="homepage">Home</a> </li>
+        <li class="govuk-breadcrumbs__list-item"> <a class="govuk-breadcrumbs__link" href="explorecareers">Explore careers</a> </li>
+        <li class="govuk-breadcrumbs__list-item">Filter your potential careers</li>
+      </ol>
+    </div>
+  </div>
+  </div>
+</header>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-grid-row  govuk-!-margin-top-5">
+    <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sfContentBlock sf-Long-text"> <span class="govuk-caption-xl">Step 1 of 5</span>
+          <h1 class="govuk-heading-xl">Select the highest education level you have achieved</h1>
+          <p class="govuk-body">To match you to jobs that will suit your education level, please select the highest level you have achieved. These levels are based on the <a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" target="_blank" class="govuk-link">education qualification levels</a> used by England, Wales and Northern Ireland.  </p>
+			<p class="govuk-body">If you do not want to filter by job level, please <a href="skills">skip this step</a>  </p>
+          
+          <form action="skills" class="js-live-search-form" id="psf-skills" method="post">
+			  <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+    <div id="nationality-hint" class="govuk-hint">
+      Select all that apply.
+    </div>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality">
+          No formal qualifications
+        </label>
+        <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          work experience and skills learnt on the job
+        </div>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+          Up to Level 2
+
+        </label>
+		  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          Achieved up to GCSEs, BTECs or equivalent
+        </div>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+          Levels 3 to 4
+
+        </label>
+		  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          Achieved A Levels or equivalent
+        </div>
+      </div>
+		<div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+         Levels 5 to 6
+
+
+        </label>
+		  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          Achieved an undergraduate degree or equivalent
+        </div>
+      </div>
+		<div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+          Levels 7 to 8
+        </label>
+		  <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          Achieved a postgraduate degree, professional 
+qualification or equivalent
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+			
+			<button class="govuk-button" data-module="govuk-button">Continue</button><a href="skills" class="govuk-link govuk-!-margin-left-5">Skip this step</a></form>
+			
+			
+<!--
+			<table class="govuk-table previous-answers-table">
+    <caption class="govuk-table__caption">
+        <h2 class="govuk-heading-m">Your answers</h2>
+
+      <p class="govuk-body">
+      <a class="govuk-link" data-module="track-click" data-track-action="Start again" data-track-category="StartAgain" data-track-label="What’s the employment status of the mother’s partner?" href="/pay-leave-for-parents">Start again</a>
+      </p>
+    </caption>
+
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Question</th>
+          <th scope="col" class="govuk-table__header">Answer</th>
+          <th scope="col" class="govuk-table__header">Change answer</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell govuk-!-width-one-half">Will the mother care for the child with a partner?</td>
+  <td class="govuk-table__cell">
+      Yes
+  </td>
+  <td class="govuk-table__cell">
+    <a class="govuk-link" data-module="track-click" data-track-category="Smart Answer Change Link" data-track-action="Link clicked" data-track-label="Will the mother care for the child with a partner? / Yes" href="/pay-leave-for-parents/y?previous_response=yes">
+      Change<span class="govuk-visually-hidden"> answer to "Will the mother care for the child with a partner?"</span>
+</a>  </td>
+</tr>
+
+          <tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell govuk-!-width-one-half">When is the baby due?</td>
+  <td class="govuk-table__cell">
+      31 December 2020
+  </td>
+  <td class="govuk-table__cell">
+    <a class="govuk-link" data-module="track-click" data-track-category="Smart Answer Change Link" data-track-action="Link clicked" data-track-label="When is the baby due? / 31 December 2020" href="/pay-leave-for-parents/y/yes?previous_response=2020-12-31">
+      Change<span class="govuk-visually-hidden"> answer to "When is the baby due?"</span>
+</a>  </td>
+</tr>
+
+          <tr class="govuk-table__row">
+  <td scope="row" class="govuk-table__cell govuk-!-width-one-half">What’s the employment status of the mother?</td>
+  <td class="govuk-table__cell">
+      Employee
+  </td>
+  <td class="govuk-table__cell">
+    <a class="govuk-link" data-module="track-click" data-track-category="Smart Answer Change Link" data-track-action="Link clicked" data-track-label="What’s the employment status of the mother? / Employee" href="/pay-leave-for-parents/y/yes/2020-12-31?previous_response=employee">
+      Change<span class="govuk-visually-hidden"> answer to "What’s the employment status of the mother?"</span>
+</a>  </td>
+</tr>
+
+      </tbody>
+  </table>
+-->
+        </div>
+      </div>
+    </div>
+    <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sf-Long-text">
+          <div class="app-related-items">
+            
+            <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_194="287" data-gtm-vis-first-on-screen-8675592_194="287" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">Want to speak to an adviser?</h2>
+            <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 </p>
+            <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

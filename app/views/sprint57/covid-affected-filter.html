@@ -1,0 +1,72 @@
+{% extends "layout_ncs_new.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header>
+  <div class="govuk-width-container">
+    <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs ">
+      <a href="restrictions" class="govuk-back-link">Back</a>
+    </div>
+  </div>
+  </div>
+</header>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-grid-row  govuk-!-margin-top-5">
+    <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sfContentBlock sf-Long-text"> <span class="govuk-caption-xl">Step 5 of 5</span>
+          <h1 class="govuk-heading-xl">COVID-19 affected jobs and sectors</h1>
+          <p class="govuk-body">COVID-19 has affected many sectors and jobs. We are using the most up-to-date data from <a href="#" class="govuk-link" target="_blank">ONS</a> to reflect jobs that are being affected. </p>
+          <p class="govuk-body">Please choose if you would like your potential careers list to include COVID-19 affected jobs. </a>
+          
+          <div class="banner-message">
+            <p class="govuk-body govuk-!-margin-bottom-0 govuk-!-font-weight-bold">We have found 15 career matches based on your selection. <a href="matched-results">View</a> </p>
+          </div>
+          <form action="matched-results" class="js-live-search-form" id="psf-skills" method="post">
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                
+                <p class="govuk-body">Would you like the list of your potential careers to include COVID-19 affected jobs? </a>
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="changed-name"> Yes </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-2"> No </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sf-Long-text">
+          <div class="app-related-items">
+            <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_194="287" data-gtm-vis-first-on-screen-8675592_194="287" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">Want to speak to an adviser?</h2>
+            <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 </p>
+            <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
