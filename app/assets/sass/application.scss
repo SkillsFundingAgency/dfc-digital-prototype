@@ -18,6 +18,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/task-list";
 @import "patterns/related-items";
 @import "patterns/explore";
+@import "patterns/gem-c-cards";
 
 // Components that aren't in Frontend
 @import "components/cookie-banner";
@@ -1415,6 +1416,8 @@ html {
 .govuk-section-break--visible {
     border-bottom: 0px solid $govuk-border-colour;
   }
+
+
 
 
 .fac-section-sort-js {display: none;}
