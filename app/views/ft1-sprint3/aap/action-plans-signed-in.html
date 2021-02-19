@@ -1,0 +1,88 @@
+{% extends "layout_ncs_sprint3.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<div class="govuk-width-container">
+        <div class="govuk-phase-banner">
+            <div class="govuk-header__navigation--end">
+              <div class="account-nav">
+              <span>  Sam Johnson  <a href="" class="govuk-!-margin-left-1 govuk-!-margin-right-3">Sign out</a><a href="#">Your account</a></span>
+              </div>
+            </div>
+        </div>
+    </div>
+
+<header class="homepage-top">
+  <div class="ec-hero">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Action plans</h1>
+          <p class="govuk-body-lead">Keep track of the goals and actions you and your adviser set during your careers advice appointment.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <!-- <a href="#" class="govuk-back-link">Back</a> -->
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row govuk-!-margin-top-6">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l govuk-!-margin-bottom-5">Your action plan</h2>
+        <p class="govuk-body">You need to log in to view and update your action plan set by you and your career adviser during your career’s advice appointment.</p>
+        <!-- <a id="homeGovukButtonLinkGoToActionPlans" href="/your-account" tabindex="0" class="govuk-button">Go to your action plans</a> -->
+        <a href="sign-in" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-button--start" data-module="govuk-button">
+          Go to your action plans
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+          </svg></a>
+
+
+        <!-- <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Action plans can only be set up by your career adviser at a careers advice appointment. If you would like advice from a career adviser you can <a id="ContactUS" href="/contact-us" tabindex="0" class=" govuk-link--light">contact us</a>
+          </strong>
+        </div> -->
+
+        <div class="govuk-inset-text">
+          <h3 class="govuk-heading-s">Do not have an action plan?</h3>
+          <p class="govuk-body">Action plans can only be set up by your career adviser at a careers advice appointment. If you would like advice from a career adviser you can <a id="ContactUS" href="/contact-us" tabindex="0" class=" govuk-link--light">contact us</a>
+          </p>
+          <p class="govuk-body">
+          If you have not had a careers advice appointment and do not have an action plan you can see our <a id="CareersAdviceLink" href="/careers-advice" tabindex="0" class=" ">careers advice articles</a> to help you at any stage of your career.
+          </p>
+        </div>
+
+
+
+
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <div class="app-related-items">
+                <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="111630">Speak to an adviser?&nbsp;</h2>
+                <p class="govuk-body-m"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat" rel="external" target="'_blank'">use webchat</a></p><p class="govuk-caption-m">8am - 8pm Monday - Friday</p><p class="govuk-caption-m">10am - 5pm Saturday</p>
+            </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+{% endblock %}

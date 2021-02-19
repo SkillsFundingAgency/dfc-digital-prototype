@@ -11,9 +11,37 @@ Careers advice - job profiles, information and resources | National Careers Serv
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
 </div>
+<div class="govuk-width-container">
+        <div class="govuk-phase-banner">
+            <div class="govuk-header__navigation--end">
+              <div class="account-nav">
+              <span>  Sam Johnson  <a href="" class="govuk-!-margin-left-1 govuk-!-margin-right-3">Sign out</a><a href="#">Your account</a></span>
+              </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 {% block content %}
-<div class="govuk-width-container"> <a href="#" class="govuk-back-link">Home</a>
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Action plans</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Your account</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Your action plan</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      Your goal
+    </li>
+  </ol>
+</div>
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row govuk-!-margin-top-6">
       <div class="govuk-grid-column-two-thirds ">
