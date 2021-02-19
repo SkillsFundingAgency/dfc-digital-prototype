@@ -1,0 +1,102 @@
+{% extends "layout_ncs_sprint3.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="homepage">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="action-plans">Action plans</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="your-account">Your account</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+    Close your account
+    </li>
+  </ol>
+  </div>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row govuk-!-margin-top-6">
+      <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">Close your account</h1>
+            <!-- <p>You can reset your password if you've forgotten it.</p> -->
+
+
+            <form id="close-your-accountFormCloseYourAccount" action="close-your-account" class="govuk-form-group validationOnClient " method="post">
+
+                <input id="CustomerId" name="CustomerId" type="hidden" value="0f57c826-9e7b-416d-867f-40a61717d403">
+
+
+                <p class="govuk-body">
+                    Closing your account means you will no longer have online access to:
+                    </p><ul class="govuk-body list list-bullet">
+                        <li>any personal information you’ve shared with us</li>
+                        <li>any adviser created action plans</li>
+                    </ul>
+                <p></p>
+
+                <p class="govuk-body">
+                    Your careers adviser will still have access to information that you've provided:
+                    </p><ul class="govuk-body list list-bullet">
+                        <li>in a face-to-face session</li>
+                        <li>over the phone</li>
+                    </ul>
+                <p></p>
+
+                <p class="govuk-body">If you want to find out how we look after your information, read our <a id="PrivatePolicy" href="https://nationalcareers.service.gov.uk/help/privacy-and-cookies" tabindex="0" class=" ">privacy policy</a></p>
+
+                <h2 class="heading-medium">Confirm account closure</h2>
+                <p>Enter your password to close your account.</p>
+                <div class="govuk-form-group ">
+
+
+<label class="govuk-label " for="password">
+    Password
+</label>
+
+
+                    <input class="govuk-input govuk-input--width-20 " id="password" name="Password" type="password">
+                </div>
+                <br>
+                <div class="govuk-form-group">
+
+<button id="close-your-accountGovukButtonCloseAccount" class="govuk-button  " data-module="govuk-button">
+    Close account
+</button>
+                </div>
+                <p>
+                    or
+                    <a href="/your-account/home">
+                        cancel and return to your account
+                    </a>.
+                </p>
+            </form>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <div class="app-related-items">
+          <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="111630">Speak to an adviser?&nbsp;</h2>
+          <p class="govuk-body-m"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat" rel="external" target="'_blank'">use webchat</a></p>
+          <p class="govuk-caption-m">8am - 8pm Monday - Friday</p>
+          <p class="govuk-caption-m">10am - 5pm Saturday</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

@@ -1,0 +1,258 @@
+{% extends "layout_ncs_sprint3.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container"> <div class="govuk-breadcrumbs">
+<ol class="govuk-breadcrumbs__list">
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="homepage">Home</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="action-plans">Action plans</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="your-account">Your account</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    Your details
+  </li>
+</ol>
+</div>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row govuk-!-margin-top-6">
+      <div class="govuk-grid-column-two-thirds">
+
+<h1 class="govuk-heading-xl ">Edit your details</h1>
+
+
+        <form id="edit-your-detailsFormEditYourDetails" action="your-details" class="govuk-form-group mt" method="post">
+
+        <h2 class="govuk-heading-l govuk-visually-hidden">Your peryour-detailssonal details</h2><table class="govuk-table govuk-visually-hidden" aria-describedby="personal-details-table">
+
+
+
+            <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><label class="govuk-label" for="Identity_PersonalDetails_Title">Title</label></th>
+                <td class="govuk-table__cell">
+
+                    <div class="govuk-form-group ">
+
+                        <select class="govuk-select " id="Identity_PersonalDetails_Title" name="Identity.PersonalDetails.Title"><option value="99">Select</option>
+<option value="3">Miss</option>
+<option value="1">Mr</option>
+<option selected="selected" value="2">Mrs</option>
+<option value="4">Dr</option>
+<option value="5">Other</option>
+</select>
+                    </div>
+                    <div class="govuk-form-group"> </div>
+                </td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">
+                    <label class="govuk-label" for="Identity_PersonalDetails_GivenName">First name</label>
+                </th>
+                <td class="govuk-table__cell">
+                    <div class="govuk-form-group ">
+
+                        <input class="govuk-input " id="Identity_PersonalDetails_GivenName" maxlength="50" name="Identity.PersonalDetails.GivenName" type="text" value="Kadir">
+                    </div>
+                    <div class="govuk-form-group"> </div>
+                </td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><label class="govuk-label" for="Identity_PersonalDetails_FamilyName">Last name</label></th>
+                <td class="govuk-table__cell">
+                    <div class="govuk-form-group ">
+
+                        <input class="govuk-input " id="Identity_PersonalDetails_FamilyName" maxlength="50" name="Identity.PersonalDetails.FamilyName" type="text" value="Hima">
+                    </div>
+                    <div class="govuk-form-group"> </div>
+                </td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><label class="govuk-label" for="Identity_PersonalDetails_DateOfBirth">Date of birth</label></th>
+                <td class="govuk-table__cell">
+                    20 April 1983
+                </td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><label class="govuk-label" for="Identity_PersonalDetails_Gender">Gender</label></th>
+                <td class="govuk-table__cell">
+                    <div class="govuk-form-group ">
+                        <select class="govuk-select " id="Identity_PersonalDetails_Gender" name="Identity.PersonalDetails.Gender"><option value="99">Select</option>
+<option value="1">Female</option>
+<option selected="selected" value="2">Male</option>
+<option value="3">Not applicable</option>
+</select>
+                    </div>
+                    <div class="govuk-form-group"> </div>
+                </td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">
+                    <span class="govuk-label">Address</span>
+                </th>
+                <td class="govuk-table__cell">
+                    <label class="govuk-label" for="Identity_PersonalDetails_HomePostCode">Enter your postcode</label>
+                    <span class="govuk-hint">Use your postcode to find your address. <br>For example, SW1A 1AA.</span>
+                    <div class="govuk-form-group ">
+
+                        <input class="govuk-input " id="Identity_PersonalDetails_HomePostCode" maxlength="8" name="Identity.PersonalDetails.HomePostCode" type="text" value="">
+                    </div>
+                    <br>
+                    <div class="govuk-form-group">
+                        <input id="EditYourDetails-FindAddress-btn" class="govuk-button" type="submit" value="Find Address" name="FindAddress">
+                    </div>
+
+                    <p>or enter your address manually:</p>
+                    <div class="govuk-form-group " id="form-address">
+                        <label class="govuk-label" for="Identity_PersonalDetails_AddressLine1">First line of your address</label>
+
+                        <input class="govuk-input " id="Identity_PersonalDetails_AddressLine1" maxlength="80" name="Identity.PersonalDetails.AddressLine1" type="text" value="">
+                    </div>
+                    <div class="govuk-form-group ">
+                        <label class="govuk-label" for="Identity_PersonalDetails_AddressLine2">Second line of your address</label>
+
+                        <input class="govuk-input " id="Identity_PersonalDetails_AddressLine2" maxlength="80" name="Identity.PersonalDetails.AddressLine2" type="text" value="">
+                    </div>
+                    <div class="govuk-form-group ">
+                        <label class="govuk-label" for="Identity_PersonalDetails_AddressLine3">Third line of your address</label>
+
+                        <input class="govuk-input " id="Identity_PersonalDetails_AddressLine3" maxlength="80" name="Identity.PersonalDetails.AddressLine3" type="text" value="">
+                    </div>
+                    <div class="govuk-form-group ">
+                        <label class="govuk-label" for="Identity_PersonalDetails_AddressLine4">Fourth line of your address</label>
+
+                        <input class="govuk-input " id="Identity_PersonalDetails_AddressLine4" maxlength="80" name="Identity.PersonalDetails.AddressLine4" type="text" value="">
+                    </div>
+                    <div class="govuk-form-group ">
+                        <label class="govuk-label" for="Identity_PersonalDetails_Town">Town</label>
+
+                        <input class="govuk-input " id="Identity_PersonalDetails_Town" maxlength="80" name="Identity.PersonalDetails.Town" type="text" value="">
+                    </div>
+                    <div class="govuk-form-group"> </div>
+
+                    <input type="hidden" name="Identity.PersonalDetails.AddressId">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2 class="heading-medium">Your contact details</h2>
+        <table class="govuk-table" aria-describedby="contact-details-table">
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header"><label class="govuk-label" for="Identity_ContactDetails_HomeNumber">Home number</label></th>
+                    <td class="govuk-table__cell  ">
+                        <div class="govuk-form-group ">
+
+                            <input class="govuk-input " id="Identity_ContactDetails_HomeNumber" name="Identity.ContactDetails.HomeNumber" type="text" value="07380713394">
+                        </div>
+                        <div class="govuk-form-group"> </div>
+                    </td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header"><label class="govuk-label" for="Identity_ContactDetails_MobileNumber">Mobile number</label></th>
+                    <td class="govuk-table__cell  ">
+                        <div class="govuk-form-group ">
+
+                            <input class="govuk-input " id="Identity_ContactDetails_MobileNumber" name="Identity.ContactDetails.MobileNumber" type="text" value="07713267676">
+                        </div>
+                        <div class="govuk-form-group"> </div>
+                    </td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header"><label class="govuk-label" for="Identity_ContactDetails_TelephoneNumberAlternative">Alternative phone number</label></th>
+                    <td class="govuk-table__cell   ">
+                        <span class="govuk-hint">
+                            If you remove this phone number, telephone and face-to-face advisers won't be able to contact you on this number anymore.
+                        </span>
+                        <div class="govuk-form-group ">
+
+                            <input class="govuk-input " id="Identity_ContactDetails_TelephoneNumberAlternative" name="Identity.ContactDetails.TelephoneNumberAlternative" type="text" value="">
+                        </div>
+                        <div class="govuk-form-group"> </div>
+                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header"><label class="govuk-label" for="Identity_ContactDetails_ContactPreference">Preferred contact method</label></th>
+                    <td class="govuk-table__cell ">
+                        <div class="govuk-form-group ">
+
+                            <select class="govuk-select " id="Identity_ContactDetails_ContactPreference" name="Identity.ContactDetails.ContactPreference"><option value="1">Email</option>
+<option value="2">Mobile</option>
+<option value="3">Telephone</option>
+<option selected="selected" value="4">SMS</option>
+<option value="5">Post</option>
+</select>
+                        </div>
+                        <div class="govuk-form-group"> </div>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2 class="heading-medium">Your marketing preferences</h2>
+        <p>I agree to the following:</p>
+
+        <legend class="govuk-visually-hidden">
+            Your marketing preferences
+        </legend>
+        <div class="govuk-form-group govuk-checkboxes govuk-checkboxes--small">
+
+
+            <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="edit-your-detailsGovukCheckBoxMarketing-opt-out" name="MarketingOptIn" type="checkbox">
+    <label class="govuk-label govuk-checkboxes__label" for="edit-your-detailsGovukCheckBoxMarketing-opt-out">
+        To receive marketing from the National Careers Service’s trusted partners
+    </label>
+</div>
+
+            <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="edit-your-detailsGovukCheckBoxMarket-research" name="MarketResearchOptIn" type="checkbox" checked="">
+    <label class="govuk-label govuk-checkboxes__label" for="edit-your-detailsGovukCheckBoxMarket-research">
+        The National Careers Service can contact me for market research
+    </label>
+</div>
+        </div>
+
+        <div class="govuk-form-group">
+            <button id="edit-your-detailsGovukButtonSave" class="govuk-button" type="submit" value="Save details" name="saveDetails" data-module="govuk-button">
+                Save my changes
+            </button>
+        </div>
+
+        <p>or <a href="your-account">cancel and return to your account</a>.</p>
+
+        </form>
+        </div>
+
+      <div class="govuk-grid-column-one-third">
+        <div class="app-related-items">
+          <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="111630">Speak to an adviser?&nbsp;</h2>
+          <p class="govuk-body-m"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat" rel="external" target="'_blank'">use webchat</a></p>
+          <p class="govuk-caption-m">8am - 8pm Monday - Friday</p>
+          <p class="govuk-caption-m">10am - 5pm Saturday</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
