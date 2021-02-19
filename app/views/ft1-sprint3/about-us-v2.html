@@ -1,4 +1,4 @@
-{% extends "layout_ncs_sprint55.html" %}
+{% extends "layout_ncs_sprint50.html" %}
 
 {% block header %}
 
@@ -17,35 +17,25 @@ About us | National Careers Service
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
             <h1 class="govuk-heading-xl">About the National Careers Service</h1>
-            <p class="govuk-body-lead">The National Careers Service provides you with career information, advice and guidance. This will help you make realistic career decisions.</p>
+            <p class="govuk-body-lead">We provide information, advice and guidance to help you make decisions on learning, training and work.</p>
             </div>
       </div>
     </div>
   </div>
-  <!-- <div class="secondary-hero">
-
-  </div> -->
-</header>
-{% endblock %}
-
-{% block content %}
-<div class="wrapper" id="wrapper">
-  <section class="govuk-!-margin-top-5" id="">
+  <div class="secondary-hero">
     <div class="govuk-width-container">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half card">
           <h2 class="govuk-heading-l">Find out more about us</h2>
           <p class="govuk-body">The National Careers Service is here to help you:</p>
           <ul class="govuk-list govuk-list--bullet">
-            <li>explore your career options</li>
-            <li>find out what skills you have already</li>
-            <li>help you plan the next steps your career</li>
-            <li>support you to take action in your career journey</li>
+            <li>discover your career options</li>
+            <li>work out your next steps</li>
+            <li>support you to take action in your career</li>
           </ul>
-          <p class="govuk-body">The video will give you a brief overview of some of the work the National Careers Service does.</p>
         </div>
         <div class="govuk-grid-column-one-half card">
-          <iframe id="" width="100%" height="315" title="What National Careers Service do" src="https://www.youtube.com/embed/BN4rdE2HXaw?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.gov.uk&amp;rel=0&amp;disablekb=1&amp;modestbranding=1&amp;channel&amp;widgetid=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="featured-banner" width="100%" height="315" title="What National Careers Service do" src="https://www.youtube.com/embed/BN4rdE2HXaw?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.gov.uk&amp;rel=0&amp;disablekb=1&amp;modestbranding=1&amp;channel&amp;widgetid=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <details class="govuk-details govuk-!-margin-top-3" data-module="govuk-details">
             <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View transcript </span> </summary>
             <div class="govuk-details__text">
@@ -84,39 +74,43 @@ About us | National Careers Service
 
       </div>
     </div>
-  </section>
-  <section class="brand--ncs brand__border-color organisation__brand-border-top organisation__section-wrap" id="">
-    <div class="govuk-grid-row govuk-!-margin-top-5">
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="wrapper" id="wrapper">
+  <section class="govuk-!-margin-top-5" id="">
+    <div class="govuk-grid-row ">
       <div class="govuk-grid-column-two-thirds">
-        <h3 class="govuk-heading-m govuk-!-font-size-27">Who is the National Careers Service for?</h3>
+        <h3 class="govuk-heading-m">Who is the National Careers Service for?</h3>
       </div>
     </div>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third  govuk-!-margin-top-2">
         <h3 class="gem-c-heading govuk-heading-m   govuk-!-margin-bottom-3">Citizens</h3>
-        <p class="govuk-body-m">We provide anyone aged 13+ with careers information, advice and guidance to help you make good career choices.</p>
+        <p class="govuk-body-m">We provide citizens aged 13+ with careers information, advice and guidance to help you make good career choices.</p>
       </div>
       <div class="govuk-grid-column-one-third govuk-!-margin-top-2">
         <div>
           <h2 class="govuk-heading-m">Intermediaries</h2>
-          <p class="govuk-body">We provide information for teachers, coaches and advisers to support others in their career journey.
-</p>
+          <p class="govuk-body">We provide information for teachers, parents and advisers to support others in their career journey.</p>
 
         </div>
       </div>
       <div class="govuk-grid-column-one-third  govuk-!-margin-top-2">
         <h3 class="gem-c-heading govuk-heading-m   govuk-!-margin-bottom-3">Stakeholders</h3>
-        <p class="govuk-body">We work with organisations and employers. We help promote the importance of careers guidance, taking into account labour market needs.</p>
+        <p class="govuk-body">We  work with employers across all sectors to make sure that the information we provide is representative of the labour market.</p>
 
       </div>
     </div>
   </section>
-  <section class="brand--ncs brand__border-color organisation__brand-border-top organisation__section-wrap govuk-!-margin-top-5" id="">
+  <section class="brand--ncs brand__border-color organisation__brand-border-top organisation__section-wrap govuk-!-margin-top-5" id="featured-documents">
     <div class="govuk-grid-row govuk-!-margin-top-3 govuk-!-margin-bottom-2">
       <div class="govuk-grid-column-two-thirds govuk-!-margin-top-2">
         <div>
-          <h2 class="govuk-heading-m govuk-!-font-size-27">Careers information and advice online</h2>
-          <p class="govuk-body">The National Careers Service website is here to give you the tools to make decisions about your career at your own pace and in your own time. You can:</p>
+          <h2 class="govuk-heading-m">Digital careers information and advice</h2>
+          <p class="govuk-body">The National Careers Website is here to give you the tools to make decisions about your career at your own pace and in your own time. You can:</p>
           <ul class="govuk-list govuk-list--bullet">
             <li>browse our <a href="#">job profiles</a> for inspiration</li>
             <li>read <a href="#">careers advice articles</a></li>
@@ -128,29 +122,29 @@ About us | National Careers Service
       </div>
     </div>
   </section>
-  <section class="" id="">
+  <section class="" id="featured-documents">
     <div class="govuk-grid-row govuk-!-margin-top-6 govuk-!-margin-bottom-2">
       <div class="govuk-grid-column-two-thirds govuk-!-margin-top-2">
         <div>
-          <h2 class="govuk-heading-m govuk-!-font-size-27">Telephone and web chat support</h2>
-          <p class="govuk-body">If you want some extra support on your career journey, you can <a href="#">contact us</a> to speak to an adviser or <a href="#">start a web chat</a>. Our careers advisers can help you work out where you want to go in your career and how to get there.</p>
+          <h2 class="govuk-heading-m">Telephone and web chat support</h2>
+          <p class="govuk-body">If you want some extra support on your career journey, you can <a href="#">contact us</a> to speak to an adviser or <a href="#">start a web chat</a>. Our careers advisers can help you work out where you want to go in your career and give you the techniques to get you there.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="" id="">
+  <section class="" id="featured-documents">
     <div class="govuk-grid-row govuk-!-margin-top-3 govuk-!-margin-bottom-2">
       <div class="govuk-grid-column-two-thirds govuk-!-margin-top-2">
         <div>
-          <h2 class="govuk-heading-m govuk-!-font-size-27">Personalised careers guidance</h2>
-          <p class="govuk-body">You can also access personal careers guidance through the National Careers Service. Trained careers advisers can help you to build your confidence to take your next steps on your career journey.</p>
-          <p class="govuk-body">If you <a href="https://nationalcareers.service.gov.uk/help/privacy-and-cookies">contact an adviser</a> personalised careers guidance, our <a href="customer-charter">customer charter </a> will help you understand what to expect from your meeting. </p>
+          <h2 class="govuk-heading-m">Face to face careers guidance</h2>
+          <p class="govuk-body">You can also access 1-1 careers guidance through the National Careers Service. Trained careers advisers can help you to build your confidence to take your next steps on your career journey.</p>
+          <p class="govuk-body">If you <a href="https://nationalcareers.service.gov.uk/help/privacy-and-cookies">contact an adviser</a> for support, our <a href="customer-charter">customer charter </a> will help you understand what to expect from your meeting. </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="brand--ncs brand__border-color organisation__brand-border-top organisation__section-wrap organisation__margin-bottom govuk-!-margin-top-5" id="">
+  <section class="brand--ncs brand__border-color organisation__brand-border-top organisation__section-wrap organisation__margin-bottom govuk-!-margin-top-5" id="featured-documents">
     <div class="govuk-grid-row govuk-!-margin-top-3">
       <div class="govuk-grid-column-one-third  govuk-!-margin-top-2">
         <h3 class="gem-c-heading govuk-heading-m   govuk-!-margin-bottom-3">U.K. careers services</h3>
@@ -163,7 +157,7 @@ About us | National Careers Service
       </div>
       <div class="govuk-grid-column-one-third govuk-!-margin-top-2">
         <div>
-          <h2 class="govuk-heading-m">Speak to an adviser</h2>
+          <h2 class="govuk-heading-m">Speak to an advisor</h2>
           <p class="govuk-body"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat/" rel="external" target="'_blank'">use webchat</a></p>
           <ul class="govuk-list">
             <li>8am-8pm Monday-Friday </li>
@@ -214,16 +208,16 @@ About us | National Careers Service
       </div>
     </div>
   </section>
-  <section class="brand--ncs brand__border-color organisation__brand-border-top organisation__section-wrap organisation__margin-bottom govuk-!-margin-top-3 govuk-!-padding-top-3" id="">
+  <section class="brand--ncs brand__border-color organisation__brand-border-top organisation__section-wrap organisation__margin-bottom govuk-!-margin-top-3 govuk-!-padding-top-3" id="featured-documents">
     <div class="govuk-grid-row ">
       <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-m govuk-!-font-size-27 govuk-!-font-weight-bold">Our policies</h2>
+        <h2 class="govuk-heading-m">Our policies</h2>
       </div>
     </div>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third govuk-!-margin-top-2">
         <h3 class="govuk-heading-m">Accessibility statement</h3>
-        <p class="govuk-body">The <a href="https://nationalcareers.service.gov.uk/help/accessibility">accessibility statement</a> explains how we build our website to make sure you can use it.</p>
+        <p class="govuk-body">The <a href="https://nationalcareers.service.gov.uk/help/accessibility">accessibility statement</a> explains how we build our website to make sure all users can use it.</p>
       </div>
       <div class="govuk-grid-column-one-third govuk-!-margin-top-2">
         <div>
@@ -247,10 +241,10 @@ About us | National Careers Service
 
         </div>
       </div> -->
-      <!-- <div class="govuk-grid-column-one-third govuk-!-margin-top-2">
+      <div class="govuk-grid-column-one-third govuk-!-margin-top-2">
         <h3 class="govuk-heading-m">Media team</h3>
         <p class="govuk-body"><a href="https://www.gov.uk/government/organisations/department-for-education/about/media-enquiries">Contact our press office</a> if you’re a journalist with a media enquiry or interview request.</p>
-      </div> -->
+      </div>
       <!-- <div class="govuk-grid-column-one-third  govuk-!-margin-top-2">
         <h3 class="gem-c-heading govuk-heading-m   govuk-!-margin-bottom-3">Terms & conditions</h3>
         <p class="govuk-body">Find out more about the National Careers Service.</p>
