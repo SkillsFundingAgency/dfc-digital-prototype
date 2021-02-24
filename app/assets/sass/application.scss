@@ -72,7 +72,7 @@ nav {
 
 .app-related-items {
   //border-top: 10px solid govuk-colour("blue");
-  border-top: 10px solid #207e77;
+  border-top: 5px solid #207e77;
   padding-top: govuk-spacing(2);
 }
 
@@ -609,8 +609,10 @@ section.PROD_icon-buttons {
   color: $govuk-secondary-text-colour;
 }
 .app-related-items,.govuk-related-items {
-    border-top: 10px solid #207e77;
-    padding-top: 10px
+    border-top: 5px solid #207e77;
+    padding-top: 10px;
+
+    .govuk-list > li {margin-bottom:5px}
 }
 .app-related-items-sb {
     border-top: 2px solid #207e77;
