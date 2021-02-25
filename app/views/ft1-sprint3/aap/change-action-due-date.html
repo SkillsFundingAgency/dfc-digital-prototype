@@ -22,7 +22,28 @@ Careers advice - job profiles, information and resources | National Careers Serv
     </div>
 {% endblock %}
 {% block content %}
-<div class="govuk-width-container"> <a href="#" class="govuk-back-link">Home</a>
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="action-plans-signed-in">Action plans</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="your-account">Your account</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="your-action-plan">Your action plan</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Your action
+      </li>
+    </ol>
+</div>
+
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row govuk-!-margin-top-6">
       <div class="govuk-grid-column-two-thirds ">
@@ -67,9 +88,14 @@ Careers advice - job profiles, information and resources | National Careers Serv
                 <br>
                 <p>We will update your adviser's records with this change.</p>
 
-<button id="view-goalGovukSecondaryButtonContinue;"  class="govuk-button  " data-module="govuk-button">
+
+<div class="govuk-button-group">
+  <button class="govuk-button" data-module="govuk-button">
     Continue
-</button>
+  </button>
+
+  <a class="govuk-link" href="view-action">Cancel</a>
+</div>
 
             </form>
         </div>
