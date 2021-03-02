@@ -23,6 +23,7 @@ $govuk-assets-path: '/govuk/assets/';
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 @import "components/jobprofile";
+@import "components/lmi";
 @import "components/filters";
 @import "components/search";
 @import "components/facet";
