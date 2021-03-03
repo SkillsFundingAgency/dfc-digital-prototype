@@ -208,9 +208,8 @@ main.govuk-main-wrapper {padding-top:0 !important}
     }
 
     .job-profile-salary {
-
         &:before {
-			background: url("/public/images/pound-sign.svg") no-repeat center;
+			       background: url("/public/images/pound-sign.svg") no-repeat center;
         }
 
         &:after {
