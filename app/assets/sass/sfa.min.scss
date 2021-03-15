@@ -529,7 +529,7 @@ a:focus {
 }
 
 #global-header .header-proposition #proposition-name {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.25;
     text-transform: none;
@@ -543,7 +543,7 @@ a:focus {
 }
 
 #global-header .header-proposition a.menu {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -600,7 +600,7 @@ a:focus {
 #global-header .header-proposition #proposition-link a,#global-header .header-proposition #proposition-links a {
     color: #fff;
     text-decoration: none;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
     font-weight: 700;
@@ -666,7 +666,7 @@ a:focus {
     }
 
     #global-header .header-proposition #proposition-link a,#global-header .header-proposition #proposition-links a {
-        font-family: nta,Arial,sans-serif;
+        font-family: "GDS Transport", Arial, sans-serif;
         font-size: 16px;
         font-weight: 700;
         text-transform: none;
@@ -719,7 +719,7 @@ a:focus {
 }
 
 #global-cookie-message p {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -754,7 +754,7 @@ a:focus {
 }
 
 #footer h2 {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.25;
     text-transform: none;
@@ -781,7 +781,7 @@ a:focus {
 }
 
 #footer .footer-meta .footer-meta-inner ul {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -857,7 +857,7 @@ a:focus {
 }
 
 #footer .footer-meta .footer-meta-inner .open-government-licence p {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -867,7 +867,7 @@ a:focus {
 }
 
 #footer .footer-meta .copyright {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -1007,7 +1007,7 @@ b,blockquote,caption,center,h1,h2,h3,h4,h5,h6,i,input,p,pre,small,strike,strong,
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-	
+
 	@media (max-width: $mobile) {
           padding: 0;
         }
@@ -1017,13 +1017,13 @@ b,blockquote,caption,center,h1,h2,h3,h4,h5,h6,i,input,p,pre,small,strike,strong,
 		@media (max-width: $mobile) {
           margin: 0 10px;
         }
-		
+
 	}
 }
 
 main {
     display: block;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -1033,7 +1033,7 @@ main {
 }
 
 .font-xxlarge {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 53px;
     line-height: 1.0377358491;
     font-weight: 400;
@@ -1073,7 +1073,7 @@ main {
 }
 
 .font-xlarge {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 32px;
     line-height: 1.09375;
     font-weight: 400;
@@ -1088,7 +1088,7 @@ main {
 }
 
 .font-large {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.0416666667;
     font-weight: 400;
@@ -1103,7 +1103,7 @@ main {
 }
 
 .font-medium {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
@@ -1118,7 +1118,7 @@ main {
 }
 
 .font-small {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -1133,7 +1133,7 @@ main {
 }
 
 .font-xsmall {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.1428571429;
     font-weight: 400;
@@ -1148,7 +1148,7 @@ main {
 }
 
 .bold-xxlarge {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 53px;
     line-height: 1.0377358491;
     font-weight: 700;
@@ -1163,7 +1163,7 @@ main {
 }
 
 .bold-xlarge {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 32px;
     line-height: 1.09375;
     font-weight: 700;
@@ -1178,7 +1178,7 @@ main {
 }
 
 .bold-large {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.0416666667;
     font-weight: 700;
@@ -1193,7 +1193,7 @@ main {
 }
 
 .bold-medium {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
@@ -1208,7 +1208,7 @@ main {
 }
 
 .bold-small {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 700;
@@ -1223,7 +1223,7 @@ main {
 }
 
 .bold-xsmall {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.1428571429;
     font-weight: 700;
@@ -1238,7 +1238,7 @@ main {
 }
 
 .heading-xlarge {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 32px;
     line-height: 1.09375;
     font-weight: 700;
@@ -1248,7 +1248,7 @@ main {
 }
 
 .heading-xlarge .heading-secondary {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 20px;
     line-height: 1.1111111111;
     font-weight: 400;
@@ -1276,7 +1276,7 @@ main {
 }
 
 .heading-large {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.0416666667;
     font-weight: 700;
@@ -1286,7 +1286,7 @@ main {
 }
 
 .heading-large .heading-secondary {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
@@ -1314,7 +1314,7 @@ main {
 }
 
 .heading-medium {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
@@ -1333,7 +1333,7 @@ main {
 }
 
 .heading-small {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 700;
@@ -1361,7 +1361,7 @@ p {
 }
 
 .lede {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
@@ -1403,7 +1403,7 @@ p {
 .link-back {
     display: inline-block;
     position: relative;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.1428571429;
     font-weight: 400;
@@ -1613,7 +1613,7 @@ hr {
 }
 
 .button-get-started,.button-start {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
@@ -1987,7 +1987,7 @@ table {
 }
 
 table td,table th {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.1428571429;
     font-weight: 400;
@@ -2115,7 +2115,7 @@ textarea {
 }
 
 .form-label-bold {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 700;
@@ -2150,7 +2150,7 @@ legend .form-label,legend .form-label-bold {
 }
 
 .form-hint {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     text-transform: none;
@@ -2338,7 +2338,7 @@ input[type=number] {
 }
 
 .error-message {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -2402,7 +2402,7 @@ input[type=number] {
 }
 
 .breadcrumbs li {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.1428571429;
     font-weight: 400;
@@ -2454,7 +2454,7 @@ input[type=number] {
     display: table;
     margin: 0;
     color: #000;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.1428571429;
     font-weight: 400;
@@ -2465,7 +2465,7 @@ input[type=number] {
     display: inline-block;
     margin: 0 8px 0 0;
     padding: 2px 5px 0;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.1428571429;
     font-weight: 700;
@@ -2507,7 +2507,7 @@ input[type=number] {
 }
 
 .check-your-answers td {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -2587,7 +2587,7 @@ input[type=number] {
 .phase-banner-beta p {
     margin: 0;
     color: #000;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.1428571429;
     font-weight: 400;
@@ -2602,7 +2602,7 @@ input[type=number] {
     vertical-align: top;
     margin: 0 8px 0 0;
     padding: 2px 5px 0;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.1428571429;
     font-weight: 700;
@@ -2786,7 +2786,7 @@ input[type=number] {
 }
 
 .profile-salary strong {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     line-height: 1.2;
     font-weight: 700;
     text-transform: none
@@ -2973,7 +2973,7 @@ button.search-submit {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -2999,7 +2999,7 @@ button.search-submit {
 
 input[type=search],input[type=text] {
     margin: 0;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-weight: 400;
     text-transform: none;
     border: 2px solid #6f777b;
@@ -3011,7 +3011,7 @@ input[type=search],input[type=text] {
 }
 
 .form-label {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -3141,7 +3141,7 @@ p.warning-message {
 }
 
 .previous-next-navigation li {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 27px;
     line-height: 1.11111;
     font-weight: 400;
@@ -3193,7 +3193,7 @@ p.warning-message {
 
 .previous-next-navigation li a span {
     display: block;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
     font-weight: 400;
@@ -3219,7 +3219,7 @@ p.warning-message {
 }
 
 .previous-next-navigation li {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-weight: 400;
     text-transform: none;
     font-size: 12px;
@@ -3249,7 +3249,7 @@ p.warning-message {
 }
 
 .previous-next-navigation li a .pagination-label,.previous-next-navigation li button .pagination-label {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-weight: 400;
     text-transform: none;
     font-size: 20px;
@@ -3273,7 +3273,7 @@ p.warning-message {
     }
 
     .previous-next-navigation li .visuallyhidden {
-        font-family: nta,Arial,sans-serif;
+        font-family: "GDS Transport", Arial, sans-serif;
         font-size: 27px;
         line-height: 1.11111;
         font-weight: 400;
@@ -3292,7 +3292,7 @@ body.search #global-breadcrumb {
 }
 
 main h1 {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.25;
     text-transform: none;
@@ -3328,7 +3328,7 @@ main .search-header .search-submit {
 main .search-header input {
     -webkit-appearance: none;
     border-radius: 0;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 19px;
     font-weight: 400;
     text-transform: none;
@@ -3383,7 +3383,7 @@ main .search-header button:hover {
 }
 
 main .search-header .spelling-suggestion p {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -3411,7 +3411,7 @@ main #results .results-block .result-count {
 }
 
 main #results .results-block .scoped-result-count a {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -3513,7 +3513,7 @@ main #results .results-block .results-list li .examples li {
 }
 
 main #results .results-block .results-list li .examples li p {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
     font-weight: 400;
@@ -3525,7 +3525,7 @@ main #results .results-block .results-list li .examples li:last-child {
 }
 
 main #results .results-block .results-list li h4 {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
     font-weight: 400;
@@ -3554,7 +3554,7 @@ main #results .results-block .results-list li.descoped-results {
 }
 
 main #results .results-block .results-list li.descoped-results .descope-message {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -3579,7 +3579,7 @@ main #results .results-block .results-list h3 a[rel=external]::after {
 }
 
 main #results .results-block .results-list .sections {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -3654,7 +3654,7 @@ main #results .results-block .results-list .sections li {
 }
 
 main #results .results-block .results-list .attributes {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
     font-weight: 400;
@@ -3680,7 +3680,7 @@ main #results .results-block .results-list .attributes li:last-child::after {
 }
 
 main #results .results-block .results-list p {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -3690,7 +3690,7 @@ main #results .results-block .results-list p {
 }
 
 main #results .results-block .results-list p.historic,main #results .results-block .results-list p.meta {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
     font-weight: 400;
@@ -3702,7 +3702,7 @@ main #results .results-block .results-list p.historic,main #results .results-blo
 }
 
 main #results .zero-results h2 {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.25;
     font-weight: 700;
@@ -3730,7 +3730,7 @@ main.no-results-term {
     }
 
     main.no-results-term h1 {
-        font-family: nta,Arial,sans-serif;
+        font-family: "GDS Transport", Arial, sans-serif;
         font-size: 48px;
         line-height: 1.04167;
         text-transform: none;
@@ -3783,7 +3783,7 @@ main.help-page nav.help-contents ul li {
 
 main.help-page nav.help-contents ul li a {
     text-transform: none;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.25;
     font-weight: 700;
@@ -3798,7 +3798,7 @@ main.help-page nav.help-contents ul li p {
 }
 
 .filter-form p {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -3817,7 +3817,7 @@ main.help-page nav.help-contents ul li p {
 }
 
 .filter-form .filter .legend {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 19px;
     line-height: 1.31579;
     text-transform: none;
@@ -3871,7 +3871,7 @@ main.help-page nav.help-contents ul li p {
 }
 
 .search-again,.search-again a {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 24px;
     line-height: 1.25;
     font-weight: 400;
@@ -3958,7 +3958,7 @@ main #results .results-block .results-list {
 }
 
 .employment-prediction .change-difference h4 {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.14286;
     font-weight: 700;
@@ -4072,7 +4072,7 @@ ul.vacancies-list {
 }
 
 ul.vacancies-list li {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -4083,7 +4083,7 @@ ul.vacancies-list li {
 }
 
 ul.vacancies-list li h5 {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 700;
@@ -4101,7 +4101,7 @@ ul.vacancies-list li dl dt {
     clear: both;
     float: left;
     margin-right: 10px;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -4160,7 +4160,7 @@ ul.vacancies-list li dl dd {
 }
 
 .profile-warning-tabs li a {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -4192,7 +4192,7 @@ ul.vacancies-list li dl dd {
 }
 
 .profile-warning h3 {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 700;
@@ -4208,7 +4208,7 @@ ul.vacancies-list li dl dd {
 }
 
 .profile-warning p {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -4409,7 +4409,7 @@ ul.vacancies-list li dl dd {
 }
 
 .profile-sidebar h2 {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
@@ -4418,7 +4418,7 @@ ul.vacancies-list li dl dd {
 }
 
 .offsite-links {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.14286;
     font-weight: 400;
@@ -4447,7 +4447,7 @@ ul.vacancies-list li dl dd {
 
 .profile-summary {
     text-transform: none;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 400;
@@ -4554,7 +4554,7 @@ ul.vacancies-list li dl dd {
 
 .meta-data {
     margin-top: 30px;
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.14286;
     font-weight: 400;
@@ -4596,7 +4596,7 @@ ul.vacancies-list li dl dd {
 }
 
 a.return-to-top {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.14286;
     font-weight: 400;
@@ -6263,7 +6263,7 @@ input[type=search] {
 }
 
 .voc_container {
-    font-family: nta,Arial,sans-serif;
+    font-family: "GDS Transport", Arial, sans-serif;
     font-weight: 400;
     text-transform: none;
     font-size: 16px;
@@ -6416,18 +6416,18 @@ header #proposition-links li:first-child a:after {
     position: absolute;
     width: 1px;
   }
-  
+
   table tr {
     border-bottom: 3px solid #ddd;
     display: block;
   }
-  
+
   table td {
     border-bottom: 1px solid #ddd;
     display: block;
     text-align: right;
   }
-  
+
   table td::before {
     //content: attr(data-label);
     float: left;
@@ -6436,12 +6436,12 @@ header #proposition-links li:first-child a:after {
 
 
 .responsive-table {
-  
+
   width: 100%;
-	
+
 	caption {
 		padding-bottom: 10px;
-		
+
 		@media (min-width: $mobile) {
 			padding-bottom: 0;
 		}
@@ -6468,7 +6468,7 @@ header #proposition-links li:first-child a:after {
 
     @media (min-width: $mobile) {
       clip: auto;
-      display: table-header-group; 
+      display: table-header-group;
       height: auto;
       overflow: auto;
       position: relative;
@@ -6484,10 +6484,10 @@ header #proposition-links li:first-child a:after {
     tr {
       display: block;
     }
-	
+
 	  th {
 		  border-bottom-width: 2px;
-		  
+
 		  @media (min-width: $mobile) {
 			  border-bottom-width: 1px;
 		  }
@@ -6637,7 +6637,7 @@ div {
 
 @media screen and (max-width: 37em), print and (max-width: 5in) {
   display: block;
-  
+
 	tr,
   td {
     display: block;
@@ -6680,7 +6680,7 @@ div {
 }
 
 @media print {page-break-inside: avoid;
-  
+
   div {
     overflow: visible;
   }

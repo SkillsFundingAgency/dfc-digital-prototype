@@ -68,11 +68,13 @@
 
     h2 {
         @include core-24;
+        font-family: "GDS Transport", Arial, sans-serif;
         color: $grey-1;
     }
 
     p {
         @include core-19;
+        font-family: "GDS Transport", Arial, sans-serif;
         margin: 10px 0 30px 0;
     }
 
@@ -126,6 +128,7 @@ main.govuk-main-wrapper {padding-top:0 !important}
         border-bottom: 1px solid $grey-3;
         color: $careers-turquoise;
         @include core-19;
+        font-family: "GDS Transport", Arial, sans-serif;
         line-height: 22px;
         margin-bottom: 10px;
         @extend %contain-floats;
@@ -558,6 +561,7 @@ main.govuk-main-wrapper {padding-top:0 !important}
 
         label {
             @include core-19;
+            font-family: "GDS Transport", Arial, sans-serif;
             line-height: 40px !important;
             position: absolute;
             left: 0;
@@ -615,6 +619,7 @@ main.govuk-main-wrapper {padding-top:0 !important}
         width: 100%;
         padding: 6px;
         @include core-19;
+        font-family: "GDS Transport", Arial, sans-serif;
         margin: 0;
         border: 0;
         outline-offset: 0;
