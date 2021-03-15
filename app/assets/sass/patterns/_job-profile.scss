@@ -3,7 +3,7 @@ iframe body{font-family: arial; font-size: 19px !important;}
 	.homepage-top {
 		#header-search {
 			background: #fff;
-			
+
 		}
 	}
 }
@@ -193,8 +193,8 @@ iframe body{font-family: arial; font-size: 19px !important;}
     padding: 5px 0;
     border-bottom: 1px solid #bfc1c3;
     text-decoration: none;
-	
-	
+
+
 }
 .list-big li:last-child a {  border-bottom: 0px solid #bfc1c3;}
 
@@ -271,7 +271,7 @@ iframe body{font-family: arial; font-size: 19px !important;}
 .search-header .search-input {
     position: static;
     margin: 0;
-	
+
 }
 .search-header .search-input input {padding-left: 10px !important;}
 .search-header .search-submit {
@@ -417,7 +417,7 @@ iframe body{font-family: arial; font-size: 19px !important;}
 }
 
 #results .results-block .results-list .results-salary {
-    margin-bottom: .75em; 
+    margin-bottom: .75em;
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -663,3 +663,9 @@ main #results .results-block .results-list {padding: 0 !important}
     }
 }
 
+.job-profile-sections h4 {
+	font-weight:bold;
+	font-size: 1.1875rem;
+	margin-bottom: 20px;
+	padding-top:10px;
+}
