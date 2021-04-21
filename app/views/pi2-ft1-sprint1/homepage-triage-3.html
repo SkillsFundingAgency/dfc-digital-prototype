@@ -26,9 +26,8 @@ Careers advice - job profiles, information and resources | National Careers Serv
   </div>
   <div>
     <div class="sfContentBlock sf-Long-text">
-      <section class="secondary-hero">
+      <section class="govuk-!-margin-top-4">
         <div class="govuk-width-container">
-
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-full"><br>
               <h2 class="govuk-heading-l">Get personalised careers advice and information</h2>
@@ -65,19 +64,29 @@ Careers advice - job profiles, information and resources | National Careers Serv
 
   <div >
     <div class="govuk-width-container">
-      <div class="govuk-grid-row govuk-!-margin-top-5">
-        <div class="govuk-grid-column-one-third card">
-          <h2 class="govuk-heading-m">Skills assessment</h2>
-          <p class="govuk-body-m">Learn more about your skills and match them to potential new careers.</p>
-          <a class="govuk-link govuk-button" role="button" href="/sprint50/skills-assessment">Assess your skills</a> </div>
+      <div class="govuk-grid-row govuk-!-margin-top-5 card-group">
         <div class="govuk-grid-column-one-third">
-          <h2 class="govuk-heading-m">Explore Careers</h2>
-          <p class="govuk-body-m">Choose from over 800 career profiles to discover what a job involves.</p>
-          <a class="govuk-link govuk-button" role="button" href="/sprint50/explorecareers">Search job profiles</a> </div>
+          <a class="cards-link" href="/sprint50/skills-assessment">
+            <div class="card">
+              <h2 class="govuk-heading-m">Skills assessment</h2>
+              <p class="govuk-body-m">Learn more about your skills and match them to potential new careers.</p>
+              <!-- <a class="govuk-link govuk-button" role="button" href="/sprint50/skills-assessment">Assess your skills</a>  --></div></a>
+        </div>
         <div class="govuk-grid-column-one-third">
+          <a class="cards-link" href="/sprint50/skills-assessment">
+            <div class="card">
+              <h2 class="govuk-heading-m">Explore Careers</h2>
+              <p class="govuk-body-m">Choose from over 800 career profiles to discover what a job involves.</p>
+              <!-- <a class="govuk-link govuk-button" role="button" href="/sprint50/explorecareers">Search job profiles -->
+               </div></a>
+        </div>
+        <div class="govuk-grid-column-one-third ">
+          <a class="cards-link" href="/sprint50/skills-assessment">
+            <div class="card">
           <h2 class="govuk-heading-m">Find a course</h2>
           <p class="govuk-body-m">Look for learning and training opportunities local to you.</p>
-		  <a class="govuk-link govuk-button" role="button" href="https://nationalcareers.service.gov.uk/find-a-course">Look for courses</a> </div>
+		  <!-- <a class="govuk-link govuk-button" role="button" href="https://nationalcareers.service.gov.uk/find-a-course">Look for courses</a>   -->
+    </div></a>
       </div>
     </div>
   </div>
@@ -91,19 +100,21 @@ Careers advice - job profiles, information and resources | National Careers Serv
 {% block content %}
 <div class="wrapper" id="wrapper">
   <section class="brand--ncs brand__border-color organisation__section-wrap organisation__margin-bottom" id="featured-documents">
-    <!-- <div class="govuk-grid-row">
+    <div class="govuk-grid-row">
       <div class="govuk-width-container">
         <div class="separator govuk-!-padding-bottom-4 govuk-!-padding-top-2"> <span style="font-size: 24px; font-weight: bold">Careers advice</span></div>
       </div>
-    </div> -->
+    </div>
     <div class="govuk-width-container">
-      <!-- <div class="govuk-grid-row card-group"><div class="govuk-grid-column-one-third"><a class="cards-link" href="/careers-advice#making-career-choices">
- <div class="card"><h3 class="govuk-heading-s">Making career choices</h3><p class="govuk-body-m">Whether starting your career, changing job or if you have been affected by COVID-19, understand and make the right choice for you.</p></div></a>
+      <div class="govuk-grid-row card-group">
+        <div class="govuk-grid-column-one-third">
+          <a class="cards-link" href="/careers-advice#making-career-choices">
+            <div class="card"><h3 class="govuk-heading-s">Making career choices</h3><p class="govuk-body-m">Whether starting your career, changing job or if you have been affected by COVID-19, understand and make the right choice for you.</p></div></a>
  </div><div class="govuk-grid-column-one-third"><a class="cards-link" href="/careers-advice#getting-a-job">
  <div class="card"><h3 class="govuk-heading-s">Getting a job</h3><p class="govuk-body-m">Be successful in the recruitment process with tips on great CVs, interviews and graduate scheme applications.</p></div></a>
  </div><div class="govuk-grid-column-one-third"><a class="cards-link" href="/careers-advice#progressing-your-career">
  <div class="card"><h3 class="govuk-heading-s">Progressing your career</h3><p class="govuk-body-m">Move up in your career by developing new skills. Find opportunities like volunteering and online learning.</p></div></a>
- </div></div> -->
+ </div></div>
 <!--
       <div class="govuk-grid-row card-group">
         <div class="govuk-grid-column-one-third  govuk-!-padding-right-0"> <a class="cards-link" href="careers-advice#coping-with-change">

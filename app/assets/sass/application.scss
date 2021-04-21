@@ -299,7 +299,18 @@ nav {
 		 }
 	}
 }
+.secondary-hero.no-bg {
+  background-color: #fff;
+}
 
+.organisation__brand-border-top {
+    border-top-width: 5px;
+    border-top-style: solid;
+}
+
+.brand--ncs.brand__border-color {
+    border-color: #207e77;
+}
 
 /* -------------------------------------------------------------
 	Job Profile Search / Related
@@ -1438,6 +1449,71 @@ html {
 
 .js-enabled #distance-block {display: none;}
 .distance-block {display: block;}
+
+
+//Filters dashboard
+
+.info-card {
+  background-color: #F4F4F4;
+  padding: 20px;
+  padding-bottom:0;
+  margin-bottom: 5px;
+
+  &:hover {
+    background: #207e77;
+    cursor: pointer;
+
+    p {
+        color: #fff;
+        text-decoration: underline;
+    }
+  }
+}
+
+.info-card .info-card-content {
+  display: inline-block !important;
+  max-width: 95%;
+  min-width: 40%;
+}
+
+.image-placeholder {
+  background-color: #D8D8D8;
+  color: #0b0c0c;
+  padding: 50px;
+  margin-right: 16px;
+  text-align: center;
+  display: inline-block !important;
+}
+
+.image-placeholder.home {
+  display: block !important;
+  margin-left: 20px;
+  padding: 88px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.adviser-box {
+  border: 1px solid #0B0C0C;
+  padding: 24px;
+}
+
+.triage-select {
+  display: inline-block;
+  width: 60%;
+  height: 46px;
+  margin: 0 10px;
+}
+
+.triage-start-btn {
+   display: inline-block;
+}
+
+.triage-select-label {
+  display: inline-block;
+}
+
 
 //COOKIES
 

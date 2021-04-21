@@ -4,7 +4,7 @@
 		background: #f3f2f1;
 		padding: 10px;
 		margin-bottom:15px;
-		
+
 		@media (max-width: 1019px) {
 			min-height: 190px;
 		}
@@ -20,7 +20,7 @@
 		@media (max-width: 713px) {
 			min-height: 290px;
 		}
-		
+
 		@media (max-width: 648px) {
 			min-height: 315px;
 		}
@@ -28,14 +28,14 @@
 			min-height: auto;
 		}
 		a { text-decoration: none;}
-		
+
 		&:hover {
 			background: #207e77;
 			cursor: pointer;
-			
-			h3, p {color:#fff;}
-			h3 {text-decoration: underline;}
-			
+
+			h3, h2, p {color:#fff;}
+			h3, h2 {text-decoration: underline;}
+
 		}
 	}
 }
