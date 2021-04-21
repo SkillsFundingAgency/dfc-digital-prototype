@@ -1504,10 +1504,19 @@ html {
   width: 60%;
   height: 46px;
   margin: 0 10px;
+
+  @media (max-width: 43.75em) {
+      float: right;
+      width: 75%;
+    }
 }
 
 .triage-start-btn {
    display: inline-block;
+
+   @media (max-width: 43.75em) {
+       margin-top:20px;
+   }
 }
 
 .triage-select-label {
