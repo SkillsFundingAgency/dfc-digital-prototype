@@ -8,7 +8,7 @@
 
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
-  <a class="govuk-back-link" href="homepage-triage-1">Back</a>
+  <a class="govuk-back-link" href="/">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -23,7 +23,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-third filters-column">
+  <div class="govuk-grid-column-one-third">
 
     <div class="govuk-accordion" data-module="govuk-accordion" id="accordionFilters">
       <div class="govuk-accordion__section">
@@ -819,247 +819,204 @@
 
 
     </div><!--end accordion -->
-    <div class="job-profile-sidebar">
-                <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="111630">Speak to an adviser?&nbsp;</h2>
-                <p class="govuk-body-m"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat" rel="external" target="'_blank'">use webchat</a></p><p class="govuk-caption-m">8am - 8pm Monday - Friday</p><p class="govuk-caption-m">10am - 5pm Saturday</p>
-            </div>
+    <div class="adviser-box">
+      <p class="govuk-body govuk-!-font-weight-bold">Speak to an adviser</p>
+      <p class="govuk-body">Contact us by online chat, phone, email or post.</p>
+      <a href="#" class="govuk-link">View contact options</a>
+    </div>
   </div>
 
   <!-- Filtered results -->
-  <div class="govuk-grid-column-two-thirds" id="allArticles">
+  <div class="govuk-grid-column-two-thirds opt1" id="allArticles">
     <h4 class="govuk-heading-m" id="totalArticles">14 suggestions</h4>
+
     <!-- Article results -->
-    <a class="govuk-link" href="/sprint43/skills-assessment/skills-health-check/skills-health-check">
-      <div class="info-card" id="card1">
-        <div class="info-card-content">
-          <p class="govuk-body govuk-!-font-weight-bold">Skills Health Check</p>
-        </div>
-      </div>
-    </a>
-    <a class="govuk-link" href="https://beta.nationalcareers.service.gov.uk/">
-      <div class="info-card" id="card2">
-        <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Discover your skills and careers (DYSAC)</p><!--<p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--></div>
-      </div>
-    </a>
-    <a class="govuk-link" href="/sprint46/explorecareers">
+    <div class="info-card" id="card1">
+      <div class="info-card-content">
+
+
+
+        <!-- <h3 class="govuk-heading-s"><a class="govuk-link" href="#">Skills Health Check</a></h3> -->
+
+        <p class="govuk-body govuk-!-font-weight-bold">Skills Health Check</p>
+        <!--<p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--></div>
+    </div>
+    <div class="info-card" id="card2">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Discover your skills and careers (DYSAC)</p><!--<p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--></div>
+    </div>
     <div class="info-card" id="card3">
 
-      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Explore careers</p><!--<p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--></div>
-    </div></a>
-    <a class="govuk-link" href="https://beta.nationalcareers.service.gov.uk/">
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">Explore careers</p><!--<p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--></div>
+    </div>
     <div class="info-card" id="card5">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Role profiles</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/find-a-course">
+    </div>
     <div class="info-card" id="card6">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Find a course</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/find-a-course/the-skills-toolkit">
+    </div>
     <div class="info-card" id="card7">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">The Skills Toolkit</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/the-world-of-work-is-changing">
+    </div>
     <div class="info-card" id="card8">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Covid support advice for if you lose your job</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice">
+    </div>
     <div class="info-card" id="card9">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Other ways to develop skills</p></div>
-    </div></a>
-    <a class="govuk-link" href="#">
+    </div>
     <div class="info-card" id="card10">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Where to find other online learning</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/career-choices-at-16">
+    </div>
     <div class="info-card" id="card11">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Post 16 options</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/career-choices-at-18">
+    </div>
     <div class="info-card" id="card12">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Post 18 options</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/options-with-education-health-and-care-plan/">
+    </div>
     <div class="info-card" id="card13">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Options with an EHC plan</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/career-and-job-support-for-people-with-a-disability/">
+    </div>
     <div class="info-card" id="card14">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Career and job support for people with a disability</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/advice-on-a-gap-year/">
+    </div>
     <div class="info-card" id="card15">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Advice on a gap year</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/advice-for-if-you-lose-your-job">
+    </div>
     <div class="info-card" id="card16">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Advice for if you lose your job</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/the-world-of-work-is-changing">
+    </div>
     <div class="info-card" id="card17">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Understanding the working world during Covid 19</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/advice-on-further-study-options">
+    </div>
     <div class="info-card" id="card18">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Advice on further study options</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/how-to-bounce-back-in-a-tough-jobs-market">
+    </div>
     <div class="info-card" id="card19">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to bounce back in a tough jobs market</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/careers-in-the-armed-forces/">
+    </div>
     <div class="info-card" id="card20">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Careers in the armed forces</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/advertised-job-vacancies">
+    </div>
     <div class="info-card" id="card21">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to find job vacancies</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/making-the-most-of-virtual-job-fairs/">
+    </div>
     <div class="info-card" id="card22">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Making the most of virtual job fairs</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/networking">
+    </div>
     <div class="info-card" id="card23">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Find a job by networking</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/cv-sections">
+    </div>
     <div class="info-card" id="card24">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to write a CV</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/covering-letter">
+    </div>
     <div class="info-card" id="card25">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to write a cover letter</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/application-forms">
+    </div>
     <div class="info-card" id="card26">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to fill in an application form</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/interview-advice">
+    </div>
     <div class="info-card" id="card27">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Interview advice</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions">
+    </div>
     <div class="info-card" id="card28">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to answer common interview questions</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-telephone-interviews/">
+    </div>
     <div class="info-card" id="card29">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to do well in telephone interviews</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews/">
+    </div>
     <div class="info-card" id="card30">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to do well in video interviews</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/create-a-linkedin-profile/">
+    </div>
     <div class="info-card" id="card31">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to create a Linkedin profile</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/how-to-find-graduate-schemes/">
+    </div>
     <div class="info-card" id="card32">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to find graduate schemes</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/how-to-prepare-for-psychometric-tests/">
+    </div>
     <div class="info-card" id="card33">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to prepare for psychometric tests</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/how-to-find-a-virtual-internships/">
+    </div>
     <div class="info-card" id="card34">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to find a virtual internship</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/how-to-develop-your-soft-skills">
+    </div>
     <div class="info-card" id="card35">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Develop your soft skills</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/advice-on-volunteering/">
+    </div>
     <div class="info-card" id="card36">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Advice on volunteering</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/getting-the-most-out-of-mentoring/">
+    </div>
     <div class="info-card" id="card37">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Getting the most out of mentoring</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/ways-to-develop-skills/">
+    </div>
     <div class="info-card" id="card38">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Ways to develop skills</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/identifying-skills-and-upskilling/">
+    </div>
     <div class="info-card" id="card39">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Identifying skills and upskilling</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/how-digital-skills-can-help-you/">
+    </div>
     <div class="info-card" id="card40">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How digital skills can help you</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/build-foundation-digital-skills-to-help-your-career/">
+    </div>
     <div class="info-card" id="card41">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Build foundation digital skills</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/choosing-online-learning">
+    </div>
     <div class="info-card" id="card42">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Choosing online learning</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/getting-the-most-out-of-online-learning">
+    </div>
     <div class="info-card" id="card43">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Getting the most out online learning</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/how-work-experience-can-help-you">
+    </div>
     <div class="info-card" id="card44">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How work experience can help you</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/types-of-work-experience">
+    </div>
     <div class="info-card" id="card45">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Types of work experience</p></div>
-    </div></a>
-    <a class="govuk-link" href="https://nationalcareers.service.gov.uk/contact-us">
+    </div>
     <div class="info-card" id="card46">
 
       <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Contact us</p></div>
-    </div></a>
-    <div class="job-profile-sidebar">
-                <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="111630">Speak to an adviser?&nbsp;</h2>
-                <p class="govuk-body-m"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat" rel="external" target="'_blank'">use webchat</a></p><p class="govuk-caption-m">8am - 8pm Monday - Friday</p><p class="govuk-caption-m">10am - 5pm Saturday</p>
-            </div>
+    </div>
   </div>
 </div>
 

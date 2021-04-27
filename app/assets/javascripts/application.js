@@ -348,9 +348,9 @@ $(function(){
   function updateNumberSuggestions() {
     filterClickedNumber = $("#allArticles .info-card:visible").length
     if (filterClickedNumber == 1) {
-      $("#totalArticles").text(filterClickedNumber + " suggestion")
+      $("#totalArticles").text(filterClickedNumber + " suggestion");
     } else {
-      $("#totalArticles").text(filterClickedNumber + " suggestions")
+      $("#totalArticles").text(filterClickedNumber + " suggestions");
     }
   }
 

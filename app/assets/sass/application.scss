@@ -1455,9 +1455,17 @@ html {
 
 .info-card {
   background-color: #F4F4F4;
-  padding: 20px;
-  padding-bottom:0;
+  padding: 10px;
   margin-bottom: 5px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .govuk-\!-font-weight-bold {
+    font-weight: 600 !important;
+
+  }
 
   &:hover {
     background: #207e77;
@@ -1465,6 +1473,30 @@ html {
 
     p {
         color: #fff;
+        text-decoration: underline;
+    }
+  }
+}
+
+.opt1 .info-card {
+  background-color: #fff;
+  border-top:1px solid #ccc;
+  padding: 5px 0px;
+  margin-bottom: 5px;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline !important; }
+  }
+
+  &:hover {
+    background: none;
+    cursor: pointer;
+
+    p {
+        color: #0b0c0c;
         text-decoration: underline;
     }
   }
@@ -1506,8 +1538,7 @@ html {
   margin: 0 10px;
 
   @media (max-width: 43.75em) {
-      float: right;
-      width: 75%;
+      width: 85%;
     }
 }
 
@@ -1522,6 +1553,22 @@ html {
 .triage-select-label {
   display: inline-block;
 }
+
+.filters-column {
+  .job-profile-sidebar {
+    @media (max-width: 43.75em) {
+        display:none;
+    }
+  }
+}
+
+  #allArticles {
+    .job-profile-sidebar { display: none;
+      @media (max-width: 43.75em) {
+          display:block;
+      }
+    }
+  }
 
 
 //COOKIES
