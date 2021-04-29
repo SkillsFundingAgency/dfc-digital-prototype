@@ -1478,11 +1478,34 @@ html {
   }
 }
 
-.opt1 .info-card {
-  background-color: #fff;
-  border-top:1px solid #ccc;
-  padding: 5px 0px;
-  margin-bottom: 5px;
+.triage-banner .triage-select-label { margin-right:10px}
+.triage-opt2 .info-card { background-color: #fff; cursor:default;}
+.triage-opt2.results {
+
+    .results-block {
+      .results-list {
+
+        li.info-card {
+        padding: 0 0 15px;
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+
+        h3 {
+          margin-bottom: 5px;
+
+          a {
+            // text-decoration: underline;
+          }
+        }
+      }
+    }
+    }
+
+
+  p {
+    margin: 5px 0;
+  }
 
   a {
     text-decoration: none;
@@ -1497,7 +1520,7 @@ html {
 
     p {
         color: #0b0c0c;
-        text-decoration: underline;
+        text-decoration: none;
     }
   }
 }
@@ -1554,7 +1577,7 @@ html {
   display: inline-block;
 }
 
-.filters-column {
+.filters {
   .job-profile-sidebar {
     @media (max-width: 43.75em) {
         display:none;
@@ -1569,6 +1592,29 @@ html {
       }
     }
   }
+
+  .triage-banner {
+    .triage-start-btn {
+      display: block;
+
+    .triage-search-item-wrapper {
+      display: table;
+      width: 90%;
+      margin-bottom: 1em;
+    }
+  }
+  .triage-select {
+      margin:0
+  }
+}
+
+.js-enabled .triage-banner .triage-start-btn {
+  display: none;
+}
+main #results.triage-results .results-block {
+    float: left;
+    width: 100%
+}
 
 
 //COOKIES

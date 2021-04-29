@@ -354,6 +354,16 @@ $(function(){
     }
   }
 
+  function updateNumberOfSuggestions() {
+    filterClickedNumber = $("#allArticles .info-card:visible").length
+    if (filterClickedNumber == 1) {
+      $("#totalNumberArticles").text(filterClickedNumber);
+    } else {
+      $("#totalNumberArticles").text(filterClickedNumber);
+    }
+  }
+
+
   function toggleArticles(n) {
 
     // Hide all articles
@@ -415,6 +425,70 @@ $(function(){
 
   }
 
+
+
+  function toggleArticlesOpt(n) {
+
+    // Hide all articles
+    $('.info-card').hide()
+
+    var filtersAlreadyClickedArray = []
+    var filterSetArray = []
+
+    // find out what filters are already clicked in the secondary group showing
+    $('#' + n + ' .govuk-checkboxes__input').each(function( index ) {
+      filterSetArray.push($(this).val())
+      if ($(this).is(":checked")){
+        filtersAlreadyClickedArray.push($(this).val())
+      }
+    })
+
+    // If nothing has been checked, then show total articles from that filter group
+    if(!$('#' + n + ' .govuk-checkboxes__input').is(":checked")) {
+
+      // Show total articles from the current filter group
+      $(allFilterNames).each(function( i ) {
+        $(filterSetArray).each(function( m ) {
+          if (allFilterNames[i] === filterSetArray[m]) {
+            //console.log("show the articles for " + filterSetArray[m])
+            $(allFilterGroups).each(function( j ) {
+              $('#'+allFilterGroups[i][j]).show()
+            })
+          }
+        })
+      })
+
+    // Otherwise, only show articles from what has already been clicked
+    } else {
+      $(allFilterNames).each(function( i ) {
+        $(filtersAlreadyClickedArray).each(function( index ) {
+          if (filtersAlreadyClickedArray[index] == allFilterNames[i]) {
+            //console.log("show" + allFilterGroups[i])
+              $(allFilterGroups).each(function( o ) {
+                $('#'+allFilterGroups[i][o]).show()
+              })
+          }
+        })
+      })
+    }
+
+    //  Only show articles from what has already been clicked
+    // $(allFilterNames).each(function( i ) {
+    //   $(filtersAlreadyClickedArray).each(function( index ) {
+    //     if (filtersAlreadyClickedArray[index] == allFilterNames[i]) {
+    //       //console.log("show" + allFilterGroups[i])
+    //         $(allFilterGroups).each(function( o ) {
+    //           $('#'+allFilterGroups[i][o]).show()
+    //         })
+    //     }
+    //   })
+    // })
+
+    updateNumberSuggestions()
+
+  }
+
+
   // functions to init
 
   // Number of suggestions at the beginning
@@ -424,3 +498,72 @@ $(function(){
 
 
 // import 'bootstrap';
+
+  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+  $("#secondaryFilters1").removeClass( "hidden");
+
+//Triage tool option2
+
+$('#triageSelect').on('change', function (e) {
+    var optionSelected = $("option:selected", this);
+    var valueSelected = this.value;
+
+    $('#primaryFiltersSelectedValue').text(valueSelected);
+    var idSelected = $(this).children(":selected").attr("id");
+
+
+
+    if(idSelected == "advice1"){
+      // hide all other filter sets and show secondary filter set 1
+      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+      $("#secondaryFilters1").removeClass( "hidden");
+      // Get the secondary filters checked in this group, hide all articles and only show the articles by the filters clicked here
+      //secondaryGroupToShow = "secondaryFilters1"
+      //toggleArticles(secondaryGroupToShow)
+    }
+    else if (idSelected == "advice2"){
+      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+      $("#secondaryFilters2").removeClass( "hidden");
+      //secondaryGroupToShow = "secondaryFilters2"
+      //toggleArticles(secondaryGroupToShow)
+    }
+
+    else if(idSelected == "advice3"){
+      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+      $("#secondaryFilters3").removeClass( "hidden");
+      //secondaryGroupToShow = "secondaryFilters3"
+      //toggleArticles(secondaryGroupToShow)
+    }
+    else if(idSelected == "advice4"){
+      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+      $("#secondaryFilters4").removeClass( "hidden");
+      //secondaryGroupToShow = "secondaryFilters4"
+      //toggleArticles(secondaryGroupToShow)
+    }
+    else if(idSelected == "advice5"){
+      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+      $("#secondaryFilters5").removeClass( "hidden");
+      //secondaryGroupToShow = "secondaryFilters5"
+      //toggleArticles(secondaryGroupToShow)
+    }
+    else if(idSelected == "advice6"){
+      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+      $("#secondaryFilters6").removeClass( "hidden");
+      //secondaryGroupToShow = "secondaryFilters6"
+      //toggleArticles(secondaryGroupToShow)
+    }
+    else if(idSelected == "advice7"){
+      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+      $("#secondaryFilters7").removeClass( "hidden");
+      //secondaryGroupToShow = "secondaryFilters7"
+      //toggleArticles(secondaryGroupToShow)
+    }
+    else if(idSelected == "advice8"){
+      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" )
+      $("#secondaryFilters8").removeClass( "hidden")
+      //secondaryGroupToShow = "secondaryFilters8"
+      //toggleArticles(secondaryGroupToShow)
+    }
+
+
+});
