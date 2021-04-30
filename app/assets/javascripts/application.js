@@ -66,7 +66,7 @@ $(document).ready(function () {
 
 
     var skillsCheckboxes = $("#accordion-filter-skills-list input[type=checkbox]");
-	skillsCheckboxes.each(function () {
+	  skillsCheckboxes.each(function () {
         $(this).change(updateCount);
     });
 
@@ -119,6 +119,10 @@ $(document).ready(function () {
       $(".fac-section-sort-nojs").hide();
    }
 });
+
+
+
+
 
 // *** Triage tool - Home page ***
 
@@ -234,7 +238,8 @@ $(function(){
 
   $("#secondaryFiltersSet1 .govuk-checkboxes__input").change(function() {
         secondaryFiltersTotal1 = $("#secondaryFiltersSet1").find('input[name="filter-results1"]:checked').length;
-        $('#secondaryFiltersSelected1').text(secondaryFiltersTotal1 + ' selected')
+        $('#secondaryFiltersSelected1').text(secondaryFiltersTotal1 + ' selected');
+        toggleArticles(secondaryGroupToShow)
   });
   $("#secondaryFiltersSet2 .govuk-checkboxes__input").change(function() {
         secondaryFiltersTotal2 = $("#secondaryFiltersSet2").find('input[name="filter-results2"]:checked').length;
@@ -340,6 +345,8 @@ $(function(){
         toggleArticles(secondaryGroupToShow)
       })
   });
+
+
 
   // var filterClickedValue, filterClickedState
   var filterClickedNumber
@@ -492,78 +499,164 @@ $(function(){
   // functions to init
 
   // Number of suggestions at the beginning
-  updateNumberSuggestions()
+  updateNumberSuggestions();
+
+
+
+  //Triage tool option2
+
+
+//show selected option from homepage
+//********** Simplify this by finding attribute 'checked' and add attribute seleted=true ********
+// $('#triageSelect option:checked').attr('selected', 'true');
+var primaryFiltersSelectedValue = $('#primaryFiltersSelectedValue').text();
+if(primaryFiltersSelectedValue == 'planning or starting your career') {
+  $('#triageSelect #advice1').attr('selected', 'true');
+}else if(primaryFiltersSelectedValue == 'moving up in your career') {
+  $('#triageSelect #advice2').attr('selected', 'true');
+}else if(primaryFiltersSelectedValue == 'changing your career') {
+  $('#triageSelect #advice3').attr('selected', 'true');
+}else if(primaryFiltersSelectedValue == 'returning to work') {
+  $('#triageSelect #advice4').attr('selected', 'true');
+}else if(primaryFiltersSelectedValue == 'understanding your options') {
+  $('#triageSelect #advice5').attr('selected', 'true');
+}else if(primaryFiltersSelectedValue == 'identifying and building your skills') {;
+  $('#triageSelect #advice6').attr('selected', 'true');
+}else if(primaryFiltersSelectedValue == 'understanding the recruitment process') {
+  $('#triageSelect #advice7').attr('selected', 'true');
+}else if(primaryFiltersSelectedValue == 'working with a health condition or disability') {
+  $('#triageSelect #advice8').attr('selected', 'true');
+}
+
+
+//Select filters based on advice selected
+
+var adviceSelected = $('#triageSelect').find(":selected").attr('id');
+
+if(adviceSelected == "advice1"){
+  // hide all other filter sets and show secondary filter set 1
+  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+  $("#secondaryFilters1").removeClass( "hidden");
+  // Get the secondary filters checked in this group, hide all articles and only show the articles by the filters clicked here
+  secondaryGroupToShow = "secondaryFilters1";
+  toggleArticles(secondaryGroupToShow);
+}
+else if (adviceSelected == "advice2"){
+  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+  $("#secondaryFilters2").removeClass( "hidden");
+  secondaryGroupToShow = "secondaryFilters2"
+  toggleArticles(secondaryGroupToShow)
+}
+
+else if(adviceSelected == "advice3"){
+  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+  $("#secondaryFilters3").removeClass( "hidden");
+  secondaryGroupToShow = "secondaryFilters3"
+  toggleArticles(secondaryGroupToShow)
+}
+else if(adviceSelected == "advice4"){
+  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+  $("#secondaryFilters4").removeClass( "hidden");
+  secondaryGroupToShow = "secondaryFilters4"
+  toggleArticles(secondaryGroupToShow)
+}
+else if(adviceSelected == "advice5"){
+  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+  $("#secondaryFilters5").removeClass( "hidden");
+  secondaryGroupToShow = "secondaryFilters5"
+  toggleArticles(secondaryGroupToShow)
+}
+else if(adviceSelected == "advice6"){
+  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+  $("#secondaryFilters6").removeClass( "hidden");
+  secondaryGroupToShow = "secondaryFilters6"
+  toggleArticles(secondaryGroupToShow)
+}
+else if(adviceSelected == "advice7"){
+  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+  $("#secondaryFilters7").removeClass( "hidden");
+  secondaryGroupToShow = "secondaryFilters7"
+  toggleArticles(secondaryGroupToShow)
+}
+else if(adviceSelected == "advice8"){
+  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" )
+  $("#secondaryFilters8").removeClass( "hidden")
+  secondaryGroupToShow = "secondaryFilters8"
+  toggleArticles(secondaryGroupToShow)
+}
+
+
+
+
+  $('#triageSelect').on('change', function (e) {
+      var optionSelected = $("option:selected", this);
+      var valueSelected = this.value;
+
+      $('#primaryFiltersSelectedValue').text(valueSelected);
+      var idSelected = $(this).children(":selected").attr("id");
+
+
+
+      if(idSelected == "advice1"){
+        // hide all other filter sets and show secondary filter set 1
+        $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+        $("#secondaryFilters1").removeClass( "hidden");
+        // Get the secondary filters checked in this group, hide all articles and only show the articles by the filters clicked here
+        secondaryGroupToShow = "secondaryFilters1";
+        toggleArticles(secondaryGroupToShow);
+      }
+      else if (idSelected == "advice2"){
+        $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+        $("#secondaryFilters2").removeClass( "hidden");
+        secondaryGroupToShow = "secondaryFilters2"
+        toggleArticles(secondaryGroupToShow)
+      }
+
+      else if(idSelected == "advice3"){
+        $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+        $("#secondaryFilters3").removeClass( "hidden");
+        secondaryGroupToShow = "secondaryFilters3"
+        toggleArticles(secondaryGroupToShow)
+      }
+      else if(idSelected == "advice4"){
+        $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+        $("#secondaryFilters4").removeClass( "hidden");
+        secondaryGroupToShow = "secondaryFilters4"
+        toggleArticles(secondaryGroupToShow)
+      }
+      else if(idSelected == "advice5"){
+        $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+        $("#secondaryFilters5").removeClass( "hidden");
+        secondaryGroupToShow = "secondaryFilters5"
+        toggleArticles(secondaryGroupToShow)
+      }
+      else if(idSelected == "advice6"){
+        $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+        $("#secondaryFilters6").removeClass( "hidden");
+        secondaryGroupToShow = "secondaryFilters6"
+        toggleArticles(secondaryGroupToShow)
+      }
+      else if(idSelected == "advice7"){
+        $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
+        $("#secondaryFilters7").removeClass( "hidden");
+        secondaryGroupToShow = "secondaryFilters7"
+        toggleArticles(secondaryGroupToShow)
+      }
+      else if(idSelected == "advice8"){
+        $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" )
+        $("#secondaryFilters8").removeClass( "hidden")
+        secondaryGroupToShow = "secondaryFilters8"
+        toggleArticles(secondaryGroupToShow)
+      }
 
 })
 
 
 // import 'bootstrap';
 
-  $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
-  $("#secondaryFilters1").removeClass( "hidden");
-
-//Triage tool option2
-
-$('#triageSelect').on('change', function (e) {
-    var optionSelected = $("option:selected", this);
-    var valueSelected = this.value;
-
-    $('#primaryFiltersSelectedValue').text(valueSelected);
-    var idSelected = $(this).children(":selected").attr("id");
 
 
 
-    if(idSelected == "advice1"){
-      // hide all other filter sets and show secondary filter set 1
-      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
-      $("#secondaryFilters1").removeClass( "hidden");
-      // Get the secondary filters checked in this group, hide all articles and only show the articles by the filters clicked here
-      //secondaryGroupToShow = "secondaryFilters1"
-      //toggleArticles(secondaryGroupToShow)
-    }
-    else if (idSelected == "advice2"){
-      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
-      $("#secondaryFilters2").removeClass( "hidden");
-      //secondaryGroupToShow = "secondaryFilters2"
-      //toggleArticles(secondaryGroupToShow)
-    }
-
-    else if(idSelected == "advice3"){
-      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
-      $("#secondaryFilters3").removeClass( "hidden");
-      //secondaryGroupToShow = "secondaryFilters3"
-      //toggleArticles(secondaryGroupToShow)
-    }
-    else if(idSelected == "advice4"){
-      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
-      $("#secondaryFilters4").removeClass( "hidden");
-      //secondaryGroupToShow = "secondaryFilters4"
-      //toggleArticles(secondaryGroupToShow)
-    }
-    else if(idSelected == "advice5"){
-      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
-      $("#secondaryFilters5").removeClass( "hidden");
-      //secondaryGroupToShow = "secondaryFilters5"
-      //toggleArticles(secondaryGroupToShow)
-    }
-    else if(idSelected == "advice6"){
-      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
-      $("#secondaryFilters6").removeClass( "hidden");
-      //secondaryGroupToShow = "secondaryFilters6"
-      //toggleArticles(secondaryGroupToShow)
-    }
-    else if(idSelected == "advice7"){
-      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" );
-      $("#secondaryFilters7").removeClass( "hidden");
-      //secondaryGroupToShow = "secondaryFilters7"
-      //toggleArticles(secondaryGroupToShow)
-    }
-    else if(idSelected == "advice8"){
-      $( "#allSecondaryFilterAccordions .secondaryFilters" ).addClass( "hidden" )
-      $("#secondaryFilters8").removeClass( "hidden")
-      //secondaryGroupToShow = "secondaryFilters8"
-      //toggleArticles(secondaryGroupToShow)
-    }
 
 
 });
