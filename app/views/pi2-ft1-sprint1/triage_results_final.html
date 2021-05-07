@@ -19,44 +19,50 @@ Careers advice - job profiles, information and resources | National Careers Serv
       </ol>
     </div>
 </div>
-<div class="course-hero-banner triage-banner">
-  <div class="govuk-width-container">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Personalised careers advice and information</h1>
-        <!-- <p class="govuk-body-lead">Use our course search to look for different types of learning opportunities.</p> -->
-        <div class="triage-search-item-wrapper">
-          <form action="" method="post" class="form">
-            <div class="govuk-form-group govuk-!-margin-bottom-0">
-              <label class="govuk-label triage-select-label" for="sort"> Showing advice for </label>
-              <select class="govuk-select triage-select" id="triageSelect">
-                <option value="planning or starting your career" id="advice1" {{ checked("triage-select", "planning or starting your career") }}>planning or starting your career</option>
-                <option value="moving up in your career" id="advice2" {{ checked("triage-select", "moving up in your career") }}>moving up in your career</option>
-                <option value="changing your career" id="advice3" {{ checked("triage-select", "changing your career") }}>changing your career</option>
-                <option value="returning to work" id="advice4" {{ checked("triage-select", "returning to work") }}>returning to work</option>
-                <option value="understanding your options" id="advice5" {{ checked("triage-select", "understanding your options") }}>understanding your options</option>
-                <option value="identifying and building your skills" id="advice6" {{ checked("triage-select", "identifying and building your skills") }}>identifying and building your skills</option>
-                <option value="understanding the recruitment process" id="advice7" {{ checked("triage-select", "understanding the recruitment process") }}>understanding the recruitment process</option>
-                <!-- <option value="taking your next career steps" {{ checked("triage-select", "taking your next career steps") }}>taking your next career steps</option> -->
-                <option value="working with a health condition or disability" id="advice8" {{ checked("triage-select", "working with a health condition or disability") }}>working with a health condition or disability</option>
-              </select>
-              <button draggable="false" class="govuk-button triage-start-btn app-button--inverted govuk-!-margin-top-1 govuk-!-margin-bottom-0"  data-module="govuk-button"> See suggestions</button>
 
+<section aria-label="Search">
+    <form action="#" method="get" id="triage-search-form" class="triage-page">
+        <section id="triage-search-banner" class="triage-banner primary-hero">
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+                        <h1 class="govuk-heading-xl">Personalised careers advice and information</h1>
+                        <div class="triage-search-item-wrapper">
+                            <div class="govuk-form-group govuk-!-margin-bottom-0">
+                              <label class="govuk-label triage-select-label" for="sort"> Showing advice for </label>
+                              <select class="govuk-select triage-select" id="triageSelect">
+                                <option value="planning or starting your career" id="advice1" {{ checked("triage-select", "planning or starting your career") }}>planning or starting your career</option>
+                                <option value="moving up in your career" id="advice2" {{ checked("triage-select", "moving up in your career") }}>moving up in your career</option>
+                                <option value="changing your career" id="advice3" {{ checked("triage-select", "changing your career") }}>changing your career</option>
+                                <option value="returning to work" id="advice4" {{ checked("triage-select", "returning to work") }}>returning to work</option>
+                                <option value="understanding your options" id="advice5" {{ checked("triage-select", "understanding your options") }}>understanding your options</option>
+                                <option value="identifying and building your skills" id="advice6" {{ checked("triage-select", "identifying and building your skills") }}>identifying and building your skills</option>
+                                <option value="understanding the recruitment process" id="advice7" {{ checked("triage-select", "understanding the recruitment process") }}>understanding the recruitment process</option>
+                                <!-- <option value="taking your next career steps" {{ checked("triage-select", "taking your next career steps") }}>taking your next career steps</option> -->
+                                <option value="working with a health condition or disability" id="advice8" {{ checked("triage-select", "working with a health condition or disability") }}>working with a health condition or disability</option>
+                              </select>
+                              <button draggable="false" class="govuk-button triage-start-btn app-button--inverted govuk-!-margin-top-1 govuk-!-margin-bottom-0"  data-module="govuk-button"> See suggestions</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        </section>
+    </form>
+</section>
+
+
 {% endblock %}
 {% block content %}
-<div class="govuk-width-container">
-  <main class="govuk-main-wrapper app-main-class govuk-!-padding-top-0" id="main-content" role="main">
-    <form action="#" method="get" novalidate="novalidate">
-      <div class="govuk-grid-row govuk-!-margin-top-2 govuk-!-padding-top-5">
+
+
+  <div class="govuk-width-container">
+    <button class="govuk-button filters-button" id="show-filters-button">Show filters</button>
+    <form action="course-search-result" method="get" novalidate="novalidate">
+      <div class="govuk-grid-row govuk-!-margin-top-3 govuk-!-padding-top-5">
+
       <div class="govuk-grid-column-one-third">
-        <button class="govuk-button filters-button" id="show-filters-button">Show filters</button>
         <div class="filters" id="allSecondaryFilterAccordions">
           <div id="allSecondaryFilterAccordions">
 
@@ -217,7 +223,7 @@ Careers advice - job profiles, information and resources | National Careers Serv
                         </label>
                       </div>
                       <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="filterResultsSet2_7" name="filter-results2" type="checkbox" value="Find a course">
+                        <input class="govuk-checkboxes__input" id="filterResultsSet2_7" name="filter-results" type="checkbox" value="Find a course">
                         <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_7">
                           Find a course
                         </label>
@@ -229,7 +235,7 @@ Careers advice - job profiles, information and resources | National Careers Serv
                         </label>
                       </div>
                       <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="filterResultsSet2_9" name="filter-results2" type="checkbox" value="Find information about a specific job">
+                        <input class="govuk-checkboxes__input" id="filterResultsSet2_9" name="filter-results" type="checkbox" value="Find information about a specific job">
                         <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_9">
                           Find information about a specific job
                         </label>
@@ -312,7 +318,7 @@ Careers advice - job profiles, information and resources | National Careers Serv
                         </label>
                       </div>
                       <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="filterResultsSet3_4" name="filter-results3" type="checkbox" value="Gain qualifications">
+                        <input class="govuk-checkboxes__input" id="filterResultsSet3_4" name="filter-results" type="checkbox" value="Gain qualifications">
                         <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_4">
                           Gain qualifications
                         </label>
@@ -766,7 +772,7 @@ Careers advice - job profiles, information and resources | National Careers Serv
 
       </div>
       <div class="govuk-grid-column-two-thirds">
-        <p class="govuk-body">Showing <span class="fac-result-count" id="totalArticles">29</span> for "<span class="govuk-!-font-weight-bold" id="primaryFiltersSelectedValue" >{{ data['triage-select'] }}</span>"</p>
+        <p class="govuk-body">Showing <span class="fac-result-count triage-result-count" id="totalArticles">29</span> for "<span class="govuk-!-font-weight-bold" id="primaryFiltersSelectedValue" >{{ data['triage-select'] }}</span>"</p>
 
 
         <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6 govuk-!-margin-top-2">
@@ -1059,6 +1065,7 @@ Careers advice - job profiles, information and resources | National Careers Serv
         </div>
       </div>
     </form>
-  </main>
-</div>
+
+  </div>
+
 {% endblock %}

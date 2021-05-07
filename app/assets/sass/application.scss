@@ -34,6 +34,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import "components/homepage";
 @import "components/currency-input";
 @import "components/discoverywork";
+@import "components/_triage-details.scss";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
@@ -1477,6 +1478,9 @@ html {
     }
   }
 }
+
+
+
 .triage-opt2 .hide {display:none}
 .triage-banner .triage-select-label { margin-right:10px}
 .triage-opt2 .info-card { background-color: #fff; cursor:default;}
@@ -1511,8 +1515,7 @@ html {
   a {
     text-decoration: none;
 
-    &:hover {
-      text-decoration: underline !important; }
+
   }
 
   &:hover {
@@ -1574,8 +1577,11 @@ html {
    }
 }
 
-.ncs-triage-select-label {
+.js-enabled .ncs-triage-select-label {
   display: inline-block;
+}
+.ncs-triage-select-label {
+  display: block;
 }
 
 .filters {
@@ -1595,23 +1601,26 @@ html {
   }
 
   .triage-banner {
-    .triage-start-btn {
-      display: block;
+
 
     .triage-search-item-wrapper {
       display: table;
       width: 90%;
       margin-bottom: 1em;
     }
-  }
+
   .triage-select {
       margin:0
   }
+}
+.triage-start-btn {
+  display: inline-block;
 }
 
 .js-enabled .triage-banner .triage-start-btn {
   display: none;
 }
+
 main #results.triage-results .results-block {
     float: left;
     width: 100%

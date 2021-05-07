@@ -6909,7 +6909,10 @@ div {
 .triage-start-btn {
    display: inline-block;
 }
-
 .triage-select-label {
+  display: block;
+}
+
+.js-enabled .triage-select-label {
   display: inline-block;
 }
