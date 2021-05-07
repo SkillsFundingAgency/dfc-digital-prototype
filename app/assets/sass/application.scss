@@ -1565,7 +1565,7 @@ html {
   margin: 0 10px;
 
   @media (max-width: 43.75em) {
-      width: 85%;
+      width: 70%;
     }
 }
 
@@ -1615,6 +1615,8 @@ html {
 }
 .triage-start-btn {
   display: inline-block;
+
+  @media (max-width: 48.0625em) { display: block;}
 }
 
 .js-enabled .triage-banner .triage-start-btn {

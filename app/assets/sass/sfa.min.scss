@@ -6908,6 +6908,8 @@ div {
 
 .triage-start-btn {
    display: inline-block;
+
+     @media (max-width: 48.0625em) { display: block; margin-top:20px}
 }
 .triage-select-label {
   display: block;
