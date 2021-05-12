@@ -328,3 +328,65 @@ main.govuk-main-wrapper, main {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
+
+
+
+
+
+/* TO DIGITAL ASSETS */
+section.dfc-app-triage-panel-banner {
+
+  .triage-panel-search-form { //[triage-page]
+
+    section.triage-banner.primary-hero {
+      .triage-search-item-wrapper {
+
+        .triage-select-label { }
+
+        select.triage-select {
+
+        }
+        button.triage-start-btn {
+
+        }
+      }
+    }
+
+
+
+  }
+}
+
+.js-enabled {
+  section.dfc-app-triage-panel-banner {
+    .primary-hero {
+      .triage-start-btn {
+        display: none;
+      }
+    }
+  }
+}
+
+
+ol.triage-result-list {
+  li.triage-search-result-item {
+        padding: 0 ;
+        background-color: #fff;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+
+        &:last-child {
+          border-bottom:0px solid #ccc;
+        }
+
+        h3 {
+          margin-bottom: 5px;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
