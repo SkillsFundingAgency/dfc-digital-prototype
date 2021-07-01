@@ -1,0 +1,1024 @@
+{% extends "layout_ncs_sprint50.html" %}
+{% from "govuk/components/radios/macro.njk" import govukRadios %}
+{% from "govuk/components/select/macro.njk" import govukSelect %}
+
+{% block pageTitle %}
+  Get personalised careers advice and information
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+  <a class="govuk-back-link" href="/">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <!-- <h1 class="govuk-heading-xl">Search careers advice</h1> -->
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <!-- <input class="govuk-input" id="event-name" name="event-name" type="text" placeholder="Enter a keyword"> -->
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+
+    <div class="govuk-accordion" data-module="govuk-accordion" id="accordionFilters">
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="primaryFiltersHeading">
+              Show results for
+            </span>
+          </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="primaryFiltersSelected">
+            {{ data['triage-select'] }}
+          </div>
+        </div>
+        <div id="primaryFiltersSet" class="govuk-accordion__section-content" aria-labelledby="primaryFiltersHeading">
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <div class="govuk-radios govuk-radios--small">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="primaryFilter1" name="changed-name" type="radio" value="planning or starting your career" {{ checked("triage-select", "planning or starting your career") }}>
+                  <label class="govuk-label govuk-radios__label" for="primaryFilter1">
+                    planning or starting your career
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="primaryFilter2" name="changed-name" type="radio" value="moving up in your career" {{ checked("triage-select", "moving up in your career") }}>
+                  <label class="govuk-label govuk-radios__label" for="primaryFilter2">
+                    moving up in your career
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="primaryFilter3" name="changed-name" type="radio" value="changing your career" {{ checked("triage-select", "changing your career") }}>
+                  <label class="govuk-label govuk-radios__label" for="primaryFilter3">
+                    changing your career
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="primaryFilter4" name="changed-name" type="radio" value="returning to work" {{ checked("triage-select", "returning to work") }}>
+                  <label class="govuk-label govuk-radios__label" for="primaryFilter4">
+                    returning to work
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="primaryFilter5" name="changed-name" type="radio" value="understanding your options" {{ checked("triage-select", "understanding your options") }}>
+                  <label class="govuk-label govuk-radios__label" for="primaryFilter5">
+                    understanding your options
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="primaryFilter6" name="changed-name" type="radio" value="identifying and building your skills" {{ checked("triage-select", "identifying and building your skills") }}>
+                  <label class="govuk-label govuk-radios__label" for="primaryFilter6">
+                    identifying and building your skills
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="primaryFilter7" name="changed-name" type="radio" value="understanding the recruitment process" {{ checked("triage-select", "understanding the recruitment process") }}>
+                  <label class="govuk-label govuk-radios__label" for="primaryFilter7">
+                    understanding the recruitment process
+                  </label>
+                </div>
+                <!-- <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="primaryFilter8" name="changed-name" type="radio" value="taking your next career steps" {{ checked("triage-select", "taking your next career steps") }}>
+                  <label class="govuk-label govuk-radios__label" for="changed-name-8">
+                    taking your next career steps
+                  </label>
+                </div> -->
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="primaryFilter8" name="changed-name" type="radio" value="working with a health condition or disability" {{ checked("triage-select", "working with a health condition or disability") }}>
+                  <label class="govuk-label govuk-radios__label" for="primaryFilter8">
+                    working with a health condition or disability
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="allSecondaryFilterAccordions">
+        <!-- Secondary filters 1: Planning or starting your career -->
+        <div class="govuk-accordion__section govuk-accordion__section--expanded" id="secondaryFilters1">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="secondaryFiltersHeading1">
+                Filter results
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="secondaryFiltersSelected1">
+              0 selected
+            </div>
+          </div>
+          <div id="secondaryFiltersSet1" class="govuk-accordion__section-content" aria-labelledby="secondaryFiltersHeading1">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <div class="govuk-checkboxes govuk-checkboxes--small">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_1" name="filter-results1" type="checkbox" value="Understand your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_1">
+                      Understand your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_2" name="filter-results1" type="checkbox" value="Find careers that suit your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_2">
+                      Find careers that suit your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_3" name="filter-results1" type="checkbox" value="Work experience">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_3">
+                      Work experience
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_4" name="filter-results1" type="checkbox" value="Options at age 16">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_4">
+                      Options at age 16
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_5" name="filter-results1" type="checkbox" value="Options at age 18">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_5">
+                      Options at age 18
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_6" name="filter-results1" type="checkbox" value="Options after university">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_6">
+                      Options after university
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_7" name="filter-results1" type="checkbox" value="Find information about a specific job">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_7">
+                      Find information about a specific job
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_8" name="filter-results1" type="checkbox" value="Find out how to get into a career">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_8">
+                      Find out how to get into a career
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_9" name="filter-results1" type="checkbox" value="Write or update your CV">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_9">
+                      Write or update your CV
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_10" name="filter-results1" type="checkbox" value="See careers in a specific sector">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_10">
+                      See careers in a specific sector
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_11" name="filter-results1" type="checkbox" value="Learning online">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_11">
+                      Learning online
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_12" name="filter-results1" type="checkbox" value="Learn about postgraduate studies">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_12">
+                      Learn about postgraduate studies
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_13" name="filter-results1" type="checkbox" value="Working with a disability or health condition">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_13">
+                      Working with a disability or health condition
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet1_14" name="filter-results1" type="checkbox" value="Options with an Education Health and Care plan">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet1_14">
+                      Options with an Education Health and Care plan
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Secondary filters 2: Moving up in your career -->
+        <div class="govuk-accordion__section hidden govuk-accordion__section--expanded" id="secondaryFilters2">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="secondaryFiltersHeading2">
+                Filter results
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="secondaryFiltersSelected2">
+              0 selected
+            </div>
+          </div>
+          <div id="secondaryFiltersSet2" class="govuk-accordion__section-content" aria-labelledby="secondaryFiltersHeading2">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <div class="govuk-checkboxes govuk-checkboxes--small">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_1" name="filter-results2" type="checkbox" value="Understand your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_1">
+                      Understand your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_2" name="filter-results2" type="checkbox" value="Find careers that suit your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_2">
+                      Find careers that suit your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_3" name="filter-results2" type="checkbox" value="Develop your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_3">
+                      Develop your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_4" name="filter-results2" type="checkbox" value="Gain qualifications">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_4">
+                      Gain qualifications
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_5" name="filter-results2" type="checkbox" value="Volunteering">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_5">
+                      Volunteering
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_6" name="filter-results2" type="checkbox" value="Find an apprenticeship">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_6">
+                      Find an apprenticeship
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_7" name="filter-results" type="checkbox" value="Find a course">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_7">
+                      Find a course
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_8" name="filter-results2" type="checkbox" value="Choose what to study">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_8">
+                      Choose what to study
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_9" name="filter-results" type="checkbox" value="Find information about a specific job">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_9">
+                      Find information about a specific job
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_10" name="filter-results2" type="checkbox" value="Understand the recruitment process">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_10">
+                      Understand the recruitment process
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_11" name="filter-results2" type="checkbox" value="How to find job vacancies">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_11">
+                      How to find job vacancies
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_12" name="filter-results2" type="checkbox" value="Prepare for a job interview">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_12">
+                      Prepare for a job interview
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_13" name="filter-results2" type="checkbox" value="Write or update your CV">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_13">
+                      Write or update your CV
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_14" name="filter-results2" type="checkbox" value="Learning online">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_14">
+                      Learning online
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet2_15" name="filter-results2" type="checkbox" value="Bouncing back in a tough jobs market">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet2_15">
+                      Bouncing back in a tough jobs market
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Secondary filters 3: Changing your career -->
+        <div class="govuk-accordion__section hidden govuk-accordion__section--expanded" id="secondaryFilters3">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="secondaryFiltersHeading3">
+                Filter results
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="secondaryFiltersSelected3">
+              0 selected
+            </div>
+          </div>
+          <div id="secondaryFiltersSet3" class="govuk-accordion__section-content" aria-labelledby="secondaryFiltersHeading3">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <div class="govuk-checkboxes govuk-checkboxes--small">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_1" name="filter-results3" type="checkbox" value="Understand your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_1">
+                      Understand your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_2" name="filter-results3" type="checkbox" value="Find careers that suit your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_2">
+                      Find careers that suit your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_3" name="filter-results3" type="checkbox" value="Develop your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_3">
+                      Develop your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_4" name="filter-results" type="checkbox" value="Gain qualifications">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_4">
+                      Gain qualifications
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_5" name="filter-results3" type="checkbox" value="Volunteering">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_5">
+                      Volunteering
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_6" name="filter-results3" type="checkbox" value="Find an apprenticeship">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_6">
+                      Find an apprenticeship
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_7" name="filter-results3" type="checkbox" value="Find a course">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_7">
+                      Find a course
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_8" name="filter-results3" type="checkbox" value="Choose what to study">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_8">
+                      Choose what to study
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_9" name="filter-results3" type="checkbox" value="Find information about a specific job">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_9">
+                      Find information about a specific job
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_10" name="filter-results3" type="checkbox" value="Find out how to get into a career">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_10">
+                      Find out how to get into a career
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_11" name="filter-results3" type="checkbox" value="How to find job vacancies">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_11">
+                      How to find job vacancies
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_12" name="filter-results3" type="checkbox" value="Prepare for a job interview">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_12">
+                      Prepare for a job interview
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet3_13" name="filter-results3" type="checkbox" value="Write or update your CV">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet3_13">
+                      Write or update your CV
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Secondary filters 4: Returning to work -->
+        <div class="govuk-accordion__section hidden govuk-accordion__section--expanded" id="secondaryFilters4">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="secondaryFiltersHeading4">
+                Filter results
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="secondaryFiltersSelected4">
+              0 selected
+            </div>
+          </div>
+          <div id="secondaryFiltersSet4" class="govuk-accordion__section-content" aria-labelledby="secondaryFiltersHeading4">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <div class="govuk-checkboxes govuk-checkboxes--small">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_1" name="filter-results4" type="checkbox" value="Understand your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_1">
+                      Understand your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_2" name="filter-results4" type="checkbox" value="Find careers that suit your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_2">
+                      Find careers that suit your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_3" name="filter-results4" type="checkbox" value="Develop your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_3">
+                      Develop your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_4" name="filter-results4" type="checkbox" value="Gain qualifications">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_4">
+                      Gain qualifications
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_5" name="filter-results4" type="checkbox" value="Find an apprenticeship">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_5">
+                      Find an apprenticeship
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_6" name="filter-results4" type="checkbox" value="Find a course">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_6">
+                      Find a course
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_7" name="filter-results4" type="checkbox" value="Understand the recruitment process">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_7">
+                      Understand the recruitment process
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_8" name="filter-results4" type="checkbox" value="How to find job vacancies">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_8">
+                      How to find job vacancies
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_9" name="filter-results4" type="checkbox" value="Filling out application forms">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_9">
+                      Filling out application forms
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_10" name="filter-results4" type="checkbox" value="Prepare for a job interview">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_10">
+                      Prepare for a job interview
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_11" name="filter-results4" type="checkbox" value="Write or update your CV">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_11">
+                      Write or update your CV
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_12" name="filter-results4" type="checkbox" value="Learning online">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_12">
+                      Learning online
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_13" name="filter-results4" type="checkbox" value="Bouncing back in a tough jobs market">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_13">
+                      Bouncing back in a tough jobs market
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet4_14" name="filter-results4" type="checkbox" value="Working with a disability or health condition">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet4_14">
+                      Working with a disability or health condition
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Secondary filters 5: Understanding your options -->
+        <div class="govuk-accordion__section hidden govuk-accordion__section--expanded" id="secondaryFilters5">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="secondaryFiltersHeading5">
+                Filter results
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="secondaryFiltersSelected5">
+              0 selected
+            </div>
+          </div>
+          <div id="secondaryFiltersSet5" class="govuk-accordion__section-content" aria-labelledby="secondaryFiltersHeading5">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <div class="govuk-checkboxes govuk-checkboxes--small">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_1" name="filter-results5" type="checkbox" value="Volunteering">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_1">
+                      Volunteering
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_2" name="filter-results5" type="checkbox" value="Work experience">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_2">
+                      Work experience
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_3" name="filter-results5" type="checkbox" value="Find an apprenticeship">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_3">
+                      Find an apprenticeship
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_4" name="filter-results5" type="checkbox" value="Find a course">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_4">
+                      Find a course
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_5" name="filter-results5" type="checkbox" value="Find a traineeship">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_5">
+                      Find a traineeship
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_6" name="filter-results5" type="checkbox" value="Choose what to study">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_6">
+                      Choose what to study
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_7" name="filter-results5" type="checkbox" value="Take a gap year">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_7">
+                      Take a gap year
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_8" name="filter-results5" type="checkbox" value="Options at age 16">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_8">
+                      Options at age 16
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_9" name="filter-results5" type="checkbox" value="Options at age 18">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_9">
+                      Options at age 18
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_10" name="filter-results5" type="checkbox" value="Options after university">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_10">
+                      Options after university
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_11" name="filter-results5" type="checkbox" value="Find information about a specific job">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_11">
+                      Find information about a specific job
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_12" name="filter-results5" type="checkbox" value="Working with a disability or health condition">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_12">
+                      Working with a disability or health condition
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet5_13" name="filter-results5" type="checkbox" value="Options with an Education Health and Care plan">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet5_13">
+                      Options with an Education Health and Care plan
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Secondary filters 6: Identifying and building your skills  -->
+        <div class="govuk-accordion__section hidden govuk-accordion__section--expanded" id="secondaryFilters6">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="secondaryFiltersHeading6">
+                Filter results
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="secondaryFiltersSelected6">
+              0 selected
+            </div>
+          </div>
+          <div id="secondaryFiltersSet6" class="govuk-accordion__section-content" aria-labelledby="secondaryFiltersHeading6">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <div class="govuk-checkboxes govuk-checkboxes--small">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_1" name="filter-results6" type="checkbox" value="Understand your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_1">
+                      Understand your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_2" name="filter-results6" type="checkbox" value="Find careers that suit your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_2">
+                      Find careers that suit your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_3" name="filter-results6" type="checkbox" value="Develop your skills">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_3">
+                      Develop your skills
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_4" name="filter-results6" type="checkbox" value="Gain qualifications">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_4">
+                      Gain qualifications
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_5" name="filter-results6" type="checkbox" value="Volunteering">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_5">
+                      Volunteering
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_6" name="filter-results6" type="checkbox" value="Work experience">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_6">
+                      Work experience
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_7" name="filter-results6" type="checkbox" value="Find an apprenticeship">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_7">
+                      Find an apprenticeship
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_8" name="filter-results6" type="checkbox" value="Find a course">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_8">
+                      Find a course
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_9" name="filter-results6" type="checkbox" value="Find a traineeship">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_9">
+                      Find a traineeship
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet6_10" name="filter-results6" type="checkbox" value="Learning online">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet6_10">
+                      Learning online
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Secondary filters 7: Understanding the recruitment process -->
+        <div class="govuk-accordion__section hidden govuk-accordion__section--expanded" id="secondaryFilters7">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="secondaryFiltersHeading7">
+                Filter results
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="secondaryFiltersSelected7">
+              0 selected
+            </div>
+          </div>
+          <div id="secondaryFiltersSet7" class="govuk-accordion__section-content" aria-labelledby="secondaryFiltersHeading7">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <div class="govuk-checkboxes govuk-checkboxes--small">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet7_1" name="filter-results7" type="checkbox" value="How to find job vacancies">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet7_1">
+                      How to find job vacancies
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet7_2" name="filter-results7" type="checkbox" value="Filling out application forms">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet7_2">
+                      Filling out application forms
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet7_3" name="filter-results7" type="checkbox" value="Prepare for a job interview">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet7_3">
+                      Prepare for a job interview
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet7_4" name="filter-results7" type="checkbox" value="Write or update your CV">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet7_4">
+                      Write or update your CV
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Secondary filters 8: Working with a health condition or disability -->
+        <div class="govuk-accordion__section hidden govuk-accordion__section--expanded" id="secondaryFilters8">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="secondaryFiltersHeading8">
+                Filter results
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="secondaryFiltersSelected8">
+              0 selected
+            </div>
+          </div>
+          <div id="secondaryFiltersSet8" class="govuk-accordion__section-content" aria-labelledby="secondaryFiltersHeading8">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <div class="govuk-checkboxes govuk-checkboxes--small">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet8_1" name="filter-results8" type="checkbox" value="Working with a disability or health condition">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet8_1">
+                      Working with a disability or health condition
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="filterResultsSet8_2" name="filter-results8" type="checkbox" value="Options with an Education Health and Care plan">
+                    <label class="govuk-label govuk-checkboxes__label" for="filterResultsSet8_2">
+                      Options with an Education Health and Care plan
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div><!--end accordion -->
+    <div class="adviser-box">
+      <p class="govuk-body govuk-!-font-weight-bold">Speak to an adviser</p>
+      <p class="govuk-body">Contact us by online chat, phone, email or post.</p>
+      <a href="#" class="govuk-link">View contact options</a>
+    </div>
+  </div>
+
+  <!-- Filtered results -->
+  <div class="govuk-grid-column-two-thirds opt1" id="allArticles">
+    <h4 class="govuk-heading-m" id="totalArticles">14 suggestions</h4>
+
+    <!-- Article results -->
+    <div class="info-card" id="card1">
+      <div class="info-card-content">
+
+
+
+        <!-- <h3 class="govuk-heading-s"><a class="govuk-link" href="#">Skills Health Check</a></h3> -->
+
+        <p class="govuk-body govuk-!-font-weight-bold">Skills Health Check</p>
+        <!--<p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--></div>
+    </div>
+    <div class="info-card" id="card2">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Discover your skills and careers (DYSAC)</p><!--<p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--></div>
+    </div>
+    <div class="info-card" id="card3">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">Explore careers</p><!--<p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--></div>
+    </div>
+    <div class="info-card" id="card5">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Role profiles</p></div>
+    </div>
+    <div class="info-card" id="card6">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Find a course</p></div>
+    </div>
+    <div class="info-card" id="card7">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">The Skills Toolkit</p></div>
+    </div>
+    <div class="info-card" id="card8">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Covid support advice for if you lose your job</p></div>
+    </div>
+    <div class="info-card" id="card9">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Other ways to develop skills</p></div>
+    </div>
+    <div class="info-card" id="card10">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Where to find other online learning</p></div>
+    </div>
+    <div class="info-card" id="card11">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Post 16 options</p></div>
+    </div>
+    <div class="info-card" id="card12">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Post 18 options</p></div>
+    </div>
+    <div class="info-card" id="card13">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Options with an EHC plan</p></div>
+    </div>
+    <div class="info-card" id="card14">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Career and job support for people with a disability</p></div>
+    </div>
+    <div class="info-card" id="card15">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Advice on a gap year</p></div>
+    </div>
+    <div class="info-card" id="card16">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Advice for if you lose your job</p></div>
+    </div>
+    <div class="info-card" id="card17">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Understanding the working world during Covid 19</p></div>
+    </div>
+    <div class="info-card" id="card18">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Advice on further study options</p></div>
+    </div>
+    <div class="info-card" id="card19">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to bounce back in a tough jobs market</p></div>
+    </div>
+    <div class="info-card" id="card20">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Careers in the armed forces</p></div>
+    </div>
+    <div class="info-card" id="card21">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to find job vacancies</p></div>
+    </div>
+    <div class="info-card" id="card22">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Making the most of virtual job fairs</p></div>
+    </div>
+    <div class="info-card" id="card23">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Find a job by networking</p></div>
+    </div>
+    <div class="info-card" id="card24">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to write a CV</p></div>
+    </div>
+    <div class="info-card" id="card25">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to write a cover letter</p></div>
+    </div>
+    <div class="info-card" id="card26">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to fill in an application form</p></div>
+    </div>
+    <div class="info-card" id="card27">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Interview advice</p></div>
+    </div>
+    <div class="info-card" id="card28">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to answer common interview questions</p></div>
+    </div>
+    <div class="info-card" id="card29">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to do well in telephone interviews</p></div>
+    </div>
+    <div class="info-card" id="card30">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to do well in video interviews</p></div>
+    </div>
+    <div class="info-card" id="card31">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to create a Linkedin profile</p></div>
+    </div>
+    <div class="info-card" id="card32">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to find graduate schemes</p></div>
+    </div>
+    <div class="info-card" id="card33">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to prepare for psychometric tests</p></div>
+    </div>
+    <div class="info-card" id="card34">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How to find a virtual internship</p></div>
+    </div>
+    <div class="info-card" id="card35">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Develop your soft skills</p></div>
+    </div>
+    <div class="info-card" id="card36">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Advice on volunteering</p></div>
+    </div>
+    <div class="info-card" id="card37">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Getting the most out of mentoring</p></div>
+    </div>
+    <div class="info-card" id="card38">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Ways to develop skills</p></div>
+    </div>
+    <div class="info-card" id="card39">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Identifying skills and upskilling</p></div>
+    </div>
+    <div class="info-card" id="card40">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How digital skills can help you</p></div>
+    </div>
+    <div class="info-card" id="card41">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Build foundation digital skills</p></div>
+    </div>
+    <div class="info-card" id="card42">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Choosing online learning</p></div>
+    </div>
+    <div class="info-card" id="card43">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Getting the most out online learning</p></div>
+    </div>
+    <div class="info-card" id="card44">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">How work experience can help you</p></div>
+    </div>
+    <div class="info-card" id="card45">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Types of work experience</p></div>
+    </div>
+    <div class="info-card" id="card46">
+
+      <div class="info-card-content"><p class="govuk-body govuk-!-font-weight-bold">Contact us</p></div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

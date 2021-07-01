@@ -1,0 +1,228 @@
+{% extends "layout_ncs_sprint56.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-triage-2">Home</a> </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Personalised careers advice and information</li>
+  </ol>
+</div>
+</div>
+<section aria-label="Search" class="dfc-app-triage-panel-banner">
+  <form action="#" method="get" id="triage-search-form" class="triage-panel-search-form triage-page">
+    <section id="triage-search-banner" class="primary-hero">
+      <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">Personalised careers advice and information</h1>
+            <div class="triage-search-item-wrapper">
+              <div class="govuk-form-group govuk-!-margin-bottom-0">
+                <label class="govuk-label triage-select-label" for="sort"> Showing advice for </label>
+                <select class="govuk-select triage-select" id="triageSelect">
+                  <option value="planning or starting your career" id="advice1" {{ checked("triage-select", "planning or starting your career") }}>planning or starting your career</option>
+                  <option value="moving up in your career" id="advice2" {{ checked("triage-select", "moving up in your career") }}>moving up in your career</option>
+                  <option value="changing your career" id="advice3" {{ checked("triage-select", "changing your career") }}>changing your career</option>
+                  <option value="returning to work" id="advice4" {{ checked("triage-select", "returning to work") }}>returning to work</option>
+                  <option value="understanding your options" id="advice5" {{ checked("triage-select", "understanding your options") }}>understanding your options</option>
+                  <option value="identifying and building your skills" id="advice6" {{ checked("triage-select", "identifying and building your skills") }}>identifying and building your skills</option>
+                  <option value="understanding the recruitment process" id="advice7" {{ checked("triage-select", "understanding the recruitment process") }}>understanding the recruitment process</option>
+                  <!-- <option value="taking your next career steps" {{ checked("triage-select", "taking your next career steps") }}>taking your next career steps</option> -->
+                  <option value="working with a health condition or disability" id="advice8" {{ checked("triage-select", "working with a health condition or disability") }}>working with a health condition or disability</option>
+                </select>
+                <button draggable="false" class="govuk-button triage-start-btn app-button--inverted govuk-!-margin-top-1 govuk-!-margin-bottom-0"  data-module="govuk-button"> See suggestions</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </form>
+</section>
+{% endblock %}
+{% block content %}
+
+
+<main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+  <div class="govuk-width-container dfc-app-triage-panel">
+    <button class="govuk-button filters-button" id="show-filters-button">Show filters</button>
+    <form action="course-search-result" method="get" novalidate="novalidate">
+    <div class="govuk-grid-row govuk-!-margin-top-3 govuk-!-padding-top-5">
+      <div class="govuk-grid-column-one-third">
+        <div class="filters" id="allSecondaryFilterAccordions">
+          <div class="govuk-form-group" id="filter-results-block">
+
+            <!-- Filters - Dynamic -  -->
+
+            <div id="triage-filter" class="govuk-checkboxes">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-label govuk-!-font-weight-bold" id="triage-label">Filter results</legend>
+                <p class="govuk-body filters-count" id="filters-selected-count"> 0 selected </p>
+                  <div class="govuk-checkboxes govuk-checkboxes--small">
+
+                    <!-- Filter items- On Loop -  -->
+
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="SideBar.triageFilterResultsSet.SelectedIds[0]" name="filter-results-1" type="checkbox" value="Understand your skills">
+                      <label class="govuk-label govuk-checkboxes__label" for="SideBar.triageFilterResultsSet.SelectedIds[0]">Understand your skills</label>
+                    </div>
+
+                    <!-- Filter items- On Loop end -  -->
+
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="SideBar.triageFilterResultsSet.SelectedIds[1]" name="filter-results-2" type="checkbox" value="Find careers that suit your skills">
+                      <label class="govuk-label govuk-checkboxes__label" for="SideBar.triageFilterResultsSet.SelectedIds[1]">Find careers that suit your skills</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="SideBar.triageFilterResultsSet.SelectedIds[2]" name="filter-results-3" type="checkbox" value="Work experience">
+                      <label class="govuk-label govuk-checkboxes__label" for="SideBar.triageFilterResultsSet.SelectedIds[1]">Work experience</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="SideBar.triageFilterResultsSet.SelectedIds[3]" name="filter-results-4" type="checkbox" value="Options at age 16">
+                      <label class="govuk-label govuk-checkboxes__label" for="SideBar.triageFilterResultsSet.SelectedIds[1]">Options at age 16</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="SideBar.triageFilterResultsSet.SelectedIds[4]" name="filter-results-5" type="checkbox" value="Options at age 18">
+                      <label class="govuk-label govuk-checkboxes__label" for="SideBar.triageFilterResultsSet.SelectedIds[1]">Options at age 18</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="SideBar.triageFilterResultsSet.SelectedIds[5]" name="filter-results-6" type="checkbox" value="Options after university">
+                      <label class="govuk-label govuk-checkboxes__label" for="SideBar.triageFilterResultsSet.SelectedIds[1]">Options after university</label>
+                    </div>
+                  </div>
+              </fieldset>
+            </div>
+          </div>
+          <noscript>
+          <button data-module="govuk-button" class="govuk-button" type="submit">Apply filters</button>
+          </noscript>
+          <p class="clear-filters"><a href="">Clear filters</a></p>
+        </div>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">Showing <span class="triage-result-count" id="total-articles">29 suggestions</span> for "<span class="govuk-!-font-weight-bold" id="triage-selected-advice-value" >{{ data['triage-select'] }}</span>"</p>
+
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6 govuk-!-margin-top-2">
+
+
+
+
+          <!-- Filtered Article results -->
+          <ol id="triage-result-list"  class="triage-result-list results-list">
+            <li class="triage-search-result-item" id="triage-result-list-result">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"><a class="govuk-link" href="#">Skills Health Check</a></h3>
+                <p class="govuk-body">The skills health check is a more in-depth collection of assessments. These assessments will generate a report, which can help you identify your personal and work-based skills.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card2">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"><a class="govuk-link" href="https://beta.nationalcareers.service.gov.uk/"  href="/sprint43/skills-assessment/skills-health-check/skills-health-check">Discover your skills and careers (DYSAC)</a></h3>
+                <p class="govuk-body">In this assessment, answer questions about the things you like to do or are good at. Understanding yourself can help you work out what careers you may enjoy working in.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card3">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"> <a class="govuk-link" href="/sprint46/explorecareers"> Explore careers</a></h3>
+                <p class="govuk-body">Find out what a job involves and if it's right for you.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card5">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"> <a class="govuk-link" href="https://beta.nationalcareers.service.gov.uk/">Role profiles</a></h3>
+                <p class="govuk-body">Find out what a job involves and if it's right for you.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card6">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"> <a class="govuk-link" href="https://nationalcareers.service.gov.uk/find-a-course"> Find a course</a></h3>
+                <p class="govuk-body">Find a course to help you improve your current digital skills or study for your future.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card7">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"> <a class="govuk-link" href="https://nationalcareers.service.gov.uk/find-a-course/the-skills-toolkit"> The Skills Toolkit</a></h3>
+                <p class="govuk-body">Free courses to help you learn new skills or change jobs. Including general skills that apply to all sectors and more specialised skills.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card8">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"> <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice/the-world-of-work-is-changing"> Covid support advice for if you lose your job</a></h3>
+                <p class="govuk-body">Understanding the working world during COVID-19.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card9">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"> <a class="govuk-link" href="https://nationalcareers.service.gov.uk/careers-advice"> Other ways to develop skills</a></h3>
+                <p class="govuk-body">You could develop develop your skills via Volunteering, Teach yourself & Virtual work experience. </p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card10">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"> <a class="govuk-link" href="#"> Where to find other online learning</a></h3>
+                <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card11">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"><a class="govuk-link"href="https://nationalcareers.service.gov.uk/careers-advice/career-choices-at-16"> Post 16 options</a></h3>
+                <p class="govuk-body">Think about what your next step in education or training will be at 16.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card12">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"><a class="govuk-link"href="https://nationalcareers.service.gov.uk/careers-advice/career-choices-at-18"> Post 18 options</a></h3>
+                <p class="govuk-body">From 17 to 19, explore the education, work and study options available to you.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card13">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"><a class="govuk-link"href="https://nationalcareers.service.gov.uk/careers-advice/options-with-education-health-and-care-plan/"> Options with an EHC plan</a></h3>
+                <p class="govuk-body">Find the right learning or training option available to you with an EHC plan.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card14">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"><a class="govuk-link"href="https://nationalcareers.service.gov.uk/careers-advice/career-and-job-support-for-people-with-a-disability/"> Career and job support for people with a disability</a></h3>
+                <p class="govuk-body">Help and advice for people with a disability or health condition to find and stay in work.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card15">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"><a class="govuk-link"href="https://nationalcareers.service.gov.uk/careers-advice/advice-on-a-gap-year/"> Advice on a gap year</a></h3>
+                <p class="govuk-body">Advice on taking time out of education before continuing your studies.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card16">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"><a class="govuk-link"href="https://nationalcareers.service.gov.uk/careers-advice/advice-for-if-you-lose-your-job"> Advice for if you lose your job</a></h3>
+                <p class="govuk-body">See how Covid-19 is changing the way you find and get a job.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card17">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"><a class="govuk-link"href="https://nationalcareers.service.gov.uk/careers-advice/the-world-of-work-is-changing"> Understanding the working world during Covid 19</a></h3>
+                <p class="govuk-body">Find useful advice and resources for if you have recently been made redundant or become unemployed.</p>
+              </div>
+            </li>
+            <li class="triage-search-result-item" id="card18">
+              <div class="info-card-content">
+                <h3 class="govuk-heading-m"> <a class="govuk-link"href="https://nationalcareers.service.gov.uk/careers-advice/advice-on-further-study-options"> Advice on further study options</a></h3>
+                <p class="govuk-body">Consider and all the further study options available to you.</p>
+              </div>
+            </li>
+          </ol>
+      </div>
+    </div>
+    </form>
+  </div>
+</main>
+{% endblock %}

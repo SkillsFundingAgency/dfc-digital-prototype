@@ -1,0 +1,192 @@
+{% extends "layout_ncs_sprint3.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<div class="govuk-width-container">
+        <div class="govuk-phase-banner">
+            <div class="govuk-header__navigation--end">
+              <div class="account-nav">
+              <span>  Sam Johnson  <a href="" class="govuk-!-margin-left-1 govuk-!-margin-right-3">Sign out</a><a href="#">Your account</a></span>
+              </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="homepage">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="action-plans-signed-in">Action plans</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="your-account">Your account</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      Your action plan
+    </li>
+  </ol>
+</div>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row govuk-!-margin-top-7">
+        <div class="govuk-grid-column-two-thirds">
+            <div class="dfc-app-actionplans-notification-container govuk-!-margin-bottom-4  govuk-visually-hidden">
+                <div class="govuk-form-group govuk-!-margin-bottom-0">
+                    <form id="homeFormHome" action="/action-plans/home/" class="govuk-form-group" method="post">
+                        <input id="CustomerId" name="CustomerId" type="hidden" value="0f57c826-9e7b-416d-867f-40a61717d403">
+                        <input id="ActionPlanId" name="ActionPlanId" type="hidden" value="d56d9b7e-0a50-449e-922d-de4bdcf2ae75">
+                        <input id="InteractionId" name="InteractionId" type="hidden" value="c21fac38-b214-45c7-af48-c84a7de91c27">
+
+                        <fieldset class="govuk-fieldset govuk-!-margin-bottom-5">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                Accept your action plan
+                            </legend>
+                            <p>Accept this action plan to complete or update your actions.</p>
+                            <div class="govuk-checkboxes govuk-checkboxes--small">
+                                <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="homeGovukCheckBoxAcceptplan" name="homeGovukCheckBoxAcceptplan" type="checkbox">
+    <label class="govuk-label govuk-checkboxes__label" for="homeGovukCheckBoxAcceptplan">
+        I accept this action plan
+    </label>
+</div>
+                            </div>
+                        </fieldset>
+
+<button id="homeGovukButtonContinue" class="govuk-button  " data-module="govuk-button">
+    Continue
+</button>
+                    </form>
+                </div>
+            </div>
+
+
+<h1 class="govuk-heading-xl ">Your action plan</h1>
+
+            <p>
+                During your careers advice appointment on 08 February 2020, you and Bill Dallas spoke about your current situation and goals.
+            </p>
+            <p>At the end of your appointment, you agreed your next steps and made an action plan with goals and actions for you to complete. You can contact Bill Dallas if you want to add new goals or actions.</p>
+            <hr class="govuk-section-break--visible govuk-section-break govuk-section-break--l">
+
+            <section >
+
+<h2 class="govuk-heading-l " data-gtm-vis-recent-on-screen-8675592_247="118" data-gtm-vis-first-on-screen-8675592_247="118" data-gtm-vis-total-visible-time-8675592_247="100" data-gtm-vis-has-fired-8675592_247="1">Your goals</h2>
+
+
+                <p>Reaching your goals can help you to make progress in your career. Your goals might help you to develop your skills, take a training course or find work.</p>
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption govuk-visually-hidden">List of goals</caption>
+                    <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-half">Goal type</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Due on</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Status</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-quarter"></th>
+                    </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Skills</td>
+                                <td class="govuk-table__cell">01 January 2030</td>
+                                <td class="govuk-table__cell">Achieved</td>
+                                <td class="govuk-table__cell">
+
+                                    <a id="homeGovUkLinkAction-plan-d5e9a26f-b986-401f-a05a-ee15c10b8fdc" href="view-goal" tabindex="0" class=" ">View</a>
+
+                                </td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Skills</td>
+                                <td class="govuk-table__cell">23 June 2018</td>
+                                <td class="govuk-table__cell">Achieved</td>
+                                <td class="govuk-table__cell">
+
+                                    <a id="homeGovUkLinkAction-plan-2956510d-ffc9-4299-93a0-3fe07a71ef0b" href="view-goal" tabindex="0" class=" ">View</a>
+
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="ncs-actionplan ">
+
+<h2 class="govuk-heading-l " data-gtm-vis-has-fired-8675592_247="1">Your actions</h2>
+
+                <p>Actions are specific tasks or activities for you to do. Completing your actions will help you to reach your goals.</p>
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption govuk-visually-hidden">List of actions</caption>
+                    <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-half">Action type</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Due on</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Status</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-quarter"></th>
+                    </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">
+                                    Interview Skills Workshop
+                                </td>
+                                <td class="govuk-table__cell">01 May 2019</td>
+                                <td class="govuk-table__cell">Not Started</td>
+                                <td class="govuk-table__cell">
+                                    <a id="homeGovUkLinkAction-plan-6ec9d7a1-d21c-49ae-87a6-0e18238dbc78" href="view-action" tabindex="0" class=" ">View</a>
+                                </td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">
+                                    Interview Skills Workshop
+                                </td>
+                                <td class="govuk-table__cell">01 May 2019</td>
+                                <td class="govuk-table__cell">In Progress</td>
+                                <td class="govuk-table__cell">
+                                    <a id="homeGovUkLinkAction-plan-b5f541a4-3e15-4480-9697-77ad2d60d7d2" href="view-action" tabindex="0" class=" ">View</a>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </div>
+        <div class="action-plan-secondary-content govuk-grid-column-one-third  ">
+
+<div class="app-related-items" id="speaktoadvisor">
+    <section>
+
+<h2 class="govuk-heading-l govuk-heading-m" data-gtm-vis-first-on-screen-8675592_194="111" data-gtm-vis-recent-on-screen-8675592_240="115" data-gtm-vis-first-on-screen-8675592_240="115" data-gtm-vis-total-visible-time-8675592_240="100" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-has-fired-8675592_247="1" data-gtm-vis-recent-on-screen-8675592_194="3661" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">Your careers adviser</h2>
+
+        <p>
+            <span><strong>Name: </strong>Bill Dallas</span><br>
+            <span>
+                <strong>Email: </strong><a href="mailto:lgqbhkj4@uhqn.vqe">Bill-Dallas@nationalcareers.service.gov.uk/</a>
+            </span><br>
+            <span><strong>Telephone:</strong> 06513 5433976</span>
+        </p>
+        <p>
+            Bill Dallas will respond to you within 3 working days
+        </p>
+    </section>
+</div>
+<div class="app-related-items">
+        <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_194="206" data-gtm-vis-first-on-screen-8675592_194="206" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1" data-gtm-vis-has-fired-8675592_240="1">Speak to an adviser</h2><p class="govuk-body-m"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat" rel="external" target="'_blank'">use webchat</a></p><ul class="govuk-list"><li>8am - 8pm Monday - Friday</li><li>10am - 5pm Saturday</li></ul>
+    </div>
+
+        </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

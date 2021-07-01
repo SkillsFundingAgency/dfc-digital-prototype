@@ -1,0 +1,559 @@
+{% extends "layout_ncs_sprint50.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+<header>
+  <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs "> <a href="qualifications" class="govuk-back-link">Back</a> </div>
+  </div>
+</header>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-grid-row  govuk-!-margin-top-9">
+    <div id="MainContent_TA2BB01DC001_Col00" class="sf_colsIn govuk-grid-column-two-thirds" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sfContentBlock sf-Long-text"> <span class="govuk-caption-xl">Step 2 of 5</span>
+          <h1 class="govuk-heading-xl">Skills</h1>
+          <p class="govuk-body">Select all of the skills that you have achieved from previous job roles and work experience</p>
+          <p class="govuk-body govuk-!-margin-bottom-6">If you do not want to filter by skills, please <a href="skills">skip this step</a> </p>
+          <div class="banner-message">
+            <p class="govuk-body govuk-!-margin-bottom-0 govuk-!-font-weight-bold">We have found 25 career matches based on your selection. <a href="matched-results">View</a> </p>
+          </div>
+          <p class="govuk-body search-title govuk-!-margin-top-9 govuk-!-margin-bottom-0" id="count"><span class="govuk-!-font-weight-bold ">0</span> skills selected </p>
+          <form action="job-sectors" class="js-live-search-form" id="psf-skills" method="post">
+            <div class="govuk-accordion govuk-!-margin-bottom-9" data-module="govuk-accordion" id="accordion-default">
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4"> Ability <strong class="govuk-tag govuk-tag--green section-count"> </strong></span> </h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+						<div class="govuk-checkboxes govuk-checkboxes--small">
+							<div class="govuk-checkboxes__item">
+							  <input class="govuk-checkboxes__input" id="ability" name="ability" type="checkbox" value="Concentration">
+							  <label class="govuk-label govuk-checkboxes__label" for="ability">Concentration</label>
+							</div>
+							<div class="govuk-checkboxes__item">
+							  <input class="govuk-checkboxes__input" id="ability-1" name="ability-1" type="checkbox" value="Endurance">
+							  <label class="govuk-label govuk-checkboxes__label" for="ability-1"> Endurance</label>
+							</div>
+							<div class="govuk-checkboxes__item">
+							  <input class="govuk-checkboxes__input" id="ability-2" name="ability-2" type="checkbox" value="Memory">
+							  <label class="govuk-label govuk-checkboxes__label" for="ability-2"> Memory</label>
+							</div>
+							<div class="govuk-checkboxes__item">
+							  <input class="govuk-checkboxes__input" id="ability-3" name="ability-3" type="checkbox" value="Thinking and reasoning">
+							  <label class="govuk-label govuk-checkboxes__label" for="ability-3"> Thinking and reasoning</label>
+							</div>
+						</div>
+                    </div>
+                    <div class="govuk-grid-column-one-half">
+                      <div class="govuk-checkboxes govuk-checkboxes--small">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="ability-4" name="ability-2" type="checkbox" value="Control Movement">
+                          <label class="govuk-label govuk-checkboxes__label" for="ability-4"> Control Movement</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="ability-5" name="ability-5" type="checkbox" value="Maths skills">
+                          <label class="govuk-label govuk-checkboxes__label" for="ability-5"> Maths skills</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="ability-6" name="ability-6" type="checkbox" value="Speaking">
+                          <label class="govuk-label govuk-checkboxes__label" for="ability-6"> Speaking</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="ability-7" name="ability-7" type="checkbox" value="Work well with your hands">
+                          <label class="govuk-label govuk-checkboxes__label" for="ability-7"> Work well with your hands</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-4"> Knowledge <strong class="govuk-tag govuk-tag--green section-count"> </strong></span> </h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                  <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                      <div class="govuk-checkboxes govuk-checkboxes--small">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge" name="skills" type="checkbox" value="Admin">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge"> Admin</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-1" name="organisation" type="checkbox" value="Biology">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-1"> Biology</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-2" name="organisation" type="checkbox" value="Chemistry">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-2"> Chemistry</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-3" name="organisation" type="checkbox" value="Computers and I.T.">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-3"> Computers and I.T.</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-4" name="organisation" type="checkbox" value="Design">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-4"> Design</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-5" name="organisation" type="checkbox" value="Education and training">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-5"> Education and training</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-6" name="organisation" type="checkbox" value="English Language">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-6"> English Language</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-7" name="organisation" type="checkbox" value="Food Production">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-7"> Food Production</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-8" name="organisation" type="checkbox" value="Geography">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-8"> Geography</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-9" name="organisation" type="checkbox" value="Law and government">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-9"> Law and government</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-10" name="organisation" type="checkbox" value="Mechanical">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-10"> Mechanical</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-11" name="organisation" type="checkbox" value="Medicine and Dentistry">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-11"> Medicine and Dentistry</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-12" name="organisation" type="checkbox" value="Philosophy and Religion">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-12"> Philosophy and Religion</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-13" name="organisation" type="checkbox" value="Production and Processing">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-13"> Production and Processing</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-14" name="organisation" type="checkbox" value="Public safety and security">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-14"> Public safety and security</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-15" name="organisation" type="checkbox" value="Sociology and Anthropology">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-15"> Sociology and Anthropology</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-16" name="organisation" type="checkbox" value="Therapy and counseling">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-16"> Therapy and counseling</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="govuk-grid-column-one-half">
+                      <div class="govuk-checkboxes govuk-checkboxes--small">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-17" name="organisation" type="checkbox" value="Administration and Management">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-17">Administration and Management</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-18" name="organisation" type="checkbox" value="Building and construction">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-18"> Building and construction</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-19" name="organisation" type="checkbox" value="Communication">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-19"> Communication</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-20" name="organisation" type="checkbox" value="Customer service">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-20"> Customer service</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-21" name="organisation" type="checkbox" value="Economics and Accounting">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-21"> Economics and Accounting</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-22" name="organisation" type="checkbox" value="Engineering and Technology">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-22"> Engineering and Technology</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-23" name="organisation" type="checkbox" value="Fine Arts">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-23"> Fine Arts</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-24" name="organisation" type="checkbox" value="Foreign Language">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-24"> Foreign Language</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-25" name="organisation" type="checkbox" value="History and Archeology">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-25"> History and Archeology</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-26" name="organisation" type="checkbox" value="Maths">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-26"> Maths</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-27" name="organisation" type="checkbox" value="Media production">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-27"> Media production</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-28" name="organisation" type="checkbox" value="Personnel and Human Resources">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-28"> Personnel and Human Resources</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-29" name="organisation" type="checkbox" value="Physics">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-29"> Physics</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-31" name="organisation" type="checkbox" value="Psychology">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-31"> Psychology</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-32" name="organisation" type="checkbox" value="Sales and Marketing">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-32"> Sales and Marketing</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-33" name="organisation" type="checkbox" value="Telecommunications">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-33"> Telecommunications</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="Knowledge-34" name="organisation" type="checkbox" value="Transport">
+                          <label class="govuk-label govuk-checkboxes__label" for="Knowledge-34"> Transport</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-1"> Skills <strong class="govuk-tag govuk-tag--green section-count"> </strong></span> </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-full-width">
+                      <div class="govuk-checkboxes govuk-checkboxes--small">
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills" name="skills" type="checkbox" value="Active learning">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills"> Active learning </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-1" name="skills" type="checkbox" value="Active listening">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-1"> Active listening </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-2" name="skills" type="checkbox" value="Critical thinking">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-2"> Critical thinking </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-3" name="skills" type="checkbox" value="Decision making">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-3"> Decision making </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-4" name="skills" type="checkbox" value="Design and technology">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-4"> Design and technology </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-5" name="skills" type="checkbox" value="Empathy">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-5"> Empathy </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-6" name="skills" type="checkbox" value="Equipment Maintenance">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-6"> Equipment Maintenance </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-7" name="skills" type="checkbox" value="Equipment Selection">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-7"> Equipment Selection </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-9" name="skills" type="checkbox" value="Excellent verbal communication">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-9"> Excellent verbal communication </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-10" name="skills" type="checkbox" value="Helping people ">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-10"> Helping people </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-11" name="skills" type="checkbox" value="Installing equipment">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-11"> Installing equipment </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-12" name="skills" type="checkbox" value="Leadership">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-12"> Leadership </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-13" name="skills" type="checkbox" value="Learning strategy">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-13"> Learning strategy </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-14" name="skills" type="checkbox" value="Manage finances">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-14"> Manage finances </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-15" name="skills" type="checkbox" value="Manage staff">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-15"> Manage staff </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-16" name="skills" type="checkbox" value="Monitoring equipment">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-16"> Monitoring equipment </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-17" name="skills" type="checkbox" value="Monitoring performance">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-17"> Monitoring performance </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-19" name="skills" type="checkbox" value="Negotiation skills">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-19"> Negotiation skills </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-20" name="skillsskills" type="checkbox" value="Operating equipment">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-20"> Operating equipment </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-21" name="skills" type="checkbox" value="Operations analysis ">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-21"> Operations analysis </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-22" name="skills" type="checkbox" value="Persuasion">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-22"> Persuasion </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-23" name="skills" type="checkbox" value="Problem solving">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-23"> Problem solving </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-24" name="skills" type="checkbox" value="Programming">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-24"> Programming </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-25" name="skills" type="checkbox" value="Quality control">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-25"> Quality control </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-26" name="skills" type="checkbox" value="Reading">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-26"> Reading </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-27" name="skills" type="checkbox" value="Repairing machines">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-27"> Repairing machines </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-28" name="skills" type="checkbox" value="Science">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-28"> Science </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-29" name="skills" type="checkbox" value="Social Skills">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-29"> Social Skills </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-30" name="skills" type="checkbox" value="Speaking">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-30"> Speaking </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-31" name="skills" type="checkbox" value="Systems Skills">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-31"> Systems Skills </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-32" name="skills" type="checkbox" value="Teaching">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-32"> Teaching </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-33" name="skills" type="checkbox" value="Teamwork">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-33"> Teamwork </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-34" name="skills" type="checkbox" value="Technical skills">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-34"> Technical skills </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-35" name="skills" type="checkbox" value="Time management">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-35"> Time management </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-36" name="skills" type="checkbox" value="Troubleshooting">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-36"> Troubleshooting </label>
+                          </div>
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="skills-37" name="skills" type="checkbox" value="Writing">
+                            <label class="govuk-label govuk-checkboxes__label" for="skills-37"> Writing </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading"> <span class="govuk-accordion__section-button" id="accordion-default-heading-2"> Work style <strong class="govuk-tag govuk-tag--green section-count"> </strong></span> </h2>
+                </div>
+                <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                  <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                      <div class="govuk-checkboxes govuk-checkboxes--small">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-1" name="work style" type="checkbox" value="Ambition">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-1"> Ambition</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-2" name="work style" type="checkbox" value="Attention to detail">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-2"> Attention to detail</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-4" name="work style" type="checkbox" value="Initiative">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-4"> Initiative</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-5" name="work style" type="checkbox" value="Innovation">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-5"> Innovation</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-6" name="work style" type="checkbox" value="Open to change">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-6"> Open to change</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-7" name="work style" type="checkbox" value="Self control">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-7"> Self control</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-3" name="work style" type="checkbox" value="Enjoy working with others">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-3"> Working with others</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="govuk-grid-column-one-half">
+                      <div class="govuk-checkboxes govuk-checkboxes--small">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-8" name="work style" type="checkbox" value=" Analytical thinking">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-8"> Analytical thinking</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-9" name="work style" type="checkbox" value="Empathy">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-9"> Empathy</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-10" name="work style" type="checkbox" value=" Independent working">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-10"> Independent working</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-11" name="work style" type="checkbox" value="Influencing">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-11"> Influencing</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-12" name="work style" type="checkbox" value="Leadship">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-12"> Leadship</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-13" name="work style" type="checkbox" value="Persistence">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-13"> Persistence</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="work style-14" name="work style" type="checkbox" value="Working under pressure">
+                          <label class="govuk-label govuk-checkboxes__label" for="work style-14"> Working under pressure</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+            <a href="job-sectors" class="govuk-link govuk-!-margin-left-5">Skip this step</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="MainContent_TA2BB01DC001_Col01" class="sf_colsIn govuk-grid-column-one-third" data-sf-element="Container" data-placeholder-label="Content container">
+      <div>
+        <div class="sf-Long-text">
+          <div class="app-related-items">
+            <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_194="287" data-gtm-vis-first-on-screen-8675592_194="287" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">Want to speak to an adviser?</h2>
+            <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 </p>
+            <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 

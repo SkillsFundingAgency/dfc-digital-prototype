@@ -1,0 +1,91 @@
+{% extends "layout_ncs_sprint3.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/beta-banner.html" %}
+</div>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="sign-in">Back</a>
+    </li>
+  </ol>
+</div>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row govuk-!-margin-top-6">
+      <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">Retrieve your email address</h1>
+  <form id="customForm" novalidate="" action="error">
+    <div>
+      <div class="govuk-form-group ">
+        <label class="govuk-label" for="firstNameCustom">First name</label>
+        <input class="govuk-input govuk-!-width-one-half" id="firstNameCustom" name="firstName" type="text" novalidate="">
+      </div>
+      <div class="govuk-form-group ">
+        <label class="govuk-label" for="lastNameCustom">Last name</label>
+        <input class="govuk-input govuk-!-width-one-half" id="lastNameCustom" name="lastName" type="text" novalidate="">
+      </div>
+      <div class="govuk-form-group ">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="date-of-birth-hint" id="dobFieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <label class="govuk-label">Date of birth</label>
+          <span id="date-of-birth-hint" class="govuk-hint">For example, 31 3 1980</span>
+          </legend>
+
+          <div class="govuk-date-input" id="date-of-birth">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dobDay">Day</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dobDay" name="dobDay" type="number" pattern="[0-9]*" inputmode="numeric" novalidate="">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dobMonth">Month</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dobMonth" name="dobMonth" type="number" pattern="[0-9]*" inputmode="numeric" novalidate="">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dobYear">Year</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dobYear" name="dobYear" type="number" pattern="[0-9]*" inputmode="numeric" novalidate="">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group ">
+        <label class="govuk-label" for="postcodeCustom">Enter your postcode</label>
+        <span id="postcode-hint" class="govuk-hint">For example, SW1A 1AA</span>
+        <input name="postcode" class="govuk-input govuk-input--width-10" id="postcodeCustom" type="text" novalidate="" value="">
+      </div>
+    </div>
+    <div class="govuk-button-group">
+      <button class="govuk-button" id="preSubmit" type="submit">Find email address</button>
+      <a class="govuk-link" href="sign-in">Cancel</a>
+    </div>
+
+  </form>
+</div>
+
+      <div class="govuk-grid-column-one-third">
+        <div class="app-related-items">
+                <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_194="206" data-gtm-vis-first-on-screen-8675592_194="206" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1" data-gtm-vis-has-fired-8675592_240="1">Speak to an adviser</h2><p class="govuk-body-m"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat" rel="external" target="'_blank'">use webchat</a></p><ul class="govuk-list"><li>8am - 8pm Monday - Friday</li><li>10am - 5pm Saturday</li></ul>
+            </div>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
