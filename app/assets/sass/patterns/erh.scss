@@ -247,7 +247,8 @@
 @media (min-width: 20em) and (max-width: 40.0525em) and (min-width: 20em) {
     .govuk-image-card__image-wrapper {
         width:33.3333%;
-        float: left
+        float: left;
+        padding-top:10px;
     }
 }
 
@@ -683,3 +684,10 @@
     }
   }
 }
+
+.govuk-link--no-underline:not(:hover):not(:active) {text-decoration: none;}
+.erh-card-half-white .govuk-link {text-decoration: none;
+
+&:hover { text-decoration: underline; text-decoration-thickness : max(3px); text-underline-offset: .1em}}
+.erh-card-group .card {min-height: 145px !important}
+.hero-banner-full-width {background-color: rgba(210, 226, 241, 0.3); }
