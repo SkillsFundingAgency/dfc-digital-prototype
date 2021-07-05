@@ -10,16 +10,16 @@ Careers advice - job profiles, information and resources | National Careers Serv
 
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
-
 <a class="govuk-back-link" href="../find-course">Back to find a course</a>
 </div>
 {% endblock %}
 {% block content %}
+
 <div class="course-hero-banner">
     <div class="govuk-width-container">
     <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
-                <h1 class="govuk-heading-xl">Find a course</h1>
+                <h1 class="govuk-heading-xl">Free adult courses offer search</h1>
                 <p class="govuk-body-lead">Use our course search to look for different types of learning opportunities.</p>
                   <div class="course-search-item-wrapper">
                     <input type="search" id="search-main" name="search-main" title="Search" class="course-gov-search-item course-gov-search-input" placeholder="Enter a keyword">
@@ -34,16 +34,11 @@ Careers advice - job profiles, information and resources | National Careers Serv
 </div>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper app-main-class" id="main-content" role="main">
-
     <form action="course-search-result" method="get" novalidate="novalidate">
-
-
       <div class="govuk-grid-row govuk-!-margin-top-7">
         <div class="govuk-grid-column-one-third">
             <button class="govuk-button filters-button" id="show-filters-button">Show filters</button>
-
             <div class="filters filters">
-
                 <div class="govuk-form-group">
                     <label class="govuk-label govuk-!-font-weight-bold" for="location">
                         Location
@@ -52,20 +47,19 @@ Careers advice - job profiles, information and resources | National Careers Serv
                 </span>
                     <input class="govuk-input govuk-input--width-10" id="location" name="location" type="text">
                 </div>
-
                 <div id="distance-block" class="govuk-form-group" style="">
-                            <div id="distance">
-                                <label class="govuk-label govuk-!-font-weight-bold" for="location-distance" id="distance-label">Distance</label>
-                                <select aria-label="DistanceValue" class="govuk-select" name="SelectedDistanceValue" id="distance-select"><option value="5 miles">5 miles</option>
-                <option selected="selected" value="10 miles">10 miles</option>
-                <option value="15 miles">15 miles</option>
-                <option value="30 miles">30 miles</option>
-                <option value="45 miles">45 miles</option>
-                <option value="60 miles">60 miles</option>
-                <option value="75 miles">75 miles</option>
-                </select>
-                            </div>
-                        </div>
+                  <div id="distance">
+                      <label class="govuk-label govuk-!-font-weight-bold" for="location-distance" id="distance-label">Distance</label>
+                      <select aria-label="DistanceValue" class="govuk-select" name="SelectedDistanceValue" id="distance-select"><option value="5 miles">5 miles</option>
+                        <option selected="selected" value="10 miles">10 miles</option>
+                        <option value="15 miles">15 miles</option>
+                        <option value="30 miles">30 miles</option>
+                        <option value="45 miles">45 miles</option>
+                        <option value="60 miles">60 miles</option>
+                        <option value="75 miles">75 miles</option>
+                      </select>
+                    </div>
+                  </div>
 
                 <!-- <div id="distanceForm" class="govuk-form-group">
                     <div id="distance">
@@ -179,9 +173,8 @@ Careers advice - job profiles, information and resources | National Careers Serv
 
         </div>
         <div class="govuk-grid-column-two-thirds">
-
 <div>
-        <p class="govuk-body">Showing all <span class="fac-result-count">96,342</span> courses   </p>
+        <p class="govuk-body">Showing all <span class="fac-result-count">568</span> free courses      </p>
 </div>
                         <div class="govuk-form-group fac-section-sort">
                             <label for="order" class="result-region-header__sort-label govuk-label">Sort by</label>
@@ -197,7 +190,7 @@ Careers advice - job profiles, information and resources | National Careers Serv
                             </select><noscript>
                                 <button data-module="govuk-button" class="govuk-button" type="submit">Apply sort</button>
                             </noscript>
-                            <a class="govuk-link govuk-button govuk-!-margin-bottom-0" style="float:right" href="free-course-search-result">Explore free adult courses offer</a>
+                             <button data-module="govuk-button" class="govuk-button govuk-!-margin-bottom-0" type="submit" style="float:right">Search other courses</button>
                         </div>
 
 
