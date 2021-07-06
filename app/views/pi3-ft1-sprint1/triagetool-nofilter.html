@@ -30,8 +30,19 @@ Careers advice - job profiles, information and resources | National Careers Serv
             <div class="govuk-form-group govuk-!-margin-bottom-0">
               <label class="govuk-label triage-select-label" for="sort"> Showing suggestions for </label>
               <select class="govuk-select triage-select" id="triageSelect">
-                <!-- <option value="changing your career">changing your career</option>
-                <option value="identifying and building your skills">identifying and building your skills</option> -->
+                <option value="planning or starting your career" id="advice1" {{ checked("triage-select", "planning or starting your career") }}>planning or starting your career</option>
+                <option value="moving up in your career" id="advice2" {{ checked("triage-select", "moving up in your career") }}>moving up in your career</option>
+                <option value="changing your career" id="advice3" {{ checked("triage-select", "changing your career") }}>changing your career</option>
+                <option value="returning to work" id="advice4" {{ checked("triage-select", "returning to work") }}>returning to work</option>
+                <option value="understanding your options" id="advice5" {{ checked("triage-select", "understanding your options") }}>understanding your options</option>
+                <option value="identifying and building your skills" id="advice6" {{ checked("triage-select", "identifying and building your skills") }}>identifying and building your skills</option>
+                <option value="understanding the recruitment process" id="advice7" {{ checked("triage-select", "understanding the recruitment process") }}>understanding the recruitment process</option>
+              </select>
+
+
+              <!-- <select class="govuk-select triage-select" id="triageSelect">
+                <option value="changing your career">changing your career</option>
+                <option value="identifying and building your skills">identifying and building your skills</option>
                 <option value="identifying career opportunities" id="advice1" {{ checked("triage-select", "identifying career opportunities") }}>identifying career opportunities</option>
                 <option value="identifying your skills" id="advice2" {{ checked("triage-select", "identifying career opportunities") }}>identifying your skills</option>
                 <option value="making career decisions" id="advice3" {{ checked("triage-select", "making career decisions") }}>making career decisions</option>
@@ -41,8 +52,8 @@ Careers advice - job profiles, information and resources | National Careers Serv
                 <option value="understanding your options">understanding your options</option>
                 <option value="understanding the recruitment process">understanding the recruitment process</option> -->
                 <!-- <option value="taking your next career steps">taking your next career steps</option> -->
-                <!-- <option value="working with a health condition or disability">working with a health condition or disability</option> -->
-              </select>
+                <!-- <option value="working with a health condition or disability">working with a health condition or disability</option>
+              </select>-->
 
               <!-- <select class="govuk-select triage-select" id="triageSelect">
                 <option value="planning or starting your career" id="advice1" {{ checked("triage-select", "planning or starting your career") }}>planning or starting your career</option>
