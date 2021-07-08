@@ -1585,7 +1585,7 @@ html {
 }
 
 .filters {
-  .job-profile-sidebar {
+  .job-profile-sidebar, .triage-tool-sidebar {
     @media (max-width: 43.75em) {
         display:none;
     }
@@ -1593,7 +1593,7 @@ html {
 }
 
   #allArticles {
-    .job-profile-sidebar { display: none;
+    .job-profile-sidebar, .triage-tool-sidebar { display: none;
       @media (max-width: 43.75em) {
           display:block;
       }
