@@ -390,3 +390,10 @@ ol.triage-result-list {
         }
       }
     }
+
+.triage-hide, .triage-filter-hide {
+  display:none;
+}
+.triage-show, .triage-filter-show {
+  display:block;
+}
