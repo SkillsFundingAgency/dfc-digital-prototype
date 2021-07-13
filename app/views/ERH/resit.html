@@ -95,12 +95,15 @@ Careers advice - job profiles, information and resources | National Careers Serv
       <div class="govuk-grid-row  govuk-!-margin-left-0  govuk-!-margin-right-0">
         <div class="govuk-grid-column-two-third">
           <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Speak to an adviser</h2>
-          <p class="govuk-body">If you need help or advice around your exam results and next steps, you can call us on <span class="govuk-!-font-weight-bold">0800 100 900</span> or <a href="https://webchat.nationalcareersservice.org.uk:8082/ERH.html" class="govuk-link">use webchat.</a></p>
+          <p class="govuk-body">If you need help or advice around your exam results and next steps, you can call us on <span class="govuk-!-font-weight-bold">0800 100 900</span> or <a class="govuk-link" href="https://nationalcareers.service.gov.uk/webchat/chat/" rel="external" onclick="event.preventDefault(); window.botmanChatWidget.open(); return false; " target="'_blank'">
+                        use webchat
+                    </a></p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<script src="//webchat.nationalcareersservice.org.uk:8080/js/ncs/chatRed.js" data-project="ERH"></script>
+<div id="botmanWidgetRoot"><div id="dragTarg" class="dragIsMobile " style="position: fixed; bottom: 0px; right: 0px; z-index: -1; min-width: 90px; box-sizing: content-box; overflow: visible; min-height: 120px;"><div id="dragTargDemo" style="position: absolute; left: 0px; top: 0px; width: calc(100% - 150px); height: 50px; z-index: 9;"></div><div style="cursor: pointer;"></div><div style="display: none; height: 550px; transition: all 0.2s linear 0s;"><a target="_blank" style="font-size: 15px; text-align: right; margin-right: 10px; display: block;"></a></div></div></div>
 
 {% endblock %}
