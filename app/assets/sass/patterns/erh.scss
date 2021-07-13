@@ -679,8 +679,10 @@
       float:left;
     }
   img {
-  width:340px;
-  margin:-40px 0px -30px -30px;
+    width:340px;
+    margin:-39px 0px -26px -52px;
+    border: 6px solid #207e77;
+
     @media(max-width: 641px) {
       margin:0px; margin-bottom: 20px; width:100%;
     }
