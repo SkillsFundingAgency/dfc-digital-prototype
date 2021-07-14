@@ -1667,7 +1667,100 @@ main #results.triage-results .results-block {
      box-shadow: inset 0 0 0 2px #fd0
  }
 
+//Generic
+.bold-xxlarge {
+    font-family: "nta",Arial,sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 53px;
+    line-height: 1.03774
+}
 
+@media(min-width: 641px) {
+    .bold-xxlarge {
+        font-size:80px;
+        line-height: 1
+    }
+}
+
+.bold-xlarge {
+    font-family: "nta",Arial,sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 32px;
+    line-height: 1.09375
+}
+
+@media(min-width: 641px) {
+    .bold-xlarge {
+        font-size:48px;
+        line-height: 1.04167
+    }
+}
+
+.bold-large {
+    font-family: "nta",Arial,sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 1.04167
+}
+
+@media(min-width: 641px) {
+    .bold-large {
+        font-size:36px;
+        line-height: 1.11111
+    }
+}
+
+.bold-medium {
+    font-family: "nta",Arial,sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.2
+}
+
+@media(min-width: 641px) {
+    .bold-medium {
+        font-size:24px;
+        line-height: 1.25
+    }
+}
+
+.bold-small {
+    font-family: "nta",Arial,sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25
+}
+
+@media(min-width: 641px) {
+    .bold-small {
+        font-size:19px;
+        line-height: 1.31579
+    }
+}
+
+.bold-xsmall {
+    font-family: "nta",Arial,sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.14286
+}
+
+@media(min-width: 641px) {
+    .bold-xsmall {
+        font-size:16px;
+        line-height: 1.25
+    }
+}
+
+.bold {
+    font-weight: 700
+}
 
 
 
