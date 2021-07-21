@@ -10,58 +10,53 @@ Free adult courses offer | National Careers Service
 
 {% block beforeContent %}
 {% include "includes/beta-banner.html" %}
-
 </div>
 {% endblock %}
 {% block content %}
-
 <div class="course-hero-banner">
-    <div class="govuk-width-container">
+  <div class="govuk-width-container">
     <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-                <h1 class="govuk-heading-xl">Free adult courses offer search</h1>
-                <p class="govuk-body-lead">Use our course search to look for different types of learning opportunities.</p>
-                  <div class="course-search-item-wrapper">
-                    <input type="search" id="search-main" name="search-main" title="Search" class="course-gov-search-item course-gov-search-input" placeholder="Enter a keyword">
-                    <div class="course-gov-search-item course-gov-search-submit-wrapper">
-                      <button data-module="govuk-button" type="submit" class="course-gov-search-submit">Search</button>
-                    </div>
-                  </div>
-
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Free courses for adults</h1>
+        <p class="govuk-body-lead">Search for free courses, paid for by the National Skills Fund, focusing on workplace skills to help you upskill or retrain.</p>
+        <div class="course-search-item-wrapper">
+          <input type="search" id="search-main" name="search-main" title="Search" class="course-gov-search-item course-gov-search-input" placeholder="Enter a keyword">
+          <div class="course-gov-search-item course-gov-search-submit-wrapper">
+            <button data-module="govuk-button" type="submit" class="course-gov-search-submit">Search</button>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper app-main-class" id="main-content" role="main">
     <form action="course-search-result" method="get" novalidate="novalidate">
       <div class="govuk-grid-row govuk-!-margin-top-7">
         <div class="govuk-grid-column-one-third">
-            <button class="govuk-button filters-button" id="show-filters-button">Show filters</button>
-            <div class="filters filters">
-                <div class="govuk-form-group">
-                    <label class="govuk-label govuk-!-font-weight-bold" for="location">
-                        Location
-                    </label>
-                    <span id="location-hint" class="govuk-hint">Enter a town or postcode
-                </span>
-                    <input class="govuk-input govuk-input--width-10" id="location" name="location" type="text">
-                </div>
-                <div id="distance-block" class="govuk-form-group" style="">
-                  <div id="distance">
-                      <label class="govuk-label govuk-!-font-weight-bold" for="location-distance" id="distance-label">Distance</label>
-                      <select aria-label="DistanceValue" class="govuk-select" name="SelectedDistanceValue" id="distance-select"><option value="5 miles">5 miles</option>
-                        <option selected="selected" value="10 miles">10 miles</option>
-                        <option value="15 miles">15 miles</option>
-                        <option value="30 miles">30 miles</option>
-                        <option value="45 miles">45 miles</option>
-                        <option value="60 miles">60 miles</option>
-                        <option value="75 miles">75 miles</option>
-                      </select>
-                    </div>
-                  </div>
+          <button class="govuk-button filters-button" id="show-filters-button">Show filters</button>
+          <div class="filters filters">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-!-font-weight-bold" for="location"> Location </label>
+              <span id="location-hint" class="govuk-hint">Enter a town or postcode </span>
+              <input class="govuk-input govuk-input--width-10" id="location" name="location" type="text">
+            </div>
+            <div id="distance-block" class="govuk-form-group" style="">
+              <div id="distance">
+                <label class="govuk-label govuk-!-font-weight-bold" for="location-distance" id="distance-label">Distance</label>
+                <select aria-label="DistanceValue" class="govuk-select" name="SelectedDistanceValue" id="distance-select">
+                  <option value="5 miles">5 miles</option>
+                  <option selected="selected" value="10 miles">10 miles</option>
+                  <option value="15 miles">15 miles</option>
+                  <option value="30 miles">30 miles</option>
+                  <option value="45 miles">45 miles</option>
+                  <option value="60 miles">60 miles</option>
+                  <option value="75 miles">75 miles</option>
+                </select>
+              </div>
+            </div>
 
-                <!-- <div id="distanceForm" class="govuk-form-group">
+            <!-- <div id="distanceForm" class="govuk-form-group">
                     <div id="distance">
                         <label class="govuk-label govuk-!-font-weight-bold" for="CurrentSearchRequest_LocationDistance">Distance</label>
                         <select class="govuk-select" id="CurrentSearchRequest_LocationDistance" name="CurrentSearchRequest.LocationDistance">
@@ -76,1213 +71,663 @@ Free adult courses offer | National Careers Service
                     </div>
                 </div> -->
 
-                <div id="startDateForm" class="govuk-form-group">
-                                    <div id="startDate">
-                                        <label class="govuk-label govuk-!-font-weight-bold" for="CurrentSearchRequest_StartDate">Start date</label>
-                                        <select class="govuk-select" id="CurrentSearchRequest_StartDate" name="CurrentSearchRequest.StartDate">
-                                            <option value="anytime" selected>Anytime</option>
-                                            <option value="nextThree">Next 3 months</option>
-                                            <option value="threeToSix">In 3 to 6 months</option>
-                                            <option value="moreThanSix">More than 6 months</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                <div id="courseTypeGroup" class="govuk-form-group">
-                    <div id="CourseType">
-                        <fieldset class="govuk-fieldset">
-                            <legend class="govuk-label govuk-!-font-weight-bold">Course type</legend>
-                            <div class="govuk-checkboxes govuk-checkboxes--small">
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseType" name="CurrentSearchRequest.CourseType" type="checkbox" value="online">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseType">Online
-                                    </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseType2" name="CurrentSearchRequest.CourseType" type="checkbox" value="classroom">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseType2">Classroom based
-                                    </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseType3" name="CurrentSearchRequest.CourseType" type="checkbox" value="work">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseType3">Work based
-                                    </label>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-                <div id="courseHoursGroup" class="govuk-form-group">
-                    <div id="CourseHours">
-                        <fieldset class="govuk-fieldset">
-                            <legend class="govuk-label govuk-!-font-weight-bold">Course hours</legend>
-                            <div class="govuk-checkboxes govuk-checkboxes--small">
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseHours" name="CurrentSearchRequest.CourseHours" type="checkbox" value="fulltime">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseHours">Full time
-                                    </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseHours2" name="CurrentSearchRequest.CourseHours" type="checkbox" value="parttime">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseHours2">Part time
-                                    </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseHours3" name="CurrentSearchRequest.CourseHours" type="checkbox" value="flexible">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseHours3">Flexible
-                                    </label>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-                <div id="courseTimeGroup" class="govuk-form-group">
-                    <div id="CourseTime">
-                        <fieldset class="govuk-fieldset">
-                            <legend class="govuk-label govuk-!-font-weight-bold">Course study time</legend>
-                            <div class="govuk-checkboxes govuk-checkboxes--small">
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime" name="CurrentSearchRequest.CourseTime" type="checkbox" value="daytime">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime">Daytime
-                                    </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime2" name="CurrentSearchRequest.CourseTime" type="checkbox" value="night">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime2">Evening
-                                    </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime3" name="CurrentSearchRequest.CourseTime" type="checkbox" value="weekend">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime3">Weekend
-                                    </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime4" name="CurrentSearchRequest.CourseTime" type="checkbox" value="dayblockrelease">
-                                    <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime4">Day or block release
-                                    </label>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-                <noscript>
-                    <button data-module="govuk-button" class="govuk-button" type="submit">Apply filters</button>
-                </noscript>
-                <p class="clear-filters"><a href="">Clear filters</a></p>
+            <div id="startDateForm" class="govuk-form-group">
+              <div id="startDate">
+                <label class="govuk-label govuk-!-font-weight-bold" for="CurrentSearchRequest_StartDate">Start date</label>
+                <select class="govuk-select" id="CurrentSearchRequest_StartDate" name="CurrentSearchRequest.StartDate">
+                  <option value="anytime" selected>Anytime</option>
+                  <option value="nextThree">Next 3 months</option>
+                  <option value="threeToSix">In 3 to 6 months</option>
+                  <option value="moreThanSix">More than 6 months</option>
+                </select>
+              </div>
             </div>
-
+            <div id="courseTypeGroup" class="govuk-form-group">
+              <div id="CourseType">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-label govuk-!-font-weight-bold">Course type</legend>
+                  <div class="govuk-checkboxes govuk-checkboxes--small">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseType" name="CurrentSearchRequest.CourseType" type="checkbox" value="online">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseType">Online </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseType2" name="CurrentSearchRequest.CourseType" type="checkbox" value="classroom">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseType2">Classroom based </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseType3" name="CurrentSearchRequest.CourseType" type="checkbox" value="work">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseType3">Work based </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div id="courseHoursGroup" class="govuk-form-group">
+              <div id="CourseHours">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-label govuk-!-font-weight-bold">Course hours</legend>
+                  <div class="govuk-checkboxes govuk-checkboxes--small">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseHours" name="CurrentSearchRequest.CourseHours" type="checkbox" value="fulltime">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseHours">Full time </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseHours2" name="CurrentSearchRequest.CourseHours" type="checkbox" value="parttime">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseHours2">Part time </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseHours3" name="CurrentSearchRequest.CourseHours" type="checkbox" value="flexible">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseHours3">Flexible </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div id="courseTimeGroup" class="govuk-form-group">
+              <div id="CourseTime">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-label govuk-!-font-weight-bold">Course study time</legend>
+                  <div class="govuk-checkboxes govuk-checkboxes--small">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime" name="CurrentSearchRequest.CourseTime" type="checkbox" value="daytime">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime">Daytime </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime2" name="CurrentSearchRequest.CourseTime" type="checkbox" value="night">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime2">Evening </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime3" name="CurrentSearchRequest.CourseTime" type="checkbox" value="weekend">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime3">Weekend </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="CurrentSearchRequest_CourseTime4" name="CurrentSearchRequest.CourseTime" type="checkbox" value="dayblockrelease">
+                      <label class="govuk-label govuk-checkboxes__label" for="CurrentSearchRequest_CourseTime4">Day or block release </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <noscript>
+            <button data-module="govuk-button" class="govuk-button" type="submit">Apply filters</button>
+            </noscript>
+            <p class="clear-filters"><a href="">Clear filters</a></p>
+          </div>
         </div>
         <div class="govuk-grid-column-two-thirds">
-<div>
-        <p class="govuk-body">Showing <span class="fac-result-count">400</span> free courses.      </p>
-
-        <hr class="govuk-section-break govuk-section-break--visible">
-</div>
-                        <div class="govuk-form-group fac-section-sort govuk-!-margin-top-3">
-                            <label for="order" class="result-region-header__sort-label govuk-label">Sort by</label>
-                            <select class="govuk-select fac-section-sort-js" name="order" id="order">
-                                <option value="updated-newest">Relevance</option>
-                                <option value="updated-oldest" selected>Start date</option>
-                            </select>
-
-                            <select class="govuk-select fac-section-sort-nojs" name="order" id="order">
-                                <option value="distance">Distance</option>
-                                <option value="updated-newest">Relevance</option>
-                                <option value="updated-oldest" selected>Start date</option>
-                            </select><noscript>
-                                <button data-module="govuk-button" class="govuk-button" type="submit">Apply sort</button>
-                            </noscript>
-
-                        </div>
-
-
-
-<div id="fac-result-list">
-
-  <div class="govuk-!-margin-top-6">
-      <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_240="120" data-gtm-vis-first-on-screen-8675592_240="120" data-gtm-vis-total-visible-time-8675592_240="100" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="124" data-gtm-vis-recent-on-screen-8675592_194="447039" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">
-          <a class="govuk-link" href="course-details-tlevels-single">T Level in Education and Childcare</a>
-      </h2>
-      <p>This T Level is suitable for anyone wanting a career in early years education, childcare or assisting teaching. The T Level is a two-year programme and will include a 9 week (minimum) industry placement  ...</p>
-      <div class="govuk-grid-row">
-          <div class="govuk-grid-column-one-half">
-              <ul class="govuk-list">
-                  <li>
-                      <span class="govuk-secondary-colour">Start date:</span>
-                          <span>01 September 2021</span>
-                  </li>
-                  <li>
-                      <span class="govuk-secondary-colour">Cost:</span>
-      <span>£0.00</span>
-      <details data-module="govuk-details" class="course-cost-desc">
-          <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                  View cost description
-              </span>
-          </summary>
-          <div class="govuk-details__text">Free where government funding available or agree with employer</div>
-      </details>
-
-                  </li>
-                  <li>
-                      <span class="govuk-secondary-colour">Provider:</span> Mid-Kent College
-                  </li>
-
-              </ul>
+          <div>
+            <p class="govuk-body">Showing <span class="fac-result-count">400</span> courses</p>
           </div>
-          <div class="govuk-grid-column-one-half">
-              <ul class="govuk-list">
-                  <li>
-                      <span class="govuk-secondary-colour">Course type:</span> Classroom based
-                  </li>
-                      <li>
-                          <span class="govuk-secondary-colour">Duration:</span>
-  2 years                    </li>
-                  <li>
-                      <span class="govuk-secondary-colour">Location:</span>
-                          <span>Kent</span>
-                  </li>
-
-              </ul>
+          <div class="govuk-form-group fac-section-sort govuk-!-margin-top-3">
+            <label for="order" class="result-region-header__sort-label govuk-label">Sort by</label>
+            <select class="govuk-select fac-section-sort-js" name="order" id="order">
+              <option value="updated-newest" selected>Relevance</option>
+              <option value="updated-oldest" >Start date</option>
+            </select>
+            <select class="govuk-select fac-section-sort-nojs" name="order" id="order">
+              <option value="distance">Distance</option>
+              <option value="updated-newest">Relevance</option>
+              <option value="updated-oldest" selected>Start date</option>
+            </select>
+            <noscript>
+            <button data-module="govuk-button" class="govuk-button" type="submit">Apply sort</button>
+            </noscript>
           </div>
+          <hr class="govuk-section-break govuk-section-break--visible">
+          <div id="fac-result-list">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_240="120" data-gtm-vis-first-on-screen-8675592_240="120" data-gtm-vis-total-visible-time-8675592_240="100" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="124" data-gtm-vis-recent-on-screen-8675592_194="447039" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1"> <a class="govuk-link" href="course-details-tlevels-single">T Level in Education and Childcare</a> </h2>
+              <p>This T Level is suitable for anyone wanting a career in early years education, childcare or assisting teaching. The T Level is a two-year programme and will include a 9 week (minimum) industry placement  ...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>01 September 2021</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>£0.00</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">Free where government funding available or agree with employer</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> Mid-Kent College </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Classroom based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 2 years </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Kent</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_240="120" data-gtm-vis-first-on-screen-8675592_240="120" data-gtm-vis-total-visible-time-8675592_240="100" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="124" data-gtm-vis-recent-on-screen-8675592_194="447039" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1"> <a class="govuk-link" href="course-details-tlevels-multiple">T Level in Education and Childcare - [Multiple venues]</a> </h2>
+              <p>This T Level is suitable for anyone wanting a career in early years education, childcare or assisting teaching. The T Level is a two-year programme and will include a 9 week (minimum) industry placement  ...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>01 September 2021</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>£0.00</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">Free where government funding available or agree with employer</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> Mid-Kent College </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Classroom based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 2 years </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Kent</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_240="120" data-gtm-vis-first-on-screen-8675592_240="120" data-gtm-vis-total-visible-time-8675592_240="100" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="124" data-gtm-vis-recent-on-screen-8675592_194="447039" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1"> <a class="govuk-link" href="/find-a-course/details?courseId=2461cf04-d951-4512-ac42-45c508f613c1&amp;runId=059c6d04-630c-4886-bd92-a75a106a3871&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Customer Service Specialist</a> </h2>
+              <p>The Customer Service Advanced Apprenticeship qualification is aimed at those individuals working and with  responsibility of supervising or managing a customer service environment who have  a broader ...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">This programme is available as a fully funded or co funded programme and is dependent on the learners age and relevant  eligibility criteria being met</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> GP STRATEGIES TRAINING LIMITED </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 12 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Blackpool</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="3620" data-gtm-vis-recent-on-screen-8675592_194="487802" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1"> <a class="govuk-link" href="#">Level 2 NVQ Diploma in Hairdressing </a> </h2>
+              <p>An introduction to hairdressing to become a qualified Level 2 hairdresser. Employed in a salon where training is undertaken with both on and off the job skills and knowledge being delivered at the Aca...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>£0.00</span> </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> POSITIVE APPROACH ACADEMY FOR HAIR LIMITED </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 2 Years </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Lincolnshire</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="5219"> <a class="govuk-link" href="#">Motor - Parts Distribution Apprenticeship at Level 2 (IMI)</a> </h2>
+              <p>This course covers parts warehousing, stock control, use of IT, customer service, merchandising ad more. Motor Industry Training offer industry specific training to employers, schools and young adults...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">Free where government funding available or agree with employer</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> M I T SKILLS LIMITED </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 18 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>East Sussex</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="5584"> <a class="govuk-link" href="#">NVQ Diploma in Front of House Reception (QCF)</a> </h2>
+              <p>The industry's recognised professional qualification for staff involved in front office and reception activities for any residential outlet, including hotels, hostels, guest houses and even bed and br...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 12 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Hampshire</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="445445"> <a class="govuk-link" href="#">Level 3 Diploma in Health and Social Care (Adults)</a> </h2>
+              <p>This is a work based qualification, which allows the apprentice to develop skills and knowledge essential for working within Health and Social Care. There are a wide range of units that the apprentice...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">Pricing based on individual units</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> STRIVE TRAINING (LONDON) LIMITED </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 18 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Bristol</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="#">FDQ Level 2 Award in Health and Safety</a> </h2>
+              <p>Individuals will emerge with a clear understanding of what hazard and risk means within this type of business. Key to this is understanding the process for conducting appropriate and effective risk as...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>£72.00</span> </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> STRIVE TRAINING (LONDON) LIMITED </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 12 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>City of London</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=9c020a3b-514d-4a40-8316-7ee4de0dff7a&amp;runId=0723ac12-0bc5-4c6f-818c-977e66615241&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Introduction to Teaching ESOL FC</a> </h2>
+              <p>Introduction to Teaching ESOL FC (DRO00FAAXX 19/20GB) is based in the Community and ESOL deparment and is designed to help you develop skills in this area. We have chosen a non-regulated certificate for this course.</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">Prices available on request</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> EAST COAST COLLEGE </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Norfolk</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=7ee35092-6039-4bce-9cb6-030a9a97012a&amp;runId=0762555d-ead4-462d-84b6-65d1cad55316&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Level 1 Upper Intermediate ESOL Reading and Writing</a> </h2>
+              <p>This course is appropriate if you can already communicate effectively and fluently in a range of everyday situations, such as taking part in a discussion and writing a letter. The course covers all th...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>£470.00</span> </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> WESTMINSTER CITY COUNCIL </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 38 Weeks </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>City of London</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=b3192070-ab35-4d42-b1e7-1b3b1651563d&amp;runId=07dd1814-483b-465e-9295-dda41e48c36f&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Level 1 Preparation for GCSE - English</a> </h2>
+              <p>This course is a progression program available to support individuals who have recently finished (up to 18 months ago) the full level 1 Functional Skill in English and  wish to move on to our English ...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">FREE</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> WESTMINSTER CITY COUNCIL </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 36 Weeks </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>City of London</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=33fad0e2-863b-489f-983e-acdc00b641f7&amp;runId=15ffc2e8-12c1-41f1-a73c-69e86cfe59d5&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Food Safety Management for Manufacturing</a> </h2>
+              <p>This qualification is for individuals who are working in, or preparing to work in food handling or in food supply chain operative, supervisory/management roles. It is suitable for those who work with ...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>£480.00</span> </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> STRIVE TRAINING (LONDON) LIMITED </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 15 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Staffordshire</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=db3bc4f8-6c89-4162-bd43-d817f1886b95&amp;runId=16128da6-c5aa-4986-a00c-54d39829040b&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">NVQ Diploma in Hairdressing (QCF) Level 3</a> </h2>
+              <p>The level 3 NVQ Diploma in Hairdressing is based on the National Occupational Standards for Hairdressing. It is a job ready qualification which requires learners to demonstrate in the workplace the sk...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">This course is fully funded for 16-18 year old learners
+                          learners 19 and over are partially funded
+                          please contact us for more details 01442230130</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> UK TRAINING &amp; DEVELOPMENT LIMITED </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 20 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Buckinghamshire</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=a43c6eea-d410-4b8b-bef1-ee70b3341cd1&amp;runId=167c3712-a096-4b4a-a6e0-ad23e0c6f5c4&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">335 Processing Hydrocarbon Control Room Level 3 VQ FC</a> </h2>
+              <p>335 Processing Hydrocarbon Control Room Level 3 VQ FC (AKT00FDLF3 18/19LA) is based in the LOWES deparment and is designed to help you develop skills in this area. We have chosen CG as the exam board for this course.</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">Prices available on request</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> EAST COAST COLLEGE </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Suffolk</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=c13b0a4d-2b4f-4985-ae6e-f5438ee7adb3&amp;runId=1692afa9-9ab4-4635-a8a5-f688d43b1e4c&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Level 4 Qualifications for Quality Assurance</a> </h2>
+              <p>The units and qualifications will provide people who carry out assessment and internal quality assurance roles in their organisation with the opportunity to develop and improve their practice as well ...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">Please contact us for details</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> WAKEFIELD COLLEGE </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 12 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Doncaster</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=9c146d41-f129-4eae-9ea4-33c38652f089&amp;runId=19a92a50-9ae7-4ce2-a0f6-f3e597f1accb&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Diploma in Hospitality Management (QCF)</a> </h2>
+              <p>This Higher Apprenticeship in Hospitality Management has been developed for managers
+                seeking to improve their leadership and management skills and to gain appropriate
+                qualifications for their job ...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 12 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Suffolk</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=ed6122ab-55ff-4b98-843c-2956c4f6c646&amp;runId=19c5bf6d-f174-4ba4-bd07-f6ed969f9f2a&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">NVQ Diploma in Food Production and Cooking (QCF)</a> </h2>
+              <p>This is the hospitality industry's professional qualification for for staff who process and cook food in any type of outlet.
 
-      </div>
-  </div>
-                          <hr class="govuk-section-break govuk-section-break--visible">
+                It is suitable for all catering staff, cooks and chefs whose  outlet an...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 12 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>North Yorkshire</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=b8a439c5-aba6-4dfd-b292-d7c3c291d73c&amp;runId=1a273e5e-2bc3-4ea1-a701-f0c6ca1af54c&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">NVQ Diploma in Hospitality Supervision and Leadership (QCF)</a> </h2>
+              <p>This is the hospitality industry's professional qualification for first line management, supervisory staff, team and shift leaders.
 
-                          <div class="govuk-!-margin-top-6">
-                              <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_240="120" data-gtm-vis-first-on-screen-8675592_240="120" data-gtm-vis-total-visible-time-8675592_240="100" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="124" data-gtm-vis-recent-on-screen-8675592_194="447039" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">
-                                  <a class="govuk-link" href="course-details-tlevels-multiple">T Level in Education and Childcare - [Multiple venues]</a>
-                              </h2>
-                              <p>This T Level is suitable for anyone wanting a career in early years education, childcare or assisting teaching. The T Level is a two-year programme and will include a 9 week (minimum) industry placement  ...</p>
-                              <div class="govuk-grid-row">
-                                  <div class="govuk-grid-column-one-half">
-                                      <ul class="govuk-list">
-                                          <li>
-                                              <span class="govuk-secondary-colour">Start date:</span>
-                                                  <span>01 September 2021</span>
-                                          </li>
-                                          <li>
-                                              <span class="govuk-secondary-colour">Cost:</span>
-                              <span>£0.00</span>
-                              <details data-module="govuk-details" class="course-cost-desc">
-                                  <summary class="govuk-details__summary">
-                                      <span class="govuk-details__summary-text">
-                                          View cost description
-                                      </span>
-                                  </summary>
-                                  <div class="govuk-details__text">Free where government funding available or agree with employer</div>
-                              </details>
-
-                                          </li>
-                                          <li>
-                                              <span class="govuk-secondary-colour">Provider:</span> Mid-Kent College
-                                          </li>
-
-                                      </ul>
-                                  </div>
-                                  <div class="govuk-grid-column-one-half">
-                                      <ul class="govuk-list">
-                                          <li>
-                                              <span class="govuk-secondary-colour">Course type:</span> Classroom based
-                                          </li>
-                                              <li>
-                                                  <span class="govuk-secondary-colour">Duration:</span>
-                          2 years                    </li>
-                                          <li>
-                                              <span class="govuk-secondary-colour">Location:</span>
-                                                  <span>Kent</span>
-                                          </li>
-
-                                      </ul>
-                                  </div>
-
-                              </div>
-                          </div>
-                                                  <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-recent-on-screen-8675592_240="120" data-gtm-vis-first-on-screen-8675592_240="120" data-gtm-vis-total-visible-time-8675592_240="100" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="124" data-gtm-vis-recent-on-screen-8675592_194="447039" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=2461cf04-d951-4512-ac42-45c508f613c1&amp;runId=059c6d04-630c-4886-bd92-a75a106a3871&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Customer Service Specialist</a>
-    </h2>
-    <p>The Customer Service Advanced Apprenticeship qualification is aimed at those individuals working and with  responsibility of supervising or managing a customer service environment who have  a broader ...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">This programme is available as a fully funded or co funded programme and is dependent on the learners age and relevant  eligibility criteria being met</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> GP STRATEGIES TRAINING LIMITED
-                </li>
-
+                This BTEC Edexcel Diploma is suitable for all supervisory staff i...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 12 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Staffordshire</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=0272a424-58ff-4c88-9e4b-deec8d8d449e&amp;runId=1aac3e19-6100-46f4-b3d7-293a6be52c15&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Sport &amp; Active Leisure Entry 3 Certificate E&amp;T</a> </h2>
+              <p>Sport &amp; Active Leisure Entry 3 Certificate E&amp;T (SPLCFE3C00 19/20GA) is based in the Foundation Skills deparment and is designed to help you develop skills in this area. We have chosen GATEWAY as the e...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">Prices available on request</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> EAST COAST COLLEGE </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Norfolk</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=84b24ffd-f53e-40cd-aec5-2bb5dd20f033&amp;runId=020f86e8-595f-4f34-8900-5b4b3962b36c&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">AAT AQ2016 Professional Diploma - Credit Management (CDMT)</a> </h2>
+              <p>Kaplan's Professional Diploma in Accounting covers higher accounting tasks required by a financial team leader such as drafting financial statement, managing budgets and evaluating financial performan...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>£529.00</span> </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> KAPLAN FINANCIAL LIMITED </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 3 Days </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>North East Lincolnshire</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=813522d0-1c8f-4f71-97b9-fe7d095018da&amp;runId=030f1b0e-af70-4e36-b3d7-516d183740ff&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">NVQ Diploma in Front of House Reception (QCF)</a> </h2>
+              <p>The industry's recognised professional qualification for staff involved in front office and reception activities for any residential outlet, including hotels, hostels, guest houses and even bed and br...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>Contact course provider</span>
+                      <details data-module="govuk-details" class="course-cost-desc">
+                        <summary class="govuk-details__summary"> <span class="govuk-details__summary-text"> View cost description </span> </summary>
+                        <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
+                      </details>
+                    </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 12 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Hertfordshire</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <div class="govuk-!-margin-top-6">
+              <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1"> <a class="govuk-link" href="/find-a-course/details?courseId=33fad0e2-863b-489f-983e-acdc00b641f7&amp;runId=031fe108-81b5-4d74-acd2-a0888f7398cc&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Food Safety Management for Manufacturing</a> </h2>
+              <p>This qualification is for individuals who are working in, or preparing to work in food handling or in food supply chain operative, supervisory/management roles. It is suitable for those who work with ...</p>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Start date:</span> <span>Not known</span> </li>
+                    <li> <span class="govuk-secondary-colour">Cost:</span> <span>£480.00</span> </li>
+                    <li> <span class="govuk-secondary-colour">Provider:</span> STRIVE TRAINING (LONDON) LIMITED </li>
+                  </ul>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <ul class="govuk-list">
+                    <li> <span class="govuk-secondary-colour">Course type:</span> Work based </li>
+                    <li> <span class="govuk-secondary-colour">Duration:</span> 15 Months </li>
+                    <li> <span class="govuk-secondary-colour">Location:</span> <span>Oxfordshire</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible">
+            <ul class="previous-next-navigation govuk-!-margin-top-3" id="page-identifiers">
+              <li class="next"> <a href="/find-a-course/page?searchTerm=&amp;town=&amp;courseType=[]&amp;courseHours=[]&amp;courseStudyTime=[]&amp;startDate=&amp;distance=&amp;filterA=False&amp;orderByValue=&amp;page=2"> <span class="pagination-label">Next</span> <span class="govuk-visually-hidden">page</span> <span class="page-numbers">2 of 4818</span> </a> </li>
             </ul>
+          </div>
         </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-12 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Blackpool</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="3620" data-gtm-vis-recent-on-screen-8675592_194="487802" data-gtm-vis-total-visible-time-8675592_194="100" data-gtm-vis-has-fired-8675592_194="1">
-        <a class="govuk-link" href="#">Level 2 NVQ Diploma in Hairdressing </a>
-    </h2>
-    <p>An introduction to hairdressing to become a qualified Level 2 hairdresser. Employed in a salon where training is undertaken with both on and off the job skills and knowledge being delivered at the Aca...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>£0.00</span>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> POSITIVE APPROACH ACADEMY FOR HAIR LIMITED
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-2 Years                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Lincolnshire</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="5219">
-        <a class="govuk-link" href="#">Motor - Parts Distribution Apprenticeship at Level 2 (IMI)</a>
-    </h2>
-    <p>This course covers parts warehousing, stock control, use of IT, customer service, merchandising ad more. Motor Industry Training offer industry specific training to employers, schools and young adults...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">Free where government funding available or agree with employer</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> M I T SKILLS LIMITED
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-18 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>East Sussex</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="5584">
-        <a class="govuk-link" href="#">NVQ Diploma in Front of House Reception (QCF)</a>
-    </h2>
-    <p>The industry's recognised professional qualification for staff involved in front office and reception activities for any residential outlet, including hotels, hostels, guest houses and even bed and br...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-12 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Hampshire</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1" data-gtm-vis-first-on-screen-8675592_194="445445">
-        <a class="govuk-link" href="#">Level 3 Diploma in Health and Social Care (Adults)</a>
-    </h2>
-    <p>This is a work based qualification, which allows the apprentice to develop skills and knowledge essential for working within Health and Social Care. There are a wide range of units that the apprentice...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">Pricing based on individual units</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> STRIVE TRAINING (LONDON) LIMITED
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-18 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Bristol</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="#">FDQ Level 2 Award in Health and Safety</a>
-    </h2>
-    <p>Individuals will emerge with a clear understanding of what hazard and risk means within this type of business. Key to this is understanding the process for conducting appropriate and effective risk as...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>£72.00</span>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> STRIVE TRAINING (LONDON) LIMITED
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-12 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>City of London</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=9c020a3b-514d-4a40-8316-7ee4de0dff7a&amp;runId=0723ac12-0bc5-4c6f-818c-977e66615241&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Introduction to Teaching ESOL FC</a>
-    </h2>
-    <p>Introduction to Teaching ESOL FC (DRO00FAAXX 19/20GB) is based in the Community and ESOL deparment and is designed to help you develop skills in this area. We have chosen a non-regulated certificate for this course.</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">Prices available on request</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> EAST COAST COLLEGE
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Norfolk</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=7ee35092-6039-4bce-9cb6-030a9a97012a&amp;runId=0762555d-ead4-462d-84b6-65d1cad55316&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Level 1 Upper Intermediate ESOL Reading and Writing</a>
-    </h2>
-    <p>This course is appropriate if you can already communicate effectively and fluently in a range of everyday situations, such as taking part in a discussion and writing a letter. The course covers all th...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>£470.00</span>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> WESTMINSTER CITY COUNCIL
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-38 Weeks                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>City of London</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=b3192070-ab35-4d42-b1e7-1b3b1651563d&amp;runId=07dd1814-483b-465e-9295-dda41e48c36f&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Level 1 Preparation for GCSE - English</a>
-    </h2>
-    <p>This course is a progression program available to support individuals who have recently finished (up to 18 months ago) the full level 1 Functional Skill in English and  wish to move on to our English ...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">FREE</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> WESTMINSTER CITY COUNCIL
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-36 Weeks                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>City of London</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=33fad0e2-863b-489f-983e-acdc00b641f7&amp;runId=15ffc2e8-12c1-41f1-a73c-69e86cfe59d5&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Food Safety Management for Manufacturing</a>
-    </h2>
-    <p>This qualification is for individuals who are working in, or preparing to work in food handling or in food supply chain operative, supervisory/management roles. It is suitable for those who work with ...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>£480.00</span>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> STRIVE TRAINING (LONDON) LIMITED
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-15 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Staffordshire</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=db3bc4f8-6c89-4162-bd43-d817f1886b95&amp;runId=16128da6-c5aa-4986-a00c-54d39829040b&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">NVQ Diploma in Hairdressing (QCF) Level 3</a>
-    </h2>
-    <p>The level 3 NVQ Diploma in Hairdressing is based on the National Occupational Standards for Hairdressing. It is a job ready qualification which requires learners to demonstrate in the workplace the sk...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">This course is fully funded for 16-18 year old learners
-learners 19 and over are partially funded
-please contact us for more details 01442230130</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> UK TRAINING &amp; DEVELOPMENT LIMITED
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-20 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Buckinghamshire</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=a43c6eea-d410-4b8b-bef1-ee70b3341cd1&amp;runId=167c3712-a096-4b4a-a6e0-ad23e0c6f5c4&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">335 Processing Hydrocarbon Control Room Level 3 VQ FC</a>
-    </h2>
-    <p>335 Processing Hydrocarbon Control Room Level 3 VQ FC (AKT00FDLF3 18/19LA) is based in the LOWES deparment and is designed to help you develop skills in this area. We have chosen CG as the exam board for this course.</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">Prices available on request</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> EAST COAST COLLEGE
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Suffolk</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=c13b0a4d-2b4f-4985-ae6e-f5438ee7adb3&amp;runId=1692afa9-9ab4-4635-a8a5-f688d43b1e4c&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Level 4 Qualifications for Quality Assurance</a>
-    </h2>
-    <p>The units and qualifications will provide people who carry out assessment and internal quality assurance roles in their organisation with the opportunity to develop and improve their practice as well ...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">Please contact us for details</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> WAKEFIELD COLLEGE
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-12 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Doncaster</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=9c146d41-f129-4eae-9ea4-33c38652f089&amp;runId=19a92a50-9ae7-4ce2-a0f6-f3e597f1accb&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Diploma in Hospitality Management (QCF)</a>
-    </h2>
-    <p>This Higher Apprenticeship in Hospitality Management has been developed for managers
-seeking to improve their leadership and management skills and to gain appropriate
-qualifications for their job ...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-12 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Suffolk</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=ed6122ab-55ff-4b98-843c-2956c4f6c646&amp;runId=19c5bf6d-f174-4ba4-bd07-f6ed969f9f2a&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">NVQ Diploma in Food Production and Cooking (QCF)</a>
-    </h2>
-    <p>This is the hospitality industry's professional qualification for for staff who process and cook food in any type of outlet.
-
-It is suitable for all catering staff, cooks and chefs whose  outlet an...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-12 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>North Yorkshire</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=b8a439c5-aba6-4dfd-b292-d7c3c291d73c&amp;runId=1a273e5e-2bc3-4ea1-a701-f0c6ca1af54c&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">NVQ Diploma in Hospitality Supervision and Leadership (QCF)</a>
-    </h2>
-    <p>This is the hospitality industry's professional qualification for first line management, supervisory staff, team and shift leaders.
-
-This BTEC Edexcel Diploma is suitable for all supervisory staff i...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-12 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Staffordshire</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=0272a424-58ff-4c88-9e4b-deec8d8d449e&amp;runId=1aac3e19-6100-46f4-b3d7-293a6be52c15&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Sport &amp; Active Leisure Entry 3 Certificate E&amp;T</a>
-    </h2>
-    <p>Sport &amp; Active Leisure Entry 3 Certificate E&amp;T (SPLCFE3C00 19/20GA) is based in the Foundation Skills deparment and is designed to help you develop skills in this area. We have chosen GATEWAY as the e...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">Prices available on request</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> EAST COAST COLLEGE
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Norfolk</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=84b24ffd-f53e-40cd-aec5-2bb5dd20f033&amp;runId=020f86e8-595f-4f34-8900-5b4b3962b36c&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">AAT AQ2016 Professional Diploma - Credit Management (CDMT)</a>
-    </h2>
-    <p>Kaplan's Professional Diploma in Accounting covers higher accounting tasks required by a financial team leader such as drafting financial statement, managing budgets and evaluating financial performan...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>£529.00</span>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> KAPLAN FINANCIAL LIMITED
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-3 Days                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>North East Lincolnshire</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=813522d0-1c8f-4f71-97b9-fe7d095018da&amp;runId=030f1b0e-af70-4e36-b3d7-516d183740ff&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">NVQ Diploma in Front of House Reception (QCF)</a>
-    </h2>
-    <p>The industry's recognised professional qualification for staff involved in front office and reception activities for any residential outlet, including hotels, hostels, guest houses and even bed and br...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>Contact course provider</span>
-        <details data-module="govuk-details" class="course-cost-desc">
-            <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                    View cost description
-                </span>
-            </summary>
-            <div class="govuk-details__text">An employer contribution may be applicable and is dependent on the size of the organisation and eligibilty of apprentice</div>
-        </details>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> HIT TRAINING LTD
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-12 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Hertfordshire</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-margin-top-6">
-    <h2 class="govuk-heading-m" data-gtm-vis-has-fired-8675592_240="1">
-        <a class="govuk-link" href="/find-a-course/details?courseId=33fad0e2-863b-489f-983e-acdc00b641f7&amp;runId=031fe108-81b5-4d74-acd2-a0888f7398cc&amp;searchTerm=&amp;town=&amp;courseType=&amp;courseHours=&amp;courseStudyTime=&amp;startDate=&amp;distance=&amp;filtera=False&amp;page=1&amp;orderByValue=">Food Safety Management for Manufacturing</a>
-    </h2>
-    <p>This qualification is for individuals who are working in, or preparing to work in food handling or in food supply chain operative, supervisory/management roles. It is suitable for those who work with ...</p>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Start date:</span>
-                        <span>Not known</span>
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Cost:</span>
-    <span>£480.00</span>
-
-                </li>
-                <li>
-                    <span class="govuk-secondary-colour">Provider:</span> STRIVE TRAINING (LONDON) LIMITED
-                </li>
-
-            </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-            <ul class="govuk-list">
-                <li>
-                    <span class="govuk-secondary-colour">Course type:</span> Work based
-                </li>
-                    <li>
-                        <span class="govuk-secondary-colour">Duration:</span>
-15 Months                    </li>
-                <li>
-                    <span class="govuk-secondary-colour">Location:</span>
-                        <span>Oxfordshire</span>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>
-                        <hr class="govuk-section-break govuk-section-break--visible">
-                <ul class="previous-next-navigation govuk-!-margin-top-3" id="page-identifiers">
-                        <li class="next">
-                            <a href="/find-a-course/page?searchTerm=&amp;town=&amp;courseType=[]&amp;courseHours=[]&amp;courseStudyTime=[]&amp;startDate=&amp;distance=&amp;filterA=False&amp;orderByValue=&amp;page=2">
-                                <span class="pagination-label">Next</span>
-                                <span class="govuk-visually-hidden">page</span>
-                                <span class="page-numbers">2 of 4818</span>
-                            </a>
-                        </li>
-
-                </ul>
-</div>
-                    </div>
       </div>
     </form>
   </main>
