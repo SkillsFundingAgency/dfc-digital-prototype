@@ -276,32 +276,32 @@ $(function(){
   // Articles (cards) to be shown for each filter
   var allFilterGroups = [
 
-    ["card1", "card2",	"card39",	"card35", "card40"], // Understand your skills
-    ["card1", "card2",	"card3"], // Find careers that suit your skills
-    ["card6", "card7",	"card9",	"card35", "card36", "card39", "card40", "card41"], // Develop your skills
-    ["card3", "card6",	"card7",	"card11", "card12", "card43"], // Gain qualifications
+    ["card1", "card2", "card39"], // Understand your skills
+    ["card1", "card2", "card3"], // Find careers that suit your skills
+    ["card6", "card7"], // Develop your skills
+    ["card6",	"card7"], // Gain qualifications
     ["card36"], // Volunteering
-    ["card15", "card34",	"card44",	"card45"], // Work experience
+    ["card15", "card34", "card44",	"card45"], // Work experience
     ["card3", "card6"], // Find an apprenticeship
-    ["card3", "card6",	"card7",	"card11", "card12", "card43"], // Find a course
+    [ "card6",	"card7", "card18", "card43"], // Find a course
     ["card11", "card12"], // Find a traineeship
     ["card3", "card6", "card7"], // Choose what to study
-    ["card7", "card9", "card15", "card19", "card35", "card36"], // Take a gap year
-    ["card3", "card6",	"card9",	"card11", "card19", "card35", "card36", "card37", "card44", "card45"], // Options at age 16
-    ["card3", "card6",	"card7",	"card12", "card15", "card19", "card35", "card36", "card37", "card44", "card45"], // Options at age 18
-    ["card3", "card6",	"card7",	"card15", "card19", "card22", "card31", "card32", "card33", "card34", "card36"], // Options after university
+    ["card7", "card15", "card19", "card35", "card36",  "card38"], // Take a gap year
+    ["card3", "card6",	"card11", "card44"], // Options at age 16
+    ["card3", "card6",	"card7",	"card12", "card15",  "card44"], // Options at age 18
+    ["card3", "card18", "card31", "card32", "card34", "card36"], // Options after university
     ["card3", "card20"], // Find information about a specific job
     ["card3"], // Find out how to get into a career
-    ["card26", "card27", "card28", "card29", "card30", "card33"], // Understand the recruitment process
-    ["card21", "card22", "card23", "card31"], // How to find job vacancies
+    ["card26", "card27", "card28",  "card29", "card30", "card33"], // Understand the recruitment process
+    ["card33",  "card47", "card32" , "card19", "card21", "card22", "card23", "card31"], // How to find job vacancies
     ["card25", "card26"], // Filling out application forms
     ["card27", "card28", "card29", "card30"], // Prepare for a job interview
     ["card24", "card25"], // Write or update your CV
     ["card3"], // See careers in a specific sector
-    ["card7", "card43"], // Learning online
+    ["card7", "card10"], // Learning online
     ["card3", "card7", "card18"], // Learn about postgraduate studies
     ["card17", "card19",	"card21",	"card22", "card23", "card27", "card31"], // Bouncing back in a tough jobs market
-    ["card7", "card17",	"card19",	"card22", "card29", "card30", "card43"], // Understanding the working world during COVID-19
+    ["card7", "card10", "card17",	"card19",	"card22", "card29", "card30"], // Understanding the working world during COVID-19
     ["card13", "card14"], // Working with a disability or health condition
     ["card11", "card12", "card13", "card14"] // Options with an Education Health and Care plan
   ]
@@ -389,7 +389,6 @@ $(function(){
 
     // If nothing has been checked, then show total articles from that filter group
     if(!$('#' + n + ' .govuk-checkboxes__input').is(":checked")) {
-
       // Show total articles from the current filter group
       $(allFilterNames).each(function( i ) {
         $(filterSetArray).each(function( m ) {
@@ -510,17 +509,17 @@ $(function(){
 //********** Simplify this by finding attribute 'checked' and add attribute seleted=true ********
 // $('#triageSelect option:checked').attr('selected', 'true');
 var primaryFiltersSelectedValue = $('#primaryFiltersSelectedValue').text();
-if(primaryFiltersSelectedValue == 'planning or starting your career') {
+if(primaryFiltersSelectedValue == 'changing your career') {
   $('#triageSelect #advice1').attr('selected', 'true');
-}else if(primaryFiltersSelectedValue == 'moving up in your career') {
+}else if(primaryFiltersSelectedValue == 'identifying and building your skills') {
   $('#triageSelect #advice2').attr('selected', 'true');
-}else if(primaryFiltersSelectedValue == 'changing your career') {
+}else if(primaryFiltersSelectedValue == 'moving up in your career') {
   $('#triageSelect #advice3').attr('selected', 'true');
-}else if(primaryFiltersSelectedValue == 'returning to work') {
+}else if(primaryFiltersSelectedValue == 'planning or starting your career') {
   $('#triageSelect #advice4').attr('selected', 'true');
-}else if(primaryFiltersSelectedValue == 'understanding your options') {
+}else if(primaryFiltersSelectedValue == 'returning to work') {
   $('#triageSelect #advice5').attr('selected', 'true');
-}else if(primaryFiltersSelectedValue == 'identifying and building your skills') {;
+}else if(primaryFiltersSelectedValue == 'understanding your options') {;
   $('#triageSelect #advice6').attr('selected', 'true');
 }else if(primaryFiltersSelectedValue == 'understanding the recruitment process') {
   $('#triageSelect #advice7').attr('selected', 'true');
