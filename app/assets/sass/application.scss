@@ -1481,10 +1481,10 @@ html {
 
 
 
-.triage-opt2 .hide {display:none}
+.triage-opt2 .hide, .triage-opt .hide, .hide {display:none}
 .triage-banner .triage-select-label { margin-right:10px}
-.triage-opt2 .info-card { background-color: #fff; cursor:default;}
-.triage-opt2.results {
+.triage-opt .info-card, .triage-opt2 .info-card { background-color: #fff; cursor:default;}
+.triage-opt.results, .triage-opt2.results {
 
     .results-block {
       .results-list {

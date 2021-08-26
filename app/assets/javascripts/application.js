@@ -306,6 +306,19 @@ $(function(){
     ["card11", "card12", "card13", "card14"] // Options with an Education Health and Care plan
   ]
 
+  // Articles (cards) to be shown for each filter
+  var allGoalGroups = [
+
+    ["card1", "card2", "card39"], //planning or starting your career
+    ["card1", "card2", "card39"], //moving up in your careerC
+    ["card1", "card2", "card39"], //Changing your career
+    ["card1", "card2", "card39"], //returning to work
+    ["card1", "card2", "card39"], //understanding your options
+    ["card1", "card2", "card39"], //identifying and building your skills
+    ["card1", "card2", "card39"], //understanding the recruitment process
+    ["card1", "card2", "card39"]  //working with a health condition or disability
+  ]
+
   var allFilterNames =
   [
     'Understand your skills',
@@ -650,6 +663,73 @@ else if(adviceSelected == "advice8"){
 
 })
 
+
+$(".triage-select-v2").on('change', function (e) {
+    var optionSelected = $("option:selected", this);
+
+    var valueSelected = this.value;
+
+    $('#primaryFiltersSelectedValue').text(valueSelected);
+    var idSelected = $(this).children(":selected").attr("id");
+
+
+    if(idSelected == "advice1"){
+      $(".triage-opt.results" ).addClass( "hidden" );
+      $("#allArticles-opt1").removeClass( "hidden");
+      $("#allArticles-opt1 .results-list .info-card").show();
+    }
+    else if (idSelected == "advice2"){
+      $( ".triage-opt.results" ).addClass( "hidden" );
+      $("#allArticles-opt2").removeClass( "hidden");
+      $("#allArticles-opt2 .results-list .info-card").show();
+    }
+    else if(idSelected == "advice3"){
+      $( ".triage-opt.results" ).addClass( "hidden" );
+      $("#allArticles-opt3").removeClass( "hidden");
+      $("#allArticles-opt3 .results-list .info-card").show();
+    }
+    else if(idSelected == "advice4"){
+      $( ".triage-opt.results" ).addClass( "hidden" );
+      $("#allArticles-opt4").removeClass( "hidden");
+      $("#allArticles-opt4 .results-list .info-card").show();
+    }
+    else if(idSelected == "advice5"){
+      $( ".triage-opt.results" ).addClass( "hidden" );
+      $("#allArticles-opt5").removeClass( "hidden");
+      $("#allArticles-opt5 .results-list .info-card").show();
+    }
+    else if(idSelected == "advice6"){
+      $( ".triage-opt.results" ).addClass( "hidden" );
+      $("#allArticles-opt6").removeClass( "hidden");
+      $("#allArticles-opt6 .results-list .info-card").show();
+    }
+    else if(idSelected == "advice7"){
+      $( ".triage-opt.results" ).addClass( "hidden" );
+      $("#allArticles-opt7").removeClass( "hidden");
+      $("#allArticles-opt7 .results-list .info-card").show();
+    }
+    else if(idSelected == "advice8"){
+      $( ".triage-opt.results" ).addClass( "hidden" );
+      $("#allArticles-opt8").removeClass( "hidden");
+      $("#allArticles-opt8 .results-list .info-card").show();
+    }
+
+})
+
+
+$(".triage-opt.triage-opt4 ol.results-list li").show();
+// $(".triage-select-v2").change(function(){
+//         $(this).find("option:selected").each(function(){
+//             var optionValue = $(this).attr("value");
+//             alert(optionValue);
+//             if(optionValue){
+//                 $(".box").not("." + optionValue).hide();
+//                 $("." + optionValue).show();
+//             } else{
+//                 $(".box").hide();
+//             }
+//         });
+//     }).change();
 
 // import 'bootstrap';
 
